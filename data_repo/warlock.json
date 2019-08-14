@@ -1,0 +1,83 @@
+[
+    {
+        "spec": "Affliction",
+        "icon": "src/something.png",
+        "bg_img" : "src/something.png",
+        "spells": [
+            {
+                "name":"Suppression",
+                "icon": "src/something.png",
+                "description": "something long",
+                "max_rank": 5,
+                "required_point": 0,
+                "required_spell": "none",
+                "row": 0,
+                "column": 1
+            },
+            {
+                "name":"Improved Corruption",
+                "icon": "src/something.png",
+                "description": "something long",
+                "max_rank": 5,
+                "required_point": 0,
+                "required_spell": "none",
+                "row": 0,
+                "column": 2
+            }
+        ]
+    },
+    {
+        "spec": "Demonology",
+        "icon": "src/something.png",
+        "bg_img" : "src/something.png",
+        "spells": [
+            {
+                "name":"Suppression",
+                "icon": "src/something.png",
+                "description": "something long",
+                "max_rank": 5,
+                "required_point": 0,
+                "required_spell": "none",
+                "row": 0,
+                "column": 1
+            },
+            {
+                "name":"Improved Corruption",
+                "icon": "src/something.png",
+                "description": "something long",
+                "max_rank": 5,
+                "required_point": 0,
+                "required_spell": "none",
+                "row": 0,
+                "column": 2
+            }
+        ]
+    },
+    {
+        "spec": "Desstruction",
+        "icon": "src/something.png",
+        "bg_img" : "src/something.png",
+        "spells": [
+            {
+                "name":"Suppression",
+                "icon": "src/something.png",
+                "description": "something long",
+                "max_rank": 5,
+                "required_point": 0,
+                "required_spell": "none",
+                "row": 0,
+                "column": 1
+            },
+            {
+                "name":"Improved Corruption",
+                "icon": "src/something.png",
+                "description": "something long",
+                "max_rank": 5,
+                "required_point": 0,
+                "required_spell": "none",
+                "row": 0,
+                "column": 2
+            }
+        ]
+    }
+]

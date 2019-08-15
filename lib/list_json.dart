@@ -8,16 +8,6 @@ import 'model/spell.dart';
 import 'model/talent.dart';
 
 class ListJson extends StatelessWidget {
-  // Future<String> loadAsset() async {
-  //   return await rootBundle.loadString('data_repo/data.json');
-  // }
-
-  // Future printFuture() async {
-  //   String jsonPhotos = await loadAsset();
-  //   final jsonResponse = json.decode(jsonPhotos);
-  //   SpellList photosList = SpellList.fromJson(jsonResponse);
-  //   print("photos " + photosList.spells[0].birthYear);
-  // }
   Future<String> loadAsset() async {
     return await rootBundle.loadString('data_repo/warlock_new.json');
   }
@@ -31,6 +21,14 @@ class ListJson extends StatelessWidget {
     print(specTreeList.specTrees[2].name);
   }
 
+  Future<SpecTree> loadSpecTreeOne() async {
+    String jsonTalent = await loadAsset();
+    final jsonResponse = json.decode(jsonTalent);
+    SpecTreeList specTreeList = SpecTreeList.fromJson(jsonResponse);
+    print(specTreeList.specTrees[0]);
+    return specTreeList.specTrees[0];
+  }
+
   @override
   Widget build(BuildContext context) {
     printFuture();
@@ -42,35 +40,32 @@ class ListJson extends StatelessWidget {
           child: Center(
             // Use future builder and DefaultAssetBundle to load the local JSON file
             child: FutureBuilder(
-                future: rootBundle.loadString('data_repo/data.json'),
-                builder: (context, snapshot) {
-                  // Decode the JSON
-                  var new_data = json.decode(snapshot.data.toString());
+                future: loadSpecTreeOne(),
+                builder: (BuildContext context, AsyncSnapshot<SpecTree> snapshot) {
+                  switch (snapshot.connectionState) {
+                    case ConnectionState.none:
+                    case ConnectionState.waiting:
+                    case ConnectionState.active:
+                      return CircularProgressIndicator();
 
-                  return ListView.builder(
-                    // Build the ListView
-                    itemBuilder: (BuildContext context, int index) {
-                      return Card(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: <Widget>[
-                            Text("Name: " + new_data[index]['name']),
-                            Text("Height: " + new_data[index]['height']),
-                            Text("Mass: " + new_data[index]['mass']),
-                            Text(
-                                "Hair Color: " + new_data[index]['hair_color']),
-                            Text(
-                                "Skin Color: " + new_data[index]['skin_color']),
-                            Text("Eye Color: " + new_data[index]['eye_color']),
-                            Text(
-                                "Birth Year: " + new_data[index]['birth_year']),
-                            Text("Gender: " + new_data[index]['gender'])
-                          ],
-                        ),
-                      );
-                    },
-                    itemCount: new_data == null ? 0 : new_data.length,
-                  );
+                    case ConnectionState.done:
+                      if (snapshot.hasError) {
+                        return Text('Error: ${snapshot.error}');
+                      } else {
+                        var specTree = snapshot.data;
+
+                        return ListView.builder(
+                            itemCount: specTree.talents.talent.length,
+                            itemBuilder: (BuildContext context, int index) {
+                              return Card(
+                                  child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                                      children: <Widget>[
+                                    Text("Name: " + specTree.talents.talent[index].name),
+                                  ]));
+                            });
+                      }
+                  }
                 }),
           ),
         ));

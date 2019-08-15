@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'DetailScreen/detail_screen.dart';
 import 'HomeScreen/home_screen.dart';
 import 'list_json.dart';
 
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+//      home: DetailScreen(),
       home: ListJson(),
     );
   }

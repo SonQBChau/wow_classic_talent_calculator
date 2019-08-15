@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wow_classic_talent_calculator/DetailScreen/tabScreen.dart';
 
 import 'DetailScreen/detail_screen.dart';
 import 'HomeScreen/home_screen.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: DetailScreen(),
-      // home: ListJson(),
+      // home: TabBarDemo(),
     );
   }
 }

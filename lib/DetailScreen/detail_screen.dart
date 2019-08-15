@@ -59,17 +59,47 @@ class _DetailScreenState extends State<DetailScreen> {
       print(specTreeList.specTrees[0]);
     }
 
-    return Scaffold(
-        appBar: AppBar(
-          title: Text('Card Details'),
-          backgroundColor: Color(0xFF673AB7),
-        ),
-        body: Container(
-          child: GridView.count(
-            crossAxisCount: 4,
-            children: talentList,
-          ),
-        ));
+    return MaterialApp(
+        home: DefaultTabController(
+            length: 3,
+            child: Scaffold(
+              appBar: AppBar(
+                title: Text('Card Details'),
+                backgroundColor: Color(0xFF673AB7),
+                bottom: TabBar(
+                  tabs: [
+                    Tab(icon: Icon(Icons.directions_car)),
+                    Tab(icon: Icon(Icons.directions_transit)),
+                    Tab(icon: Icon(Icons.directions_bike)),
+                  ],
+                ),
+              ),
+              body: TabBarView(
+                children: [
+                  Container(
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    child: GridView.count(
+                      crossAxisCount: 4,
+                      children: talentList,
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    child: GridView.count(
+                      crossAxisCount: 4,
+                      children: talentList,
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    child: GridView.count(
+                      crossAxisCount: 4,
+                      children: talentList,
+                    ),
+                  )
+                ],
+              ),
+            )));
   }
 }
 

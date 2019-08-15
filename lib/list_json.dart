@@ -5,17 +5,30 @@ import 'dart:async' show Future;
 import 'package:flutter/services.dart' show rootBundle;
 
 import 'model/spell.dart';
+import 'model/talent.dart';
 
 class ListJson extends StatelessWidget {
+  // Future<String> loadAsset() async {
+  //   return await rootBundle.loadString('data_repo/data.json');
+  // }
+
+  // Future printFuture() async {
+  //   String jsonPhotos = await loadAsset();
+  //   final jsonResponse = json.decode(jsonPhotos);
+  //   SpellList photosList = SpellList.fromJson(jsonResponse);
+  //   print("photos " + photosList.spells[0].birthYear);
+  // }
   Future<String> loadAsset() async {
-    return await rootBundle.loadString('data_repo/data.json');
+    return await rootBundle.loadString('data_repo/warlock.json');
   }
 
   Future printFuture() async {
-    String jsonPhotos = await loadAsset();
-    final jsonResponse = json.decode(jsonPhotos);
-    SpellList photosList = SpellList.fromJson(jsonResponse);
-    print("photos " + photosList.spells[0].birthYear);
+    String jsonTalent = await loadAsset();
+    final jsonResponse = json.decode(jsonTalent);
+    TalentTreeList talentTreeList = TalentTreeList.fromJson(jsonResponse);
+    print(talentTreeList.talentTrees[0].spec);
+    print(talentTreeList.talentTrees[1].spec);
+    print(talentTreeList.talentTrees[2].spec);
   }
 
   @override

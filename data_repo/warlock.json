@@ -54,7 +54,7 @@
         ]
     },
     {
-        "spec": "Desstruction",
+        "spec": "Destruction",
         "icon": "src/something.png",
         "bg_img" : "src/something.png",
         "spells": [

@@ -16,9 +16,9 @@ class ListJson extends StatelessWidget {
     String jsonTalent = await loadAsset();
     final jsonResponse = json.decode(jsonTalent);
     SpecTreeList specTreeList = SpecTreeList.fromJson(jsonResponse);
-    print(specTreeList.specTrees[0].name);
-    print(specTreeList.specTrees[1].name);
-    print(specTreeList.specTrees[2].name);
+    // print(specTreeList.specTrees[0].name);
+    // print(specTreeList.specTrees[1].name);
+    // print(specTreeList.specTrees[2].name);
   }
 
   Future<SpecTree> loadSpecTreeOne() async {
@@ -41,7 +41,8 @@ class ListJson extends StatelessWidget {
             // Use future builder and DefaultAssetBundle to load the local JSON file
             child: FutureBuilder(
                 future: loadSpecTreeOne(),
-                builder: (BuildContext context, AsyncSnapshot<SpecTree> snapshot) {
+                builder:
+                    (BuildContext context, AsyncSnapshot<SpecTree> snapshot) {
                   switch (snapshot.connectionState) {
                     case ConnectionState.none:
                     case ConnectionState.waiting:
@@ -59,9 +60,11 @@ class ListJson extends StatelessWidget {
                             itemBuilder: (BuildContext context, int index) {
                               return Card(
                                   child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.stretch,
                                       children: <Widget>[
-                                    Text("Name: " + specTree.talents.talent[index].name),
+                                    Text("Name: " +
+                                        specTree.talents.talent[index].name),
                                   ]));
                             });
                       }

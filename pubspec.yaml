@@ -40,3 +40,4 @@ flutter:
   assets:
     - data_repo/data.json
     - data_repo/warlock.json
+    - data_repo/warlock_new.json

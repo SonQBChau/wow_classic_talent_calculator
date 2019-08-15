@@ -19,16 +19,16 @@ class ListJson extends StatelessWidget {
   //   print("photos " + photosList.spells[0].birthYear);
   // }
   Future<String> loadAsset() async {
-    return await rootBundle.loadString('data_repo/warlock.json');
+    return await rootBundle.loadString('data_repo/warlock_new.json');
   }
 
   Future printFuture() async {
     String jsonTalent = await loadAsset();
     final jsonResponse = json.decode(jsonTalent);
-    TalentTreeList talentTreeList = TalentTreeList.fromJson(jsonResponse);
-    print(talentTreeList.talentTrees[0].spec);
-    print(talentTreeList.talentTrees[1].spec);
-    print(talentTreeList.talentTrees[2].spec);
+    SpecTreeList specTreeList = SpecTreeList.fromJson(jsonResponse);
+    print(specTreeList.specTrees[0].name);
+    print(specTreeList.specTrees[1].name);
+    print(specTreeList.specTrees[2].name);
   }
 
   @override

@@ -1,91 +1,146 @@
-class TalentTree {
-  String spec;
-  String icon;
-  String bgImg;
-  List<Spells> spells;
+class SpecTreeList {
+  final List<SpecTree> specTrees;
 
-  TalentTree({this.spec, this.icon, this.bgImg, this.spells});
+  SpecTreeList({
+    this.specTrees,
+  });
 
-  TalentTree.fromJson(Map<String, dynamic> json) {
-    spec = json['spec'];
-    icon = json['icon'];
-    bgImg = json['bg_img'];
-    if (json['spells'] != null) {
-      spells = new List<Spells>();
-      json['spells'].forEach((v) {
-        spells.add(new Spells.fromJson(v));
+  factory SpecTreeList.fromJson(List<dynamic> parsedJson) {
+    List<SpecTree> specTrees = new List<SpecTree>();
+    specTrees = parsedJson.map((i) => SpecTree.fromJson(i)).toList();
+
+    return new SpecTreeList(specTrees: specTrees);
+  }
+}
+
+class SpecTree {
+  String name;
+  Talents talents;
+
+  SpecTree({this.name, this.talents});
+
+  SpecTree.fromJson(Map<String, dynamic> json) {
+    name = json['Name'];
+    talents =
+    json['Talents'] != null ? new Talents.fromJson(json['Talents']) : null;
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['Name'] = this.name;
+    if (this.talents != null) {
+      data['Talents'] = this.talents.toJson();
+    }
+    return data;
+  }
+}
+
+
+
+class Talents {
+  List<Talent> talent;
+
+  Talents({this.talent});
+
+  Talents.fromJson(Map<String, dynamic> json) {
+    if (json['Talent'] != null) {
+      talent = new List<Talent>();
+      json['Talent'].forEach((v) {
+        talent.add(new Talent.fromJson(v));
       });
     }
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['spec'] = this.spec;
-    data['icon'] = this.icon;
-    data['bg_img'] = this.bgImg;
-    if (this.spells != null) {
-      data['spells'] = this.spells.map((v) => v.toJson()).toList();
+    if (this.talent != null) {
+      data['Talent'] = this.talent.map((v) => v.toJson()).toList();
     }
     return data;
   }
 }
 
-class TalentTreeList {
-  final List<TalentTree> talentTrees;
-
-  TalentTreeList({
-    this.talentTrees,
-  });
-
-  factory TalentTreeList.fromJson(List<dynamic> parsedJson) {
-    List<TalentTree> talentTrees = new List<TalentTree>();
-    talentTrees = parsedJson.map((i) => TalentTree.fromJson(i)).toList();
-
-    return new TalentTreeList(talentTrees: talentTrees);
-  }
-}
-
-class Spells {
-  String name;
+class Talent {
   String icon;
-  String description;
-  int maxRank;
-  int requiredPoint;
-  String requiredSpell;
-  int row;
-  int column;
+  String name;
+  String points;
+  String dependancy;
+  List<int> position;
+  String tier;
+  Ranks ranks;
 
-  Spells(
-      {this.name,
-      this.icon,
-      this.description,
-      this.maxRank,
-      this.requiredPoint,
-      this.requiredSpell,
-      this.row,
-      this.column});
+  Talent(
+      {this.icon,
+        this.name,
+        this.points,
+        this.dependancy,
+        this.position,
+        this.tier,
+        this.ranks});
 
-  Spells.fromJson(Map<String, dynamic> json) {
-    name = json['name'];
-    icon = json['icon'];
-    description = json['description'];
-    maxRank = json['max_rank'];
-    requiredPoint = json['required_point'];
-    requiredSpell = json['required_spell'];
-    row = json['row'];
-    column = json['column'];
+  Talent.fromJson(Map<String, dynamic> json) {
+    icon = json['Icon'];
+    name = json['Name'];
+    points = json['Points'];
+    dependancy = json['Dependancy'];
+    position = json['Position'].cast<int>();
+    tier = json['Tier'];
+    ranks = json['Ranks'] != null ? new Ranks.fromJson(json['Ranks']) : null;
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['name'] = this.name;
-    data['icon'] = this.icon;
-    data['description'] = this.description;
-    data['max_rank'] = this.maxRank;
-    data['required_point'] = this.requiredPoint;
-    data['required_spell'] = this.requiredSpell;
-    data['row'] = this.row;
-    data['column'] = this.column;
+    data['Icon'] = this.icon;
+    data['Name'] = this.name;
+    data['Points'] = this.points;
+    data['Dependancy'] = this.dependancy;
+    data['Position'] = this.position;
+    data['Tier'] = this.tier;
+    if (this.ranks != null) {
+      data['Ranks'] = this.ranks.toJson();
+    }
+    return data;
+  }
+}
+
+class Ranks {
+  List<Rank> rank;
+
+  Ranks({this.rank});
+
+  Ranks.fromJson(Map<String, dynamic> json) {
+    if (json['Rank'] != null) {
+      rank = new List<Rank>();
+      json['Rank'].forEach((v) {
+        rank.add(new Rank.fromJson(v));
+      });
+    }
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    if (this.rank != null) {
+      data['Rank'] = this.rank.map((v) => v.toJson()).toList();
+    }
+    return data;
+  }
+}
+
+class Rank {
+  String number;
+  String description;
+
+  Rank({this.number, this.description});
+
+  Rank.fromJson(Map<String, dynamic> json) {
+    number = json['Number'];
+    description = json['Description'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['Number'] = this.number;
+    data['Description'] = this.description;
     return data;
   }
 }

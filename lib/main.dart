@@ -16,7 +16,21 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: DetailScreen(),
-      // home: TabBarDemo(),
+      // home: MyImageApp(),
+    );
+  }
+}
+
+class MyImageApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Image from assets"),
+        ),
+        body: Image.asset('assets/Warlock/Affliction.png'), //   <--- image here
+      ),
     );
   }
 }

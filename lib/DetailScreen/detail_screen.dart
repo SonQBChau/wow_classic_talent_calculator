@@ -48,7 +48,9 @@ class _DetailScreenState extends State<DetailScreen> {
     for (var i = 0; i < specListOne.length; i++) {
       List<int> positions = specListOne[i].position;
       int pos = (positions[0] * 4) + (positions[1]); // row + column
-      widgetListOne[pos] = (Center(child: Text(specListOne[i].name)));
+      String spellName = specListOne[i].icon.toLowerCase();
+      String imgLocation = 'assets/Icons/$spellName.png';
+      widgetListOne[pos] = (Center(child: Image.asset(imgLocation)));
     }
     for (var i = 0; i < specListTwo.length; i++) {
       List<int> positions = specListTwo[i].position;

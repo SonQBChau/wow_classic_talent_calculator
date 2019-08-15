@@ -5,7 +5,7 @@
             "Icon": "Spell_Shadow_UnsummonBuilding",
             "Name": "Suppression",
             "Points": "",
-            "Dependancy": "",
+            "Dependency": "",
             "Position": [0, 1],
             "Tier": "1",
             "Ranks": {
@@ -36,7 +36,7 @@
                 "Icon": "Spell_Shadow_AbominationExplosion",
                 "Name": "Improved Corruption",
                 "Points": "",
-                "Dependancy": "",
+                "Dependency": "",
                 "Position": [0, 1],
                 "Tier": "1",
                 "Ranks": {
@@ -67,7 +67,7 @@
                 "Icon": "Spell_Shadow_CurseOfMannoroth",
                 "Name": "Improved Curse of Weakness",
                 "Points": "",
-                "Dependancy": "",
+                "Dependency": "",
                 "Position": [0, 1],
                 "Tier": "2",
                 "Ranks": {
@@ -90,7 +90,7 @@
                 "Icon": "Spell_Shadow_Haunting",
                 "Name": "Improved Drain Soul",
                 "Points": "",
-                "Dependancy": "",
+                "Dependency": "",
                 "Position": [0, 1],
                 "Tier": "2",
                 "Ranks": {
@@ -109,7 +109,7 @@
                 "Icon": "Spell_Shadow_BurningSpirit",
                 "Name": "Improved Life Tap",
                 "Points": "",
-                "Dependancy": "",
+                "Dependency": "",
                 "Position": [0, 1],
                 "Tier": "2",
                 "Ranks": {
@@ -128,7 +128,7 @@
                 "Icon": "Spell_Shadow_LifeDrain02",
                 "Name": "Improved Drain Life",
                 "Points": "",
-                "Dependancy": "",
+                "Dependency": "",
                 "Position": [0, 1],
                 "Tier": "2",
                 "Ranks": {
@@ -159,7 +159,7 @@
                 "Icon": "Spell_Shadow_CurseOfSargeras",
                 "Name": "Improved Curse of Agony",
                 "Points": "",
-                "Dependancy": "",
+                "Dependency": "",
                 "Position": [0, 1],
                 "Tier": "3",
                 "Ranks": {
@@ -182,7 +182,7 @@
                 "Icon": "Spell_Shadow_FingerOfDeath",
                 "Name": "Fel Concentration",
                 "Points": "",
-                "Dependancy": "",
+                "Dependency": "",
                 "Position": [0, 1],
                 "Tier": "3",
                 "Ranks": {
@@ -213,7 +213,7 @@
                 "Icon": "Spell_Shadow_Contagion",
                 "Name": "Amplify Curse",
                 "Points": "",
-                "Dependancy": "",
+                "Dependency": "",
                 "Position": [0, 1],
                 "Tier": "3",
                 "Ranks": {
@@ -227,7 +227,7 @@
                 "Icon": "Spell_Shadow_CallofBone",
                 "Name": "Grim Reach",
                 "Points": "",
-                "Dependancy": "",
+                "Dependency": "",
                 "Position": [0, 1],
                 "Tier": "4",
                 "Ranks": {
@@ -246,7 +246,7 @@
                 "Icon": "Spell_Shadow_Twilight",
                 "Name": "Nightfall",
                 "Points": "",
-                "Dependancy": "",
+                "Dependency": "",
                 "Position": [0, 1],
                 "Tier": "4",
                 "Ranks": {
@@ -265,7 +265,7 @@
                 "Icon": "Spell_Shadow_SiphonMana",
                 "Name": "Improved Drain Mana",
                 "Points": "",
-                "Dependancy": "",
+                "Dependency": "",
                 "Position": [0, 1],
                 "Tier": "4",
                 "Ranks": {
@@ -284,7 +284,7 @@
                 "Icon": "Spell_Shadow_Requiem",
                 "Name": "Siphon Life",
                 "Points": "",
-                "Dependancy": "",
+                "Dependency": "",
                 "Position": [0, 1],
                 "Tier": "5",
                 "Ranks": {
@@ -298,7 +298,7 @@
                 "Icon": "Spell_Shadow_GrimWard",
                 "Name": "Curse of Exhaustion",
                 "Points": "1",
-                "Dependancy": "Amplify Curse",
+                "Dependency": "Amplify Curse",
                 "Position": [0, 1],
                 "Tier": "5",
                 "Ranks": {
@@ -312,7 +312,7 @@
                 "Icon": "Spell_Shadow_GrimWard",
                 "Name": "Improved Curse of Exhaustion",
                 "Points": "1",
-                "Dependancy": "Curse of Exhaustion",
+                "Dependency": "Curse of Exhaustion",
                 "Position": [0, 1],
                 "Tier": "5",
                 "Ranks": {
@@ -339,7 +339,7 @@
                 "Icon": "Spell_Shadow_ShadeTrueSight",
                 "Name": "Shadow Mastery",
                 "Points": "1",
-                "Dependancy": "Siphon Life",
+                "Dependency": "Siphon Life",
                 "Position": [0, 1],
                 "Tier": "6",
                 "Ranks": {
@@ -370,7 +370,7 @@
                 "Icon": "Spell_Shadow_DarkRitual",
                 "Name": "Dark Pact",
                 "Points": "",
-                "Dependancy": "",
+                "Dependency": "",
                 "Position": [0, 1],
                 "Tier": "7",
                 "Ranks": {
@@ -390,7 +390,7 @@
                 "Icon": "INV_Stone_04",
                 "Name": "Improved Healthstone",
                 "Points": "",
-                "Dependancy": "",
+                "Dependency": "",
                 "Position": [0, 1],
                 "Tier": "1",
                 "Ranks": {
@@ -409,7 +409,7 @@
                     "Icon": "Spell_Shadow_SummonImp",
                     "Name": "Improved Imp",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "1",
                     "Ranks": {
@@ -432,7 +432,7 @@
                     "Icon": "Spell_Shadow_Metamorphosis",
                     "Name": "Demonic Embrace",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "1",
                     "Ranks": {
@@ -463,7 +463,7 @@
                     "Icon": "Spell_Shadow_LifeDrain",
                     "Name": "Improved Health Funnel",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "2",
                     "Ranks": {
@@ -482,7 +482,7 @@
                     "Icon": "Spell_Shadow_SummonVoidWalker",
                     "Name": "Improved Voidwalker",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "2",
                     "Ranks": {
@@ -505,7 +505,7 @@
                     "Icon": "Spell_Holy_MagicalSentry",
                     "Name": "Fel Intellect",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "2",
                     "Ranks": {
@@ -536,7 +536,7 @@
                     "Icon": "Spell_Shadow_SummonSuccubus",
                     "Name": "Improved Succubus",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "3",
                     "Ranks": {
@@ -559,7 +559,7 @@
                     "Icon": "Spell_Nature_RemoveCurse",
                     "Name": "Fel Domination",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "3",
                     "Ranks": {
@@ -573,7 +573,7 @@
                     "Icon": "Spell_Shadow_AntiShadow",
                     "Name": "Fel Stamina",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "3",
                     "Ranks": {
@@ -604,7 +604,7 @@
                     "Icon": "Spell_Shadow_ImpPhaseShift",
                     "Name": "Master Summoner",
                     "Points": "1",
-                    "Dependancy": "Fel Domination",
+                    "Dependency": "Fel Domination",
                     "Position": [0, 1],
                     "Tier": "4",
                     "Ranks": {
@@ -623,7 +623,7 @@
                     "Icon": "Spell_Shadow_ShadowWordDominate",
                     "Name": "Unholy Power",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "4",
                     "Ranks": {
@@ -654,7 +654,7 @@
                     "Icon": "Spell_Shadow_EnslaveDemon",
                     "Name": "Improved Enslave Demon",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "5",
                     "Ranks": {
@@ -685,7 +685,7 @@
                     "Icon": "Spell_Shadow_PsychicScream",
                     "Name": "Demonic Sacrifice",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "5",
                     "Ranks": {
@@ -699,7 +699,7 @@
                     "Icon": "INV_Ammo_FireTar",
                     "Name": "Improved Firestone",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "5",
                     "Ranks": {
@@ -718,7 +718,7 @@
                     "Icon": "Spell_Shadow_ShadowPact",
                     "Name": "Master Demonologist",
                     "Points": "5",
-                    "Dependancy": "Unholy Power",
+                    "Dependency": "Unholy Power",
                     "Position": [0, 1],
                     "Tier": "6",
                     "Ranks": {
@@ -749,7 +749,7 @@
                     "Icon": "Spell_Shadow_GatherShadows",
                     "Name": "Soul Link",
                     "Points": "1",
-                    "Dependancy": "Demonic Sacrifice",
+                    "Dependency": "Demonic Sacrifice",
                     "Position": [0, 1],
                     "Tier": "7",
                     "Ranks": {
@@ -763,7 +763,7 @@
                     "Icon": "INV_Misc_Gem_Sapphire_01",
                     "Name": "Improved Spellstone",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "7",
                     "Ranks": {
@@ -788,7 +788,7 @@
                 "Icon": "Spell_Shadow_ShadowBolt",
                 "Name": "Improved Shadow Bolt",
                 "Points": "",
-                "Dependancy": "",
+                "Dependency": "",
                 "Position": [0, 1],
                 "Tier": "1",
                 "Ranks": {
@@ -819,7 +819,7 @@
                     "Icon": "Spell_Fire_WindsofWoe",
                     "Name": "Cataclysm",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "1",
                     "Ranks": {
@@ -850,7 +850,7 @@
                     "Icon": "Spell_Shadow_DeathPact",
                     "Name": "Bane",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "2",
                     "Ranks": {
@@ -881,7 +881,7 @@
                     "Icon": "Spell_Fire_Fire",
                     "Name": "Aftermath",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "2",
                     "Ranks": {
@@ -912,7 +912,7 @@
                     "Icon": "Spell_Fire_FireBolt",
                     "Name": "Improved Firebolt",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "3",
                     "Ranks": {
@@ -931,7 +931,7 @@
                     "Icon": "Spell_Shadow_Curse",
                     "Name": "Improved Lash of Pain",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "3",
                     "Ranks": {
@@ -950,7 +950,7 @@
                     "Icon": "Spell_Fire_FlameShock",
                     "Name": "Devastation",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "3",
                     "Ranks": {
@@ -981,7 +981,7 @@
                     "Icon": "Spell_Shadow_ScourgeBuild",
                     "Name": "Shadowburn",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "3",
                     "Ranks": {
@@ -995,7 +995,7 @@
                     "Icon": "Spell_Fire_LavaSpawn",
                     "Name": "Intensity",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "4",
                     "Ranks": {
@@ -1014,7 +1014,7 @@
                     "Icon": "Spell_Shadow_CorpseExplode",
                     "Name": "Destructive Reach",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "4",
                     "Ranks": {
@@ -1033,7 +1033,7 @@
                     "Icon": "Spell_Fire_SoulBurn",
                     "Name": "Improved Searing Pain",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "4",
                     "Ranks": {
@@ -1064,7 +1064,7 @@
                     "Icon": "Spell_Fire_Volcano",
                     "Name": "Pyroclasm",
                     "Points": "2",
-                    "Dependancy": "Intensity",
+                    "Dependency": "Intensity",
                     "Position": [0, 1],
                     "Tier": "5",
                     "Ranks": {
@@ -1083,7 +1083,7 @@
                     "Icon": "Spell_Fire_Immolation",
                     "Name": "Improved Immolate",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "5",
                     "Ranks": {
@@ -1114,7 +1114,7 @@
                     "Icon": "Spell_Shadow_ShadowWordPain",
                     "Name": "Ruin",
                     "Points": "5",
-                    "Dependancy": "Devastation",
+                    "Dependency": "Devastation",
                     "Position": [0, 1],
                     "Tier": "5",
                     "Ranks": {
@@ -1128,7 +1128,7 @@
                     "Icon": "Spell_Fire_SelfDestruct",
                     "Name": "Emberstorm",
                     "Points": "",
-                    "Dependancy": "",
+                    "Dependency": "",
                     "Position": [0, 1],
                     "Tier": "6",
                     "Ranks": {
@@ -1147,7 +1147,7 @@
                     "Icon": "Spell_Fire_Fireball",
                     "Name": "Conflagrate",
                     "Points": "5",
-                    "Dependancy": "Improved Immolate",
+                    "Dependency": "Improved Immolate",
                     "Position": [0, 1],
                     "Tier": "7",
                     "Ranks": {

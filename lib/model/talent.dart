@@ -64,7 +64,7 @@ class Talent {
   String icon;
   String name;
   String points;
-  String dependancy;
+  String dependency;
   List<int> position;
   String tier;
   Ranks ranks;
@@ -73,7 +73,7 @@ class Talent {
       {this.icon,
         this.name,
         this.points,
-        this.dependancy,
+        this.dependency,
         this.position,
         this.tier,
         this.ranks});
@@ -82,7 +82,7 @@ class Talent {
     icon = json['Icon'];
     name = json['Name'];
     points = json['Points'];
-    dependancy = json['Dependancy'];
+    dependency = json['Dependency'];
     position = json['Position'].cast<int>();
     tier = json['Tier'];
     ranks = json['Ranks'] != null ? new Ranks.fromJson(json['Ranks']) : null;
@@ -93,7 +93,7 @@ class Talent {
     data['Icon'] = this.icon;
     data['Name'] = this.name;
     data['Points'] = this.points;
-    data['Dependancy'] = this.dependancy;
+    data['Dependency'] = this.dependency;
     data['Position'] = this.position;
     data['Tier'] = this.tier;
     if (this.ranks != null) {

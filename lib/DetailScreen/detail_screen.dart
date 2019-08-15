@@ -15,7 +15,7 @@ class _DetailScreenState extends State<DetailScreen> {
   List<Widget> talentList = [];
 
   Future<String> loadJson() async {
-    return await rootBundle.loadString('data_repo/warlock_new.json');
+    return await rootBundle.loadString('data_repo/warlock.json');
   }
 
   Future<SpecTreeList> loadTalent() async {

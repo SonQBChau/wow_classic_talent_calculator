@@ -11,8 +11,11 @@ class DetailScreen extends StatefulWidget {
 }
 
 class _DetailScreenState extends State<DetailScreen> {
-  SpecTreeList specTreeList;
-  List<Widget> talentList = [];
+  static const NUM_OF_TILES = 28; // 6 rows and 4 columns
+  // SpecTreeList specTreeList;
+  List<Widget> specOneWidgetList = [];
+  List<Widget> specTwoWidgetList = [];
+  List<Widget> specThreeWidgetList = [];
 
   Future<String> loadJson() async {
     return await rootBundle.loadString('data_repo/warlock.json');
@@ -21,43 +24,58 @@ class _DetailScreenState extends State<DetailScreen> {
   Future<SpecTreeList> loadTalent() async {
     String jsonTalent = await loadJson();
     final jsonResponse = json.decode(jsonTalent);
-    SpecTreeList parsedData = SpecTreeList.fromJson(jsonResponse);
-
-    return parsedData;
+    SpecTreeList specTreeList = SpecTreeList.fromJson(jsonResponse);
+    return specTreeList;
   }
 
   Future buildTalentList() async {
-    final children = <Widget>[];
+    final widgetListOne = <Widget>[];
+    final widgetListTwo = <Widget>[];
+    final widgetListThree = <Widget>[];
     SpecTreeList specTreeList = await loadTalent();
-    List<Talent> talentList = specTreeList.specTrees[0].talents.talent;
-    for (var i = 0; i < 28; i++) {
-      children.add(BlockTile());
-    }
-    for (var i = 0; i < talentList.length; i++) {
-      List<int> positions = talentList[i].position;
-      int pos = (positions[0] * 4) + (positions[1]); // row + column
-      children[pos] = (Center(child: Text(talentList[i].name)));
+    List<Talent> specListOne = specTreeList.specTrees[0].talents.talent;
+    List<Talent> specListTwo = specTreeList.specTrees[1].talents.talent;
+    List<Talent> specListThree = specTreeList.specTrees[2].talents.talent;
+
+    // fill the widget with empty blocks
+    for (var i = 0; i < NUM_OF_TILES; i++) {
+      widgetListOne.add(BlockTile());
+      widgetListTwo.add(BlockTile());
+      widgetListThree.add(BlockTile());
     }
 
-    return children;
+    // fill the widget with talent spec items
+    for (var i = 0; i < specListOne.length; i++) {
+      List<int> positions = specListOne[i].position;
+      int pos = (positions[0] * 4) + (positions[1]); // row + column
+      widgetListOne[pos] = (Center(child: Text(specListOne[i].name)));
+    }
+    for (var i = 0; i < specListTwo.length; i++) {
+      List<int> positions = specListTwo[i].position;
+      int pos = (positions[0] * 4) + (positions[1]); // row + column
+      widgetListTwo[pos] = (Center(child: Text(specListTwo[i].name)));
+    }
+    for (var i = 0; i < specListThree.length; i++) {
+      List<int> positions = specListThree[i].position;
+      int pos = (positions[0] * 4) + (positions[1]); // row + column
+      widgetListThree[pos] = (Center(child: Text(specListThree[i].name)));
+    }
+
+    setState(() {
+      specOneWidgetList = widgetListOne;
+      specTwoWidgetList = widgetListTwo;
+      specThreeWidgetList = widgetListThree;
+    });
   }
 
   @override
   initState() {
     super.initState();
-    buildTalentList().then((result) {
-      setState(() {
-        talentList = result;
-      });
-    });
+    buildTalentList();
   }
 
   @override
   Widget build(BuildContext context) {
-    if (specTreeList != null) {
-      print(specTreeList.specTrees[0]);
-    }
-
     return MaterialApp(
         home: DefaultTabController(
             length: 3,
@@ -79,21 +97,21 @@ class _DetailScreenState extends State<DetailScreen> {
                     padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                     child: GridView.count(
                       crossAxisCount: 4,
-                      children: talentList,
+                      children: specOneWidgetList,
                     ),
                   ),
                   Container(
                     padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                     child: GridView.count(
                       crossAxisCount: 4,
-                      children: talentList,
+                      children: specTwoWidgetList,
                     ),
                   ),
                   Container(
                     padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                     child: GridView.count(
                       crossAxisCount: 4,
-                      children: talentList,
+                      children: specThreeWidgetList,
                     ),
                   )
                 ],

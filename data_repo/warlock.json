@@ -391,7 +391,7 @@
                 "Name": "Improved Healthstone",
                 "Points": "",
                 "Dependency": "",
-                "Position": [0, 1],
+                "Position": [0, 0],
                 "Tier": "1",
                 "Ranks": {
                     "Rank": [{
@@ -433,7 +433,7 @@
                     "Name": "Demonic Embrace",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [0, 2],
                     "Tier": "1",
                     "Ranks": {
                         "Rank": [{
@@ -464,7 +464,7 @@
                     "Name": "Improved Health Funnel",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [1, 0],
                     "Tier": "2",
                     "Ranks": {
                         "Rank": [{
@@ -483,7 +483,7 @@
                     "Name": "Improved Voidwalker",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [1, 1],
                     "Tier": "2",
                     "Ranks": {
                         "Rank": [{
@@ -506,7 +506,7 @@
                     "Name": "Fel Intellect",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [1, 2],
                     "Tier": "2",
                     "Ranks": {
                         "Rank": [{
@@ -537,7 +537,7 @@
                     "Name": "Improved Succubus",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [2, 0],
                     "Tier": "3",
                     "Ranks": {
                         "Rank": [{
@@ -560,7 +560,7 @@
                     "Name": "Fel Domination",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [2, 1],
                     "Tier": "3",
                     "Ranks": {
                         "Rank": [{
@@ -574,7 +574,7 @@
                     "Name": "Fel Stamina",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [2, 2],
                     "Tier": "3",
                     "Ranks": {
                         "Rank": [{
@@ -605,7 +605,7 @@
                     "Name": "Master Summoner",
                     "Points": "1",
                     "Dependency": "Fel Domination",
-                    "Position": [0, 1],
+                    "Position": [3, 1],
                     "Tier": "4",
                     "Ranks": {
                         "Rank": [{
@@ -624,7 +624,7 @@
                     "Name": "Unholy Power",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [3, 2],
                     "Tier": "4",
                     "Ranks": {
                         "Rank": [{
@@ -655,7 +655,7 @@
                     "Name": "Improved Enslave Demon",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [4, 0],
                     "Tier": "5",
                     "Ranks": {
                         "Rank": [{
@@ -686,7 +686,7 @@
                     "Name": "Demonic Sacrifice",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [4, 1],
                     "Tier": "5",
                     "Ranks": {
                         "Rank": [{
@@ -700,7 +700,7 @@
                     "Name": "Improved Firestone",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [4, 3],
                     "Tier": "5",
                     "Ranks": {
                         "Rank": [{
@@ -719,7 +719,7 @@
                     "Name": "Master Demonologist",
                     "Points": "5",
                     "Dependency": "Unholy Power",
-                    "Position": [0, 1],
+                    "Position": [5, 2],
                     "Tier": "6",
                     "Ranks": {
                         "Rank": [{
@@ -750,7 +750,7 @@
                     "Name": "Soul Link",
                     "Points": "1",
                     "Dependency": "Demonic Sacrifice",
-                    "Position": [0, 1],
+                    "Position": [6, 1],
                     "Tier": "7",
                     "Ranks": {
                         "Rank": [{
@@ -764,7 +764,7 @@
                     "Name": "Improved Spellstone",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [6, 2],
                     "Tier": "7",
                     "Ranks": {
                         "Rank": [{
@@ -820,7 +820,7 @@
                     "Name": "Cataclysm",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [0, 2],
                     "Tier": "1",
                     "Ranks": {
                         "Rank": [{
@@ -851,7 +851,7 @@
                     "Name": "Bane",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [1, 1],
                     "Tier": "2",
                     "Ranks": {
                         "Rank": [{
@@ -882,7 +882,7 @@
                     "Name": "Aftermath",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [1, 2],
                     "Tier": "2",
                     "Ranks": {
                         "Rank": [{
@@ -913,7 +913,7 @@
                     "Name": "Improved Firebolt",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [2, 0],
                     "Tier": "3",
                     "Ranks": {
                         "Rank": [{
@@ -932,7 +932,7 @@
                     "Name": "Improved Lash of Pain",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [2, 1],
                     "Tier": "3",
                     "Ranks": {
                         "Rank": [{
@@ -951,7 +951,7 @@
                     "Name": "Devastation",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [2, 2],
                     "Tier": "3",
                     "Ranks": {
                         "Rank": [{
@@ -982,7 +982,7 @@
                     "Name": "Shadowburn",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [2, 3],
                     "Tier": "3",
                     "Ranks": {
                         "Rank": [{
@@ -996,7 +996,7 @@
                     "Name": "Intensity",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [3, 0],
                     "Tier": "4",
                     "Ranks": {
                         "Rank": [{
@@ -1015,7 +1015,7 @@
                     "Name": "Destructive Reach",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [3, 1],
                     "Tier": "4",
                     "Ranks": {
                         "Rank": [{
@@ -1034,7 +1034,7 @@
                     "Name": "Improved Searing Pain",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [3, 3],
                     "Tier": "4",
                     "Ranks": {
                         "Rank": [{
@@ -1065,7 +1065,7 @@
                     "Name": "Pyroclasm",
                     "Points": "2",
                     "Dependency": "Intensity",
-                    "Position": [0, 1],
+                    "Position": [4, 0],
                     "Tier": "5",
                     "Ranks": {
                         "Rank": [{
@@ -1084,7 +1084,7 @@
                     "Name": "Improved Immolate",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [4, 1],
                     "Tier": "5",
                     "Ranks": {
                         "Rank": [{
@@ -1115,7 +1115,7 @@
                     "Name": "Ruin",
                     "Points": "5",
                     "Dependency": "Devastation",
-                    "Position": [0, 1],
+                    "Position": [4, 2],
                     "Tier": "5",
                     "Ranks": {
                         "Rank": [{
@@ -1129,7 +1129,7 @@
                     "Name": "Emberstorm",
                     "Points": "",
                     "Dependency": "",
-                    "Position": [0, 1],
+                    "Position": [5, 2],
                     "Tier": "6",
                     "Ranks": {
                         "Rank": [{
@@ -1148,7 +1148,7 @@
                     "Name": "Conflagrate",
                     "Points": "5",
                     "Dependency": "Improved Immolate",
-                    "Position": [0, 1],
+                    "Position": [6, 1],
                     "Tier": "7",
                     "Ranks": {
                         "Rank": [{

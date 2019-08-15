@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:wow_classic_talent_calculator/DetailScreen/tabScreen.dart';
 
 import 'DetailScreen/detail_screen.dart';
 import 'HomeScreen/home_screen.dart';

@@ -37,7 +37,6 @@ class _DetailScreenState extends State<DetailScreen> {
       List<int> positions = talentList[i].position;
       int pos = (positions[0] * 4) + (positions[1]); // row + column
       children[pos] = (Center(child: Text(talentList[i].name)));
-      print(pos);
     }
 
     return children;

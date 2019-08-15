@@ -12,36 +12,38 @@ class DetailScreen extends StatefulWidget {
 
 class _DetailScreenState extends State<DetailScreen> {
   SpecTreeList specTreeList;
+  List<Widget> talentList = [];
 
   Future<String> loadJson() async {
     return await rootBundle.loadString('data_repo/warlock_new.json');
   }
 
-  Future loadTalent() async {
+  Future<SpecTreeList> loadTalent() async {
     String jsonTalent = await loadJson();
     final jsonResponse = json.decode(jsonTalent);
     SpecTreeList parsedData = SpecTreeList.fromJson(jsonResponse);
 
-    setState(() {
-      specTreeList = parsedData;
-    });
+    return parsedData;
+  }
 
-    // return parsedData;
-
-    // print(specTreeList.specTrees[0].name);
-//    print(specTreeList.specTrees[1].name);
-//    print(specTreeList.specTrees[2].name);
+  Future buildTalentList() async {
+    final children = <Widget>[];
+    SpecTreeList specTreeList = await loadTalent();
+    List<Talent> talentList = specTreeList.specTrees[0].talents.talent;
+    for (var i = 0; i < talentList.length; i++) {
+      children.add(Text(talentList[i].name));
+    }
+    return children;
   }
 
   @override
   initState() {
     super.initState();
-    loadTalent();
-    // loadTalent().then((result) {
-    //   setState(() {
-    //     specTreeList = result;
-    //   });
-    // });
+    buildTalentList().then((result) {
+      setState(() {
+        talentList = result;
+      });
+    });
   }
 
   @override
@@ -58,9 +60,7 @@ class _DetailScreenState extends State<DetailScreen> {
         body: Container(
           child: GridView.count(
             crossAxisCount: 4,
-            children: List.generate(100, (index) {
-              return BlockTile();
-            }),
+            children: talentList,
           ),
         ));
   }

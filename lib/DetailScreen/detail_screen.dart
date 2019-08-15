@@ -30,9 +30,16 @@ class _DetailScreenState extends State<DetailScreen> {
     final children = <Widget>[];
     SpecTreeList specTreeList = await loadTalent();
     List<Talent> talentList = specTreeList.specTrees[0].talents.talent;
-    for (var i = 0; i < talentList.length; i++) {
-      children.add(Text(talentList[i].name));
+    for (var i = 0; i < 28; i++) {
+      children.add(BlockTile());
     }
+    for (var i = 0; i < talentList.length; i++) {
+      List<int> positions = talentList[i].position;
+      int pos = (positions[0] * 4) + (positions[1]); // row + column
+      children[pos] = (Center(child: Text(talentList[i].name)));
+      print(pos);
+    }
+
     return children;
   }
 

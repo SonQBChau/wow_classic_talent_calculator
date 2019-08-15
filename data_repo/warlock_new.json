@@ -37,7 +37,7 @@
                 "Name": "Improved Corruption",
                 "Points": "",
                 "Dependency": "",
-                "Position": [0, 1],
+                "Position": [0, 2],
                 "Tier": "1",
                 "Ranks": {
                     "Rank": [{
@@ -68,7 +68,7 @@
                 "Name": "Improved Curse of Weakness",
                 "Points": "",
                 "Dependency": "",
-                "Position": [0, 1],
+                "Position": [1, 0],
                 "Tier": "2",
                 "Ranks": {
                     "Rank": [{
@@ -91,7 +91,7 @@
                 "Name": "Improved Drain Soul",
                 "Points": "",
                 "Dependency": "",
-                "Position": [0, 1],
+                "Position": [1, 1],
                 "Tier": "2",
                 "Ranks": {
                     "Rank": [{
@@ -110,7 +110,7 @@
                 "Name": "Improved Life Tap",
                 "Points": "",
                 "Dependency": "",
-                "Position": [0, 1],
+                "Position": [1, 2],
                 "Tier": "2",
                 "Ranks": {
                     "Rank": [{
@@ -129,7 +129,7 @@
                 "Name": "Improved Drain Life",
                 "Points": "",
                 "Dependency": "",
-                "Position": [0, 1],
+                "Position": [1, 3],
                 "Tier": "2",
                 "Ranks": {
                     "Rank": [{
@@ -160,7 +160,7 @@
                 "Name": "Improved Curse of Agony",
                 "Points": "",
                 "Dependency": "",
-                "Position": [0, 1],
+                "Position": [2, 0],
                 "Tier": "3",
                 "Ranks": {
                     "Rank": [{
@@ -183,7 +183,7 @@
                 "Name": "Fel Concentration",
                 "Points": "",
                 "Dependency": "",
-                "Position": [0, 1],
+                "Position": [2, 1],
                 "Tier": "3",
                 "Ranks": {
                     "Rank": [{
@@ -214,7 +214,7 @@
                 "Name": "Amplify Curse",
                 "Points": "",
                 "Dependency": "",
-                "Position": [0, 1],
+                "Position": [2, 2],
                 "Tier": "3",
                 "Ranks": {
                     "Rank": [{
@@ -228,7 +228,7 @@
                 "Name": "Grim Reach",
                 "Points": "",
                 "Dependency": "",
-                "Position": [0, 1],
+                "Position": [3, 0],
                 "Tier": "4",
                 "Ranks": {
                     "Rank": [{
@@ -247,7 +247,7 @@
                 "Name": "Nightfall",
                 "Points": "",
                 "Dependency": "",
-                "Position": [0, 1],
+                "Position": [3, 1],
                 "Tier": "4",
                 "Ranks": {
                     "Rank": [{
@@ -266,7 +266,7 @@
                 "Name": "Improved Drain Mana",
                 "Points": "",
                 "Dependency": "",
-                "Position": [0, 1],
+                "Position": [3, 3],
                 "Tier": "4",
                 "Ranks": {
                     "Rank": [{
@@ -285,7 +285,7 @@
                 "Name": "Siphon Life",
                 "Points": "",
                 "Dependency": "",
-                "Position": [0, 1],
+                "Position": [4, 1],
                 "Tier": "5",
                 "Ranks": {
                     "Rank": [{
@@ -299,7 +299,7 @@
                 "Name": "Curse of Exhaustion",
                 "Points": "1",
                 "Dependency": "Amplify Curse",
-                "Position": [0, 1],
+                "Position": [4, 2],
                 "Tier": "5",
                 "Ranks": {
                     "Rank": [{
@@ -313,7 +313,7 @@
                 "Name": "Improved Curse of Exhaustion",
                 "Points": "1",
                 "Dependency": "Curse of Exhaustion",
-                "Position": [0, 1],
+                "Position": [4, 3],
                 "Tier": "5",
                 "Ranks": {
                     "Rank": [{
@@ -340,7 +340,7 @@
                 "Name": "Shadow Mastery",
                 "Points": "1",
                 "Dependency": "Siphon Life",
-                "Position": [0, 1],
+                "Position": [5, 1],
                 "Tier": "6",
                 "Ranks": {
                     "Rank": [{
@@ -371,7 +371,7 @@
                 "Name": "Dark Pact",
                 "Points": "",
                 "Dependency": "",
-                "Position": [0, 1],
+                "Position": [6, 1],
                 "Tier": "7",
                 "Ranks": {
                     "Rank": [{

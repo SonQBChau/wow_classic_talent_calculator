@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async' show Future;
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:wow_classic_talent_calculator/DetailScreen/spell_widget.dart';
 import 'dart:convert';
 
 import 'package:wow_classic_talent_calculator/model/talent.dart';
@@ -50,21 +51,21 @@ class _DetailScreenState extends State<DetailScreen> {
       int pos = (positions[0] * 4) + (positions[1]); // row + column
       String spellName = specListOne[i].icon.toLowerCase();
       String imgLocation = 'assets/Icons/$spellName.png';
-      widgetListOne[pos] = (Center(child: Image.asset(imgLocation)));
+      widgetListOne[pos] = SpellWidget(imgLocation: imgLocation);
     }
     for (var i = 0; i < specListTwo.length; i++) {
       List<int> positions = specListTwo[i].position;
       int pos = (positions[0] * 4) + (positions[1]); // row + column
       String spellName = specListTwo[i].icon.toLowerCase();
       String imgLocation = 'assets/Icons/$spellName.png';
-      widgetListTwo[pos] = (Center(child: Image.asset(imgLocation)));
+      widgetListTwo[pos] = SpellWidget(imgLocation: imgLocation);
     }
     for (var i = 0; i < specListThree.length; i++) {
       List<int> positions = specListThree[i].position;
       int pos = (positions[0] * 4) + (positions[1]); // row + column
       String spellName = specListThree[i].icon.toLowerCase();
       String imgLocation = 'assets/Icons/$spellName.png';
-      widgetListThree[pos] = (Center(child: Image.asset(imgLocation)));
+      widgetListThree[pos] = SpellWidget(imgLocation: imgLocation);
     }
 
     setState(() {

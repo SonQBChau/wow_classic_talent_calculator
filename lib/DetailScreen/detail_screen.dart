@@ -3,6 +3,7 @@ import 'dart:async' show Future;
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:wow_classic_talent_calculator/DetailScreen/spell_grid_widget.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/spell_widget.dart';
+import 'package:wow_classic_talent_calculator/DetailScreen/spells_positioned_widget.dart';
 import 'dart:convert';
 
 import 'package:wow_classic_talent_calculator/model/talent.dart';
@@ -115,7 +116,9 @@ class _DetailScreenState extends State<DetailScreen> {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: SpellGridWidget(specWidgetList: specOneWidgetList),
+                    // child: SpellGridWidget(specWidgetList: specOneWidgetList),
+                    child: SpellsPositionedWidget(
+                        specWidgetList: specOneWidgetList),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -145,12 +148,13 @@ class BlockTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Container(
-        margin: EdgeInsets.all(1),
-        color: Colors.transparent,
-        width: double.infinity,
-        height: double.infinity,
-      ),
+      child: SizedBox(),
+      // Container(
+      //   margin: EdgeInsets.all(1),
+      //   color: Colors.transparent,
+      //   width: double.infinity,
+      //   height: double.infinity,
+      // ),
     );
   }
 }

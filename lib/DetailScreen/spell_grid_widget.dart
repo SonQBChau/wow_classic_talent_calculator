@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SpellGridWidget extends StatelessWidget {
-  List<Widget> specWidgetList;
+  final List<Widget> specWidgetList;
   SpellGridWidget({@required this.specWidgetList});
 
   @override

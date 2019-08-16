@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async' show Future;
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:wow_classic_talent_calculator/DetailScreen/spell_grid_widget.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/spell_widget.dart';
 import 'dart:convert';
 
@@ -87,9 +88,21 @@ class _DetailScreenState extends State<DetailScreen> {
                 backgroundColor: Color(0xFF673AB7),
                 bottom: TabBar(
                   tabs: [
-                    Tab(icon: Image.asset("assets/Icons/spell_shadow_requiem.png", width: 32,)),
-                    Tab(icon: Image.asset("assets/Icons/spell_shadow_metamorphosis.png", width: 32,)),
-                    Tab(icon: Image.asset("assets/Icons/spell_fire_fireball.png", width: 32,)),
+                    Tab(
+                        icon: Image.asset(
+                      "assets/Icons/spell_shadow_requiem.png",
+                      width: 32,
+                    )),
+                    Tab(
+                        icon: Image.asset(
+                      "assets/Icons/spell_shadow_metamorphosis.png",
+                      width: 32,
+                    )),
+                    Tab(
+                        icon: Image.asset(
+                      "assets/Icons/spell_fire_fireball.png",
+                      width: 32,
+                    )),
                   ],
                 ),
               ),
@@ -102,11 +115,7 @@ class _DetailScreenState extends State<DetailScreen> {
                         fit: BoxFit.cover,
                       ),
                     ),
-
-                    child: GridView.count(
-                      crossAxisCount: 4,
-                      children: specOneWidgetList,
-                    ),
+                    child: SpellGridWidget(specWidgetList: specOneWidgetList),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -115,11 +124,7 @@ class _DetailScreenState extends State<DetailScreen> {
                         fit: BoxFit.cover,
                       ),
                     ),
-
-                    child: GridView.count(
-                      crossAxisCount: 4,
-                      children: specTwoWidgetList,
-                    ),
+                    child: SpellGridWidget(specWidgetList: specTwoWidgetList),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -128,11 +133,7 @@ class _DetailScreenState extends State<DetailScreen> {
                         fit: BoxFit.cover,
                       ),
                     ),
-
-                    child: GridView.count(
-                      crossAxisCount: 4,
-                      children: specThreeWidgetList,
-                    ),
+                    child: SpellGridWidget(specWidgetList: specThreeWidgetList),
                   )
                 ],
               ),

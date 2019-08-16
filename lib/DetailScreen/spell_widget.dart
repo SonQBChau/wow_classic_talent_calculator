@@ -70,10 +70,10 @@ class _SpellWidgetState extends State<SpellWidget> {
                 onDoubleTap: () => _decreaseRank(),
                 onLongPress: () => _showDescription(),
                 child: Container(
-                    foregroundDecoration: BoxDecoration(
-                      color: Colors.grey,
-                      backgroundBlendMode: BlendMode.saturation,
-                    ),
+                    // foregroundDecoration: BoxDecoration(
+                    //   color: Colors.grey,
+                    //   backgroundBlendMode: BlendMode.saturation,
+                    // ),
                     child: Image.asset(imgLocation))),
           ),
           Align(

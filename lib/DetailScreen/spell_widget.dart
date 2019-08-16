@@ -1,17 +1,34 @@
 import 'package:flutter/material.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
 
-class SpellWidget extends StatelessWidget {
+class SpellWidget extends StatefulWidget {
   final Talent talent;
   SpellWidget({@required this.talent});
 
+  @override
+  _SpellWidgetState createState() => _SpellWidgetState();
+}
+
+class _SpellWidgetState extends State<SpellWidget> {
+  final key = new GlobalKey();
+  int currentRank = 0;
 
   @override
   Widget build(BuildContext context) {
-    final key = new GlobalKey();
-    String spellName = talent.icon.toLowerCase();
+    String spellName = widget.talent.icon.toLowerCase();
     String imgLocation = 'assets/Icons/$spellName.png';
-    int maxRank = talent.ranks.rank.length;
+    final int maxRank = widget.talent.ranks.rank.length;
+
+
+    void _increaseRank(){
+      if (currentRank < maxRank){
+        int newRank = currentRank + 1;
+        setState(() {
+          currentRank = newRank;
+        });
+      }
+
+    }
 
     return Container(
 //      color: Colors.grey,
@@ -22,12 +39,12 @@ class SpellWidget extends StatelessWidget {
             key: key,
             verticalOffset: -32,
             padding: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
-            message: talent.ranks.rank[0].description
+            message: widget.talent.ranks.rank[0].description
         ),
           Align(
             alignment: Alignment.center,
             child: GestureDetector(
-                onTap: () {print('${talent.name}');},
+                onTap: () => _increaseRank(),
                 onLongPress: () {
                   final dynamic tooltip = key.currentState;
                   tooltip.ensureTooltipVisible();
@@ -45,7 +62,7 @@ class SpellWidget extends StatelessWidget {
                 borderRadius: BorderRadius.circular(3),
               ),
               child: Text(
-                '0/$maxRank',
+                '$currentRank/$maxRank',
               style: TextStyle(color: Colors.white),
               ),
             ),

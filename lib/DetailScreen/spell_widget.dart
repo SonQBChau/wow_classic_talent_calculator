@@ -11,6 +11,7 @@ class SpellWidget extends StatelessWidget {
     final key = new GlobalKey();
     String spellName = talent.icon.toLowerCase();
     String imgLocation = 'assets/Icons/$spellName.png';
+    int maxRank = talent.ranks.rank.length;
 
     return Container(
 //      color: Colors.grey,
@@ -20,6 +21,7 @@ class SpellWidget extends StatelessWidget {
         Tooltip(
             key: key,
             verticalOffset: -32,
+            padding: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
             message: talent.ranks.rank[0].description
         ),
           Align(
@@ -39,11 +41,11 @@ class SpellWidget extends StatelessWidget {
             child: Container(
               padding: EdgeInsets.symmetric(vertical: 2, horizontal: 3),
               decoration: BoxDecoration(
-                color: Colors.black54,
+                color: Colors.black87,
                 borderRadius: BorderRadius.circular(3),
               ),
               child: Text(
-                '0/5',
+                '0/$maxRank',
               style: TextStyle(color: Colors.white),
               ),
             ),

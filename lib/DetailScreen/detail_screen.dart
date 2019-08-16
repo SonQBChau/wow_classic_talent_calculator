@@ -19,6 +19,9 @@ class _DetailScreenState extends State<DetailScreen> {
   List<Widget> specOneWidgetList = [];
   List<Widget> specTwoWidgetList = [];
   List<Widget> specThreeWidgetList = [];
+  List<Talent> specListOne = [];
+  List<Talent> specListTwo = [];
+  List<Talent> specListThree = [];
 
   Future<String> loadJson() async {
     return await rootBundle.loadString('data_repo/warlock.json');
@@ -36,9 +39,9 @@ class _DetailScreenState extends State<DetailScreen> {
     final widgetListTwo = <Widget>[];
     final widgetListThree = <Widget>[];
     SpecTreeList specTreeList = await loadTalent();
-    List<Talent> specListOne = specTreeList.specTrees[0].talents.talent;
-    List<Talent> specListTwo = specTreeList.specTrees[1].talents.talent;
-    List<Talent> specListThree = specTreeList.specTrees[2].talents.talent;
+    specListOne = specTreeList.specTrees[0].talents.talent;
+    specListTwo = specTreeList.specTrees[1].talents.talent;
+    specListThree = specTreeList.specTrees[2].talents.talent;
 
     // fill the widget with empty blocks
     for (var i = 0; i < NUM_OF_TILES; i++) {
@@ -117,8 +120,7 @@ class _DetailScreenState extends State<DetailScreen> {
                       ),
                     ),
                     // child: SpellGridWidget(specWidgetList: specOneWidgetList),
-                    child: SpellsPositionedWidget(
-                        specWidgetList: specOneWidgetList),
+                    child: SpellsPositionedWidget(specTalentList: specListOne),
                   ),
                   Container(
                     decoration: BoxDecoration(

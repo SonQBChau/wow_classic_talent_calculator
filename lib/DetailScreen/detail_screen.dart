@@ -87,34 +87,52 @@ class _DetailScreenState extends State<DetailScreen> {
             length: 3,
             child: Scaffold(
               appBar: AppBar(
-                title: Text('Card Details'),
+                title: Text('Warlock'),
                 backgroundColor: Color(0xFF673AB7),
                 bottom: TabBar(
                   tabs: [
-                    Tab(icon: Icon(Icons.directions_car)),
-                    Tab(icon: Icon(Icons.directions_transit)),
-                    Tab(icon: Icon(Icons.directions_bike)),
+                    Tab(icon: Image.asset("assets/Icons/spell_shadow_requiem.png", width: 32,)),
+                    Tab(icon: Image.asset("assets/Icons/spell_shadow_metamorphosis.png", width: 32,)),
+                    Tab(icon: Image.asset("assets/Icons/spell_fire_fireball.png", width: 32,)),
                   ],
                 ),
               ),
               body: TabBarView(
                 children: [
                   Container(
-                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage("assets/Warlock/Affliction.png"),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+
                     child: GridView.count(
                       crossAxisCount: 4,
                       children: specOneWidgetList,
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage("assets/Warlock/Demonology.png"),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+
                     child: GridView.count(
                       crossAxisCount: 4,
                       children: specTwoWidgetList,
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage("assets/Warlock/Destruction.png"),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+
                     child: GridView.count(
                       crossAxisCount: 4,
                       children: specThreeWidgetList,
@@ -132,7 +150,7 @@ class BlockTile extends StatelessWidget {
     return Center(
       child: Container(
         margin: EdgeInsets.all(1),
-        color: Colors.grey,
+        color: Colors.transparent,
         width: double.infinity,
         height: double.infinity,
       ),

@@ -19,9 +19,8 @@ class _SpellWidgetState extends State<SpellWidget> {
     String imgLocation = 'assets/Icons/$spellName.png';
     final int maxRank = widget.talent.ranks.rank.length;
 
-
-    void _increaseRank(){
-      if (currentRank < maxRank){
+    void _increaseRank() {
+      if (currentRank < maxRank) {
         int newRank = currentRank + 1;
         setState(() {
           currentRank = newRank;
@@ -29,8 +28,8 @@ class _SpellWidgetState extends State<SpellWidget> {
       }
     }
 
-    void _decreaseRank(){
-      if (currentRank > 0){
+    void _decreaseRank() {
+      if (currentRank > 0) {
         int newRank = currentRank - 1;
         setState(() {
           currentRank = newRank;
@@ -38,14 +37,14 @@ class _SpellWidgetState extends State<SpellWidget> {
       }
     }
 
-    void _showDescription(){
+    void _showDescription() {
       final dynamic tooltip = key.currentState;
       tooltip.ensureTooltipVisible();
     }
 
-    String _getDescription(){
-      int displayRank = currentRank -1;
-      if (displayRank < 0){
+    String _getDescription() {
+      int displayRank = currentRank - 1;
+      if (displayRank < 0) {
         displayRank = 0;
         return 'Learn: ${widget.talent.ranks.rank[displayRank].description}';
       }
@@ -54,23 +53,28 @@ class _SpellWidgetState extends State<SpellWidget> {
 
     return Container(
 //      color: Colors.grey,
+
       padding: EdgeInsets.all(10),
       child: Stack(
         children: <Widget>[
-        Tooltip(
+          Tooltip(
             key: key,
             verticalOffset: -32,
             padding: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
             message: _getDescription(),
-        ),
+          ),
           Align(
             alignment: Alignment.center,
             child: GestureDetector(
                 onTap: () => _increaseRank(),
                 onDoubleTap: () => _decreaseRank(),
                 onLongPress: () => _showDescription(),
-                child: Image.asset(imgLocation)
-            ),
+                child: Container(
+                    foregroundDecoration: BoxDecoration(
+                      color: Colors.grey,
+                      backgroundBlendMode: BlendMode.saturation,
+                    ),
+                    child: Image.asset(imgLocation))),
           ),
           Align(
             alignment: Alignment.bottomRight,
@@ -82,7 +86,7 @@ class _SpellWidgetState extends State<SpellWidget> {
               ),
               child: Text(
                 '$currentRank/$maxRank',
-              style: TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.white),
               ),
             ),
           ),

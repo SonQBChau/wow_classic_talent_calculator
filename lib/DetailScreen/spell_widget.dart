@@ -27,7 +27,29 @@ class _SpellWidgetState extends State<SpellWidget> {
           currentRank = newRank;
         });
       }
+    }
 
+    void _decreaseRank(){
+      if (currentRank > 0){
+        int newRank = currentRank - 1;
+        setState(() {
+          currentRank = newRank;
+        });
+      }
+    }
+
+    void _showDescription(){
+      final dynamic tooltip = key.currentState;
+      tooltip.ensureTooltipVisible();
+    }
+
+    String _getDescription(){
+      int displayRank = currentRank -1;
+      if (displayRank < 0){
+        displayRank = 0;
+        return 'Learn: ${widget.talent.ranks.rank[displayRank].description}';
+      }
+      return widget.talent.ranks.rank[displayRank].description;
     }
 
     return Container(
@@ -39,17 +61,14 @@ class _SpellWidgetState extends State<SpellWidget> {
             key: key,
             verticalOffset: -32,
             padding: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
-            message: widget.talent.ranks.rank[0].description
+            message: _getDescription(),
         ),
           Align(
             alignment: Alignment.center,
             child: GestureDetector(
                 onTap: () => _increaseRank(),
-                onLongPress: () {
-                  final dynamic tooltip = key.currentState;
-                  tooltip.ensureTooltipVisible();
-
-                },
+                onDoubleTap: () => _decreaseRank(),
+                onLongPress: () => _showDescription(),
                 child: Image.asset(imgLocation)
             ),
           ),

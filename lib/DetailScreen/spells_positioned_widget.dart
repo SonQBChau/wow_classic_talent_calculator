@@ -19,6 +19,20 @@ class SpellsPositionedWidget extends StatelessWidget {
     return talentTree;
   }
 
+  _buildArrows(double space) {
+    List<Widget> arrows = [];
+
+    String imgLocation = 'assets/Arrows/ArrowLong.png';
+
+    Widget arrow = Positioned(
+      top: 2 * space + space / 1.3,
+      left: 2 * space + space / 3,
+      child: Image.asset(imgLocation),
+    );
+    arrows.add(arrow);
+    return arrows;
+  }
+
   @override
   Widget build(BuildContext context) {
     final double screenWidth = MediaQuery.of(context).size.width;
@@ -35,7 +49,10 @@ class SpellsPositionedWidget extends StatelessWidget {
                   minHeight: viewportConstraints.maxHeight,
                   maxHeight: space * 7,
                 ),
-                child: Stack(children: _buildTalentTree(space))));
+                child: Stack(children: <Widget>[
+                  ..._buildTalentTree(space),
+                  ..._buildArrows(space)
+                ])));
       });
     }
   }

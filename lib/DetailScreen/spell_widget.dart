@@ -52,7 +52,7 @@ class _SpellWidgetState extends State<SpellWidget> {
     }
 
     return Container(
-      color: Colors.grey,
+      // color: Colors.grey,
       padding: EdgeInsets.all(10),
       child: Stack(
         children: <Widget>[

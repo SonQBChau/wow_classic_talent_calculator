@@ -5,8 +5,10 @@ import 'package:wow_classic_talent_calculator/DetailScreen/spell_grid_widget.dar
 import 'package:wow_classic_talent_calculator/DetailScreen/spell_widget.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/spells_positioned_widget.dart';
 import 'dart:convert';
+import 'package:wow_classic_talent_calculator/utils/constants.dart';
 
 import 'package:wow_classic_talent_calculator/model/talent.dart';
+import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 
 class DetailScreen extends StatefulWidget {
   @override
@@ -85,6 +87,9 @@ class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderSt
 
   @override
   Widget build(BuildContext context) {
+    //TODO: move SizeConfig to main page
+    SizeConfig().init(context);
+
     return  Scaffold(
               appBar: AppBar(
                 title: Text('Warlock'),
@@ -95,17 +100,17 @@ class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderSt
                     Tab(
                         icon: Image.asset(
                       "assets/Icons/spell_shadow_requiem.png",
-                      width: 32,
+                      width: kTabIconSize,
                     )),
                     Tab(
                         icon: Image.asset(
                       "assets/Icons/spell_shadow_metamorphosis.png",
-                      width: 32,
+                      width: kTabIconSize,
                     )),
                     Tab(
                         icon: Image.asset(
                       "assets/Icons/spell_fire_fireball.png",
-                      width: 32,
+                      width: kTabIconSize,
                     )),
                   ],
                 ),

@@ -3,17 +3,18 @@ import 'package:wow_classic_talent_calculator/DetailScreen/arrow_widget.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/spell_widget.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
 import 'package:wow_classic_talent_calculator/utils/constants.dart';
+import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 
 class SpellsPositionedWidget extends StatelessWidget {
   final List<Talent> specTalentList;
   SpellsPositionedWidget({@required this.specTalentList});
 
-  _buildTalentTree(double space) {
+  _buildTalentTree() {
     List<Widget> talentTree = [];
     for (int i = 0; i < specTalentList.length; i++) {
       Widget spell = Positioned(
-        top: specTalentList[i].position[0].toDouble() * space,
-        left: specTalentList[i].position[1].toDouble() * space,
+        top: specTalentList[i].position[0].toDouble() * SizeConfig.cellSize,
+        left: specTalentList[i].position[1].toDouble() * SizeConfig.cellSize,
         child: SpellWidget(talent: specTalentList[i]),
       );
       talentTree.add(spell);
@@ -21,18 +22,18 @@ class SpellsPositionedWidget extends StatelessWidget {
     return talentTree;
   }
 
-  _buildArrows(double space) {
+  _buildArrows() {
     List<Widget> arrows = [];
-    arrows.add(MediumArrowWidget(space: space));
-    arrows.add(ShortArrowWidget(space: space));
-    arrows.add(RightShortArrowWidget(space: space));
+    arrows.add(MediumArrowWidget(space: SizeConfig.cellSize));
+    arrows.add(ShortArrowWidget(space: SizeConfig.cellSize));
+    arrows.add(RightShortArrowWidget(space: SizeConfig.cellSize));
     return arrows;
   }
 
   @override
   Widget build(BuildContext context) {
-    final double screenWidth = MediaQuery.of(context).size.width;
-    final double space = (screenWidth -40) / 4;
+//    final double screenWidth = MediaQuery.of(context).size.width;
+//    final double space = (screenWidth -40) / 4;
 
     if (specTalentList.length == 0) {
       return SizedBox();
@@ -42,12 +43,12 @@ class SpellsPositionedWidget extends StatelessWidget {
             child: ConstrainedBox(
                 constraints: BoxConstraints(
                   minHeight: viewportConstraints.maxHeight,
-                  maxHeight: space * 7 + 40,
+                  maxHeight: SizeConfig.cellSize * 7 + kTalentScreenPadding * 2, // cell size * number of row + padding
                 ),
                 child:
                     Container(
                       padding: EdgeInsets.symmetric(vertical: kTalentScreenPadding, horizontal: kTalentScreenPadding),
-                        child: Stack(children: <Widget>[..._buildTalentTree(space), ..._buildArrows(space)]))));
+                        child: Stack(children: <Widget>[..._buildTalentTree(), ..._buildArrows()]))));
       });
     }
   }

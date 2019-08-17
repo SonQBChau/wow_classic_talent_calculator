@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wow_classic_talent_calculator/DetailScreen/arrow_widget.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/spell_widget.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
 
@@ -21,29 +22,9 @@ class SpellsPositionedWidget extends StatelessWidget {
 
   _buildArrows(double space) {
     List<Widget> arrows = [];
-
-    String imgLocation = 'assets/Arrows/ArrowMedium.png';
-
-    Widget arrow = Positioned(
-      top: 2 * space + space / 1.3,
-      left: 2 * space + space / 3,
-      child: Container(
-          width: 20,
-          height: 121,
-          child: Image.asset('assets/Arrows/ArrowBody.png', fit: BoxFit.fill,)),
-    );
-    arrows.add(arrow);
-    Widget arrow2 = Positioned(
-      top: 4 * space ,
-      left: 2 * space + space / 3,
-      child: Container(
-//        color: Colors.green,
-        width: 20,
-
-          child: Image.asset('assets/Arrows/ArrowHead.png', fit: BoxFit.fill,)
-      ),
-    );
-    arrows.add(arrow2);
+    arrows.add(MediumArrowWidget(space: space));
+    arrows.add(ShortArrowWidget(space: space));
+    arrows.add(RightShortArrowWidget(space: space));
     return arrows;
   }
 
@@ -55,18 +36,15 @@ class SpellsPositionedWidget extends StatelessWidget {
     if (specTalentList.length == 0) {
       return SizedBox();
     } else {
-      return LayoutBuilder(
-          builder: (BuildContext context, BoxConstraints viewportConstraints) {
+      return LayoutBuilder(builder: (BuildContext context, BoxConstraints viewportConstraints) {
         return SingleChildScrollView(
             child: ConstrainedBox(
                 constraints: BoxConstraints(
                   minHeight: viewportConstraints.maxHeight,
                   maxHeight: space * 7,
                 ),
-                child: Stack(children: <Widget>[
-                  ..._buildTalentTree(space),
-                  ..._buildArrows(space)
-                ])));
+                child:
+                    Stack(children: <Widget>[..._buildTalentTree(space), ..._buildArrows(space)])));
       });
     }
   }

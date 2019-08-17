@@ -139,7 +139,7 @@ class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderSt
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: SpellGridWidget(specWidgetList: specTwoWidgetList),
+                    child: TalentTreeWidget(specTalentList: specListTwo, arrowList: demonologyArrowList),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -148,7 +148,7 @@ class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderSt
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: SpellGridWidget(specWidgetList: specThreeWidgetList),
+                    child: TalentTreeWidget(specTalentList: specListThree, arrowList: destructionArrowList),
                   )
                 ],
               ),

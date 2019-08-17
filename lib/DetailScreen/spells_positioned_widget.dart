@@ -9,10 +9,7 @@ import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 class TalentTreeWidget extends StatelessWidget {
   final List<Talent> specTalentList;
   final List<Widget> arrowList;
-  TalentTreeWidget({
-    @required this.specTalentList,
-    @required this.arrowList
-  });
+  TalentTreeWidget({@required this.specTalentList, @required this.arrowList});
 
   _buildTalentTree() {
     List<Widget> talentTree = [];
@@ -35,17 +32,24 @@ class TalentTreeWidget extends StatelessWidget {
     if (specTalentList.length == 0) {
       return SizedBox();
     } else {
-      return LayoutBuilder(builder: (BuildContext context, BoxConstraints viewportConstraints) {
+      return LayoutBuilder(
+          builder: (BuildContext context, BoxConstraints viewportConstraints) {
         return SingleChildScrollView(
             child: ConstrainedBox(
                 constraints: BoxConstraints(
-                  minHeight: viewportConstraints.maxHeight,
-                  maxHeight: SizeConfig.cellSize * 7 + kTalentScreenPadding * 2, // cell size * number of row + padding
+                  // minHeight: viewportConstraints.maxHeight,
+                  maxHeight: SizeConfig.cellSize * 7 +
+                      kTalentScreenPadding *
+                          2, // cell size * number of row + padding
                 ),
-                child:
-                    Container(
-                      padding: EdgeInsets.symmetric(vertical: kTalentScreenPadding, horizontal: kTalentScreenPadding),
-                        child: Stack(children: <Widget>[..._buildTalentTree(), ...arrowList]))));
+                child: Container(
+                    padding: EdgeInsets.symmetric(
+                        vertical: kTalentScreenPadding,
+                        horizontal: kTalentScreenPadding),
+                    child: Stack(children: <Widget>[
+                      ..._buildTalentTree(),
+                      ...arrowList
+                    ]))));
       });
     }
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/arrow_widget.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/spell_widget.dart';
+import 'package:wow_classic_talent_calculator/model/position.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
 import 'package:wow_classic_talent_calculator/utils/constants.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
@@ -24,7 +25,10 @@ class SpellsPositionedWidget extends StatelessWidget {
 
   _buildArrows() {
     List<Widget> arrows = [];
-    arrows.add(MediumArrowWidget(space: SizeConfig.cellSize));
+    arrows.add(MediumArrowWidget(
+      startPosition: Position(row: 3, column: 3),
+      endPosition: Position(row: 4, column: 3),
+    ));
     arrows.add(ShortArrowWidget(space: SizeConfig.cellSize));
     arrows.add(RightShortArrowWidget(space: SizeConfig.cellSize));
     return arrows;

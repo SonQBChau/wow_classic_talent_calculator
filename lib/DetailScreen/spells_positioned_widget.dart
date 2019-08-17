@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/arrow_widget.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/spell_widget.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
+import 'package:wow_classic_talent_calculator/utils/constants.dart';
 
 class SpellsPositionedWidget extends StatelessWidget {
   final List<Talent> specTalentList;
@@ -45,7 +46,7 @@ class SpellsPositionedWidget extends StatelessWidget {
                 ),
                 child:
                     Container(
-                      padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                      padding: EdgeInsets.symmetric(vertical: kTalentScreenPadding, horizontal: kTalentScreenPadding),
                         child: Stack(children: <Widget>[..._buildTalentTree(space), ..._buildArrows(space)]))));
       });
     }

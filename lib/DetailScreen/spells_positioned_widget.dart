@@ -22,14 +22,28 @@ class SpellsPositionedWidget extends StatelessWidget {
   _buildArrows(double space) {
     List<Widget> arrows = [];
 
-    String imgLocation = 'assets/Arrows/ArrowLong.png';
+    String imgLocation = 'assets/Arrows/ArrowMedium.png';
 
     Widget arrow = Positioned(
       top: 2 * space + space / 1.3,
       left: 2 * space + space / 3,
-      child: Image.asset(imgLocation),
+      child: Container(
+          width: 20,
+          height: 121,
+          child: Image.asset('assets/Arrows/ArrowBody.png', fit: BoxFit.fill,)),
     );
     arrows.add(arrow);
+    Widget arrow2 = Positioned(
+      top: 4 * space ,
+      left: 2 * space + space / 3,
+      child: Container(
+//        color: Colors.green,
+        width: 20,
+
+          child: Image.asset('assets/Arrows/ArrowHead.png', fit: BoxFit.fill,)
+      ),
+    );
+    arrows.add(arrow2);
     return arrows;
   }
 

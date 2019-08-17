@@ -6,6 +6,7 @@
             "Name": "Suppression",
             "Points": "",
             "Dependency": "",
+            "Arrow": "",
             "Position": [0, 1],
             "Tier": "1",
             "Ranks": {
@@ -37,6 +38,7 @@
                 "Name": "Improved Corruption",
                 "Points": "",
                 "Dependency": "",
+                "Arrow": "",
                 "Position": [0, 2],
                 "Tier": "1",
                 "Ranks": {
@@ -68,6 +70,7 @@
                 "Name": "Improved Curse of Weakness",
                 "Points": "",
                 "Dependency": "",
+                "Arrow": "",
                 "Position": [1, 0],
                 "Tier": "2",
                 "Ranks": {
@@ -91,6 +94,7 @@
                 "Name": "Improved Drain Soul",
                 "Points": "",
                 "Dependency": "",
+                "Arrow": "",
                 "Position": [1, 1],
                 "Tier": "2",
                 "Ranks": {
@@ -110,6 +114,7 @@
                 "Name": "Improved Life Tap",
                 "Points": "",
                 "Dependency": "",
+                "Arrow": "",
                 "Position": [1, 2],
                 "Tier": "2",
                 "Ranks": {
@@ -129,6 +134,7 @@
                 "Name": "Improved Drain Life",
                 "Points": "",
                 "Dependency": "",
+                "Arrow": "",
                 "Position": [1, 3],
                 "Tier": "2",
                 "Ranks": {
@@ -160,6 +166,7 @@
                 "Name": "Improved Curse of Agony",
                 "Points": "",
                 "Dependency": "",
+                "Arrow": "",
                 "Position": [2, 0],
                 "Tier": "3",
                 "Ranks": {
@@ -183,6 +190,7 @@
                 "Name": "Fel Concentration",
                 "Points": "",
                 "Dependency": "",
+                "Arrow": "",
                 "Position": [2, 1],
                 "Tier": "3",
                 "Ranks": {
@@ -214,6 +222,7 @@
                 "Name": "Amplify Curse",
                 "Points": "",
                 "Dependency": "",
+                "Arrow": "",
                 "Position": [2, 2],
                 "Tier": "3",
                 "Ranks": {
@@ -228,6 +237,7 @@
                 "Name": "Grim Reach",
                 "Points": "",
                 "Dependency": "",
+                "Arrow": "",
                 "Position": [3, 0],
                 "Tier": "4",
                 "Ranks": {
@@ -247,6 +257,7 @@
                 "Name": "Nightfall",
                 "Points": "",
                 "Dependency": "",
+                "Arrow": "",
                 "Position": [3, 1],
                 "Tier": "4",
                 "Ranks": {
@@ -266,6 +277,7 @@
                 "Name": "Improved Drain Mana",
                 "Points": "",
                 "Dependency": "",
+                "Arrow": "",
                 "Position": [3, 3],
                 "Tier": "4",
                 "Ranks": {
@@ -285,6 +297,7 @@
                 "Name": "Siphon Life",
                 "Points": "",
                 "Dependency": "",
+                "Arrow": "",
                 "Position": [4, 1],
                 "Tier": "5",
                 "Ranks": {
@@ -299,6 +312,11 @@
                 "Name": "Curse of Exhaustion",
                 "Points": "1",
                 "Dependency": "Amplify Curse",
+                "Arrow": {
+                    "Name": "ArrowMedium",
+                    "X": "148",
+                    "Y": "200"
+                },
                 "Position": [4, 2],
                 "Tier": "5",
                 "Ranks": {
@@ -313,6 +331,11 @@
                 "Name": "Improved Curse of Exhaustion",
                 "Points": "1",
                 "Dependency": "Curse of Exhaustion",
+                "Arrow": {
+                    "Name": "ArrowRightShort",
+                    "X": "180",
+                    "Y": "288"
+                },
                 "Position": [4, 3],
                 "Tier": "5",
                 "Ranks": {
@@ -340,6 +363,11 @@
                 "Name": "Shadow Mastery",
                 "Points": "1",
                 "Dependency": "Siphon Life",
+                "Arrow": {
+                    "Name": "ArrowShort",
+                    "X": "88",
+                    "Y": "320"
+                },
                 "Position": [5, 1],
                 "Tier": "6",
                 "Ranks": {
@@ -371,6 +399,7 @@
                 "Name": "Dark Pact",
                 "Points": "",
                 "Dependency": "",
+                "Arrow": "",
                 "Position": [6, 1],
                 "Tier": "7",
                 "Ranks": {
@@ -391,6 +420,7 @@
                 "Name": "Improved Healthstone",
                 "Points": "",
                 "Dependency": "",
+                "Arrow": "",
                 "Position": [0, 0],
                 "Tier": "1",
                 "Ranks": {
@@ -410,6 +440,7 @@
                     "Name": "Improved Imp",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [0, 1],
                     "Tier": "1",
                     "Ranks": {
@@ -433,6 +464,7 @@
                     "Name": "Demonic Embrace",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [0, 2],
                     "Tier": "1",
                     "Ranks": {
@@ -464,6 +496,7 @@
                     "Name": "Improved Health Funnel",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [1, 0],
                     "Tier": "2",
                     "Ranks": {
@@ -483,6 +516,7 @@
                     "Name": "Improved Voidwalker",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [1, 1],
                     "Tier": "2",
                     "Ranks": {
@@ -506,6 +540,7 @@
                     "Name": "Fel Intellect",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [1, 2],
                     "Tier": "2",
                     "Ranks": {
@@ -537,6 +572,7 @@
                     "Name": "Improved Succubus",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [2, 0],
                     "Tier": "3",
                     "Ranks": {
@@ -560,6 +596,7 @@
                     "Name": "Fel Domination",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [2, 1],
                     "Tier": "3",
                     "Ranks": {
@@ -574,6 +611,7 @@
                     "Name": "Fel Stamina",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [2, 2],
                     "Tier": "3",
                     "Ranks": {
@@ -605,6 +643,11 @@
                     "Name": "Master Summoner",
                     "Points": "1",
                     "Dependency": "Fel Domination",
+                    "Arrow": {
+                        "Name": "ArrowShort",
+                        "X": "88",
+                        "Y": "200"
+                    },
                     "Position": [3, 1],
                     "Tier": "4",
                     "Ranks": {
@@ -624,6 +667,7 @@
                     "Name": "Unholy Power",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [3, 2],
                     "Tier": "4",
                     "Ranks": {
@@ -655,6 +699,7 @@
                     "Name": "Improved Enslave Demon",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [4, 0],
                     "Tier": "5",
                     "Ranks": {
@@ -686,6 +731,7 @@
                     "Name": "Demonic Sacrifice",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [4, 1],
                     "Tier": "5",
                     "Ranks": {
@@ -700,6 +746,7 @@
                     "Name": "Improved Firestone",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [4, 3],
                     "Tier": "5",
                     "Ranks": {
@@ -719,6 +766,11 @@
                     "Name": "Master Demonologist",
                     "Points": "5",
                     "Dependency": "Unholy Power",
+                    "Arrow": {
+                        "Name": "ArrowMedium",
+                        "X": "148",
+                        "Y": "260"
+                    },
                     "Position": [5, 2],
                     "Tier": "6",
                     "Ranks": {
@@ -750,6 +802,11 @@
                     "Name": "Soul Link",
                     "Points": "1",
                     "Dependency": "Demonic Sacrifice",
+                    "Arrow": {
+                        "Name": "ArrowMedium",
+                        "X": "88",
+                        "Y": "320"
+                    },
                     "Position": [6, 1],
                     "Tier": "7",
                     "Ranks": {
@@ -764,6 +821,7 @@
                     "Name": "Improved Spellstone",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [6, 2],
                     "Tier": "7",
                     "Ranks": {
@@ -789,6 +847,7 @@
                 "Name": "Improved Shadow Bolt",
                 "Points": "",
                 "Dependency": "",
+                "Arrow": "",
                 "Position": [0, 1],
                 "Tier": "1",
                 "Ranks": {
@@ -820,6 +879,7 @@
                     "Name": "Cataclysm",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [0, 2],
                     "Tier": "1",
                     "Ranks": {
@@ -851,6 +911,7 @@
                     "Name": "Bane",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [1, 1],
                     "Tier": "2",
                     "Ranks": {
@@ -882,6 +943,7 @@
                     "Name": "Aftermath",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [1, 2],
                     "Tier": "2",
                     "Ranks": {
@@ -913,6 +975,7 @@
                     "Name": "Improved Firebolt",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [2, 0],
                     "Tier": "3",
                     "Ranks": {
@@ -932,6 +995,7 @@
                     "Name": "Improved Lash of Pain",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [2, 1],
                     "Tier": "3",
                     "Ranks": {
@@ -951,6 +1015,7 @@
                     "Name": "Devastation",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [2, 2],
                     "Tier": "3",
                     "Ranks": {
@@ -982,6 +1047,7 @@
                     "Name": "Shadowburn",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [2, 3],
                     "Tier": "3",
                     "Ranks": {
@@ -996,6 +1062,7 @@
                     "Name": "Intensity",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [3, 0],
                     "Tier": "4",
                     "Ranks": {
@@ -1015,6 +1082,7 @@
                     "Name": "Destructive Reach",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [3, 1],
                     "Tier": "4",
                     "Ranks": {
@@ -1034,6 +1102,7 @@
                     "Name": "Improved Searing Pain",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [3, 3],
                     "Tier": "4",
                     "Ranks": {
@@ -1066,6 +1135,11 @@
                     "Points": "2",
                     "Dependency": "Intensity",
                     "Position": [4, 0],
+                    "Arrow": {
+                        "Name": "ArrowShort",
+                        "X": "28",
+                        "Y": "260"
+                    },
                     "Tier": "5",
                     "Ranks": {
                         "Rank": [{
@@ -1084,6 +1158,7 @@
                     "Name": "Improved Immolate",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [4, 1],
                     "Tier": "5",
                     "Ranks": {
@@ -1115,6 +1190,11 @@
                     "Name": "Ruin",
                     "Points": "5",
                     "Dependency": "Devastation",
+                    "Arrow": {
+                        "Name": "ArrowMedium",
+                        "X": "148",
+                        "Y": "200"
+                    },
                     "Position": [4, 2],
                     "Tier": "5",
                     "Ranks": {
@@ -1129,6 +1209,7 @@
                     "Name": "Emberstorm",
                     "Points": "",
                     "Dependency": "",
+                    "Arrow": "",
                     "Position": [5, 2],
                     "Tier": "6",
                     "Ranks": {
@@ -1148,6 +1229,11 @@
                     "Name": "Conflagrate",
                     "Points": "5",
                     "Dependency": "Improved Immolate",
+                    "Arrow": {
+                        "Name": "ArrowMedium",
+                        "X": "88",
+                        "Y": "320"
+                    },
                     "Position": [6, 1],
                     "Tier": "7",
                     "Ranks": {

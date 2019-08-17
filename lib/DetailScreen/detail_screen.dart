@@ -13,7 +13,8 @@ class DetailScreen extends StatefulWidget {
   _DetailScreenState createState() => _DetailScreenState();
 }
 
-class _DetailScreenState extends State<DetailScreen> {
+class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderStateMixin {
+  TabController _tabController;
   static const NUM_OF_TILES = 28; // 6 rows and 4 columns
   // SpecTreeList specTreeList;
   List<Widget> specOneWidgetList = [];
@@ -79,18 +80,17 @@ class _DetailScreenState extends State<DetailScreen> {
   initState() {
     super.initState();
     buildTalentList();
+    _tabController = TabController(length: 3, vsync: this, initialIndex: 1);
   }
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: DefaultTabController(
-            length: 3,
-            child: Scaffold(
+    return  Scaffold(
               appBar: AppBar(
                 title: Text('Warlock'),
                 backgroundColor: Color(0xFF673AB7),
                 bottom: TabBar(
+                  controller: _tabController,
                   tabs: [
                     Tab(
                         icon: Image.asset(
@@ -111,6 +111,7 @@ class _DetailScreenState extends State<DetailScreen> {
                 ),
               ),
               body: TabBarView(
+                controller: _tabController,
                 children: [
                   Container(
                     decoration: BoxDecoration(
@@ -142,7 +143,7 @@ class _DetailScreenState extends State<DetailScreen> {
                   )
                 ],
               ),
-            )));
+            );
   }
 }
 

@@ -82,7 +82,7 @@ class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderSt
   initState() {
     super.initState();
     buildTalentList();
-    _tabController = TabController(length: 3, vsync: this, initialIndex: 1);
+    _tabController = TabController(length: 3, vsync: this, initialIndex: 0);
   }
 
   @override

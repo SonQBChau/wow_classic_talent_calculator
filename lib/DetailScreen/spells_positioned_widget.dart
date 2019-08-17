@@ -25,11 +25,16 @@ class SpellsPositionedWidget extends StatelessWidget {
 
   _buildArrows() {
     List<Widget> arrows = [];
-    arrows.add(MediumArrowWidget(
+    arrows.add(ArrowWidget(
       startPosition: Position(row: 3, column: 3),
-      endPosition: Position(row: 4, column: 3),
+      endPosition: Position(row: 5, column: 3),
+      lengthType: 'medium',
     ));
-    arrows.add(ShortArrowWidget(space: SizeConfig.cellSize));
+    arrows.add(ArrowWidget(
+      startPosition: Position(row: 5, column: 2),
+      endPosition: Position(row: 6, column: 2),
+      lengthType: 'short',
+    ));
     arrows.add(RightShortArrowWidget(space: SizeConfig.cellSize));
     return arrows;
   }

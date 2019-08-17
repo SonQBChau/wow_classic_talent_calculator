@@ -10,3 +10,5 @@ const double kTalentScreenTwoPadding = 40.0;
 /// The size of the Icon on Tab Bar of the [DetailScreen].
 const double kTabIconSize = 32.0;
 
+/// The size of arrow [ArrowWidget].
+const double kArrowWidthSize = 20.0;

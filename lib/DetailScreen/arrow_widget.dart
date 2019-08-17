@@ -1,25 +1,33 @@
 import 'package:flutter/material.dart';
 import 'package:wow_classic_talent_calculator/model/position.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
+import 'package:wow_classic_talent_calculator/utils/constants.dart';
 
-class MediumArrowWidget extends StatelessWidget {
+class ArrowWidget extends StatelessWidget {
   final Position startPosition;
   final Position endPosition;
-  MediumArrowWidget({
+  final String lengthType;
+  ArrowWidget({
     @required this.startPosition,
     @required this.endPosition,
-
+    @required this.lengthType,
   });
 
   @override
   Widget build(BuildContext context) {
     final double arrowBodyTop = SizeConfig.cellSize * startPosition.row - SizeConfig.cellSize/7;
     final double arrowBodyLeft = SizeConfig.cellSize * startPosition.column - SizeConfig.cellSize/1.6;
-    final double arrowBodyWidth = 20.0;
-    final double arrowBodyHeight = SizeConfig.cellSize * 1.15;
-    final double arrowHeadTop = SizeConfig.cellSize * endPosition.row;
+    final double arrowBodyWidth = kArrowWidthSize;
+    double arrowBodyHeight = 0;
+    final double arrowHeadTop = SizeConfig.cellSize * (endPosition.row-1);
     final double arrowHeadLeft = SizeConfig.cellSize * startPosition.column - SizeConfig.cellSize/1.6;
-    final double arrowHeadWidth = 20.0;
+    final double arrowHeadWidth = kArrowWidthSize;
+
+    if(lengthType == 'medium'){
+      arrowBodyHeight = SizeConfig.cellSize * 1.15; //magic number
+    } else if(lengthType == 'short') {
+      arrowBodyHeight = SizeConfig.cellSize * 0.15; //magic number
+    }
 
     return Stack(
       children: <Widget>[

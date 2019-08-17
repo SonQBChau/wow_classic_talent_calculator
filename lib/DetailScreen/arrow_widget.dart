@@ -77,9 +77,7 @@ class RightArrowWidget extends StatelessWidget {
     final double arrowHeadLeft = SizeConfig.cellSize * startPosition.column ;
     final double arrowHeadHeight = kArrowWidthSize;
 
-    if(lengthType == 'medium'){
-      arrowBodyWidth = SizeConfig.cellSize * 1.15; //magic number
-    } else if(lengthType == 'short') {
+    if(lengthType == 'short') {
       arrowBodyWidth = SizeConfig.cellSize * 0.15; //magic number
     }
 

@@ -6,9 +6,13 @@ import 'package:wow_classic_talent_calculator/model/talent.dart';
 import 'package:wow_classic_talent_calculator/utils/constants.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 
-class SpellsPositionedWidget extends StatelessWidget {
+class TalentTreeWidget extends StatelessWidget {
   final List<Talent> specTalentList;
-  SpellsPositionedWidget({@required this.specTalentList});
+  final List<Widget> arrowList;
+  TalentTreeWidget({
+    @required this.specTalentList,
+    @required this.arrowList
+  });
 
   _buildTalentTree() {
     List<Widget> talentTree = [];
@@ -21,27 +25,6 @@ class SpellsPositionedWidget extends StatelessWidget {
       talentTree.add(spell);
     }
     return talentTree;
-  }
-
-  _buildArrows() {
-    List<Widget> arrows = [];
-    arrows.add(ArrowWidget(
-      startPosition: Position(row: 3, column: 3),
-      endPosition: Position(row: 5, column: 3),
-      lengthType: 'medium',
-    ));
-    arrows.add(ArrowWidget(
-      startPosition: Position(row: 5, column: 2),
-      endPosition: Position(row: 6, column: 2),
-      lengthType: 'short',
-    ));
-    arrows.add(RightArrowWidget(
-      startPosition: Position(row: 5, column: 3),
-      endPosition: Position(row: 5, column: 4),
-      lengthType: 'short',
-    ));
-//    arrows.add(RightShortArrowWidget(space: SizeConfig.cellSize));
-    return arrows;
   }
 
   @override
@@ -62,7 +45,7 @@ class SpellsPositionedWidget extends StatelessWidget {
                 child:
                     Container(
                       padding: EdgeInsets.symmetric(vertical: kTalentScreenPadding, horizontal: kTalentScreenPadding),
-                        child: Stack(children: <Widget>[..._buildTalentTree(), ..._buildArrows()]))));
+                        child: Stack(children: <Widget>[..._buildTalentTree(), ...arrowList]))));
       });
     }
   }

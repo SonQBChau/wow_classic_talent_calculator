@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async' show Future;
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:wow_classic_talent_calculator/Arrow/warlock_arrow.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/spell_grid_widget.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/spell_widget.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/spells_positioned_widget.dart';
@@ -9,6 +10,9 @@ import 'package:wow_classic_talent_calculator/utils/constants.dart';
 
 import 'package:wow_classic_talent_calculator/model/talent.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
+
+
+
 
 class DetailScreen extends StatefulWidget {
   @override
@@ -126,7 +130,7 @@ class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderSt
                       ),
                     ),
                     // child: SpellGridWidget(specWidgetList: specOneWidgetList),
-                    child: SpellsPositionedWidget(specTalentList: specListOne),
+                    child: TalentTreeWidget(specTalentList: specListOne, arrowList: afflictionArrowList),
                   ),
                   Container(
                     decoration: BoxDecoration(

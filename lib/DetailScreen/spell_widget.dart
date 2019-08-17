@@ -52,7 +52,9 @@ class _SpellWidgetState extends State<SpellWidget> {
     }
 
     return Container(
-       color: Colors.grey,
+//       color: Colors.grey,
+      width: (MediaQuery.of(context).size.width - 40)/4,
+      height: (MediaQuery.of(context).size.width - 40)/4,
       padding: EdgeInsets.all(10),
       child: Stack(
         children: <Widget>[

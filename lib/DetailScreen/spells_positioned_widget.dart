@@ -31,7 +31,7 @@ class SpellsPositionedWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final double screenWidth = MediaQuery.of(context).size.width;
-    final double space = screenWidth / 4;
+    final double space = (screenWidth -40) / 4;
 
     if (specTalentList.length == 0) {
       return SizedBox();
@@ -41,10 +41,12 @@ class SpellsPositionedWidget extends StatelessWidget {
             child: ConstrainedBox(
                 constraints: BoxConstraints(
                   minHeight: viewportConstraints.maxHeight,
-                  maxHeight: space * 7,
+                  maxHeight: space * 7 + 40,
                 ),
                 child:
-                    Stack(children: <Widget>[..._buildTalentTree(space), ..._buildArrows(space)])));
+                    Container(
+                      padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                        child: Stack(children: <Widget>[..._buildTalentTree(space), ..._buildArrows(space)]))));
       });
     }
   }

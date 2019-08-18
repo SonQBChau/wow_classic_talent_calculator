@@ -4,7 +4,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'package:wow_classic_talent_calculator/Arrow/warlock_arrow.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/spell_grid_widget.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/spell_widget.dart';
-import 'package:wow_classic_talent_calculator/DetailScreen/spells_positioned_widget.dart';
+import 'package:wow_classic_talent_calculator/DetailScreen/talent_tree_widget.dart';
 import 'dart:convert';
 import 'package:wow_classic_talent_calculator/utils/constants.dart';
 
@@ -29,6 +29,7 @@ class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderSt
   List<Talent> specListOne = [];
   List<Talent> specListTwo = [];
   List<Talent> specListThree = [];
+
 
   Future<String> loadJson() async {
     return await rootBundle.loadString('data_repo/warlock.json');

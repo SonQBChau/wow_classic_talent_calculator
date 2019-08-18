@@ -3,7 +3,7 @@ import 'package:wow_classic_talent_calculator/model/position.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 import 'package:wow_classic_talent_calculator/utils/constants.dart';
 
-class ArrowWidget extends StatelessWidget {
+class ArrowWidget extends StatefulWidget {
   final Position startPosition;
   final Position endPosition;
   final String lengthType;
@@ -14,18 +14,34 @@ class ArrowWidget extends StatelessWidget {
   });
 
   @override
+  _ArrowWidgetState createState() => _ArrowWidgetState();
+}
+
+class _ArrowWidgetState extends State<ArrowWidget> {
+  bool enableState = false;
+
+  @override
   Widget build(BuildContext context) {
-    final double arrowBodyTop = SizeConfig.cellSize * startPosition.row - SizeConfig.cellSize/7;
-    final double arrowBodyLeft = SizeConfig.cellSize * startPosition.column - SizeConfig.cellSize/1.6;
+    final double arrowBodyTop = SizeConfig.cellSize * widget.startPosition.row - SizeConfig.cellSize/7;
+    final double arrowBodyLeft = SizeConfig.cellSize * widget.startPosition.column - SizeConfig.cellSize/1.6;
     final double arrowBodyWidth = kArrowWidthSize;
     double arrowBodyHeight = 0;
-    final double arrowHeadTop = SizeConfig.cellSize * (endPosition.row-1);
-    final double arrowHeadLeft = SizeConfig.cellSize * startPosition.column - SizeConfig.cellSize/1.6;
+    final double arrowHeadTop = SizeConfig.cellSize * (widget.endPosition.row-1);
+    final double arrowHeadLeft = SizeConfig.cellSize * widget.startPosition.column - SizeConfig.cellSize/1.6;
     final double arrowHeadWidth = kArrowWidthSize;
+    String arrowBodyImg = 'assets/Arrows/GreyArrowBody.png';
+    String arrowHeadImg = 'assets/Arrows/GreyArrowHead.png';
+    if(enableState){
+      setState(() {
+        arrowBodyImg = 'assets/Arrows/ArrowBody.png';
+        arrowHeadImg = 'assets/Arrows/ArrowHead.png';
+      });
 
-    if(lengthType == 'medium'){
+    }
+
+    if(widget.lengthType == 'medium'){
       arrowBodyHeight = SizeConfig.cellSize * 1.15; //magic number
-    } else if(lengthType == 'short') {
+    } else if(widget.lengthType == 'short') {
       arrowBodyHeight = SizeConfig.cellSize * 0.15; //magic number
     }
 
@@ -38,7 +54,7 @@ class ArrowWidget extends StatelessWidget {
               width: arrowBodyWidth,
               height: arrowBodyHeight,
               child: Image.asset(
-                'assets/Arrows/ArrowBody.png',
+                arrowBodyImg,
                 fit: BoxFit.fill,
               )),
         ),
@@ -48,7 +64,7 @@ class ArrowWidget extends StatelessWidget {
           child: Container(
               width: arrowHeadWidth,
               child: Image.asset(
-                'assets/Arrows/ArrowHead.png',
+                arrowHeadImg,
                 fit: BoxFit.fill,
               )),
         )

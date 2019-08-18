@@ -9,6 +9,8 @@ import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 class TalentTreeWidget extends StatelessWidget {
   final List<Talent> specTalentList;
   final List<Widget> arrowList;
+  int usedTalentPoints = 0;
+
   TalentTreeWidget({@required this.specTalentList, @required this.arrowList});
 
   _buildTalentTree() {

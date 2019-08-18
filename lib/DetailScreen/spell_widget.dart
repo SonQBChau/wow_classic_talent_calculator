@@ -50,28 +50,26 @@ class _SpellWidgetState extends State<SpellWidget> {
     return widget.talent.ranks.rank[displayRank].description;
   }
 
+  _setEnable(){
+    if (widget.talent.tier == '1'){
+      enableState = true;
+    }
+  }
+
   _buildSpellWidget() {
     if (enableState) {
       return GestureDetector(
           onTap: () => _increaseRank(),
           onDoubleTap: () => _decreaseRank(),
           onLongPress: () => _showDescription(),
-          child: Container(
-              // foregroundDecoration: BoxDecoration(
-              //   color: Colors.grey,
-              //   backgroundBlendMode: BlendMode.saturation,
-              // ),
-              child: Image.asset(imgLocation)));
+          child: Container(child: Image.asset(imgLocation)));
     } else {
       return Container(
           foregroundDecoration: BoxDecoration(
-            color: Colors.grey,
-            backgroundBlendMode: BlendMode.saturation,
-            borderRadius: BorderRadius.circular(6)
-            
-          ),
-          child: Image.asset(imgLocation)
-      );
+              color: Colors.grey,
+              backgroundBlendMode: BlendMode.saturation,
+              borderRadius: BorderRadius.circular(6)),
+          child: Image.asset(imgLocation));
     }
   }
 
@@ -82,6 +80,7 @@ class _SpellWidgetState extends State<SpellWidget> {
     spellName = widget.talent.icon.toLowerCase();
     imgLocation = 'assets/Icons/$spellName.png';
     maxRank = widget.talent.ranks.rank.length;
+    _setEnable();
   }
 
   @override

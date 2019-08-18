@@ -3,8 +3,11 @@ import 'package:wow_classic_talent_calculator/DetailScreen/arrow_widget.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/spell_widget.dart';
 import 'package:wow_classic_talent_calculator/model/position.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
+import 'package:wow_classic_talent_calculator/provider/Counter.dart';
+import 'package:wow_classic_talent_calculator/provider/TalentPointProvider.dart';
 import 'package:wow_classic_talent_calculator/utils/constants.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
+import 'package:provider/provider.dart';
 
 class TalentTreeWidget extends StatelessWidget {
   final List<Talent> specTalentList;
@@ -41,14 +44,17 @@ class TalentTreeWidget extends StatelessWidget {
                       kTalentScreenPadding *
                           2, // cell size * number of row + padding
                 ),
-                child: Container(
-                    padding: EdgeInsets.symmetric(
-                        vertical: kTalentScreenPadding,
-                        horizontal: kTalentScreenPadding),
-                    child: Stack(children: <Widget>[
-                      ..._buildTalentTree(),
-                      ...arrowList
-                    ]))));
+                child: ChangeNotifierProvider<TalentPointProvider>(
+                  builder: (_) => TalentPointProvider(0),
+                  child: Container(
+                      padding: EdgeInsets.symmetric(
+                          vertical: kTalentScreenPadding,
+                          horizontal: kTalentScreenPadding),
+                      child: Stack(children: <Widget>[
+                        ..._buildTalentTree(),
+                        ...arrowList
+                      ])),
+                )));
       });
     }
   }

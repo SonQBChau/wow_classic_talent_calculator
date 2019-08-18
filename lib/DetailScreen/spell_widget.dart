@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
+import 'package:wow_classic_talent_calculator/provider/TalentPointProvider.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 
 class SpellWidget extends StatefulWidget {
@@ -18,18 +20,21 @@ class _SpellWidgetState extends State<SpellWidget> {
   String imgLocation = '';
   int maxRank = 0;
 
-  void _increaseRank() {
+
+  void _increaseRank(talentPointProvider) {
     if (currentRank < maxRank) {
       int newRank = currentRank + 1;
+      talentPointProvider.increase();
       setState(() {
         currentRank = newRank;
       });
     }
   }
 
-  void _decreaseRank() {
+  void _decreaseRank(talentPointProvider) {
     if (currentRank > 0) {
       int newRank = currentRank - 1;
+      talentPointProvider.decrease();
       setState(() {
         currentRank = newRank;
       });
@@ -56,20 +61,23 @@ class _SpellWidgetState extends State<SpellWidget> {
     }
   }
 
-  _buildSpellWidget() {
+  _buildSpellWidget(counter) {
     if (enableState) {
       return GestureDetector(
-          onTap: () => _increaseRank(),
-          onDoubleTap: () => _decreaseRank(),
+          onTap: () => _increaseRank(counter),
+          onDoubleTap: () => _decreaseRank(counter),
           onLongPress: () => _showDescription(),
           child: Container(child: Image.asset(imgLocation)));
     } else {
-      return Container(
-          foregroundDecoration: BoxDecoration(
-              color: Colors.grey,
-              backgroundBlendMode: BlendMode.saturation,
-              borderRadius: BorderRadius.circular(6)),
-          child: Image.asset(imgLocation));
+      return GestureDetector(
+        onLongPress: () => _showDescription(),
+        child: Container(
+            foregroundDecoration: BoxDecoration(
+                color: Colors.grey,
+                backgroundBlendMode: BlendMode.saturation,
+                borderRadius: BorderRadius.circular(6)),
+            child: Image.asset(imgLocation)),
+      );
     }
   }
 
@@ -85,6 +93,9 @@ class _SpellWidgetState extends State<SpellWidget> {
 
   @override
   Widget build(BuildContext context) {
+    final talentPointProvider = Provider.of<TalentPointProvider>(context);
+    print(talentPointProvider.getPoint());
+
     return Container(
       width: SizeConfig.cellSize,
       height: SizeConfig.cellSize,
@@ -99,7 +110,7 @@ class _SpellWidgetState extends State<SpellWidget> {
           ),
           Align(
             alignment: Alignment.center,
-            child: _buildSpellWidget(),
+            child: _buildSpellWidget(talentPointProvider),
           ),
           Align(
             alignment: Alignment.bottomRight,

@@ -162,12 +162,6 @@ class BlockTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: SizedBox(),
-      // Container(
-      //   margin: EdgeInsets.all(1),
-      //   color: Colors.transparent,
-      //   width: double.infinity,
-      //   height: double.infinity,
-      // ),
     );
   }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
-import 'package:wow_classic_talent_calculator/provider/TalentPointProvider.dart';
+import 'package:wow_classic_talent_calculator/provider/TalentProvider.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 
 class SpellWidget extends StatefulWidget {
@@ -56,7 +56,10 @@ class _SpellWidgetState extends State<SpellWidget> {
   }
 
   _setEnable(){
-    if (widget.talent.tier == '1'){
+    final talentPointProvider = Provider.of<TalentProvider>(context);
+    final int currentPoints = talentPointProvider.getPoint();
+    final int tierPoints =  int.parse(widget.talent.tier ) * 5 - 5;
+    if (currentPoints >= tierPoints){
       enableState = true;
     }
   }
@@ -88,13 +91,14 @@ class _SpellWidgetState extends State<SpellWidget> {
     spellName = widget.talent.icon.toLowerCase();
     imgLocation = 'assets/Icons/$spellName.png';
     maxRank = widget.talent.ranks.rank.length;
-    _setEnable();
+
   }
 
   @override
   Widget build(BuildContext context) {
-    final talentPointProvider = Provider.of<TalentPointProvider>(context);
+    final talentPointProvider = Provider.of<TalentProvider>(context);
     print(talentPointProvider.getPoint());
+    _setEnable();
 
     return Container(
       width: SizeConfig.cellSize,

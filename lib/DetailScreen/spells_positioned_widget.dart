@@ -26,9 +26,6 @@ class TalentTreeWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-//    final double screenWidth = MediaQuery.of(context).size.width;
-//    final double space = (screenWidth -40) / 4;
-
     if (specTalentList.length == 0) {
       return SizedBox();
     } else {

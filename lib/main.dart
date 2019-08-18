@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'WoW Classic Talent Calculator',
       theme: ThemeData(
+//        brightness: Brightness.dark,
         primarySwatch: Colors.blue,
       ),
       home: DetailScreen(),

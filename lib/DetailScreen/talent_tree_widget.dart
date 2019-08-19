@@ -20,15 +20,18 @@ class TalentTreeWidget extends StatelessWidget {
       Widget spell = Positioned(
         top: talentList[i].position[0].toDouble() * SizeConfig.cellSize,
         left: talentList[i].position[1].toDouble() * SizeConfig.cellSize,
-        child: SpellWidget(talent: talentList[i], talentTree: this.talentTreeName),
+        child: SpellWidget(talentList:talentList, talent: talentList[i], talentTree: this.talentTreeName),
       );
       talentTree.add(spell);
     }
     return talentTree;
   }
 
+
+
   @override
   Widget build(BuildContext context) {
+
     if (talentList.length == 0) {
       return SizedBox();
     } else {

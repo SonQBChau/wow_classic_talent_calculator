@@ -101,6 +101,7 @@ class Talent {
     }
     return data;
   }
+
 }
 
 class Ranks {

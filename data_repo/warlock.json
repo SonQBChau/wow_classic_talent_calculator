@@ -297,7 +297,7 @@
             {
                 "Icon": "Spell_Shadow_GrimWard",
                 "Name": "Curse of Exhaustion",
-                "Points": "1",
+                "Points": "",
                 "Dependency": "Amplify Curse",
                 "Position": [4, 2],
                 "Tier": "5",
@@ -311,7 +311,7 @@
             {
                 "Icon": "Spell_Shadow_GrimWard",
                 "Name": "Improved Curse of Exhaustion",
-                "Points": "1",
+                "Points": "",
                 "Dependency": "Curse of Exhaustion",
                 "Position": [4, 3],
                 "Tier": "5",
@@ -338,7 +338,7 @@
             {
                 "Icon": "Spell_Shadow_ShadeTrueSight",
                 "Name": "Shadow Mastery",
-                "Points": "1",
+                "Points": "",
                 "Dependency": "Siphon Life",
                 "Position": [5, 1],
                 "Tier": "6",
@@ -603,7 +603,7 @@
                 {
                     "Icon": "Spell_Shadow_ImpPhaseShift",
                     "Name": "Master Summoner",
-                    "Points": "1",
+                    "Points": "",
                     "Dependency": "Fel Domination",
                     "Position": [3, 1],
                     "Tier": "4",
@@ -717,7 +717,7 @@
                 {
                     "Icon": "Spell_Shadow_ShadowPact",
                     "Name": "Master Demonologist",
-                    "Points": "5",
+                    "Points": "",
                     "Dependency": "Unholy Power",
                     "Position": [5, 2],
                     "Tier": "6",
@@ -748,7 +748,7 @@
                 {
                     "Icon": "Spell_Shadow_GatherShadows",
                     "Name": "Soul Link",
-                    "Points": "1",
+                    "Points": "",
                     "Dependency": "Demonic Sacrifice",
                     "Position": [6, 1],
                     "Tier": "7",

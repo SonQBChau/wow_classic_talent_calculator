@@ -5,9 +5,10 @@ import 'package:wow_classic_talent_calculator/provider/TalentProvider.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 
 class SpellWidget extends StatefulWidget {
+  final List<Talent> talentList;
   final Talent talent;
   final String talentTree;
-  SpellWidget({@required this.talent, this.talentTree});
+  SpellWidget({@required this.talent, this.talentTree, this.talentList});
 
   @override
   _SpellWidgetState createState() => _SpellWidgetState();
@@ -58,12 +59,31 @@ class _SpellWidgetState extends State<SpellWidget> {
     return widget.talent.ranks.rank[displayRank].description;
   }
 
+  findTalentByName(String name){
+    for (int i = 0; i < widget.talentList.length; i++) {
+      if (widget.talentList[i].name == name){
+        return widget.talentList[i];
+      }
+    }
+    return null;
+  }
+
   _setEnable(){
     final talentPointProvider = Provider.of<TalentProvider>(context);
     final int currentPoints = talentPointProvider.getTalentTreePoints(widget.talentTree);
     final int tierPoints =  int.parse(widget.talent.tier) * 5 - 5;
-    if (currentPoints >= tierPoints){
-      enableState = true;
+    // first, check for enough points for tier
+    if (currentPoints >= tierPoints) {
+      //second, check for dependency
+      if (widget.talent.dependency != '') {
+        Talent dependencyTalent = findTalentByName(widget.talent.dependency);
+        if (dependencyTalent.points == dependencyTalent.ranks.rank.length.toString()) {
+          enableState = true;
+        }
+      }
+      else {
+        enableState = true;
+      }
     }
   }
 
@@ -103,7 +123,6 @@ class _SpellWidgetState extends State<SpellWidget> {
   @override
   Widget build(BuildContext context) {
     final talentPointProvider = Provider.of<TalentProvider>(context);
-//    print(talentPointProvider.getTotalPoint());
     _setEnable();
 
     return Container(

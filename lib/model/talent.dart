@@ -22,7 +22,7 @@ class SpecTree {
   SpecTree.fromJson(Map<String, dynamic> json) {
     name = json['Name'];
     talents =
-    json['Talents'] != null ? new Talents.fromJson(json['Talents']) : null;
+        json['Talents'] != null ? new Talents.fromJson(json['Talents']) : null;
   }
 
   Map<String, dynamic> toJson() {
@@ -34,8 +34,6 @@ class SpecTree {
     return data;
   }
 }
-
-
 
 class Talents {
   List<Talent> talent;
@@ -68,15 +66,17 @@ class Talent {
   List<int> position;
   String tier;
   Ranks ranks;
+  bool enable;
 
   Talent(
       {this.icon,
-        this.name,
-        this.points,
-        this.dependency,
-        this.position,
-        this.tier,
-        this.ranks});
+      this.name,
+      this.points,
+      this.dependency,
+      this.position,
+      this.tier,
+      this.ranks,
+      this.enable = false});
 
   Talent.fromJson(Map<String, dynamic> json) {
     icon = json['Icon'];
@@ -101,7 +101,6 @@ class Talent {
     }
     return data;
   }
-
 }
 
 class Ranks {

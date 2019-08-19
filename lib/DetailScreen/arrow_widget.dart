@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wow_classic_talent_calculator/model/position.dart';
+import 'package:wow_classic_talent_calculator/model/talent.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 import 'package:wow_classic_talent_calculator/utils/constants.dart';
 
@@ -7,10 +8,14 @@ class ArrowWidget extends StatefulWidget {
   final Position startPosition;
   final Position endPosition;
   final String lengthType;
+  final String dependencyTalent;
+  final List<Talent> talentList;
   ArrowWidget({
     @required this.startPosition,
     @required this.endPosition,
     @required this.lengthType,
+    @required this.dependencyTalent,
+    @required this.talentList,
   });
 
   @override
@@ -18,32 +23,57 @@ class ArrowWidget extends StatefulWidget {
 }
 
 class _ArrowWidgetState extends State<ArrowWidget> {
-  bool enableState = false;
+  String arrowBodyImg = 'assets/Arrows/GreyArrowBody.png';
+  String arrowHeadImg = 'assets/Arrows/GreyArrowHead.png';
+
+  findTalentByName(String name) {
+    for (int i = 0; i < widget.talentList.length; i++) {
+      if (widget.talentList[i].name == name) {
+        return widget.talentList[i];
+      }
+    }
+    return null;
+  }
+
+  setEnable() {
+    Talent dependencyTalent = findTalentByName(widget.dependencyTalent);
+    if (dependencyTalent != null) {
+      if (dependencyTalent.enable) {
+        setState(() {
+          arrowBodyImg = 'assets/Arrows/ArrowBody.png';
+          arrowHeadImg = 'assets/Arrows/ArrowHead.png';
+        });
+      } else {
+        arrowBodyImg = 'assets/Arrows/GreyArrowBody.png';
+        arrowHeadImg = 'assets/Arrows/GreyArrowHead.png';
+      }
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
-    final double arrowBodyTop = SizeConfig.cellSize * widget.startPosition.row - SizeConfig.cellSize/7;
-    final double arrowBodyLeft = SizeConfig.cellSize * widget.startPosition.column - SizeConfig.cellSize/1.6;
+    final double arrowBodyTop = SizeConfig.cellSize * widget.startPosition.row -
+        SizeConfig.cellSize / 7;
+    final double arrowBodyLeft =
+        SizeConfig.cellSize * widget.startPosition.column -
+            SizeConfig.cellSize / 1.6;
     final double arrowBodyWidth = kArrowWidthSize;
     double arrowBodyHeight = 0;
-    final double arrowHeadTop = SizeConfig.cellSize * (widget.endPosition.row-1);
-    final double arrowHeadLeft = SizeConfig.cellSize * widget.startPosition.column - SizeConfig.cellSize/1.6;
+    final double arrowHeadTop =
+        SizeConfig.cellSize * (widget.endPosition.row - 1);
+    final double arrowHeadLeft =
+        SizeConfig.cellSize * widget.startPosition.column -
+            SizeConfig.cellSize / 1.6;
     final double arrowHeadWidth = kArrowWidthSize;
-    String arrowBodyImg = 'assets/Arrows/GreyArrowBody.png';
-    String arrowHeadImg = 'assets/Arrows/GreyArrowHead.png';
-    if(enableState){
-      setState(() {
-        arrowBodyImg = 'assets/Arrows/ArrowBody.png';
-        arrowHeadImg = 'assets/Arrows/ArrowHead.png';
-      });
 
-    }
-
-    if(widget.lengthType == 'medium'){
+    if (widget.lengthType == 'medium') {
       arrowBodyHeight = SizeConfig.cellSize * 1.15; //magic number
-    } else if(widget.lengthType == 'short') {
+    } else if (widget.lengthType == 'short') {
       arrowBodyHeight = SizeConfig.cellSize * 0.15; //magic number
     }
+
+    // set arrow enable or disable depend on the state of talent spell
+    setEnable();
 
     return Stack(
       children: <Widget>[
@@ -85,15 +115,18 @@ class RightArrowWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double arrowBodyTop = SizeConfig.cellSize * startPosition.row - SizeConfig.cellSize/1.6;
-    final double arrowBodyLeft = SizeConfig.cellSize * startPosition.column - SizeConfig.cellSize/7;
+    final double arrowBodyTop =
+        SizeConfig.cellSize * startPosition.row - SizeConfig.cellSize / 1.6;
+    final double arrowBodyLeft =
+        SizeConfig.cellSize * startPosition.column - SizeConfig.cellSize / 7;
     final double arrowBodyHeight = kArrowWidthSize;
     double arrowBodyWidth = 0;
-    final double arrowHeadTop = SizeConfig.cellSize * endPosition.row - SizeConfig.cellSize/1.6;
-    final double arrowHeadLeft = SizeConfig.cellSize * startPosition.column ;
+    final double arrowHeadTop =
+        SizeConfig.cellSize * endPosition.row - SizeConfig.cellSize / 1.6;
+    final double arrowHeadLeft = SizeConfig.cellSize * startPosition.column;
     final double arrowHeadHeight = kArrowWidthSize;
 
-    if(lengthType == 'short') {
+    if (lengthType == 'short') {
       arrowBodyWidth = SizeConfig.cellSize * 0.15; //magic number
     }
 

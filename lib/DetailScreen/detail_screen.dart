@@ -15,7 +15,8 @@ class DetailScreen extends StatefulWidget {
   _DetailScreenState createState() => _DetailScreenState();
 }
 
-class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderStateMixin {
+class _DetailScreenState extends State<DetailScreen>
+    with SingleTickerProviderStateMixin {
   TabController _tabController;
   List<Talent> firstTalentTree = [];
   List<Talent> secondTalentTree = [];
@@ -30,8 +31,8 @@ class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderSt
   Future<SpecTreeList> loadTalent() async {
     String jsonTalent = await loadJson();
     final jsonResponse = json.decode(jsonTalent);
-    SpecTreeList specTreeList = SpecTreeList.fromJson(jsonResponse);
-    return specTreeList;
+    SpecTreeList localSpecTreeList = SpecTreeList.fromJson(jsonResponse);
+    return localSpecTreeList;
   }
 
   Future buildTalentList() async {
@@ -40,6 +41,7 @@ class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderSt
       firstTalentTree = specTreeList.specTrees[0].talents.talent;
       secondTalentTree = specTreeList.specTrees[1].talents.talent;
       thirdTalentTree = specTreeList.specTrees[2].talents.talent;
+      // specTreeList = specTreeList;
     });
   }
 
@@ -54,7 +56,7 @@ class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderSt
   Widget build(BuildContext context) {
     //TODO: move SizeConfig to main page
     SizeConfig().init(context);
-//    print('rebuild detail screen');
+    // print(specTreeList);
 
     return Scaffold(
       appBar: AppBar(
@@ -81,56 +83,54 @@ class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderSt
           ],
         ),
       ),
-      body: ChangeNotifierProvider<TalentProvider>(
-        builder: (_) => TalentProvider(0,0,0,0),
-        child: TabBarView(
-          controller: _tabController,
-          children: [
-            Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("assets/Warlock/Affliction.png"),
-                  fit: BoxFit.cover,
-                ),
-              ),
-              child:
-                  TalentTreeWidget(
-                      talentTreeName:kFirstTalentTree,
-                      talentList: firstTalentTree,
-                      arrowList: afflictionArrowList
+      body: specTreeList == null
+          ? Container()
+          : ChangeNotifierProvider<TalentProvider>(
+              builder: (_) => TalentProvider(0, 0, 0, 0, specTreeList),
+              child: TabBarView(
+                controller: _tabController,
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage("assets/Warlock/Affliction.png"),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    child: TalentTreeWidget(
+                        talentTreeName: kFirstTalentTree,
+                        // talentList: firstTalentTree,
+                        arrowList: getAfflictionArrowList(firstTalentTree)),
                   ),
+                  Container(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage("assets/Warlock/Demonology.png"),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    // child: TalentTreeWidget(
+                    //   talentTreeName: kSecondTalentTree,
+                    //   talentList: secondTalentTree,
+                    //   // arrowList: demonologyArrowList
+                    // ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage("assets/Warlock/Destruction.png"),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    // child: TalentTreeWidget(
+                    //   talentTreeName: kThirdTalentTree,
+                    //   talentList: thirdTalentTree,
+                    //   // arrowList: destructionArrowList
+                    // ),
+                  )
+                ],
+              ),
             ),
-            Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("assets/Warlock/Demonology.png"),
-                  fit: BoxFit.cover,
-                ),
-              ),
-              child:
-                  TalentTreeWidget(
-                      talentTreeName:kSecondTalentTree,
-                      talentList: secondTalentTree,
-                      arrowList: demonologyArrowList
-                  ),
-            ),
-            Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("assets/Warlock/Destruction.png"),
-                  fit: BoxFit.cover,
-                ),
-              ),
-              child:
-                  TalentTreeWidget(
-                      talentTreeName:kThirdTalentTree,
-                      talentList: thirdTalentTree,
-                      arrowList: destructionArrowList
-                  ),
-            )
-          ],
-        ),
-      ),
     );
   }
 }

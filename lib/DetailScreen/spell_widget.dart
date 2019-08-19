@@ -8,7 +8,12 @@ class SpellWidget extends StatefulWidget {
   final List<Talent> talentList;
   final Talent talent;
   final String talentTree;
-  SpellWidget({@required this.talent, this.talentTree, this.talentList});
+  final String currentPoint;
+  SpellWidget(
+      {@required this.talent,
+      this.talentTree,
+      this.talentList,
+      this.currentPoint});
 
   @override
   _SpellWidgetState createState() => _SpellWidgetState();
@@ -22,27 +27,29 @@ class _SpellWidgetState extends State<SpellWidget> {
   String imgLocation = '';
   int maxRank = 0;
 
-
   void _increaseRank(talentPointProvider) {
     if (currentRank < maxRank) {
-      int newRank = currentRank + 1;
+      currentRank++;
       talentPointProvider.increase(widget.talentTree);
-      widget.talent.points = newRank.toString();
-      setState(() {
-        currentRank = newRank;
-      });
+      talentPointProvider.setTalentPoint(widget.talent, currentRank);
+      // print('increase rank');
+      // widget.talent.points = newRank.toString();
+      // setState(() {
+      //   currentRank = newRank;
+      // });
     }
   }
 
   void _decreaseRank(talentPointProvider) {
     //check for dependency
     if (currentRank > 0) {
-      int newRank = currentRank - 1;
+      currentRank--;
       talentPointProvider.decrease(widget.talentTree);
-      widget.talent.points = newRank.toString();
-      setState(() {
-        currentRank = newRank;
-      });
+      talentPointProvider.setTalentPoint(widget.talent, currentRank);
+      // widget.talent.points = newRank.toString();
+      // setState(() {
+      //   currentRank = newRank;
+      // });
     }
   }
 
@@ -60,37 +67,40 @@ class _SpellWidgetState extends State<SpellWidget> {
     return widget.talent.ranks.rank[displayRank].description;
   }
 
-  findTalentByName(String name){
+  findTalentByName(String name) {
     for (int i = 0; i < widget.talentList.length; i++) {
-      if (widget.talentList[i].name == name){
+      if (widget.talentList[i].name == name) {
         return widget.talentList[i];
       }
     }
     return null;
   }
 
-  _setEnable(){
+  _setEnable() {
     final talentPointProvider = Provider.of<TalentProvider>(context);
-    final int currentPoints = talentPointProvider.getTalentTreePoints(widget.talentTree);
-    final int tierPoints =  int.parse(widget.talent.tier) * 5 - 5;
+    final int currentPoints =
+        talentPointProvider.getTalentTreePoints(widget.talentTree);
+    final int tierPoints = int.parse(widget.talent.tier) * 5 - 5;
     // first, check for enough points for tier
     if (currentPoints >= tierPoints) {
       //second, check for dependency
       if (widget.talent.dependency != '') {
         Talent dependencyTalent = findTalentByName(widget.talent.dependency);
-        if (dependencyTalent.points == dependencyTalent.ranks.rank.length.toString()) {
+        if (dependencyTalent.points ==
+            dependencyTalent.ranks.rank.length.toString()) {
           enableState = true;
-        }
-        else{
+          widget.talent.enable = true;
+        } else {
           enableState = false;
-        };
-      }
-      else {
+          widget.talent.enable = false;
+        }
+      } else {
         enableState = true;
+        widget.talent.enable = true;
       }
-    }
-    else{
+    } else {
       enableState = false;
+      widget.talent.enable = false;
     }
   }
 
@@ -124,13 +134,13 @@ class _SpellWidgetState extends State<SpellWidget> {
     if (widget.talent.points != '') {
       currentRank = int.parse(widget.talent.points);
     }
-
   }
 
   @override
   Widget build(BuildContext context) {
     final talentPointProvider = Provider.of<TalentProvider>(context);
     _setEnable();
+    String currentPoint = widget.currentPoint == '' ? '0' : widget.currentPoint;
 
     return Container(
       width: SizeConfig.cellSize,
@@ -157,7 +167,7 @@ class _SpellWidgetState extends State<SpellWidget> {
                 borderRadius: BorderRadius.circular(3),
               ),
               child: Text(
-                '$currentRank/$maxRank',
+                '$currentPoint/$maxRank',
                 style: TextStyle(color: Colors.white),
               ),
             ),

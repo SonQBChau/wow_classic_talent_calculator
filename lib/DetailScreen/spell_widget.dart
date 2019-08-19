@@ -35,6 +35,7 @@ class _SpellWidgetState extends State<SpellWidget> {
   }
 
   void _decreaseRank(talentPointProvider) {
+    //check for dependency
     if (currentRank > 0) {
       int newRank = currentRank - 1;
       talentPointProvider.decrease(widget.talentTree);

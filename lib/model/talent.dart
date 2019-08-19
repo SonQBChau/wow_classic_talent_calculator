@@ -61,10 +61,10 @@ class Talents {
 class Talent {
   String icon;
   String name;
-  String points;
+  int points;
   String dependency;
   List<int> position;
-  String tier;
+  int tier;
   Ranks ranks;
   bool enable;
 
@@ -127,7 +127,7 @@ class Ranks {
 }
 
 class Rank {
-  String number;
+  int number;
   String description;
 
   Rank({this.number, this.description});

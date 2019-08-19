@@ -4,29 +4,29 @@
         "Talent": [{
             "Icon": "Spell_Shadow_UnsummonBuilding",
             "Name": "Suppression",
-            "Points": "",
+            "Points": 0,
             "Dependency": "",
             "Position": [0, 1],
-            "Tier": "1",
+            "Tier": 1,
             "Ranks": {
                 "Rank": [{
-                    "Number": "1",
+                    "Number": 1,
                     "Description": "Reduces the chance for enemies to resist your Affliction spells by 2%."
                 },
                     {
-                        "Number": "2",
+                        "Number": 2,
                         "Description": "Reduces the chance for enemies to resist your Affliction spells by 4%."
                     },
                     {
-                        "Number": "3",
+                        "Number": 3,
                         "Description": "Reduces the chance for enemies to resist your Affliction spells by 6%."
                     },
                     {
-                        "Number": "4",
+                        "Number": 4,
                         "Description": "Reduces the chance for enemies to resist your Affliction spells by 8%."
                     },
                     {
-                        "Number": "5",
+                        "Number": 5,
                         "Description": "Reduces the chance for enemies to resist your Affliction spells by 10%."
                     }
                 ]
@@ -35,29 +35,29 @@
             {
                 "Icon": "Spell_Shadow_AbominationExplosion",
                 "Name": "Improved Corruption",
-                "Points": "",
+                "Points": 0,
                 "Dependency": "",
                 "Position": [0, 2],
-                "Tier": "1",
+                "Tier": 1,
                 "Ranks": {
                     "Rank": [{
-                        "Number": "1",
+                        "Number": 1,
                         "Description": "Reduces the casting time of your Corruption spell by 0.4 sec."
                     },
                         {
-                            "Number": "2",
+                            "Number": 2,
                             "Description": "Reduces the casting time of your Corruption spell by 0.8 sec."
                         },
                         {
-                            "Number": "3",
+                            "Number": 3,
                             "Description": "Reduces the casting time of your Corruption spell by 1.2 sec."
                         },
                         {
-                            "Number": "4",
+                            "Number": 4,
                             "Description": "Reduces the casting time of your Corruption spell by 1.6 sec."
                         },
                         {
-                            "Number": "5",
+                            "Number": 5,
                             "Description": "Reduces the casting time of your Corruption spell by 2 sec."
                         }
                     ]
@@ -66,21 +66,21 @@
             {
                 "Icon": "Spell_Shadow_CurseOfMannoroth",
                 "Name": "Improved Curse of Weakness",
-                "Points": "",
+                "Points": 0,
                 "Dependency": "",
                 "Position": [1, 0],
-                "Tier": "2",
+                "Tier": 2,
                 "Ranks": {
                     "Rank": [{
-                        "Number": "1",
+                        "Number": 1,
                         "Description": "Increases the effect of your Curse of Weakness by 6%."
                     },
                         {
-                            "Number": "2",
+                            "Number": 2,
                             "Description": "Increases the effect of your Curse of Weakness by 13%."
                         },
                         {
-                            "Number": "3",
+                            "Number": 3,
                             "Description": "Increases the effect of your Curse of Weakness by 20%."
                         }
                     ]
@@ -89,17 +89,17 @@
             {
                 "Icon": "Spell_Shadow_Haunting",
                 "Name": "Improved Drain Soul",
-                "Points": "",
+                "Points": 0,
                 "Dependency": "",
                 "Position": [1, 1],
-                "Tier": "2",
+                "Tier": 2,
                 "Ranks": {
                     "Rank": [{
-                        "Number": "1",
+                        "Number": 1,
                         "Description": "Gives you a 50% chance to get a 100% increase to your Mana regeneration for 10 sec if the target is killed by you while you drain its soul.  In addition your Mana may continue to regenerate while casting at 50% of normal."
                     },
                         {
-                            "Number": "2",
+                            "Number": 2,
                             "Description": "Gives you a 100% chance to get a 100% increase to your Mana regeneration for 10 sec if the target is killed by you while you drain its soul.  In addition your Mana may continue to regenerate while casting at 50% of normal."
                         }
                     ]
@@ -108,17 +108,17 @@
             {
                 "Icon": "Spell_Shadow_BurningSpirit",
                 "Name": "Improved Life Tap",
-                "Points": "",
+                "Points": 0,
                 "Dependency": "",
                 "Position": [1, 2],
-                "Tier": "2",
+                "Tier": 2,
                 "Ranks": {
                     "Rank": [{
-                        "Number": "1",
+                        "Number": 1,
                         "Description": "Increases the amount of Mana awarded by your Life Tap spell by 10%."
                     },
                         {
-                            "Number": "2",
+                            "Number": 2,
                             "Description": "Increases the amount of Mana awarded by your Life Tap spell by 20%."
                         }
                     ]
@@ -127,29 +127,29 @@
             {
                 "Icon": "Spell_Shadow_LifeDrain02",
                 "Name": "Improved Drain Life",
-                "Points": "",
+                "Points": 0,
                 "Dependency": "",
                 "Position": [1, 3],
-                "Tier": "2",
+                "Tier": 2,
                 "Ranks": {
                     "Rank": [{
-                        "Number": "1",
+                        "Number": 1,
                         "Description": "Increases the Health drained by your Drain Life spell by 2%."
                     },
                         {
-                            "Number": "2",
+                            "Number": 2,
                             "Description": "Increases the Health drained by your Drain Life spell by 4%."
                         },
                         {
-                            "Number": "3",
+                            "Number": 3,
                             "Description": "Increases the Health drained by your Drain Life spell by 6%."
                         },
                         {
-                            "Number": "4",
+                            "Number": 4,
                             "Description": "Increases the Health drained by your Drain Life spell by 8%."
                         },
                         {
-                            "Number": "5",
+                            "Number": 5,
                             "Description": "Increases the Health drained by your Drain Life spell by 10%."
                         }
                     ]
@@ -158,21 +158,21 @@
             {
                 "Icon": "Spell_Shadow_CurseOfSargeras",
                 "Name": "Improved Curse of Agony",
-                "Points": "",
+                "Points": 0,
                 "Dependency": "",
                 "Position": [2, 0],
-                "Tier": "3",
+                "Tier": 3,
                 "Ranks": {
                     "Rank": [{
-                        "Number": "1",
+                        "Number": 1,
                         "Description": "Increases the damage done by your Curse of Agony by 2%."
                     },
                         {
-                            "Number": "2",
+                            "Number": 2,
                             "Description": "Increases the damage done by your Curse of Agony by 4%."
                         },
                         {
-                            "Number": "3",
+                            "Number": 3,
                             "Description": "Increases the damage done by your Curse of Agony by 6%."
                         }
                     ]
@@ -181,29 +181,29 @@
             {
                 "Icon": "Spell_Shadow_FingerOfDeath",
                 "Name": "Fel Concentration",
-                "Points": "",
+                "Points": 0,
                 "Dependency": "",
                 "Position": [2, 1],
-                "Tier": "3",
+                "Tier": 3,
                 "Ranks": {
                     "Rank": [{
-                        "Number": "1",
+                        "Number": 1,
                         "Description": "Gives you a 14% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell."
                     },
                         {
-                            "Number": "2",
+                            "Number": 2,
                             "Description": "Gives you a 28% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell."
                         },
                         {
-                            "Number": "3",
+                            "Number": 3,
                             "Description": "Gives you a 42% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell."
                         },
                         {
-                            "Number": "4",
+                            "Number": 4,
                             "Description": "Gives you a 56% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell."
                         },
                         {
-                            "Number": "5",
+                            "Number": 5,
                             "Description": "Gives you a 70% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell."
                         }
                     ]
@@ -212,13 +212,13 @@
             {
                 "Icon": "Spell_Shadow_Contagion",
                 "Name": "Amplify Curse",
-                "Points": "",
+                "Points": 0,
                 "Dependency": "",
                 "Position": [2, 2],
-                "Tier": "3",
+                "Tier": 3,
                 "Ranks": {
                     "Rank": [{
-                        "Number": "1",
+                        "Number": 1,
                         "Description": "Increases the effect of your next Curse of Weakness or Curse of Agony by 50%, or your next Curse of Exhaustion by 20%.  Lasts 30 sec."
                     }]
                 }
@@ -226,17 +226,17 @@
             {
                 "Icon": "Spell_Shadow_CallofBone",
                 "Name": "Grim Reach",
-                "Points": "",
+                "Points": 0,
                 "Dependency": "",
                 "Position": [3, 0],
-                "Tier": "4",
+                "Tier": 4,
                 "Ranks": {
                     "Rank": [{
-                        "Number": "1",
+                        "Number": 1,
                         "Description": "Increases the range of your Affliction spells by 10%."
                     },
                         {
-                            "Number": "2",
+                            "Number": 2,
                             "Description": "Increases the range of your Affliction spells by 20%."
                         }
                     ]
@@ -245,17 +245,17 @@
             {
                 "Icon": "Spell_Shadow_Twilight",
                 "Name": "Nightfall",
-                "Points": "",
+                "Points": 0,
                 "Dependency": "",
                 "Position": [3, 1],
-                "Tier": "4",
+                "Tier": 4,
                 "Ranks": {
                     "Rank": [{
-                        "Number": "1",
+                        "Number": 1,
                         "Description": "Gives your Corruption and Drain Life spells a 2% chance to cause you to enter a Shadow Trance state after damaging the opponent.  The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%."
                     },
                         {
-                            "Number": "2",
+                            "Number": 2,
                             "Description": "Gives your Corruption and Drain Life spells a 4% chance to cause you to enter a Shadow Trance state after damaging the opponent.  The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%."
                         }
                     ]
@@ -264,17 +264,17 @@
             {
                 "Icon": "Spell_Shadow_SiphonMana",
                 "Name": "Improved Drain Mana",
-                "Points": "",
+                "Points": 0,
                 "Dependency": "",
                 "Position": [3, 3],
-                "Tier": "4",
+                "Tier": 4,
                 "Ranks": {
                     "Rank": [{
-                        "Number": "1",
+                        "Number": 1,
                         "Description": "Causes 15% of the Mana drained by your Drain Mana spell to damage the opponent."
                     },
                         {
-                            "Number": "2",
+                            "Number": 2,
                             "Description": "Causes 30% of the Mana drained by your Drain Mana spell to damage the opponent."
                         }
                     ]
@@ -283,13 +283,13 @@
             {
                 "Icon": "Spell_Shadow_Requiem",
                 "Name": "Siphon Life",
-                "Points": "",
+                "Points": 0,
                 "Dependency": "",
                 "Position": [4, 1],
-                "Tier": "5",
+                "Tier": 5,
                 "Ranks": {
                     "Rank": [{
-                        "Number": "1",
+                        "Number": 1,
                         "Description": "Transfers 15 health from the target to the caster every 3 sec.  Lasts 30 sec."
                     }]
                 }
@@ -297,13 +297,13 @@
             {
                 "Icon": "Spell_Shadow_GrimWard",
                 "Name": "Curse of Exhaustion",
-                "Points": "",
+                "Points": 0,
                 "Dependency": "Amplify Curse",
                 "Position": [4, 2],
-                "Tier": "5",
+                "Tier": 5,
                 "Ranks": {
                     "Rank": [{
-                        "Number": "1",
+                        "Number": 1,
                         "Description": "Reduces the target's movement speed by 10% for 12 sec.  Only one Curse per Warlock can be active on any one target."
                     }]
                 }
@@ -311,25 +311,25 @@
             {
                 "Icon": "Spell_Shadow_GrimWard",
                 "Name": "Improved Curse of Exhaustion",
-                "Points": "",
+                "Points": 0,
                 "Dependency": "Curse of Exhaustion",
                 "Position": [4, 3],
-                "Tier": "5",
+                "Tier": 5,
                 "Ranks": {
                     "Rank": [{
-                        "Number": "1",
+                        "Number": 1,
                         "Description": "Increases the speed reduction of your Curse of Exhaustion by 5%."
                     },
                         {
-                            "Number": "2",
+                            "Number": 2,
                             "Description": "Increases the speed reduction of your Curse of Exhaustion by 10%."
                         },
                         {
-                            "Number": "3",
+                            "Number": 3,
                             "Description": "Increases the speed reduction of your Curse of Exhaustion by 15%."
                         },
                         {
-                            "Number": "4",
+                            "Number": 4,
                             "Description": "Increases the speed reduction of your Curse of Exhaustion by 20%."
                         }
                     ]
@@ -338,29 +338,29 @@
             {
                 "Icon": "Spell_Shadow_ShadeTrueSight",
                 "Name": "Shadow Mastery",
-                "Points": "",
+                "Points": 0,
                 "Dependency": "Siphon Life",
                 "Position": [5, 1],
-                "Tier": "6",
+                "Tier": 6,
                 "Ranks": {
                     "Rank": [{
-                        "Number": "1",
+                        "Number": 1,
                         "Description": "Increases the damage dealt or life drained by your Shadow spells by 2%."
                     },
                         {
-                            "Number": "2",
+                            "Number": 2,
                             "Description": "Increases the damage dealt or life drained by your Shadow spells by 4%."
                         },
                         {
-                            "Number": "3",
+                            "Number": 3,
                             "Description": "Increases the damage dealt or life drained by your Shadow spells by 6%."
                         },
                         {
-                            "Number": "4",
+                            "Number": 4,
                             "Description": "Increases the damage dealt or life drained by your Shadow spells by 8%."
                         },
                         {
-                            "Number": "5",
+                            "Number": 5,
                             "Description": "Increases the damage dealt or life drained by your Shadow spells by 10%."
                         }
                     ]
@@ -369,13 +369,13 @@
             {
                 "Icon": "Spell_Shadow_DarkRitual",
                 "Name": "Dark Pact",
-                "Points": "",
+                "Points": 0,
                 "Dependency": "",
                 "Position": [6, 1],
-                "Tier": "7",
+                "Tier": 7,
                 "Ranks": {
                     "Rank": [{
-                        "Number": "1",
+                        "Number": 1,
                         "Description": "Drains 150 of your pet's Mana, returning 100% to you."
                     }]
                 }
@@ -389,17 +389,17 @@
             "Talent": [{
                 "Icon": "INV_Stone_04",
                 "Name": "Improved Healthstone",
-                "Points": "",
+                "Points": 0,
                 "Dependency": "",
                 "Position": [0, 0],
-                "Tier": "1",
+                "Tier": 1,
                 "Ranks": {
                     "Rank": [{
-                        "Number": "1",
+                        "Number": 1,
                         "Description": "Increases the amount of Health restored by your Healthstone by 10%."
                     },
                         {
-                            "Number": "2",
+                            "Number": 2,
                             "Description": "Increases the amount of Health restored by your Healthstone by 20%."
                         }
                     ]
@@ -408,21 +408,21 @@
                 {
                     "Icon": "Spell_Shadow_SummonImp",
                     "Name": "Improved Imp",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [0, 1],
-                    "Tier": "1",
+                    "Tier": 1,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Increases the effect of your Imp's Firebolt, Fire Shield, and Blood Pact spells by 10%."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Increases the effect of your Imp's Firebolt, Fire Shield, and Blood Pact spells by 20%."
                             },
                             {
-                                "Number": "3",
+                                "Number": 3,
                                 "Description": "Increases the effect of your Imp's Firebolt, Fire Shield, and Blood Pact spells by 30%."
                             }
                         ]
@@ -431,29 +431,29 @@
                 {
                     "Icon": "Spell_Shadow_Metamorphosis",
                     "Name": "Demonic Embrace",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [0, 2],
-                    "Tier": "1",
+                    "Tier": 1,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Increases your total Stamina by 3% but reduces your total Spirit by 1%."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Increases your total Stamina by 6% but reduces your total Spirit by 2%."
                             },
                             {
-                                "Number": "3",
+                                "Number": 3,
                                 "Description": "Increases your total Stamina by 9% but reduces your total Spirit by 3%."
                             },
                             {
-                                "Number": "4",
+                                "Number": 4,
                                 "Description": "Increases your total Stamina by 12% but reduces your total Spirit by 4%."
                             },
                             {
-                                "Number": "5",
+                                "Number": 5,
                                 "Description": "Increases your total Stamina by 15% but reduces your total Spirit by 5%."
                             }
                         ]
@@ -462,17 +462,17 @@
                 {
                     "Icon": "Spell_Shadow_LifeDrain",
                     "Name": "Improved Health Funnel",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [1, 0],
-                    "Tier": "2",
+                    "Tier": 2,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Increases the amount of Health transferred by your Health Funnel spell by 10%."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Increases the amount of Health transferred by your Health Funnel spell by 20%."
                             }
                         ]
@@ -481,21 +481,21 @@
                 {
                     "Icon": "Spell_Shadow_SummonVoidWalker",
                     "Name": "Improved Voidwalker",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [1, 1],
-                    "Tier": "2",
+                    "Tier": 2,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice and Suffering spells by 10%."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice and Suffering spells by 20%."
                             },
                             {
-                                "Number": "3",
+                                "Number": 3,
                                 "Description": "Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice and Suffering spells by 30%."
                             }
                         ]
@@ -504,29 +504,29 @@
                 {
                     "Icon": "Spell_Holy_MagicalSentry",
                     "Name": "Fel Intellect",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [1, 2],
-                    "Tier": "2",
+                    "Tier": 2,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Increases the maximum Mana of your Imp, Voidwalker, Succubus, and Felhunter by 3%."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Increases the maximum Mana of your Imp, Voidwalker, Succubus, and Felhunter by 6%."
                             },
                             {
-                                "Number": "3",
+                                "Number": 3,
                                 "Description": "Increases the maximum Mana of your Imp, Voidwalker, Succubus, and Felhunter by 9%."
                             },
                             {
-                                "Number": "4",
+                                "Number": 4,
                                 "Description": "Increases the maximum Mana of your Imp, Voidwalker, Succubus, and Felhunter by 12%."
                             },
                             {
-                                "Number": "5",
+                                "Number": 5,
                                 "Description": "Increases the maximum Mana of your Imp, Voidwalker, Succubus, and Felhunter by 15%."
                             }
                         ]
@@ -535,21 +535,21 @@
                 {
                     "Icon": "Spell_Shadow_SummonSuccubus",
                     "Name": "Improved Succubus",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [2, 0],
-                    "Tier": "3",
+                    "Tier": 3,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Increases the effect of your Succubus' Lash of Pain and Soothing Kiss spells by 10%, and increases the duration of your Succubus' Seduction and Lesser Invisibility spells by 10%."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Increases the effect of your Succubus' Lash of Pain and Soothing Kiss spells by 20%, and increases the duration of your Succubus' Seduction and Lesser Invisibility spells by 20%."
                             },
                             {
-                                "Number": "3",
+                                "Number": 3,
                                 "Description": "Increases the effect of your Succubus' Lash of Pain and Soothing Kiss spells by 30%, and increases the duration of your Succubus' Seduction and Lesser Invisibility spells by 30%."
                             }
                         ]
@@ -558,13 +558,13 @@
                 {
                     "Icon": "Spell_Nature_RemoveCurse",
                     "Name": "Fel Domination",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [2, 1],
-                    "Tier": "3",
+                    "Tier": 3,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Your next Imp, Voidwalker, Succubus, or Felhunter Summon spell has its casting time reduced by 5.5 sec and its Mana cost reduced by 50%."
                         }]
                     }
@@ -572,29 +572,29 @@
                 {
                     "Icon": "Spell_Shadow_AntiShadow",
                     "Name": "Fel Stamina",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [2, 2],
-                    "Tier": "3",
+                    "Tier": 3,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Increases the maximum Health of your Imp, Voidwalker, Succubus, and Felhunter by 3%."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Increases the maximum Health of your Imp, Voidwalker, Succubus, and Felhunter by 6%."
                             },
                             {
-                                "Number": "3",
+                                "Number": 3,
                                 "Description": "Increases the maximum Health of your Imp, Voidwalker, Succubus, and Felhunter by 9%."
                             },
                             {
-                                "Number": "4",
+                                "Number": 4,
                                 "Description": "Increases the maximum Health of your Imp, Voidwalker, Succubus, and Felhunter by 12%."
                             },
                             {
-                                "Number": "5",
+                                "Number": 5,
                                 "Description": "Increases the maximum Health of your Imp, Voidwalker, Succubus, and Felhunter by 15%."
                             }
                         ]
@@ -603,17 +603,17 @@
                 {
                     "Icon": "Spell_Shadow_ImpPhaseShift",
                     "Name": "Master Summoner",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "Fel Domination",
                     "Position": [3, 1],
-                    "Tier": "4",
+                    "Tier": 4,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Reduces the casting time of your Imp, Voidwalker, Succubus, and Felhunter Summoning spells by 2 sec and the Mana cost by 20%."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Reduces the casting time of your Imp, Voidwalker, Succubus, and Felhunter Summoning spells by 4 sec and the Mana cost by 40%."
                             }
                         ]
@@ -622,29 +622,29 @@
                 {
                     "Icon": "Spell_Shadow_ShadowWordDominate",
                     "Name": "Unholy Power",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [3, 2],
-                    "Tier": "4",
+                    "Tier": 4,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Increases the damage done by your Voidwalker, Succubus, and Felhunter's melee attacks by 4%."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Increases the damage done by your Voidwalker, Succubus, and Felhunter's melee attacks by 8%."
                             },
                             {
-                                "Number": "3",
+                                "Number": 3,
                                 "Description": "Increases the damage done by your Voidwalker, Succubus, and Felhunter's melee attacks by 12%."
                             },
                             {
-                                "Number": "4",
+                                "Number": 4,
                                 "Description": "Increases the damage done by your Voidwalker, Succubus, and Felhunter's melee attacks by 16%."
                             },
                             {
-                                "Number": "5",
+                                "Number": 5,
                                 "Description": "Increases the damage done by your Voidwalker, Succubus, and Felhunter's melee attacks by 20%."
                             }
                         ]
@@ -653,29 +653,29 @@
                 {
                     "Icon": "Spell_Shadow_EnslaveDemon",
                     "Name": "Improved Enslave Demon",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [4, 0],
-                    "Tier": "5",
+                    "Tier": 5,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Reduces the Attack Speed and Casting Speed penalty of your Enslave Demon spell by 2% and reduces the resist chance by 2%."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Reduces the Attack Speed and Casting Speed penalty of your Enslave Demon spell by 4% and reduces the resist chance by 4%."
                             },
                             {
-                                "Number": "3",
+                                "Number": 3,
                                 "Description": "Reduces the Attack Speed and Casting Speed penalty of your Enslave Demon spell by 6% and reduces the resist chance by 6%."
                             },
                             {
-                                "Number": "4",
+                                "Number": 4,
                                 "Description": "Reduces the Attack Speed and Casting Speed penalty of your Enslave Demon spell by 8% and reduces the resist chance by 8%."
                             },
                             {
-                                "Number": "5",
+                                "Number": 5,
                                 "Description": "Reduces the Attack Speed and Casting Speed penalty of your Enslave Demon spell by 10% and reduces the resist chance by 10%."
                             }
                         ]
@@ -684,13 +684,13 @@
                 {
                     "Icon": "Spell_Shadow_PsychicScream",
                     "Name": "Demonic Sacrifice",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [4, 1],
-                    "Tier": "5",
+                    "Tier": 5,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "When activated, sacrifices your summoned demon to grant you an effect that lasts 30 min.  The effect is canceled if any Demon is summoned.\n\nImp: Increases your Fire damage by 15%.\n\nVoidwalker: Restores 3% of total Health every 4 sec.\n\nSuccubus: Increases your Shadow damage by 15%.\n\nFelhunter: Restores 2% of total Mana every 4 sec."
                         }]
                     }
@@ -698,17 +698,17 @@
                 {
                     "Icon": "INV_Ammo_FireTar",
                     "Name": "Improved Firestone",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [4, 3],
-                    "Tier": "5",
+                    "Tier": 5,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Increases the bonus Fire damage from Firestones and the Firestone effect by 15%."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Increases the bonus Fire damage from Firestones and the Firestone effect by 30%."
                             }
                         ]
@@ -717,29 +717,29 @@
                 {
                     "Icon": "Spell_Shadow_ShadowPact",
                     "Name": "Master Demonologist",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "Unholy Power",
                     "Position": [5, 2],
-                    "Tier": "6",
+                    "Tier": 6,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Reduces threat caused by 4%.\n\nVoidwalker - Reduces physical damage taken by 2%.\n\nSuccubus - Increases all damage caused by 2%.\n\nFelhunter - Increases all resistances by .2 per level."
                         },
                             {
-                                "Number": "1",
+                                "Number": 1,
                                 "Description": "Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Reduces threat caused by 8%.\n\nVoidwalker - Reduces physical damage taken by 4%.\n\nSuccubus - Increases all damage caused by 4%.\n\nFelhunter - Increases all resistances by .4 per level."
                             },
                             {
-                                "Number": "1",
+                                "Number": 1,
                                 "Description": "Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Reduces threat caused by 12%.\n\nVoidwalker - Reduces physical damage taken by 6%.\n\nSuccubus - Increases all damage caused by 6%.\n\nFelhunter - Increases all resistances by .6 per level."
                             },
                             {
-                                "Number": "1",
+                                "Number": 1,
                                 "Description": "Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Reduces threat caused by 16%.\n\nVoidwalker - Reduces physical damage taken by 8%.\n\nSuccubus - Increases all damage caused by 8%.\n\nFelhunter - Increases all resistances by .8 per level."
                             },
                             {
-                                "Number": "1",
+                                "Number": 1,
                                 "Description": "Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Reduces threat caused by 20%.\n\nVoidwalker - Reduces physical damage taken by 10%.\n\nSuccubus - Increases all damage caused by 10%.\n\nFelhunter - Increases all resistances by 1 per level."
                             }
                         ]
@@ -748,13 +748,13 @@
                 {
                     "Icon": "Spell_Shadow_GatherShadows",
                     "Name": "Soul Link",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "Demonic Sacrifice",
                     "Position": [6, 1],
-                    "Tier": "7",
+                    "Tier": 7,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "When active, 30% of all damage taken by the caster is taken by your Imp, Voidwalker, Succubus, or Felhunter demon instead.  In addition, both the demon and master will inflict 3% more damage.  Lasts as long as the demon is active."
                         }]
                     }
@@ -762,17 +762,17 @@
                 {
                     "Icon": "INV_Misc_Gem_Sapphire_01",
                     "Name": "Improved Spellstone",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [6, 2],
-                    "Tier": "7",
+                    "Tier": 7,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Increases the amount of damage absorbed by your Spellstone by 15%."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Increases the amount of damage absorbed by your Spellstone by 30%."
                             }
                         ]
@@ -787,29 +787,29 @@
             "Talent": [{
                 "Icon": "Spell_Shadow_ShadowBolt",
                 "Name": "Improved Shadow Bolt",
-                "Points": "",
+                "Points": 0,
                 "Dependency": "",
                 "Position": [0, 1],
-                "Tier": "1",
+                "Tier": 1,
                 "Ranks": {
                     "Rank": [{
-                        "Number": "1",
+                        "Number": 1,
                         "Description": "Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 4% until 4 non-periodic damage sources are applied.  Effect lasts a maximum of 12 sec."
                     },
                         {
-                            "Number": "2",
+                            "Number": 2,
                             "Description": "Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 8% until 4 non-periodic damage sources are applied.  Effect lasts a maximum of 12 sec."
                         },
                         {
-                            "Number": "3",
+                            "Number": 3,
                             "Description": "Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 12% until 4 non-periodic damage sources are applied.  Effect lasts a maximum of 12 sec."
                         },
                         {
-                            "Number": "4",
+                            "Number": 4,
                             "Description": "Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 16% until 4 non-periodic damage sources are applied.  Effect lasts a maximum of 12 sec."
                         },
                         {
-                            "Number": "5",
+                            "Number": 5,
                             "Description": "Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 20% until 4 non-periodic damage sources are applied.  Effect lasts a maximum of 12 sec."
                         }
                     ]
@@ -818,29 +818,29 @@
                 {
                     "Icon": "Spell_Fire_WindsofWoe",
                     "Name": "Cataclysm",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [0, 2],
-                    "Tier": "1",
+                    "Tier": 1,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Reduces the Mana cost of your Destruction spells by 1%."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Reduces the Mana cost of your Destruction spells by 2%."
                             },
                             {
-                                "Number": "3",
+                                "Number": 3,
                                 "Description": "Reduces the Mana cost of your Destruction spells by 3%."
                             },
                             {
-                                "Number": "4",
+                                "Number": 4,
                                 "Description": "Reduces the Mana cost of your Destruction spells by 4%."
                             },
                             {
-                                "Number": "5",
+                                "Number": 5,
                                 "Description": "Reduces the Mana cost of your Destruction spells by 5%."
                             }
                         ]
@@ -849,29 +849,29 @@
                 {
                     "Icon": "Spell_Shadow_DeathPact",
                     "Name": "Bane",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [1, 1],
-                    "Tier": "2",
+                    "Tier": 2,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Reduces the casting time of your Shadow Bolt and Immolate spells by 0.1 sec and your Soul Fire spell by 0.4 sec."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Reduces the casting time of your Shadow Bolt and Immolate spells by 0.2 sec and your Soul Fire spell by 0.8 sec."
                             },
                             {
-                                "Number": "3",
+                                "Number": 3,
                                 "Description": "Reduces the casting time of your Shadow Bolt and Immolate spells by 0.3 sec and your Soul Fire spell by 1.2 sec."
                             },
                             {
-                                "Number": "4",
+                                "Number": 4,
                                 "Description": "Reduces the casting time of your Shadow Bolt and Immolate spells by 0.4 sec and your Soul Fire spell by 1.6 sec."
                             },
                             {
-                                "Number": "5",
+                                "Number": 5,
                                 "Description": "Reduces the casting time of your Shadow Bolt and Immolate spells by 0.5 sec and your Soul Fire spell by 2 sec."
                             }
                         ]
@@ -880,29 +880,29 @@
                 {
                     "Icon": "Spell_Fire_Fire",
                     "Name": "Aftermath",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [1, 2],
-                    "Tier": "2",
+                    "Tier": 2,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Gives your Destruction spells a 2% chance to daze the target for 5 sec."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Gives your Destruction spells a 4% chance to daze the target for 5 sec."
                             },
                             {
-                                "Number": "3",
+                                "Number": 3,
                                 "Description": "Gives your Destruction spells a 6% chance to daze the target for 5 sec."
                             },
                             {
-                                "Number": "4",
+                                "Number": 4,
                                 "Description": "Gives your Destruction spells a 8% chance to daze the target for 5 sec."
                             },
                             {
-                                "Number": "5",
+                                "Number": 5,
                                 "Description": "Gives your Destruction spells a 10% chance to daze the target for 5 sec."
                             }
                         ]
@@ -911,17 +911,17 @@
                 {
                     "Icon": "Spell_Fire_FireBolt",
                     "Name": "Improved Firebolt",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [2, 0],
-                    "Tier": "3",
+                    "Tier": 3,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Reduces the casting time of your Imp's Firebolt spell by 0.5 sec."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Reduces the casting time of your Imp's Firebolt spell by 1 sec."
                             }
                         ]
@@ -930,17 +930,17 @@
                 {
                     "Icon": "Spell_Shadow_Curse",
                     "Name": "Improved Lash of Pain",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [2, 1],
-                    "Tier": "3",
+                    "Tier": 3,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Reduces the cooldown of your Succubus' Lash of Pain spell by 3 sec."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Reduces the cooldown of your Succubus' Lash of Pain spell by 6 sec."
                             }
                         ]
@@ -949,29 +949,29 @@
                 {
                     "Icon": "Spell_Fire_FlameShock",
                     "Name": "Devastation",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [2, 2],
-                    "Tier": "3",
+                    "Tier": 3,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Increases the critical strike chance of your Destruction spells by 1%."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Increases the critical strike chance of your Destruction spells by 2%."
                             },
                             {
-                                "Number": "3",
+                                "Number": 3,
                                 "Description": "Increases the critical strike chance of your Destruction spells by 3%."
                             },
                             {
-                                "Number": "4",
+                                "Number": 4,
                                 "Description": "Increases the critical strike chance of your Destruction spells by 4%."
                             },
                             {
-                                "Number": "5",
+                                "Number": 5,
                                 "Description": "Increases the critical strike chance of your Destruction spells by 5%."
                             }
                         ]
@@ -980,13 +980,13 @@
                 {
                     "Icon": "Spell_Shadow_ScourgeBuild",
                     "Name": "Shadowburn",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [2, 3],
-                    "Tier": "3",
+                    "Tier": 3,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Instantly blasts the target for 87 to 100 Shadow damage.  If the target dies within 5 sec of Shadowburn, and yields experience or honor, the caster gains a Soul Shard."
                         }]
                     }
@@ -994,17 +994,17 @@
                 {
                     "Icon": "Spell_Fire_LavaSpawn",
                     "Name": "Intensity",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [3, 0],
-                    "Tier": "4",
+                    "Tier": 4,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Gives you a 35% chance to resist interruption caused by damage while channeling the Rain of Fire, Hellfire or Soul Fire spell."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Gives you a 70% chance to resist interruption caused by damage while channeling the Rain of Fire, Hellfire or Soul Fire spell."
                             }
                         ]
@@ -1013,17 +1013,17 @@
                 {
                     "Icon": "Spell_Shadow_CorpseExplode",
                     "Name": "Destructive Reach",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [3, 1],
-                    "Tier": "4",
+                    "Tier": 4,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Increases the range of your Destruction spells by 10%."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Increases the range of your Destruction spells by 20%."
                             }
                         ]
@@ -1032,29 +1032,29 @@
                 {
                     "Icon": "Spell_Fire_SoulBurn",
                     "Name": "Improved Searing Pain",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [3, 3],
-                    "Tier": "4",
+                    "Tier": 4,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Increases the critical strike chance of your Searing Pain spell by 2%."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Increases the critical strike chance of your Searing Pain spell by 4%."
                             },
                             {
-                                "Number": "3",
+                                "Number": 3,
                                 "Description": "Increases the critical strike chance of your Searing Pain spell by 6%."
                             },
                             {
-                                "Number": "4",
+                                "Number": 4,
                                 "Description": "Increases the critical strike chance of your Searing Pain spell by 8%."
                             },
                             {
-                                "Number": "5",
+                                "Number": 5,
                                 "Description": "Increases the critical strike chance of your Searing Pain spell by 10%."
                             }
                         ]
@@ -1063,17 +1063,17 @@
                 {
                     "Icon": "Spell_Fire_Volcano",
                     "Name": "Pyroclasm",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "Intensity",
                     "Position": [4, 0],
-                    "Tier": "5",
+                    "Tier": 5,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Gives your Rain of Fire, Hellfire, and Soul Fire spells a 13% chance to stun the target for 3 sec."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Gives your Rain of Fire, Hellfire, and Soul Fire spells a 26% chance to stun the target for 3 sec."
                             }
                         ]
@@ -1082,29 +1082,29 @@
                 {
                     "Icon": "Spell_Fire_Immolation",
                     "Name": "Improved Immolate",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [4, 1],
-                    "Tier": "5",
+                    "Tier": 5,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Increases the initial damage of your Immolate spell by 5%."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Increases the initial damage of your Immolate spell by 10%."
                             },
                             {
-                                "Number": "3",
+                                "Number": 3,
                                 "Description": "Increases the initial damage of your Immolate spell by 15%."
                             },
                             {
-                                "Number": "4",
+                                "Number": 4,
                                 "Description": "Increases the initial damage of your Immolate spell by 20%."
                             },
                             {
-                                "Number": "5",
+                                "Number": 5,
                                 "Description": "Increases the initial damage of your Immolate spell by 25%."
                             }
                         ]
@@ -1113,13 +1113,13 @@
                 {
                     "Icon": "Spell_Shadow_ShadowWordPain",
                     "Name": "Ruin",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "Devastation",
                     "Position": [4, 2],
-                    "Tier": "5",
+                    "Tier": 5,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Increases the critical strike damage bonus of your Destruction spells by 100%."
                         }]
                     }
@@ -1127,17 +1127,17 @@
                 {
                     "Icon": "Spell_Fire_SelfDestruct",
                     "Name": "Emberstorm",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "",
                     "Position": [5, 2],
-                    "Tier": "6",
+                    "Tier": 6,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Increases the damage done by your Fire spells by 2%."
                         },
                             {
-                                "Number": "2",
+                                "Number": 2,
                                 "Description": "Increases the damage done by your Fire spells by 4%."
                             }
                         ]
@@ -1146,13 +1146,13 @@
                 {
                     "Icon": "Spell_Fire_Fireball",
                     "Name": "Conflagrate",
-                    "Points": "",
+                    "Points": 0,
                     "Dependency": "Improved Immolate",
                     "Position": [6, 1],
-                    "Tier": "7",
+                    "Tier": 7,
                     "Ranks": {
                         "Rank": [{
-                            "Number": "1",
+                            "Number": 1,
                             "Description": "Ignites a target that is already afflicted by Immolate, dealing 240 to 307 Fire damage and consuming the Immolate spell."
                         }]
                     }

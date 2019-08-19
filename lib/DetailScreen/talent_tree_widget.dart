@@ -29,7 +29,7 @@ class TalentTreeWidget extends StatelessWidget {
           child: SpellWidget(
             talentList: talentList,
             talent: talentList[i],
-            talentTree: this.talentTreeName,
+            talentTreeName: this.talentTreeName,
             currentPoint: talentList[i].points,
           ));
       talentTree.add(spell);

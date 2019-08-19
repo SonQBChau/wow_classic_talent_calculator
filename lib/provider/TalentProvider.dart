@@ -57,7 +57,7 @@ class TalentProvider extends ChangeNotifier {
   }
 
   void setTalentPoint(Talent talent, int newRank) {
-    talent.points = (newRank + 1).toString();
+    talent.points = newRank + 1;
     notifyListeners();
     // print(newRank);
   }

@@ -7,11 +7,11 @@ import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 class SpellWidget extends StatefulWidget {
   final List<Talent> talentList;
   final Talent talent;
-  final String talentTree;
-  final String currentPoint;
+  final String talentTreeName;
+  final int currentPoint;
   SpellWidget(
       {@required this.talent,
-      this.talentTree,
+      this.talentTreeName,
       this.talentList,
       this.currentPoint});
 
@@ -30,7 +30,7 @@ class _SpellWidgetState extends State<SpellWidget> {
   void _increaseRank(talentPointProvider) {
     if (currentRank < maxRank) {
       currentRank++;
-      talentPointProvider.increase(widget.talentTree);
+      talentPointProvider.increase(widget.talentTreeName);
       talentPointProvider.setTalentPoint(widget.talent, currentRank);
       // print('increase rank');
       // widget.talent.points = newRank.toString();
@@ -44,7 +44,7 @@ class _SpellWidgetState extends State<SpellWidget> {
     //check for dependency
     if (currentRank > 0) {
       currentRank--;
-      talentPointProvider.decrease(widget.talentTree);
+      talentPointProvider.decrease(widget.talentTreeName);
       talentPointProvider.setTalentPoint(widget.talent, currentRank);
       // widget.talent.points = newRank.toString();
       // setState(() {
@@ -79,8 +79,8 @@ class _SpellWidgetState extends State<SpellWidget> {
   _setEnable() {
     final talentPointProvider = Provider.of<TalentProvider>(context);
     final int currentPoints =
-        talentPointProvider.getTalentTreePoints(widget.talentTree);
-    final int tierPoints = int.parse(widget.talent.tier) * 5 - 5;
+        talentPointProvider.getTalentTreePoints(widget.talentTreeName);
+    final int tierPoints = widget.talent.tier * 5 - 5;
     // first, check for enough points for tier
     if (currentPoints >= tierPoints) {
       //second, check for dependency
@@ -131,16 +131,13 @@ class _SpellWidgetState extends State<SpellWidget> {
     spellName = widget.talent.icon.toLowerCase();
     imgLocation = 'assets/Icons/$spellName.png';
     maxRank = widget.talent.ranks.rank.length;
-    if (widget.talent.points != '') {
-      currentRank = int.parse(widget.talent.points);
-    }
   }
 
   @override
   Widget build(BuildContext context) {
     final talentPointProvider = Provider.of<TalentProvider>(context);
     _setEnable();
-    String currentPoint = widget.currentPoint == '' ? '0' : widget.currentPoint;
+    // String currentPoint = widget.currentPoint == '' ? '0' : widget.currentPoint;
 
     return Container(
       width: SizeConfig.cellSize,
@@ -167,7 +164,7 @@ class _SpellWidgetState extends State<SpellWidget> {
                 borderRadius: BorderRadius.circular(3),
               ),
               child: Text(
-                '$currentPoint/$maxRank',
+                '${widget.currentPoint}/$maxRank',
                 style: TextStyle(color: Colors.white),
               ),
             ),

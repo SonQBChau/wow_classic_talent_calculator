@@ -6,7 +6,8 @@ import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 
 class SpellWidget extends StatefulWidget {
   final Talent talent;
-  SpellWidget({@required this.talent});
+  final String talentTree;
+  SpellWidget({@required this.talent, this.talentTree});
 
   @override
   _SpellWidgetState createState() => _SpellWidgetState();
@@ -24,7 +25,8 @@ class _SpellWidgetState extends State<SpellWidget> {
   void _increaseRank(talentPointProvider) {
     if (currentRank < maxRank) {
       int newRank = currentRank + 1;
-      talentPointProvider.increase();
+      talentPointProvider.increase(widget.talentTree);
+      widget.talent.points = newRank.toString();
       setState(() {
         currentRank = newRank;
       });
@@ -34,7 +36,8 @@ class _SpellWidgetState extends State<SpellWidget> {
   void _decreaseRank(talentPointProvider) {
     if (currentRank > 0) {
       int newRank = currentRank - 1;
-      talentPointProvider.decrease();
+      talentPointProvider.decrease(widget.talentTree);
+      widget.talent.points = newRank.toString();
       setState(() {
         currentRank = newRank;
       });
@@ -57,8 +60,8 @@ class _SpellWidgetState extends State<SpellWidget> {
 
   _setEnable(){
     final talentPointProvider = Provider.of<TalentProvider>(context);
-    final int currentPoints = talentPointProvider.getPoint();
-    final int tierPoints =  int.parse(widget.talent.tier ) * 5 - 5;
+    final int currentPoints = talentPointProvider.getTalentTreePoints(widget.talentTree);
+    final int tierPoints =  int.parse(widget.talent.tier) * 5 - 5;
     if (currentPoints >= tierPoints){
       enableState = true;
     }
@@ -91,13 +94,16 @@ class _SpellWidgetState extends State<SpellWidget> {
     spellName = widget.talent.icon.toLowerCase();
     imgLocation = 'assets/Icons/$spellName.png';
     maxRank = widget.talent.ranks.rank.length;
+    if (widget.talent.points != '') {
+      currentRank = int.parse(widget.talent.points);
+    }
 
   }
 
   @override
   Widget build(BuildContext context) {
     final talentPointProvider = Provider.of<TalentProvider>(context);
-    print(talentPointProvider.getPoint());
+//    print(talentPointProvider.getTotalPoint());
     _setEnable();
 
     return Container(

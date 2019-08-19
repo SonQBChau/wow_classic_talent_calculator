@@ -7,19 +7,20 @@ import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 import 'package:provider/provider.dart';
 
 class TalentTreeWidget extends StatelessWidget {
-  final List<Talent> specTalentList;
+  final List<Talent> talentList;
   final List<Widget> arrowList;
+  final String talentTreeName;
   int usedTalentPoints = 0;
 
-  TalentTreeWidget({@required this.specTalentList, @required this.arrowList});
+  TalentTreeWidget({@required this.talentList, @required this.arrowList, this.talentTreeName});
 
   _buildTalentTree() {
     List<Widget> talentTree = [];
-    for (int i = 0; i < specTalentList.length; i++) {
+    for (int i = 0; i < talentList.length; i++) {
       Widget spell = Positioned(
-        top: specTalentList[i].position[0].toDouble() * SizeConfig.cellSize,
-        left: specTalentList[i].position[1].toDouble() * SizeConfig.cellSize,
-        child: SpellWidget(talent: specTalentList[i]),
+        top: talentList[i].position[0].toDouble() * SizeConfig.cellSize,
+        left: talentList[i].position[1].toDouble() * SizeConfig.cellSize,
+        child: SpellWidget(talent: talentList[i], talentTree: this.talentTreeName),
       );
       talentTree.add(spell);
     }
@@ -28,7 +29,7 @@ class TalentTreeWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (specTalentList.length == 0) {
+    if (talentList.length == 0) {
       return SizedBox();
     } else {
       return LayoutBuilder(
@@ -38,20 +39,16 @@ class TalentTreeWidget extends StatelessWidget {
                 constraints: BoxConstraints(
                   // minHeight: viewportConstraints.maxHeight,
                   maxHeight: SizeConfig.cellSize * 7 +
-                      kTalentScreenPadding *
-                          2, // cell size * number of row + padding
+                      kTalentScreenTwoPadding, // cell size * number of row + padding
                 ),
-                child: ChangeNotifierProvider<TalentProvider>(
-                  builder: (_) => TalentProvider(0),
-                  child: Container(
-                      padding: EdgeInsets.symmetric(
-                          vertical: kTalentScreenPadding,
-                          horizontal: kTalentScreenPadding),
-                      child: Stack(children: <Widget>[
-                        ..._buildTalentTree(),
-                        ...arrowList
-                      ])),
-                )));
+                child: Container(
+                    padding: EdgeInsets.symmetric(
+                        vertical: kTalentScreenPadding,
+                        horizontal: kTalentScreenPadding),
+                    child: Stack(children: <Widget>[
+                      ..._buildTalentTree(),
+                      ...arrowList
+                    ]))));
       });
     }
   }

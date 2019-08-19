@@ -1063,7 +1063,7 @@
                 {
                     "Icon": "Spell_Fire_Volcano",
                     "Name": "Pyroclasm",
-                    "Points": "2",
+                    "Points": "",
                     "Dependency": "Intensity",
                     "Position": [4, 0],
                     "Tier": "5",
@@ -1113,7 +1113,7 @@
                 {
                     "Icon": "Spell_Shadow_ShadowWordPain",
                     "Name": "Ruin",
-                    "Points": "5",
+                    "Points": "",
                     "Dependency": "Devastation",
                     "Position": [4, 2],
                     "Tier": "5",
@@ -1146,7 +1146,7 @@
                 {
                     "Icon": "Spell_Fire_Fireball",
                     "Name": "Conflagrate",
-                    "Points": "5",
+                    "Points": "",
                     "Dependency": "Improved Immolate",
                     "Position": [6, 1],
                     "Tier": "7",

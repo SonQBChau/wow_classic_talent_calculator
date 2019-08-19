@@ -12,3 +12,7 @@ const double kTabIconSize = 32.0;
 
 /// The size of arrow [ArrowWidget].
 const double kArrowWidthSize = 20.0;
+
+const String kFirstTalentTree = 'FirstTalentTree';
+const String kSecondTalentTree = 'SecondTalentTree';
+const String kThirdTalentTree = 'ThirdTalentTree';

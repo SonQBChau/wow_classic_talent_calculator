@@ -21,20 +21,15 @@ class DetailScreen extends StatefulWidget {
 
 class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderStateMixin {
   TabController _tabController;
-  static const NUM_OF_TILES = 28; // 6 rows and 4 columns
-  // SpecTreeList specTreeList;
-  List<Widget> specOneWidgetList = [];
-  List<Widget> specTwoWidgetList = [];
-  List<Widget> specThreeWidgetList = [];
-  List<Talent> specListOne = [];
-  List<Talent> specListTwo = [];
-  List<Talent> specListThree = [];
+  List<Talent> firstTalentTree = [];
+  List<Talent> secondTalentTree = [];
+  List<Talent> thirdTalentTree = [];
 
 
   Future<String> loadJson() async {
     return await rootBundle.loadString('data_repo/warlock.json');
   }
-
+///parse json to object
   Future<SpecTreeList> loadTalent() async {
     String jsonTalent = await loadJson();
     final jsonResponse = json.decode(jsonTalent);
@@ -42,44 +37,13 @@ class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderSt
     return specTreeList;
   }
 
+
   Future buildTalentList() async {
-    final widgetListOne = <Widget>[];
-    final widgetListTwo = <Widget>[];
-    final widgetListThree = <Widget>[];
     SpecTreeList specTreeList = await loadTalent();
-    specListOne = specTreeList.specTrees[0].talents.talent;
-    specListTwo = specTreeList.specTrees[1].talents.talent;
-    specListThree = specTreeList.specTrees[2].talents.talent;
-
-    // fill the widget with empty blocks
-    for (var i = 0; i < NUM_OF_TILES; i++) {
-      widgetListOne.add(BlockTile());
-      widgetListTwo.add(BlockTile());
-      widgetListThree.add(BlockTile());
-    }
-
-    // fill the widget with talent spec items
-    for (var i = 0; i < specListOne.length; i++) {
-      List<int> positions = specListOne[i].position;
-      int pos = (positions[0] * 4) + (positions[1]); // row + column
-      widgetListOne[pos] = SpellWidget(talent: specListOne[i]);
-    }
-    for (var i = 0; i < specListTwo.length; i++) {
-      List<int> positions = specListTwo[i].position;
-      int pos = (positions[0] * 4) + (positions[1]); // row + column
-
-      widgetListTwo[pos] = SpellWidget(talent: specListTwo[i]);
-    }
-    for (var i = 0; i < specListThree.length; i++) {
-      List<int> positions = specListThree[i].position;
-      int pos = (positions[0] * 4) + (positions[1]); // row + column
-      widgetListThree[pos] = SpellWidget(talent: specListThree[i]);
-    }
-
     setState(() {
-      specOneWidgetList = widgetListOne;
-      specTwoWidgetList = widgetListTwo;
-      specThreeWidgetList = widgetListThree;
+      firstTalentTree = specTreeList.specTrees[0].talents.talent;
+      secondTalentTree = specTreeList.specTrees[1].talents.talent;
+      thirdTalentTree = specTreeList.specTrees[2].talents.talent;
     });
   }
 
@@ -130,8 +94,7 @@ class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderSt
                         fit: BoxFit.cover,
                       ),
                     ),
-                    // child: SpellGridWidget(specWidgetList: specOneWidgetList),
-                    child: TalentTreeWidget(specTalentList: specListOne, arrowList: afflictionArrowList),
+                    child: TalentTreeWidget(specTalentList: firstTalentTree, arrowList: afflictionArrowList),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -140,7 +103,7 @@ class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderSt
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: TalentTreeWidget(specTalentList: specListTwo, arrowList: demonologyArrowList),
+                    child: TalentTreeWidget(specTalentList: secondTalentTree, arrowList: demonologyArrowList),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -149,19 +112,10 @@ class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderSt
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: TalentTreeWidget(specTalentList: specListThree, arrowList: destructionArrowList),
+                    child: TalentTreeWidget(specTalentList: thirdTalentTree, arrowList: destructionArrowList),
                   )
                 ],
               ),
             );
-  }
-}
-
-class BlockTile extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: SizedBox(),
-    );
   }
 }

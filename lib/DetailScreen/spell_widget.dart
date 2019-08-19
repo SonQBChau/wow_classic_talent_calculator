@@ -80,10 +80,16 @@ class _SpellWidgetState extends State<SpellWidget> {
         if (dependencyTalent.points == dependencyTalent.ranks.rank.length.toString()) {
           enableState = true;
         }
+        else{
+          enableState = false;
+        };
       }
       else {
         enableState = true;
       }
+    }
+    else{
+      enableState = false;
     }
   }
 

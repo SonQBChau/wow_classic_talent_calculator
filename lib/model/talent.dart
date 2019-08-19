@@ -65,8 +65,8 @@ class Talent {
   String dependency;
   List<int> position;
   int tier;
-  Ranks ranks;
   bool enable;
+  Ranks ranks;
 
   Talent(
       {this.icon,
@@ -75,8 +75,8 @@ class Talent {
       this.dependency,
       this.position,
       this.tier,
-      this.ranks,
-      this.enable = false});
+      this.enable,
+      this.ranks});
 
   Talent.fromJson(Map<String, dynamic> json) {
     icon = json['Icon'];
@@ -85,6 +85,7 @@ class Talent {
     dependency = json['Dependency'];
     position = json['Position'].cast<int>();
     tier = json['Tier'];
+    enable = json['Enable'];
     ranks = json['Ranks'] != null ? new Ranks.fromJson(json['Ranks']) : null;
   }
 
@@ -96,6 +97,7 @@ class Talent {
     data['Dependency'] = this.dependency;
     data['Position'] = this.position;
     data['Tier'] = this.tier;
+    data['Enable'] = this.enable;
     if (this.ranks != null) {
       data['Ranks'] = this.ranks.toJson();
     }

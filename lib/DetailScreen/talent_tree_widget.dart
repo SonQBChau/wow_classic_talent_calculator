@@ -9,16 +9,12 @@ import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 import 'package:provider/provider.dart';
 
 class TalentTreeWidget extends StatelessWidget {
-  List<Talent> talentList;
   final List<Widget> arrowList;
   final String talentTreeName;
-  int usedTalentPoints = 0;
+  TalentTreeWidget({@required this.arrowList, this.talentTreeName});
 
-  TalentTreeWidget(
-      {
-      // @required this.talentList,
-      @required this.arrowList,
-      this.talentTreeName});
+  /// contain talent list for this tree/page
+  List<Talent> talentList;
 
   _buildTalentTree() {
     List<Widget> talentTree = [];
@@ -27,10 +23,10 @@ class TalentTreeWidget extends StatelessWidget {
           top: talentList[i].position[0].toDouble() * SizeConfig.cellSize,
           left: talentList[i].position[1].toDouble() * SizeConfig.cellSize,
           child: SpellWidget(
-            talentList: talentList,
+            // talentList: talentList,
             talent: talentList[i],
             talentTreeName: this.talentTreeName,
-            currentPoint: talentList[i].points,
+            // currentPoint: talentList[i].points,
           ));
       talentTree.add(spell);
     }
@@ -84,7 +80,7 @@ class TalentTreeWidget extends StatelessWidget {
                     child: Stack(children: <Widget>[
                       ..._buildTalentTree(),
                       // ...arrowList
-                      ..._buildArrowTree()
+                      // ..._buildArrowTree()
                     ]))));
       });
     }

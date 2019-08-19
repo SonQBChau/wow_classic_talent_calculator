@@ -33,7 +33,7 @@ class TalentProvider extends ChangeNotifier {
     }
   }
 
-  void increase(String talentTree) {
+  void increaseTreePoints(String talentTree) {
     if (talentTree == kFirstTalentTree) {
       _firstTalentTreePoints++;
     } else if (talentTree == kSecondTalentTree) {
@@ -56,9 +56,27 @@ class TalentProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  void setTalentPoint(Talent talent, int newRank) {
-    talent.points = newRank + 1;
+  void increaseTalentPoints(Talent talent, int currentRank) {
+    talent.points = currentRank + 1;
     notifyListeners();
-    // print(newRank);
+  }
+
+  void decreaseTalentPoints(Talent talent, int currentRank) {
+    talent.points = currentRank - 1;
+    notifyListeners();
+  }
+
+  /// return the talent by name
+  Talent findTalentByName(String name) {
+    List<SpecTree> specTrees = specTreeList.specTrees;
+    for (int i = 0; i < specTrees.length; i++) {
+      List<Talent> talents = specTrees[i].talents.talent;
+      for (int j = 0; j < talents.length; j++) {
+        if (talents[j].name == name) {
+          return talents[j];
+        }
+      }
+    }
+    return null;
   }
 }

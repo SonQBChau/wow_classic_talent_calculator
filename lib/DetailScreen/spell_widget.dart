@@ -5,15 +5,10 @@ import 'package:wow_classic_talent_calculator/provider/TalentProvider.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 
 class SpellWidget extends StatefulWidget {
-  final List<Talent> talentList;
   final Talent talent;
   final String talentTreeName;
-  final int currentPoint;
-  SpellWidget(
-      {@required this.talent,
-      this.talentTreeName,
-      this.talentList,
-      this.currentPoint});
+
+  SpellWidget({this.talent, this.talentTreeName});
 
   @override
   _SpellWidgetState createState() => _SpellWidgetState();
@@ -21,37 +16,12 @@ class SpellWidget extends StatefulWidget {
 
 class _SpellWidgetState extends State<SpellWidget> {
   final key = new GlobalKey();
-  int currentRank = 0;
+  var talentProvider;
+  int maxRank;
+  int currentRank;
+  String spellName;
+  String imgLocation;
   bool enableState = false;
-  String spellName = '';
-  String imgLocation = '';
-  int maxRank = 0;
-
-  void _increaseRank(talentPointProvider) {
-    if (currentRank < maxRank) {
-      currentRank++;
-      talentPointProvider.increase(widget.talentTreeName);
-      talentPointProvider.setTalentPoint(widget.talent, currentRank);
-      // print('increase rank');
-      // widget.talent.points = newRank.toString();
-      // setState(() {
-      //   currentRank = newRank;
-      // });
-    }
-  }
-
-  void _decreaseRank(talentPointProvider) {
-    //check for dependency
-    if (currentRank > 0) {
-      currentRank--;
-      talentPointProvider.decrease(widget.talentTreeName);
-      talentPointProvider.setTalentPoint(widget.talent, currentRank);
-      // widget.talent.points = newRank.toString();
-      // setState(() {
-      //   currentRank = newRank;
-      // });
-    }
-  }
 
   void _showDescription() {
     final dynamic tooltip = key.currentState;
@@ -67,27 +37,51 @@ class _SpellWidgetState extends State<SpellWidget> {
     return widget.talent.ranks.rank[displayRank].description;
   }
 
-  findTalentByName(String name) {
-    for (int i = 0; i < widget.talentList.length; i++) {
-      if (widget.talentList[i].name == name) {
-        return widget.talentList[i];
-      }
+  void _increaseRank() {
+    if (currentRank < maxRank) {
+      talentProvider.increaseTreePoints(this.widget.talentTreeName);
+      talentProvider.increaseTalentPoints(this.widget.talent, currentRank);
     }
-    return null;
+  }
+
+  void _decreaseRank() {
+    if (currentRank > 0) {
+      talentProvider.decreaseTreePoints(this.widget.talentTreeName);
+      talentProvider.decreaseTalentPoints(this.widget.talent, currentRank);
+    }
+  }
+
+  _buildSpellWidget() {
+    if (widget.talent.enable) {
+      return GestureDetector(
+          onTap: () => _increaseRank(),
+          // onDoubleTap: () => _decreaseRank(counter),
+          onLongPress: () => _showDescription(),
+          child: Container(child: Image.asset(imgLocation)));
+    } else {
+      return GestureDetector(
+        onLongPress: () => _showDescription(),
+        child: Container(
+            foregroundDecoration: BoxDecoration(
+                color: Colors.grey,
+                backgroundBlendMode: BlendMode.saturation,
+                borderRadius: BorderRadius.circular(6)),
+            child: Image.asset(imgLocation)),
+      );
+    }
   }
 
   _setEnable() {
-    final talentPointProvider = Provider.of<TalentProvider>(context);
     final int currentPoints =
-        talentPointProvider.getTalentTreePoints(widget.talentTreeName);
+        talentProvider.getTalentTreePoints(widget.talentTreeName);
     final int tierPoints = widget.talent.tier * 5 - 5;
     // first, check for enough points for tier
     if (currentPoints >= tierPoints) {
       //second, check for dependency
       if (widget.talent.dependency != '') {
-        Talent dependencyTalent = findTalentByName(widget.talent.dependency);
-        if (dependencyTalent.points ==
-            dependencyTalent.ranks.rank.length.toString()) {
+        Talent dependencyTalent =
+            talentProvider.findTalentByName(widget.talent.dependency);
+        if (dependencyTalent.points == dependencyTalent.ranks.rank.length) {
           enableState = true;
           widget.talent.enable = true;
         } else {
@@ -104,40 +98,15 @@ class _SpellWidgetState extends State<SpellWidget> {
     }
   }
 
-  _buildSpellWidget(counter) {
-    if (enableState) {
-      return GestureDetector(
-          onTap: () => _increaseRank(counter),
-          onDoubleTap: () => _decreaseRank(counter),
-          onLongPress: () => _showDescription(),
-          child: Container(child: Image.asset(imgLocation)));
-    } else {
-      return GestureDetector(
-        onLongPress: () => _showDescription(),
-        child: Container(
-            foregroundDecoration: BoxDecoration(
-                color: Colors.grey,
-                backgroundBlendMode: BlendMode.saturation,
-                borderRadius: BorderRadius.circular(6)),
-            child: Image.asset(imgLocation)),
-      );
-    }
-  }
-
-  @override
-  initState() {
-    super.initState();
-    // Add listeners to this class
-    spellName = widget.talent.icon.toLowerCase();
-    imgLocation = 'assets/Icons/$spellName.png';
-    maxRank = widget.talent.ranks.rank.length;
-  }
-
   @override
   Widget build(BuildContext context) {
-    final talentPointProvider = Provider.of<TalentProvider>(context);
+    talentProvider = Provider.of<TalentProvider>(context);
+    maxRank = widget.talent.ranks.rank.length;
+    currentRank = widget.talent.points;
+    spellName = widget.talent.icon.toLowerCase();
+    imgLocation = 'assets/Icons/$spellName.png';
+
     _setEnable();
-    // String currentPoint = widget.currentPoint == '' ? '0' : widget.currentPoint;
 
     return Container(
       width: SizeConfig.cellSize,
@@ -153,7 +122,7 @@ class _SpellWidgetState extends State<SpellWidget> {
           ),
           Align(
             alignment: Alignment.center,
-            child: _buildSpellWidget(talentPointProvider),
+            child: _buildSpellWidget(),
           ),
           Align(
             alignment: Alignment.bottomRight,
@@ -164,7 +133,7 @@ class _SpellWidgetState extends State<SpellWidget> {
                 borderRadius: BorderRadius.circular(3),
               ),
               child: Text(
-                '${widget.currentPoint}/$maxRank',
+                '${widget.talent.points}/$maxRank',
                 style: TextStyle(color: Colors.white),
               ),
             ),

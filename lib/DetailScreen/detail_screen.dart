@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async' show Future;
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:provider/provider.dart';
-import 'package:wow_classic_talent_calculator/Arrow/warlock_arrow.dart';
+import 'package:wow_classic_talent_calculator/ClassArrow/warlock_arrow.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/talent_tree_widget.dart';
 import 'package:wow_classic_talent_calculator/provider/TalentProvider.dart';
 import 'dart:convert';

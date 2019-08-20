@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wow_classic_talent_calculator/DetailScreen/arrow_widget.dart';
+import 'package:wow_classic_talent_calculator/DetailScreen/Arrows/arrow_widget.dart';
+import 'package:wow_classic_talent_calculator/DetailScreen/Arrows/right_arrow_widget.dart';
 import 'package:wow_classic_talent_calculator/model/position.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
 
@@ -16,6 +17,12 @@ List<Widget> getAfflictionArrowList(List<Talent> talentList) {
       endPosition: Position(row: 6, column: 2),
       lengthType: 'short',
       dependencyTalent: 'Shadow Mastery',
+    ),
+    RightArrowWidget(
+      startPosition: Position(row: 5, column: 3),
+      endPosition: Position(row: 5, column: 4),
+      lengthType: 'short',
+      dependencyTalent: 'Improved Curse of Exhaustion',
     ),
   ];
 }

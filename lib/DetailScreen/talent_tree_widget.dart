@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wow_classic_talent_calculator/DetailScreen/arrow_widget.dart';
+import 'package:wow_classic_talent_calculator/DetailScreen/Arrows/arrow_widget.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/spell_widget.dart';
 import 'package:wow_classic_talent_calculator/model/position.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
@@ -41,14 +41,12 @@ class TalentTreeWidget extends StatelessWidget {
         endPosition: Position(row: 5, column: 3),
         lengthType: 'medium',
         dependencyTalent: 'Amplify Curse',
-
       ),
       ArrowWidget(
         startPosition: Position(row: 5, column: 2),
         endPosition: Position(row: 6, column: 2),
         lengthType: 'short',
         dependencyTalent: 'Siphon Life',
-
       ),
     ];
   }
@@ -79,7 +77,7 @@ class TalentTreeWidget extends StatelessWidget {
                         horizontal: kTalentScreenPadding),
                     child: Stack(children: <Widget>[
                       ..._buildTalentTree(),
-                       ...arrowList
+                      ...arrowList
 //                       ..._buildArrowTree()
                     ]))));
       });

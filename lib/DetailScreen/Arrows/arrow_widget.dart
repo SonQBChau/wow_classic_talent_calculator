@@ -18,7 +18,6 @@ class ArrowWidget extends StatefulWidget {
     @required this.dependencyTalent,
   });
 
-
   @override
   _ArrowWidgetState createState() => _ArrowWidgetState();
 }
@@ -29,9 +28,8 @@ class _ArrowWidgetState extends State<ArrowWidget> {
   var talentProvider;
 
   setEnable() {
-    Talent dependencyTalent = talentProvider.findTalentByName(widget.dependencyTalent);
-//    print(dependencyTalent.name);
-//    print(dependencyTalent.enable);
+    Talent dependencyTalent =
+        talentProvider.findTalentByName(widget.dependencyTalent);
     if (dependencyTalent != null) {
       if (dependencyTalent.enable) {
         setState(() {
@@ -44,7 +42,6 @@ class _ArrowWidgetState extends State<ArrowWidget> {
       }
     }
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +69,6 @@ class _ArrowWidgetState extends State<ArrowWidget> {
 
     // set arrow enable or disable depend on the state of talent spell
     setEnable();
-//    print('=======');
 
     return Stack(
       children: <Widget>[
@@ -102,63 +98,63 @@ class _ArrowWidgetState extends State<ArrowWidget> {
   }
 }
 
-class RightArrowWidget extends StatelessWidget {
-  final Position startPosition;
-  final Position endPosition;
-  final String lengthType;
-  RightArrowWidget({
-    @required this.startPosition,
-    @required this.endPosition,
-    @required this.lengthType,
-  });
+// class RightArrowWidget extends StatelessWidget {
+//   final Position startPosition;
+//   final Position endPosition;
+//   final String lengthType;
+//   RightArrowWidget({
+//     @required this.startPosition,
+//     @required this.endPosition,
+//     @required this.lengthType,
+//   });
 
-  @override
-  Widget build(BuildContext context) {
-    final double arrowBodyTop =
-        SizeConfig.cellSize * startPosition.row - SizeConfig.cellSize / 1.6;
-    final double arrowBodyLeft =
-        SizeConfig.cellSize * startPosition.column - SizeConfig.cellSize / 7;
-    final double arrowBodyHeight = kArrowWidthSize;
-    double arrowBodyWidth = 0;
-    final double arrowHeadTop =
-        SizeConfig.cellSize * endPosition.row - SizeConfig.cellSize / 1.6;
-    final double arrowHeadLeft = SizeConfig.cellSize * startPosition.column;
-    final double arrowHeadHeight = kArrowWidthSize;
+//   @override
+//   Widget build(BuildContext context) {
+//     final double arrowBodyTop =
+//         SizeConfig.cellSize * startPosition.row - SizeConfig.cellSize / 1.6;
+//     final double arrowBodyLeft =
+//         SizeConfig.cellSize * startPosition.column - SizeConfig.cellSize / 7;
+//     final double arrowBodyHeight = kArrowWidthSize;
+//     double arrowBodyWidth = 0;
+//     final double arrowHeadTop =
+//         SizeConfig.cellSize * endPosition.row - SizeConfig.cellSize / 1.6;
+//     final double arrowHeadLeft = SizeConfig.cellSize * startPosition.column;
+//     final double arrowHeadHeight = kArrowWidthSize;
 
-    if (lengthType == 'short') {
-      arrowBodyWidth = SizeConfig.cellSize * 0.15; //magic number
-    }
+//     if (lengthType == 'short') {
+//       arrowBodyWidth = SizeConfig.cellSize * 0.15; //magic number
+//     }
 
-    return Stack(
-      children: <Widget>[
-        Positioned(
-          top: arrowBodyTop,
-          left: arrowBodyLeft,
-          child: Container(
-              width: arrowBodyWidth,
-              height: arrowBodyHeight,
-              child: RotatedBox(
-                quarterTurns: 1,
-                child: Image.asset(
-                  'assets/Arrows/ArrowBody.png',
-                  fit: BoxFit.fill,
-                ),
-              )),
-        ),
-        Positioned(
-          top: arrowHeadTop,
-          left: arrowHeadLeft,
-          child: Container(
-              height: arrowHeadHeight,
-              child: RotatedBox(
-                quarterTurns: 3,
-                child: Image.asset(
-                  'assets/Arrows/ArrowHead.png',
-                  fit: BoxFit.fill,
-                ),
-              )),
-        )
-      ],
-    );
-  }
-}
+//     return Stack(
+//       children: <Widget>[
+//         Positioned(
+//           top: arrowBodyTop,
+//           left: arrowBodyLeft,
+//           child: Container(
+//               width: arrowBodyWidth,
+//               height: arrowBodyHeight,
+//               child: RotatedBox(
+//                 quarterTurns: 1,
+//                 child: Image.asset(
+//                   'assets/Arrows/ArrowBody.png',
+//                   fit: BoxFit.fill,
+//                 ),
+//               )),
+//         ),
+//         Positioned(
+//           top: arrowHeadTop,
+//           left: arrowHeadLeft,
+//           child: Container(
+//               height: arrowHeadHeight,
+//               child: RotatedBox(
+//                 quarterTurns: 3,
+//                 child: Image.asset(
+//                   'assets/Arrows/ArrowHead.png',
+//                   fit: BoxFit.fill,
+//                 ),
+//               )),
+//         )
+//       ],
+//     );
+//   }
+// }

@@ -61,6 +61,17 @@ class _DetailScreenState extends State<DetailScreen>
     return Scaffold(
       appBar: AppBar(
         title: Text('Warlock'),
+        actions: <Widget>[
+          Center(
+            child: Container(
+              padding: EdgeInsets.only(right: 10),
+              child: Text(
+                'Level 60',
+                style: TextStyle(fontSize: 17, fontWeight: FontWeight.w500),
+              ),
+            ),
+          )
+        ],
         backgroundColor: Color(0xFF673AB7),
         bottom: TabBar(
           controller: _tabController,
@@ -86,7 +97,7 @@ class _DetailScreenState extends State<DetailScreen>
       body: specTreeList == null
           ? Container()
           : ChangeNotifierProvider<TalentProvider>(
-              builder: (_) => TalentProvider(0, 0, 0, 0, specTreeList),
+              builder: (_) => TalentProvider(0, 0, 0, specTreeList),
               child: TabBarView(
                 controller: _tabController,
                 children: [

@@ -98,7 +98,7 @@ class _DetailScreenState extends State<DetailScreen>
                       ),
                     ),
                     child: TalentTreeWidget(
-                        talentTreeName: kFirstTalentTree,
+                        talentTreeName: specTreeList.specTrees[0].name,
                         // talentList: firstTalentTree,
                         arrowList: getAfflictionArrowList(firstTalentTree)),
                   ),

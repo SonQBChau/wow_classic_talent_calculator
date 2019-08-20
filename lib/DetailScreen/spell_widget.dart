@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:wow_classic_talent_calculator/DetailScreen/arrow_widget.dart';
+import 'package:wow_classic_talent_calculator/model/position.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
 import 'package:wow_classic_talent_calculator/provider/TalentProvider.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
@@ -41,6 +43,7 @@ class _SpellWidgetState extends State<SpellWidget> {
     if (currentRank < maxRank) {
       talentProvider.increaseTreePoints(this.widget.talentTreeName);
       talentProvider.increaseTalentPoints(this.widget.talent, currentRank);
+
     }
   }
 
@@ -55,7 +58,7 @@ class _SpellWidgetState extends State<SpellWidget> {
     if (widget.talent.enable) {
       return GestureDetector(
           onTap: () => _increaseRank(),
-          // onDoubleTap: () => _decreaseRank(counter),
+           onDoubleTap: () => _decreaseRank(),
           onLongPress: () => _showDescription(),
           child: Container(child: Image.asset(imgLocation)));
     } else {
@@ -71,32 +74,6 @@ class _SpellWidgetState extends State<SpellWidget> {
     }
   }
 
-  _setEnable() {
-    final int currentPoints =
-        talentProvider.getTalentTreePoints(widget.talentTreeName);
-    final int tierPoints = widget.talent.tier * 5 - 5;
-    // first, check for enough points for tier
-    if (currentPoints >= tierPoints) {
-      //second, check for dependency
-      if (widget.talent.dependency != '') {
-        Talent dependencyTalent =
-            talentProvider.findTalentByName(widget.talent.dependency);
-        if (dependencyTalent.points == dependencyTalent.ranks.rank.length) {
-          enableState = true;
-          widget.talent.enable = true;
-        } else {
-          enableState = false;
-          widget.talent.enable = false;
-        }
-      } else {
-        enableState = true;
-        widget.talent.enable = true;
-      }
-    } else {
-      enableState = false;
-      widget.talent.enable = false;
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -106,7 +83,9 @@ class _SpellWidgetState extends State<SpellWidget> {
     spellName = widget.talent.icon.toLowerCase();
     imgLocation = 'assets/Icons/$spellName.png';
 
-    _setEnable();
+//    _setEnable();
+    //draw arrow
+
 
     return Container(
       width: SizeConfig.cellSize,

@@ -41,14 +41,14 @@ class TalentTreeWidget extends StatelessWidget {
         endPosition: Position(row: 5, column: 3),
         lengthType: 'medium',
         dependencyTalent: 'Amplify Curse',
-        talentList: talentList,
+
       ),
       ArrowWidget(
         startPosition: Position(row: 5, column: 2),
         endPosition: Position(row: 6, column: 2),
         lengthType: 'short',
         dependencyTalent: 'Siphon Life',
-        talentList: talentList,
+
       ),
     ];
   }
@@ -79,8 +79,8 @@ class TalentTreeWidget extends StatelessWidget {
                         horizontal: kTalentScreenPadding),
                     child: Stack(children: <Widget>[
                       ..._buildTalentTree(),
-                      // ...arrowList
-                      // ..._buildArrowTree()
+                       ...arrowList
+//                       ..._buildArrowTree()
                     ]))));
       });
     }

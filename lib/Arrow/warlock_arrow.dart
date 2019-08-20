@@ -9,15 +9,13 @@ List<Widget> getAfflictionArrowList(List<Talent> talentList) {
       startPosition: Position(row: 3, column: 3),
       endPosition: Position(row: 5, column: 3),
       lengthType: 'medium',
-      dependencyTalent: 'Amplify Curse',
-      talentList: talentList,
+      dependencyTalent: 'Curse of Exhaustion',
     ),
     ArrowWidget(
       startPosition: Position(row: 5, column: 2),
       endPosition: Position(row: 6, column: 2),
       lengthType: 'short',
-      dependencyTalent: 'Siphon Life',
-      talentList: talentList,
+      dependencyTalent: 'Shadow Mastery',
     ),
   ];
 }

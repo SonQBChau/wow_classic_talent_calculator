@@ -23,34 +23,34 @@ class TalentProvider extends ChangeNotifier {
   getTotalPoint() => _totalPoints;
 
   getTalentTreePoints(String talentTree) {
-    if (talentTree == kFirstTalentTree) {
+    if (talentTree == specTreeList.specTrees[0].name) {
       return _firstTalentTreePoints;
-    } else if (talentTree == kSecondTalentTree) {
+    } else if (talentTree == specTreeList.specTrees[1].name) {
       return _secondTalentTreePoints;
     }
-    if (talentTree == kThirdTalentTree) {
+    if (talentTree == specTreeList.specTrees[2].name) {
       return _thirdTalentTreePoints;
     }
   }
 
   void increaseTreePoints(String talentTree) {
-    if (talentTree == kFirstTalentTree) {
+    if (talentTree == specTreeList.specTrees[0].name) {
       _firstTalentTreePoints++;
-    } else if (talentTree == kSecondTalentTree) {
+    } else if (talentTree == specTreeList.specTrees[1].name) {
       _secondTalentTreePoints++;
-    } else if (talentTree == kThirdTalentTree) {
+    } else if (talentTree == specTreeList.specTrees[2].name) {
       _thirdTalentTreePoints++;
     }
 
     notifyListeners();
   }
 
-  void decrease(String talentTree) {
-    if (talentTree == kFirstTalentTree) {
+  void decreaseTreePoints(String talentTree) {
+    if (talentTree == specTreeList.specTrees[0].name) {
       _firstTalentTreePoints--;
-    } else if (talentTree == kSecondTalentTree) {
+    } else if (talentTree == specTreeList.specTrees[1].name) {
       _secondTalentTreePoints--;
-    } else if (talentTree == kThirdTalentTree) {
+    } else if (talentTree == specTreeList.specTrees[2].name) {
       _thirdTalentTreePoints--;
     }
     notifyListeners();
@@ -58,12 +58,47 @@ class TalentProvider extends ChangeNotifier {
 
   void increaseTalentPoints(Talent talent, int currentRank) {
     talent.points = currentRank + 1;
+    updateTalentTree();
     notifyListeners();
   }
 
   void decreaseTalentPoints(Talent talent, int currentRank) {
     talent.points = currentRank - 1;
+    updateTalentTree();
     notifyListeners();
+  }
+
+  void updateTalentTree(){
+    List<SpecTree> specTrees = specTreeList.specTrees;
+    for (int i = 0; i < specTrees.length-2; i++) {
+      String specTreeName = specTrees[i].name;
+      List<Talent> talents = specTrees[i].talents.talent;
+      for (int j = 0; j < talents.length; j++) {
+        updateTalentEnable(talents[j], specTreeName);
+      }
+    }
+  }
+
+  void updateTalentEnable(Talent talent, String specTreeName) {
+    final int currentPoints = getTalentTreePoints(specTreeName);
+    final int tierPoints = talent.tier * 5 - 5;
+    // first, check for enough points for tier
+    if (currentPoints >= tierPoints) {
+      //second, check for dependency
+      if (talent.dependency != '') {
+        Talent dependencyTalent =
+        findTalentByName(talent.dependency);
+        if (dependencyTalent.points == dependencyTalent.ranks.rank.length) {
+          talent.enable = true;
+        } else {
+          talent.enable = false;
+        }
+      } else {
+        talent.enable = true;
+      }
+    } else {
+      talent.enable = false;
+    }
   }
 
   /// return the talent by name

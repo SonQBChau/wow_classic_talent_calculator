@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:wow_classic_talent_calculator/model/position.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
+import 'package:wow_classic_talent_calculator/provider/TalentProvider.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 import 'package:wow_classic_talent_calculator/utils/constants.dart';
 
@@ -9,14 +11,13 @@ class ArrowWidget extends StatefulWidget {
   final Position endPosition;
   final String lengthType;
   final String dependencyTalent;
-  final List<Talent> talentList;
   ArrowWidget({
     @required this.startPosition,
     @required this.endPosition,
     @required this.lengthType,
     @required this.dependencyTalent,
-    @required this.talentList,
   });
+
 
   @override
   _ArrowWidgetState createState() => _ArrowWidgetState();
@@ -25,18 +26,12 @@ class ArrowWidget extends StatefulWidget {
 class _ArrowWidgetState extends State<ArrowWidget> {
   String arrowBodyImg = 'assets/Arrows/GreyArrowBody.png';
   String arrowHeadImg = 'assets/Arrows/GreyArrowHead.png';
-
-  findTalentByName(String name) {
-    for (int i = 0; i < widget.talentList.length; i++) {
-      if (widget.talentList[i].name == name) {
-        return widget.talentList[i];
-      }
-    }
-    return null;
-  }
+  var talentProvider;
 
   setEnable() {
-    Talent dependencyTalent = findTalentByName(widget.dependencyTalent);
+    Talent dependencyTalent = talentProvider.findTalentByName(widget.dependencyTalent);
+//    print(dependencyTalent.name);
+//    print(dependencyTalent.enable);
     if (dependencyTalent != null) {
       if (dependencyTalent.enable) {
         setState(() {
@@ -49,6 +44,7 @@ class _ArrowWidgetState extends State<ArrowWidget> {
       }
     }
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -66,6 +62,8 @@ class _ArrowWidgetState extends State<ArrowWidget> {
             SizeConfig.cellSize / 1.6;
     final double arrowHeadWidth = kArrowWidthSize;
 
+    talentProvider = Provider.of<TalentProvider>(context);
+
     if (widget.lengthType == 'medium') {
       arrowBodyHeight = SizeConfig.cellSize * 1.15; //magic number
     } else if (widget.lengthType == 'short') {
@@ -74,6 +72,7 @@ class _ArrowWidgetState extends State<ArrowWidget> {
 
     // set arrow enable or disable depend on the state of talent spell
     setEnable();
+//    print('=======');
 
     return Stack(
       children: <Widget>[

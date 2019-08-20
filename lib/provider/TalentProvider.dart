@@ -56,23 +56,25 @@ class TalentProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  void increaseTalentPoints(Talent talent, int currentRank, String talentTreeName) {
+  void increaseTalentPoints(
+      Talent talent, int currentRank, String talentTreeName) {
     talent.points = currentRank + 1;
     increaseTreePoints(talentTreeName);
     updateTalentTree();
     notifyListeners();
   }
 
-  void decreaseTalentPoints(Talent talent, int currentRank, String talentTreeName) {
+  void decreaseTalentPoints(
+      Talent talent, int currentRank, String talentTreeName) {
     talent.points = currentRank - 1;
     decreaseTreePoints(talentTreeName);
     updateTalentTree();
     notifyListeners();
   }
 
-  void updateTalentTree(){
+  void updateTalentTree() {
     List<SpecTree> specTrees = specTreeList.specTrees;
-    for (int i = 0; i < specTrees.length-2; i++) {
+    for (int i = 0; i < specTrees.length; i++) {
       String specTreeName = specTrees[i].name;
       List<Talent> talents = specTrees[i].talents.talent;
       for (int j = 0; j < talents.length; j++) {
@@ -88,8 +90,7 @@ class TalentProvider extends ChangeNotifier {
     if (currentPoints >= tierPoints) {
       //second, check for dependency
       if (talent.dependency != '') {
-        Talent dependencyTalent =
-        findTalentByName(talent.dependency);
+        Talent dependencyTalent = findTalentByName(talent.dependency);
         if (dependencyTalent.points == dependencyTalent.ranks.rank.length) {
           talent.enable = true;
         } else {
@@ -115,5 +116,27 @@ class TalentProvider extends ChangeNotifier {
       }
     }
     return null;
+  }
+
+  /// find highest tier spell checked
+  Talent findHighestTierSpell(String specTreeName) {
+    Talent highestTierSpell;
+    List<SpecTree> specTrees = specTreeList.specTrees;
+    for (int i = 0; i < specTrees.length; i++) {
+      if (specTrees[i].name == specTreeName) {
+        List<Talent> talents = specTrees[i].talents.talent;
+        for (int j = 0; j < talents.length; j++) {
+          if (talents[j].points > 0) {
+            if (highestTierSpell == null) {
+              highestTierSpell = talents[j];
+            } else if (talents[j].tier > highestTierSpell.tier) {
+              highestTierSpell = talents[j];
+            }
+          }
+        }
+      }
+      break;
+    }
+    return highestTierSpell;
   }
 }

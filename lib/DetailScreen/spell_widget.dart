@@ -47,24 +47,41 @@ class _SpellWidgetState extends State<SpellWidget> {
   }
 
   void _decreaseRank() {
-    //rules: can decrease if
-    // currentRank > 0
-    // has no talent dependency
-    // retain enough point for higher tier if checked
-    if (currentRank > 0) {
-      if (widget.talent.support == '') {
-        // this talent has no dependency on
-        talentProvider.decreaseTalentPoints(
-            widget.talent, currentRank, widget.talentTreeName);
-      } else {
-        // if we have dependency on, check if the dependency has been checked
-        Talent dependencyTalent =
-            talentProvider.findTalentByName(widget.talent.support);
-        if (dependencyTalent.points == 0) {
-          talentProvider.decreaseTalentPoints(
-              widget.talent, currentRank, widget.talentTreeName);
-        }
+    // rules: can decrease if
+    // 1. currentRank > 0
+    // 2. has no talent dependency
+    // 3. retain enough points for higher tier if checked
+
+    bool canDecrease = true;
+
+    // 1. currentRank > 0
+    if (currentRank <= 0) {
+      canDecrease = false;
+    }
+
+    // 2. has no talent dependency
+    if (widget.talent.support != '') {
+      Talent dependencyTalent =
+          talentProvider.findTalentByName(widget.talent.support);
+      if (dependencyTalent.points > 0) {
+        canDecrease = false;
       }
+    }
+
+    // 3. retain enough points for higher tier if checked
+    Talent highestTalent =
+        talentProvider.findHighestTierSpell(widget.talentTreeName);
+    int requiredTreePoints =
+        (highestTalent.tier * 5 - 5) + highestTalent.points;
+    int talentTreePoints =
+        talentProvider.getTalentTreePoints(widget.talentTreeName);
+    if (requiredTreePoints > talentTreePoints) {
+      canDecrease = false;
+    }
+
+    if (canDecrease) {
+      talentProvider.decreaseTalentPoints(
+          widget.talent, currentRank, widget.talentTreeName);
     }
   }
 

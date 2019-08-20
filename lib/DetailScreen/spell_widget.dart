@@ -34,21 +34,37 @@ class _SpellWidgetState extends State<SpellWidget> {
     int displayRank = currentRank - 1;
     if (displayRank < 0) {
       displayRank = 0;
-      return 'Learn: ${widget.talent.ranks.rank[displayRank].description}';
+      return '${widget.talent.name}: ${widget.talent.ranks.rank[displayRank].description}';
     }
     return widget.talent.ranks.rank[displayRank].description;
   }
 
   void _increaseRank() {
     if (currentRank < maxRank) {
-      talentProvider.increaseTalentPoints(widget.talent, currentRank, widget.talentTreeName);
+      talentProvider.increaseTalentPoints(
+          widget.talent, currentRank, widget.talentTreeName);
     }
   }
 
   void _decreaseRank() {
-    //check if current rank is greater than 0 and have no dependency
+    //rules: can decrease if
+    // currentRank > 0
+    // has no talent dependency
+    // retain enough point for higher tier if checked
     if (currentRank > 0) {
-      talentProvider.decreaseTalentPoints(widget.talent, currentRank, widget.talentTreeName);
+      if (widget.talent.support == '') {
+        // this talent has no dependency on
+        talentProvider.decreaseTalentPoints(
+            widget.talent, currentRank, widget.talentTreeName);
+      } else {
+        // if we have dependency on, check if the dependency has been checked
+        Talent dependencyTalent =
+            talentProvider.findTalentByName(widget.talent.support);
+        if (dependencyTalent.points == 0) {
+          talentProvider.decreaseTalentPoints(
+              widget.talent, currentRank, widget.talentTreeName);
+        }
+      }
     }
   }
 
@@ -56,7 +72,7 @@ class _SpellWidgetState extends State<SpellWidget> {
     if (widget.talent.enable) {
       return GestureDetector(
           onTap: () => _increaseRank(),
-           onDoubleTap: () => _decreaseRank(),
+          onDoubleTap: () => _decreaseRank(),
           onLongPress: () => _showDescription(),
           child: Container(child: Image.asset(imgLocation)));
     } else {
@@ -72,7 +88,6 @@ class _SpellWidgetState extends State<SpellWidget> {
     }
   }
 
-
   @override
   Widget build(BuildContext context) {
     talentProvider = Provider.of<TalentProvider>(context);
@@ -83,7 +98,6 @@ class _SpellWidgetState extends State<SpellWidget> {
 
 //    _setEnable();
     //draw arrow
-
 
     return Container(
       width: SizeConfig.cellSize,

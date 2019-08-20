@@ -63,6 +63,7 @@ class Talent {
   String name;
   int points;
   String dependency;
+  String support;
   List<int> position;
   int tier;
   bool enable;
@@ -73,6 +74,7 @@ class Talent {
       this.name,
       this.points,
       this.dependency,
+      this.support,
       this.position,
       this.tier,
       this.enable,
@@ -83,6 +85,7 @@ class Talent {
     name = json['Name'];
     points = json['Points'];
     dependency = json['Dependency'];
+    support = json['Support'];
     position = json['Position'].cast<int>();
     tier = json['Tier'];
     enable = json['Enable'];
@@ -95,6 +98,7 @@ class Talent {
     data['Name'] = this.name;
     data['Points'] = this.points;
     data['Dependency'] = this.dependency;
+    data['Support'] = this.support;
     data['Position'] = this.position;
     data['Tier'] = this.tier;
     data['Enable'] = this.enable;

@@ -22,23 +22,23 @@ class TalentProvider extends ChangeNotifier {
 
   getTotalPoint() => _totalPoints;
 
-  getTalentTreePoints(String talentTree) {
-    if (talentTree == specTreeList.specTrees[0].name) {
+  getTalentTreePoints(String talentTreeName) {
+    if (talentTreeName == specTreeList.specTrees[0].name) {
       return _firstTalentTreePoints;
-    } else if (talentTree == specTreeList.specTrees[1].name) {
+    } else if (talentTreeName == specTreeList.specTrees[1].name) {
       return _secondTalentTreePoints;
     }
-    if (talentTree == specTreeList.specTrees[2].name) {
+    if (talentTreeName == specTreeList.specTrees[2].name) {
       return _thirdTalentTreePoints;
     }
   }
 
-  void increaseTreePoints(String talentTree) {
-    if (talentTree == specTreeList.specTrees[0].name) {
+  void increaseTreePoints(String talentTreeName) {
+    if (talentTreeName == specTreeList.specTrees[0].name) {
       _firstTalentTreePoints++;
-    } else if (talentTree == specTreeList.specTrees[1].name) {
+    } else if (talentTreeName == specTreeList.specTrees[1].name) {
       _secondTalentTreePoints++;
-    } else if (talentTree == specTreeList.specTrees[2].name) {
+    } else if (talentTreeName == specTreeList.specTrees[2].name) {
       _thirdTalentTreePoints++;
     }
 
@@ -56,14 +56,16 @@ class TalentProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  void increaseTalentPoints(Talent talent, int currentRank) {
+  void increaseTalentPoints(Talent talent, int currentRank, String talentTreeName) {
     talent.points = currentRank + 1;
+    increaseTreePoints(talentTreeName);
     updateTalentTree();
     notifyListeners();
   }
 
-  void decreaseTalentPoints(Talent talent, int currentRank) {
+  void decreaseTalentPoints(Talent talent, int currentRank, String talentTreeName) {
     talent.points = currentRank - 1;
+    decreaseTreePoints(talentTreeName);
     updateTalentTree();
     notifyListeners();
   }

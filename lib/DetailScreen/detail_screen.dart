@@ -11,6 +11,9 @@ import 'package:wow_classic_talent_calculator/model/talent.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 
 class DetailScreen extends StatefulWidget {
+  final String className;
+  DetailScreen({this.className});
+
   @override
   _DetailScreenState createState() => _DetailScreenState();
 }
@@ -24,7 +27,7 @@ class _DetailScreenState extends State<DetailScreen>
   SpecTreeList specTreeList;
 
   Future<String> loadJson() async {
-    return await rootBundle.loadString('data_repo/warlock.json');
+    return await rootBundle.loadString('data_repo/${widget.className}.json');
   }
 
   ///parse json to object

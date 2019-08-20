@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:wow_classic_talent_calculator/DetailScreen/detail_screen.dart';
 
 class HomeScreen extends StatelessWidget {
-  List cards = List.generate(9, (i) => CustomCard());
+  _handleOnTap(BuildContext context, String className) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => DetailScreen(className: className),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -9,52 +18,27 @@ class HomeScreen extends StatelessWidget {
           title: Text('WoW Classic Talent Calculator'),
           backgroundColor: Color(0xFF673AB7),
         ),
-        body: Container(
-            child: ListView.builder(
-                itemCount: 9,
-                itemBuilder: (BuildContext ctxt, int index) => CustomCard())));
-  }
-}
-
-class CustomCard extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      child: Column(
-        children: <Widget>[
-          Image.network('https://i.ytimg.com/vi/fq4N0hgOWzU/maxresdefault.jpg'),
-          Padding(
-            padding: EdgeInsets.all(7.0),
-            child: Text('Title display'),
-          )
-        ],
-      ),
-    );
-  }
-}
-
-class CardDetails extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text('Card Details'),
-          backgroundColor: Color(0xFF673AB7),
-        ),
-        body: Container(
-          child: GridView.count(
-            crossAxisCount: 4,
-            children: List.generate(100, (index) {
-              return Center(
-                child: Container(
-                  margin: EdgeInsets.all(1),
-                  color: Colors.grey,
-                  width: double.infinity,
-                  height: double.infinity,
-                ),
-              );
-            }),
-          ),
+        body: ListView(
+          children: <Widget>[
+            GestureDetector(
+              onTap: () => _handleOnTap(context, 'warlock'),
+              child: Container(
+                height: 150,
+                color: Colors.amber[600],
+                child: const Center(child: Text('Warlock')),
+              ),
+            ),
+            Container(
+              height: 150,
+              color: Colors.amber[500],
+              child: const Center(child: Text('Warrior')),
+            ),
+            Container(
+              height: 150,
+              color: Colors.amber[100],
+              child: const Center(child: Text('Priest')),
+            ),
+          ],
         ));
   }
 }

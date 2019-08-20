@@ -41,11 +41,12 @@ class _SpellWidgetState extends State<SpellWidget> {
 
   void _increaseRank() {
     if (currentRank < maxRank) {
-      talentProvider.increaseTalentPoints(this.widget.talent, currentRank, widget.talentTreeName);
+      talentProvider.increaseTalentPoints(widget.talent, currentRank, widget.talentTreeName);
     }
   }
 
   void _decreaseRank() {
+    //check if current rank is greater than 0 and have no dependency
     if (currentRank > 0) {
       talentProvider.decreaseTalentPoints(widget.talent, currentRank, widget.talentTreeName);
     }

@@ -11,9 +11,9 @@ class TalentProvider extends ChangeNotifier {
   TalentProvider(this._firstTalentTreePoints, this._secondTalentTreePoints,
       this._thirdTalentTreePoints, this.specTreeList);
 
-  getFirstTalentTree() => specTreeList.specTrees[0].talents.talent;
-  getSecondTalentTree() => specTreeList.specTrees[1].talents.talent;
-  getThirdTalentTree() => specTreeList.specTrees[2].talents.talent;
+  // getFirstTalentTree() => specTreeList.specTrees[0].talents.talent;
+  // getSecondTalentTree() => specTreeList.specTrees[1].talents.talent;
+  // getThirdTalentTree() => specTreeList.specTrees[2].talents.talent;
 
   getTotalTalentPoints() =>
       _firstTalentTreePoints + _secondTalentTreePoints + _thirdTalentTreePoints;
@@ -101,6 +101,19 @@ class TalentProvider extends ChangeNotifier {
   }
 
   /// return the talent by name
+  List<Talent> findTalentTreeByName(String name) {
+    List<SpecTree> specTrees = specTreeList.specTrees;
+    List<Talent> talentTree = [];
+    for (int i = 0; i < specTrees.length; i++) {
+      if (specTrees[i].name == name) {
+        talentTree = specTrees[i].talents.talent;
+        return talentTree;
+      }
+    }
+    return talentTree;
+  }
+
+  /// return the talent by name
   Talent findTalentByName(String name) {
     List<SpecTree> specTrees = specTreeList.specTrees;
     for (int i = 0; i < specTrees.length; i++) {
@@ -130,8 +143,8 @@ class TalentProvider extends ChangeNotifier {
             }
           }
         }
+        break;
       }
-      break;
     }
     return highestTierSpell;
   }

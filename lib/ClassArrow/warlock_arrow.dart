@@ -4,7 +4,7 @@ import 'package:wow_classic_talent_calculator/DetailScreen/Arrows/right_arrow_wi
 import 'package:wow_classic_talent_calculator/model/position.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
 
-List<Widget> getAfflictionArrowList(List<Talent> talentList) {
+List<Widget> getAfflictionArrowList() {
   return [
     ArrowWidget(
       startPosition: Position(row: 3, column: 3),
@@ -27,6 +27,51 @@ List<Widget> getAfflictionArrowList(List<Talent> talentList) {
   ];
 }
 
+List<Widget> getDemonologyArrowList() {
+  return [
+    ArrowWidget(
+      startPosition: Position(row: 3, column: 2),
+      endPosition: Position(row: 4, column: 2),
+      lengthType: 'short',
+      dependencyTalent: 'Master Summoner',
+    ),
+    ArrowWidget(
+      startPosition: Position(row: 4, column: 3),
+      endPosition: Position(row: 6, column: 3),
+      lengthType: 'medium',
+      dependencyTalent: 'Master Demonologist',
+    ),
+    ArrowWidget(
+      startPosition: Position(row: 5, column: 2),
+      endPosition: Position(row: 7, column: 2),
+      lengthType: 'medium',
+      dependencyTalent: 'Soul Link',
+    ),
+  ];
+}
+
+List<Widget> getDestructionArrowList() {
+  return [
+    ArrowWidget(
+      startPosition: Position(row: 4, column: 1),
+      endPosition: Position(row: 5, column: 1),
+      lengthType: 'short',
+      dependencyTalent: 'Pyroclasm',
+    ),
+    ArrowWidget(
+      startPosition: Position(row: 3, column: 3),
+      endPosition: Position(row: 5, column: 3),
+      lengthType: 'medium',
+      dependencyTalent: 'Ruin',
+    ),
+    ArrowWidget(
+      startPosition: Position(row: 5, column: 2),
+      endPosition: Position(row: 7, column: 2),
+      lengthType: 'medium',
+      dependencyTalent: 'Conflagrate',
+    ),
+  ];
+}
 // List<Widget> afflictionArrowList = [
 //   ArrowWidget(
 //     startPosition: Position(row: 3, column: 3),

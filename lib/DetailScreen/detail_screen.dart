@@ -110,8 +110,7 @@ class _DetailScreenState extends State<DetailScreen>
                     ),
                     child: TalentTreeWidget(
                         talentTreeName: specTreeList.specTrees[0].name,
-                        // talentList: firstTalentTree,
-                        arrowList: getAfflictionArrowList(firstTalentTree)),
+                        arrowList: getAfflictionArrowList()),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -120,11 +119,9 @@ class _DetailScreenState extends State<DetailScreen>
                         fit: BoxFit.cover,
                       ),
                     ),
-                    // child: TalentTreeWidget(
-                    //   talentTreeName: kSecondTalentTree,
-                    //   talentList: secondTalentTree,
-                    //   // arrowList: demonologyArrowList
-                    // ),
+                    child: TalentTreeWidget(
+                        talentTreeName: specTreeList.specTrees[1].name,
+                        arrowList: getDemonologyArrowList()),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -133,11 +130,9 @@ class _DetailScreenState extends State<DetailScreen>
                         fit: BoxFit.cover,
                       ),
                     ),
-                    // child: TalentTreeWidget(
-                    //   talentTreeName: kThirdTalentTree,
-                    //   talentList: thirdTalentTree,
-                    //   // arrowList: destructionArrowList
-                    // ),
+                    child: TalentTreeWidget(
+                        talentTreeName: specTreeList.specTrees[2].name,
+                        arrowList: getDestructionArrowList()),
                   )
                 ],
               ),

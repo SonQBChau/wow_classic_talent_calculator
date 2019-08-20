@@ -23,10 +23,8 @@ class TalentTreeWidget extends StatelessWidget {
           top: talentList[i].position[0].toDouble() * SizeConfig.cellSize,
           left: talentList[i].position[1].toDouble() * SizeConfig.cellSize,
           child: SpellWidget(
-            // talentList: talentList,
             talent: talentList[i],
             talentTreeName: this.talentTreeName,
-            // currentPoint: talentList[i].points,
           ));
       talentTree.add(spell);
     }
@@ -34,30 +32,10 @@ class TalentTreeWidget extends StatelessWidget {
     return talentTree;
   }
 
-  _buildArrowTree() {
-    return [
-      ArrowWidget(
-        startPosition: Position(row: 3, column: 3),
-        endPosition: Position(row: 5, column: 3),
-        lengthType: 'medium',
-        dependencyTalent: 'Amplify Curse',
-      ),
-      ArrowWidget(
-        startPosition: Position(row: 5, column: 2),
-        endPosition: Position(row: 6, column: 2),
-        lengthType: 'short',
-        dependencyTalent: 'Siphon Life',
-      ),
-    ];
-  }
-
   @override
   Widget build(BuildContext context) {
     final talentProvider = Provider.of<TalentProvider>(context);
-    // talentList = talentProvider.getFirstTalentTree();
-    // print(talentProvider.specTreeList);
-    talentList = talentProvider.getFirstTalentTree();
-    // print(this.talentList);
+    talentList = talentProvider.findTalentTreeByName(talentTreeName);
 
     if (talentList.length == 0) {
       return SizedBox();

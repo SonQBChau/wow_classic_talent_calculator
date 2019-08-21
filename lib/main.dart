@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 
 import 'DetailScreen/detail_screen.dart';

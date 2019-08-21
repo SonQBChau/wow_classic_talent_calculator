@@ -1,25 +1,25 @@
-class SpecTreeList {
-  final List<SpecTree> specTrees;
+class TalentTrees {
+  final List<TalentTree> specTrees;
 
-  SpecTreeList({
+  TalentTrees({
     this.specTrees,
   });
 
-  factory SpecTreeList.fromJson(List<dynamic> parsedJson) {
-    List<SpecTree> specTrees = new List<SpecTree>();
-    specTrees = parsedJson.map((i) => SpecTree.fromJson(i)).toList();
+  factory TalentTrees.fromJson(List<dynamic> parsedJson) {
+    List<TalentTree> specTrees = new List<TalentTree>();
+    specTrees = parsedJson.map((i) => TalentTree.fromJson(i)).toList();
 
-    return new SpecTreeList(specTrees: specTrees);
+    return new TalentTrees(specTrees: specTrees);
   }
 }
 
-class SpecTree {
+class TalentTree {
   String name;
   Talents talents;
 
-  SpecTree({this.name, this.talents});
+  TalentTree({this.name, this.talents});
 
-  SpecTree.fromJson(Map<String, dynamic> json) {
+  TalentTree.fromJson(Map<String, dynamic> json) {
     name = json['Name'];
     talents =
         json['Talents'] != null ? new Talents.fromJson(json['Talents']) : null;

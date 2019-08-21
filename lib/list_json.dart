@@ -14,16 +14,16 @@ class ListJson extends StatelessWidget {
   Future printFuture() async {
     String jsonTalent = await loadAsset();
     final jsonResponse = json.decode(jsonTalent);
-    SpecTreeList specTreeList = SpecTreeList.fromJson(jsonResponse);
+    TalentTrees specTreeList = TalentTrees.fromJson(jsonResponse);
     // print(specTreeList.specTrees[0].name);
     // print(specTreeList.specTrees[1].name);
     // print(specTreeList.specTrees[2].name);
   }
 
-  Future<SpecTree> loadSpecTreeOne() async {
+  Future<TalentTree> loadSpecTreeOne() async {
     String jsonTalent = await loadAsset();
     final jsonResponse = json.decode(jsonTalent);
-    SpecTreeList specTreeList = SpecTreeList.fromJson(jsonResponse);
+    TalentTrees specTreeList = TalentTrees.fromJson(jsonResponse);
     print(specTreeList.specTrees[0]);
     return specTreeList.specTrees[0];
   }
@@ -41,7 +41,7 @@ class ListJson extends StatelessWidget {
             child: FutureBuilder(
                 future: loadSpecTreeOne(),
                 builder:
-                    (BuildContext context, AsyncSnapshot<SpecTree> snapshot) {
+                    (BuildContext context, AsyncSnapshot<TalentTree> snapshot) {
                   switch (snapshot.connectionState) {
                     case ConnectionState.none:
                     case ConnectionState.waiting:

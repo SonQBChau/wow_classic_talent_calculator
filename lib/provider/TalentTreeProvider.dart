@@ -13,17 +13,17 @@ class TalentTreeProvider extends ChangeNotifier {
   List<Talent> firstTalentTree = [];
   List<Talent> secondTalentTree = [];
   List<Talent> thirdTalentTree = [];
-  SpecTreeList specTreeList;
+  TalentTrees specTreeList;
 
   Future<String> loadJson() async {
     return await rootBundle.loadString(_classNameJson);
   }
 
   ///parse json to object
-  Future<SpecTreeList> loadTalentTree() async {
+  Future<TalentTrees> loadTalentTree() async {
     String jsonTalent = await loadJson();
     final jsonResponse = json.decode(jsonTalent);
-    SpecTreeList specTreeList = SpecTreeList.fromJson(jsonResponse);
+    TalentTrees specTreeList = TalentTrees.fromJson(jsonResponse);
     return specTreeList;
   }
 

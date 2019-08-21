@@ -6,7 +6,7 @@ class TalentProvider extends ChangeNotifier {
   int _firstTalentTreePoints;
   int _secondTalentTreePoints;
   int _thirdTalentTreePoints;
-  SpecTreeList specTreeList;
+  TalentTrees specTreeList;
 
   TalentProvider(this._firstTalentTreePoints, this._secondTalentTreePoints,
       this._thirdTalentTreePoints, this.specTreeList);
@@ -69,7 +69,7 @@ class TalentProvider extends ChangeNotifier {
   }
 
   void updateTalentTree() {
-    List<SpecTree> specTrees = specTreeList.specTrees;
+    List<TalentTree> specTrees = specTreeList.specTrees;
     for (int i = 0; i < specTrees.length; i++) {
       String specTreeName = specTrees[i].name;
       List<Talent> talents = specTrees[i].talents.talent;
@@ -102,7 +102,7 @@ class TalentProvider extends ChangeNotifier {
 
   /// return the talent by name
   List<Talent> findTalentTreeByName(String name) {
-    List<SpecTree> specTrees = specTreeList.specTrees;
+    List<TalentTree> specTrees = specTreeList.specTrees;
     List<Talent> talentTree = [];
     for (int i = 0; i < specTrees.length; i++) {
       if (specTrees[i].name == name) {
@@ -115,7 +115,7 @@ class TalentProvider extends ChangeNotifier {
 
   /// return the talent by name
   Talent findTalentByName(String name) {
-    List<SpecTree> specTrees = specTreeList.specTrees;
+    List<TalentTree> specTrees = specTreeList.specTrees;
     for (int i = 0; i < specTrees.length; i++) {
       List<Talent> talents = specTrees[i].talents.talent;
       for (int j = 0; j < talents.length; j++) {
@@ -130,7 +130,7 @@ class TalentProvider extends ChangeNotifier {
   /// find highest tier spell checked
   Talent findHighestTierSpell(String specTreeName) {
     Talent highestTierSpell;
-    List<SpecTree> specTrees = specTreeList.specTrees;
+    List<TalentTree> specTrees = specTreeList.specTrees;
     for (int i = 0; i < specTrees.length; i++) {
       if (specTrees[i].name == specTreeName) {
         List<Talent> talents = specTrees[i].talents.talent;

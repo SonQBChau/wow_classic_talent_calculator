@@ -37,28 +37,18 @@ class TalentTreeWidget extends StatelessWidget {
     final talentProvider = Provider.of<TalentProvider>(context);
     talentList = talentProvider.findTalentTreeByName(talentTreeName);
 
-    if (talentList.length == 0) {
-      return SizedBox();
-    } else {
-      return LayoutBuilder(
-          builder: (BuildContext context, BoxConstraints viewportConstraints) {
-        return SingleChildScrollView(
-            child: ConstrainedBox(
-                constraints: BoxConstraints(
-                  // minHeight: viewportConstraints.maxHeight,
-                  maxHeight: SizeConfig.cellSize * 7 +
-                      kTalentScreenTwoPadding, // cell size * number of row + padding
-                ),
-                child: Container(
-                    padding: EdgeInsets.symmetric(
-                        vertical: kTalentScreenPadding,
-                        horizontal: kTalentScreenPadding),
-                    child: Stack(children: <Widget>[
-                      ..._buildTalentTree(),
-                      ...arrowList
-//                       ..._buildArrowTree()
-                    ]))));
-      });
-    }
+    return LayoutBuilder(builder: (BuildContext context, BoxConstraints viewportConstraints) {
+      return SingleChildScrollView(
+          child: ConstrainedBox(
+              constraints: BoxConstraints(
+                // minHeight: viewportConstraints.maxHeight,
+                maxHeight: SizeConfig.cellSize * 7 +
+                    kTalentScreenTwoPadding, // cell size * number of row + padding
+              ),
+              child: Container(
+                  padding: EdgeInsets.symmetric(
+                      vertical: kTalentScreenPadding, horizontal: kTalentScreenPadding),
+                  child: Stack(children: <Widget>[..._buildTalentTree(), ...arrowList]))));
+    });
   }
 }

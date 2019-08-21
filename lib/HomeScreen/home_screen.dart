@@ -28,12 +28,11 @@ class HomeScreen extends StatelessWidget {
   }
 
   _handleOnTap(BuildContext context, String className) {
-    print(talentTrees);
     Navigator.push(
       context,
       MaterialPageRoute(
         builder: (context) =>
-            DetailScreen(className: className, talentTrees: talentTrees),
+            DetailScreen(className: className),
       ),
     );
   }

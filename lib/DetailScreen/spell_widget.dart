@@ -5,6 +5,7 @@ import 'package:wow_classic_talent_calculator/model/position.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
 import 'package:wow_classic_talent_calculator/provider/TalentProvider.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
+import 'package:transparent_image/transparent_image.dart';
 
 class SpellWidget extends StatefulWidget {
   final Talent talent;
@@ -91,7 +92,10 @@ class _SpellWidgetState extends State<SpellWidget> {
           onTap: () => _increaseRank(),
           onDoubleTap: () => _decreaseRank(),
           onLongPress: () => _showDescription(),
-          child: Container(child: Image.asset(imgLocation)));
+          child: Container(child:
+          Image.asset(imgLocation)
+          ));
+
     } else {
       return GestureDetector(
         onLongPress: () => _showDescription(),

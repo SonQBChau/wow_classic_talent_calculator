@@ -12,8 +12,7 @@ import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 
 class DetailScreen extends StatefulWidget {
   final String className;
-  TalentTrees talentTrees;
-  DetailScreen({this.className, this.talentTrees});
+  DetailScreen({this.className});
 
   @override
   _DetailScreenState createState() => _DetailScreenState();
@@ -22,31 +21,31 @@ class DetailScreen extends StatefulWidget {
 class _DetailScreenState extends State<DetailScreen>
     with SingleTickerProviderStateMixin {
   TabController _tabController;
-  // TalentTrees specTreeList;
+   TalentTrees talentTrees;
 
-  // Future<String> loadJson() async {
-  //   return await rootBundle.loadString('data_repo/${widget.className}.json');
-  // }
+   Future<String> loadJson() async {
+     return await rootBundle.loadString('data_repo/${widget.className}.json');
+   }
 
-  // ///parse json to object
-  // Future<TalentTrees> loadTalent() async {
-  //   String jsonTalent = await loadJson();
-  //   final jsonResponse = json.decode(jsonTalent);
-  //   TalentTrees localSpecTreeList = TalentTrees.fromJson(jsonResponse);
-  //   return localSpecTreeList;
-  // }
+   ///parse json to object
+   Future<TalentTrees> loadTalent() async {
+     String jsonTalent = await loadJson();
+     final jsonResponse = json.decode(jsonTalent);
+     TalentTrees localSpecTreeList = TalentTrees.fromJson(jsonResponse);
+     return localSpecTreeList;
+   }
 
-  // Future buildTalentList() async {
-  //   TalentTrees loadedSpecTreeList = await loadTalent();
-  //   setState(() {
-  //     specTreeList = loadedSpecTreeList;
-  //   });
-  // }
+   Future buildTalentList() async {
+     TalentTrees loadedSpecTreeList = await loadTalent();
+     setState(() {
+       talentTrees = loadedSpecTreeList;
+     });
+   }
 
   @override
   initState() {
     super.initState();
-    // buildTalentList();
+     buildTalentList();
     _tabController = TabController(length: 3, vsync: this, initialIndex: 0);
   }
 
@@ -90,8 +89,10 @@ class _DetailScreenState extends State<DetailScreen>
           ],
         ),
       ),
-      body: ChangeNotifierProvider<TalentProvider>(
-        builder: (_) => TalentProvider(0, 0, 0, widget.talentTrees),
+      body: talentTrees == null
+          ? CircularProgressIndicator()
+          : ChangeNotifierProvider<TalentProvider>(
+        builder: (_) => TalentProvider(0, 0, 0, talentTrees),
         child: TabBarView(
           controller: _tabController,
           children: [
@@ -101,9 +102,10 @@ class _DetailScreenState extends State<DetailScreen>
                   image: AssetImage("assets/Warlock/Affliction.png"),
                   fit: BoxFit.cover,
                 ),
+
               ),
               child: TalentTreeWidget(
-                  talentTreeName: widget.talentTrees.specTrees[0].name,
+                  talentTreeName: talentTrees.specTrees[0].name,
                   arrowList: getAfflictionArrowList()),
             ),
             Container(
@@ -114,7 +116,7 @@ class _DetailScreenState extends State<DetailScreen>
                 ),
               ),
               child: TalentTreeWidget(
-                  talentTreeName: widget.talentTrees.specTrees[1].name,
+                  talentTreeName: talentTrees.specTrees[1].name,
                   arrowList: getDemonologyArrowList()),
             ),
             Container(
@@ -125,7 +127,7 @@ class _DetailScreenState extends State<DetailScreen>
                 ),
               ),
               child: TalentTreeWidget(
-                  talentTreeName: widget.talentTrees.specTrees[2].name,
+                  talentTreeName: talentTrees.specTrees[2].name,
                   arrowList: getDestructionArrowList()),
             )
           ],

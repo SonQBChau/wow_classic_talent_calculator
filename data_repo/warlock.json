@@ -1,5 +1,7 @@
 [{
     "Name": "Affliction",
+    "Icon": "spell_shadow_requiem",
+    "Background": "affliction_bg",
     "Talents": {
         "Talent": [{
                 "Icon": "Spell_Shadow_UnsummonBuilding",
@@ -419,6 +421,8 @@
 },
 {
     "Name": "Demonology",
+    "Icon": "spell_shadow_metamorphosis",
+    "Background": "demonology_bg",
     "Talents": {
         "Talent": [{
                 "Icon": "INV_Stone_04",
@@ -851,6 +855,8 @@
 },
 {
     "Name": "Destruction",
+    "Icon": "spell_fire_fireball",
+    "Background": "destruction_bg",
     "Talents": {
         "Talent": [{
                 "Icon": "Spell_Shadow_ShadowBolt",

@@ -15,12 +15,16 @@ class TalentTrees {
 
 class TalentTree {
   String name;
+  String icon;
+  String background;
   Talents talents;
 
-  TalentTree({this.name, this.talents});
+  TalentTree({this.name, this.icon, this.background, this.talents});
 
   TalentTree.fromJson(Map<String, dynamic> json) {
     name = json['Name'];
+    icon = json['Icon'];
+    background = json['Background'];
     talents =
         json['Talents'] != null ? new Talents.fromJson(json['Talents']) : null;
   }
@@ -28,6 +32,8 @@ class TalentTree {
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['Name'] = this.name;
+    data['Icon'] = this.icon;
+    data['Background'] = this.background;
     if (this.talents != null) {
       data['Talents'] = this.talents.toJson();
     }

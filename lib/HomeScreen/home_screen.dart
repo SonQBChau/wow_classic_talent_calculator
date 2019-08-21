@@ -31,8 +31,7 @@ class HomeScreen extends StatelessWidget {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) =>
-            DetailScreen(className: className),
+        builder: (context) => DetailScreen(className: className),
       ),
     );
   }

@@ -4,6 +4,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'package:provider/provider.dart';
 import 'package:wow_classic_talent_calculator/ClassArrow/class_arrow_widget.dart';
 import 'package:wow_classic_talent_calculator/ClassArrow/warlock_arrow.dart';
+import 'package:wow_classic_talent_calculator/DetailScreen/detail_screen_content.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/talent_tree_widget.dart';
 import 'package:wow_classic_talent_calculator/provider/TalentProvider.dart';
 import 'dart:convert';
@@ -53,90 +54,21 @@ class _DetailScreenState extends State<DetailScreen>
   }
 
   @override
+  void dispose() {
+    // TODO: implement dispose
+    _tabController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return talentTrees == null
         ? CircularProgressIndicator()
-        : Scaffold(
-            appBar: AppBar(
-              title: Text('Warlock'),
-              actions: <Widget>[
-                Center(
-                  child: Container(
-                    padding: EdgeInsets.only(right: 10),
-                    child: Text(
-                      'Level 60',
-                      style:
-                          TextStyle(fontSize: 17, fontWeight: FontWeight.w500),
-                    ),
-                  ),
-                )
-              ],
-              backgroundColor: Color(0xFF673AB7),
-              bottom: TabBar(
-                controller: _tabController,
-                tabs: [
-                  Tab(
-                      icon: Image.asset(
-                    "assets/Icons/${talentTrees.specTrees[0].icon}.png",
-                    width: kTabIconSize,
-                  )),
-                  Tab(
-                      icon: Image.asset(
-                    "assets/Icons/${talentTrees.specTrees[1].icon}.png",
-                    width: kTabIconSize,
-                  )),
-                  Tab(
-                      icon: Image.asset(
-                    "assets/Icons/${talentTrees.specTrees[2].icon}.png",
-                    width: kTabIconSize,
-                  )),
-                ],
-              ),
-            ),
-            body: ChangeNotifierProvider<TalentProvider>(
-              builder: (_) => TalentProvider(0, 0, 0, talentTrees),
-              child: TabBarView(
-                controller: _tabController,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage(
-                            "assets/${widget.className}/${talentTrees.specTrees[0].background}.png"),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                    child: TalentTreeWidget(
-                        talentTreeName: talentTrees.specTrees[0].name,
-                        arrowList: arrowTrees[0]),
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage(
-                            "assets/${widget.className}/${talentTrees.specTrees[1].background}.png"),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                    child: TalentTreeWidget(
-                        talentTreeName: talentTrees.specTrees[1].name,
-                        arrowList: arrowTrees[1]),
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage(
-                            "assets/${widget.className}/${talentTrees.specTrees[2].background}.png"),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                    child: TalentTreeWidget(
-                        talentTreeName: talentTrees.specTrees[2].name,
-                        arrowList: arrowTrees[2]),
-                  )
-                ],
-              ),
-            ),
-          );
+        : ChangeNotifierProvider<TalentProvider>(
+            builder: (_) => TalentProvider(talentTrees),
+            child: DetailScreenContent(
+                className: widget.className,
+                talentTrees: talentTrees,
+                arrowTrees: arrowTrees));
   }
 }

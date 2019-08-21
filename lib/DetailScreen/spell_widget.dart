@@ -92,18 +92,18 @@ class _SpellWidgetState extends State<SpellWidget> {
           onTap: () => _increaseRank(),
           onDoubleTap: () => _decreaseRank(),
           onLongPress: () => _showDescription(),
-          child: Container(child:
-          Image.asset(imgLocation)
-          ));
-
+          child: Container(child: Image.asset(imgLocation)));
     } else {
       return GestureDetector(
         onLongPress: () => _showDescription(),
         child: Container(
             foregroundDecoration: BoxDecoration(
-                color: Colors.grey,
-                backgroundBlendMode: BlendMode.saturation,
-                borderRadius: BorderRadius.circular(6)),
+              color: Colors.grey,
+              backgroundBlendMode: BlendMode.saturation,
+              borderRadius:
+                  BorderRadius.circular(14), // icon curve border magic number
+              // color: Colors.red,
+            ),
             child: Image.asset(imgLocation)),
       );
     }

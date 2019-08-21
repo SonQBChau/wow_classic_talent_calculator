@@ -3,20 +3,22 @@ import 'package:wow_classic_talent_calculator/model/talent.dart';
 import 'package:wow_classic_talent_calculator/utils/constants.dart';
 
 class TalentProvider extends ChangeNotifier {
-  int _firstTalentTreePoints;
-  int _secondTalentTreePoints;
-  int _thirdTalentTreePoints;
+  int _firstTalentTreePoints = 0;
+  int _secondTalentTreePoints = 0;
+  int _thirdTalentTreePoints = 0;
   TalentTrees specTreeList;
 
-  TalentProvider(this._firstTalentTreePoints, this._secondTalentTreePoints,
-      this._thirdTalentTreePoints, this.specTreeList);
+  TalentProvider(this.specTreeList);
 
   // getFirstTalentTree() => specTreeList.specTrees[0].talents.talent;
   // getSecondTalentTree() => specTreeList.specTrees[1].talents.talent;
   // getThirdTalentTree() => specTreeList.specTrees[2].talents.talent;
 
   getTotalTalentPoints() =>
-      _firstTalentTreePoints + _secondTalentTreePoints + _thirdTalentTreePoints;
+      10 +
+      _firstTalentTreePoints +
+      _secondTalentTreePoints +
+      _thirdTalentTreePoints;
 
   getTalentTreePoints(String talentTreeName) {
     if (talentTreeName == specTreeList.specTrees[0].name) {

@@ -12,7 +12,6 @@ final kColorBlueMage = const Color(0xff40C7EB);
 final kColorGreenHunter = const Color(0xffABD473);
 final kColorOrangeDruid = const Color(0xffFF7D0A);
 
-final kColorGold = const Color(0xFFe6cc80);
 final kColorSelectiveYellow = const Color(0xFFF8B700);
 final kColorLicorice = const Color(0xFF211510);
 final kColorLightLicorice = const Color(0xFF241512);

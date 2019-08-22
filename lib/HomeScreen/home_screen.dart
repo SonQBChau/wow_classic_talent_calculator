@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/detail_screen.dart';
+import 'package:wow_classic_talent_calculator/HomeScreen/class_widget.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
 import 'package:wow_classic_talent_calculator/provider/TalentProvider.dart';
 import 'package:wow_classic_talent_calculator/utils/colors.dart';
@@ -32,7 +33,8 @@ class HomeScreen extends StatelessWidget {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => DetailScreen(className: className, classColor: classColor),
+        builder: (context) =>
+            DetailScreen(className: className, classColor: classColor),
       ),
     );
   }
@@ -46,67 +48,38 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: Text('Classic Talent Calculator'),
-            centerTitle: true,
-          backgroundColor: Color(0xFFe6cc80),
+          centerTitle: true,
+          backgroundColor: kColorGold,
         ),
         body: ListView(
           children: <Widget>[
-            Container(
-              height: 150,
-              width: SizeConfig.screenWidth,
-              color: kColorGreenHunter,
-              child: Image.asset('assets/Class/druid.png', fit: BoxFit.fitWidth),
+            ClassWidget(
+              className: 'druid',
             ),
-            Container(
-              height: 150,
-              width: SizeConfig.screenWidth,
-              color: kColorGreenHunter,
-              child: Image.asset('assets/Class/hunter.png', fit: BoxFit.fitWidth),
+            ClassWidget(
+              className: 'hunter',
             ),
-            Container(
-              height: 150,
-              width: SizeConfig.screenWidth,
-              color: kColorGreenHunter,
-              child: Image.asset('assets/Class/mage.png', fit: BoxFit.fitWidth),
+            ClassWidget(
+              className: 'mage',
             ),
-            Container(
-              height: 150,
-              width: SizeConfig.screenWidth,
-              color: kColorGreenHunter,
-              child: Image.asset('assets/Class/paladin.png', fit: BoxFit.fitWidth),
+            ClassWidget(
+              className: 'paladin',
             ),
-            Container(
-              height: 150,
-              width: SizeConfig.screenWidth,
-              color: kColorGreenHunter,
-              child: Image.asset('assets/Class/priest.png', fit: BoxFit.fitWidth),
+            ClassWidget(
+              className: 'priest',
             ),
-            Container(
-              height: 150,
-              width: SizeConfig.screenWidth,
-              color: kColorGreenHunter,
-              child: Image.asset('assets/Class/rogue.png', fit: BoxFit.fitWidth),
+            ClassWidget(
+              className: 'rogue',
             ),
-            Container(
-              height: 150,
-              width: SizeConfig.screenWidth,
-              color: kColorGreenHunter,
-              child: Image.asset('assets/Class/shaman.png', fit: BoxFit.fitWidth),
+            ClassWidget(
+              className: 'shaman',
             ),
-            Container(
-              height: 150,
-              width: SizeConfig.screenWidth,
-              color: kColorGreenHunter,
-              child: Image.asset('assets/Class/warlock.png', fit: BoxFit.fitWidth),
+            ClassWidget(
+              className: 'warlock',
             ),
-            Container(
-              height: 150,
-              width: SizeConfig.screenWidth,
-              color: kColorGreenHunter,
-              child: Image.asset('assets/Class/warrior.png', fit: BoxFit.fitWidth),
+            ClassWidget(
+              className: 'warrior',
             ),
-
-
           ],
         ));
   }

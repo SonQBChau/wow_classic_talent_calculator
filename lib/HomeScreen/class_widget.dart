@@ -27,7 +27,7 @@ class ClassWidget extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 40,
                     fontWeight: FontWeight.bold,
-                    color: kColorGold),
+                    color: kColorSelectiveYellow),
               )),
           ShaderMask(
             shaderCallback: (rect) {

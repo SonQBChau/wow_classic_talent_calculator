@@ -1,0 +1,1519 @@
+{
+	"Specializations": {
+		"Specialization": [
+			{
+				"Name": "Elemental",
+				"Talents": {
+					"Talent": [
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Nature_WispSplode",
+							"Name": "Convection",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "1",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Reduces the mana cost of your Shock, Lightning Bolt and Chain Lightning spells by 2%."
+									},
+									{
+										"Number": "2",
+										"Description": "Reduces the mana cost of your Shock, Lightning Bolt and Chain Lightning spells by 4%."
+									},
+									{
+										"Number": "3",
+										"Description": "Reduces the mana cost of your Shock, Lightning Bolt and Chain Lightning spells by 6%."
+									},
+									{
+										"Number": "4",
+										"Description": "Reduces the mana cost of your Shock, Lightning Bolt and Chain Lightning spells by 8%."
+									},
+									{
+										"Number": "5",
+										"Description": "Reduces the mana cost of your Shock, Lightning Bolt and Chain Lightning spells by 10%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Fire_Fireball",
+							"Name": "Concussion",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "1",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the damage done by your Lightning Bolt, Chain Lightning and Shock spells by 1%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the damage done by your Lightning Bolt, Chain Lightning and Shock spells by 2%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases the damage done by your Lightning Bolt, Chain Lightning and Shock spells by 3%."
+									},
+									{
+										"Number": "4",
+										"Description": "Increases the damage done by your Lightning Bolt, Chain Lightning and Shock spells by 4%."
+									},
+									{
+										"Number": "5",
+										"Description": "Increases the damage done by your Lightning Bolt, Chain Lightning and Shock spells by 5%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Nature_StoneClawTotem",
+							"Name": "Earth's Grasp",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "2",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the health of your Stoneclaw Totem by 25% and the radius of your Earthbind Totem by 10%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the health of your Stoneclaw Totem by 50% and the radius of your Earthbind Totem by 20%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Nature_SpiritArmor",
+							"Name": "Elemental Warding",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "2",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Reduces damage taken from Fire, Frost and Nature effects by 4%."
+									},
+									{
+										"Number": "2",
+										"Description": "Reduces damage taken from Fire, Frost and Nature effects by 7%."
+									},
+									{
+										"Number": "3",
+										"Description": "Reduces damage taken from Fire, Frost and Nature effects by 10%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Fire_Immolation",
+							"Name": "Call of Flame",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "2",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the damage done by your Fire Totems by 5%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the damage done by your Fire Totems by 10%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases the damage done by your Fire Totems by 15%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Shadow_ManaBurn",
+							"Name": "Elemental Focus",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "3",
+							"Ranks": {
+								"Rank": {
+									"Number": "1",
+									"Description": "Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell.  The Clearcasting state reduces the mana cost of your next damage spell by 100%."
+								}
+							}
+						},
+						{
+							"Icon": "Spell_Frost_FrostWard",
+							"Name": "Reverberation",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "3",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Reduces the cooldown of your Shock spells by 0.2 sec."
+									},
+									{
+										"Number": "2",
+										"Description": "Reduces the cooldown of your Shock spells by 0.4 sec."
+									},
+									{
+										"Number": "3",
+										"Description": "Reduces the cooldown of your Shock spells by 0.6 sec."
+									},
+									{
+										"Number": "4",
+										"Description": "Reduces the cooldown of your Shock spells by 0.8 sec."
+									},
+									{
+										"Number": "5",
+										"Description": "Reduces the cooldown of your Shock spells by 1 sec."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Nature_CallStorm",
+							"Name": "Call of Thunder",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "3",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 1%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 2%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 3%."
+									},
+									{
+										"Number": "4",
+										"Description": "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 4%."
+									},
+									{
+										"Number": "5",
+										"Description": "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional 6%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Fire_SealOfFire",
+							"Name": "Improved Fire Totems",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "4",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Reduces the delay before your Fire Nova Totem activates by 1 sec. and decreases the threat generated by your Magma Totem by 25%."
+									},
+									{
+										"Number": "2",
+										"Description": "Reduces the delay before your Fire Nova Totem activates by 2 sec. and decreases the threat generated by your Magma Totem by 50%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Nature_EyeOfTheStorm",
+							"Name": "Eye of the Storm",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "4",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Gives you a 33% chance to gain the Focused Casting effect that lasts for 6 sec after being the victim of a melee or ranged critical strike.  The Focused Casting effect prevents you from losing casting time when taking damage."
+									},
+									{
+										"Number": "2",
+										"Description": "Gives you a 66% chance to gain the Focused Casting effect that lasts for 6 sec after being the victim of a melee or ranged critical strike.  The Focused Casting effect prevents you from losing casting time when taking damage."
+									},
+									{
+										"Number": "3",
+										"Description": "Gives you a 100% chance to gain the Focused Casting effect that lasts for 6 sec after being the victim of a melee or ranged critical strike.  The Focused Casting effect prevents you from losing casting time when taking damage."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Fire_ElementalDevastation",
+							"Name": "Elemental Devastation",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "4",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Your offensive spell crits will increase your chance to get a critical strike with melee attacks by 3% for 10 sec."
+									},
+									{
+										"Number": "2",
+										"Description": "Your offensive spell crits will increase your chance to get a critical strike with melee attacks by 6% for 10 sec."
+									},
+									{
+										"Number": "3",
+										"Description": "Your offensive spell crits will increase your chance to get a critical strike with melee attacks by 9% for 10 sec."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Nature_StormReach",
+							"Name": "Storm Reach",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "5",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the range of your Lightning Bolt and Chain Lightning spells by 3 yards."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the range of your Lightning Bolt and Chain Lightning spells by 6 yards."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Fire_Volcano",
+							"Name": "Elemental Fury",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "5",
+							"Ranks": {
+								"Rank": {
+									"Number": "1",
+									"Description": "Increases the critical strike damage bonus of your Searing, Magma, and Fire Nova Totems and your Fire, Frost, and Nature spells by 100%."
+								}
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Lightning_LightningBolt01",
+							"Name": "Lightning Mastery",
+							"Points": "5",
+							"Dependancy": "Call of Thunder",
+							"Arrow": {
+								"Name": "ArrowLong",
+								"X": "148",
+								"Y": "200"
+							},
+							"Tier": "6",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Reduces the cast time of your Lightning Bolt and Chain Lightning spells by 0.2 sec."
+									},
+									{
+										"Number": "2",
+										"Description": "Reduces the cast time of your Lightning Bolt and Chain Lightning spells by 0.4 sec."
+									},
+									{
+										"Number": "3",
+										"Description": "Reduces the cast time of your Lightning Bolt and Chain Lightning spells by 0.6 sec."
+									},
+									{
+										"Number": "4",
+										"Description": "Reduces the cast time of your Lightning Bolt and Chain Lightning spells by 0.8 sec."
+									},
+									{
+										"Number": "5",
+										"Description": "Reduces the cast time of your Lightning Bolt and Chain Lightning spells by 1 sec."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Nature_WispHeal",
+							"Name": "Elemental Mastery",
+							"Points": "1",
+							"Dependancy": "Elemental Fury",
+							"Arrow": {
+								"Name": "ArrowMedium",
+								"X": "88",
+								"Y": "320"
+							},
+							"Tier": "7",
+							"Ranks": {
+								"Rank": {
+									"Number": "1",
+									"Description": "When activated, this spell gives your next Fire, Frost, or Nature damage spell a 100% critical strike chance and reduces the mana cost by 100%."
+								}
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						}
+					]
+				}
+			},
+			{
+				"Name": "Enhancement",
+				"Talents": {
+					"Talent": [
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Shadow_GrimWard",
+							"Name": "Ancestral Knowledge",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "1",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases your maximum Mana by 1%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases your maximum Mana by 2%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases your maximum Mana by 3%."
+									},
+									{
+										"Number": "4",
+										"Description": "Increases your maximum Mana by 4%."
+									},
+									{
+										"Number": "5",
+										"Description": "Increases your maximum Mana by 5%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "INV_Shield_06",
+							"Name": "Shield Specialization",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "1",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases your chance to block attacks with a shield by 1% and increases the amount blocked by 5%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases your chance to block attacks with a shield by 2% and increases the amount blocked by 10%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases your chance to block attacks with a shield by 3% and increases the amount blocked by 15%."
+									},
+									{
+										"Number": "4",
+										"Description": "Increases your chance to block attacks with a shield by 4% and increases the amount blocked by 20%."
+									},
+									{
+										"Number": "5",
+										"Description": "Increases your chance to block attacks with a shield by 5% and increases the amount blocked by 25%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Nature_StoneSkinTotem",
+							"Name": "Guardian Totems",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "2",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the amount of damage reduced by your Stoneskin Totem and Windwall Totem by 10% and reduces the cooldown of your Grounding Totem by 1 sec."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the amount of damage reduced by your Stoneskin Totem and Windwall Totem by 20% and reduces the cooldown of your Grounding Totem by 2 sec."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Ability_ThunderBolt",
+							"Name": "Thundering Strikes",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "2",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Improves your chance to get a critical strike with your weapon attacks by 1%."
+									},
+									{
+										"Number": "2",
+										"Description": "Improves your chance to get a critical strike with your weapon attacks by 2%."
+									},
+									{
+										"Number": "3",
+										"Description": "Improves your chance to get a critical strike with your weapon attacks by 3%."
+									},
+									{
+										"Number": "4",
+										"Description": "Improves your chance to get a critical strike with your weapon attacks by 4%."
+									},
+									{
+										"Number": "5",
+										"Description": "Improves your chance to get a critical strike with your weapon attacks by 5%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Nature_SpiritWolf",
+							"Name": "Improved Ghost Wolf",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "2",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Reduces the cast time of your Ghost Wolf spell by 1 sec."
+									},
+									{
+										"Number": "2",
+										"Description": "Reduces the cast time of your Ghost Wolf spell by 2 sec."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Nature_LightningShield",
+							"Name": "Improved Lightning Shield",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "2",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the damage done by your Lightning Shield orbs by 5%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the damage done by your Lightning Shield orbs by 10%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases the damage done by your Lightning Shield orbs by 15%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Nature_EarthBindTotem",
+							"Name": "Enhancing Totems",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "3",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the effect of your Strength of Earth and Grace of Air Totems by 8%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the effect of your Strength of Earth and Grace of Air Totems by 15%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "INV_Axe_10",
+							"Name": "Two-Handed Axes and Maces",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "3",
+							"Ranks": {
+								"Rank": {
+									"Number": "1",
+									"Description": "Allows you to use Two-Handed Axes and Two-Handed Maces."
+								}
+							}
+						},
+						{
+							"Icon": "Spell_Nature_MirrorImage",
+							"Name": "Anticipation",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "3",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases your chance to dodge by an additional 1%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases your chance to dodge by an additional 2%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases your chance to dodge by an additional 3%."
+									},
+									{
+										"Number": "4",
+										"Description": "Increases your chance to dodge by an additional 4%."
+									},
+									{
+										"Number": "5",
+										"Description": "Increases your chance to dodge by an additional 5%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Ability_GhoulFrenzy",
+							"Name": "Flurry",
+							"Points": "5",
+							"Dependancy": "Thundering Strikes",
+							"Arrow": {
+								"Name": "ArrowMedium",
+								"X": "88",
+								"Y": "140"
+							},
+							"Tier": "4",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases your attack speed by 10% for your next 3 swings after dealing a critical strike."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases your attack speed by 15% for your next 3 swings after dealing a critical strike."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases your attack speed by 20% for your next 3 swings after dealing a critical strike."
+									},
+									{
+										"Number": "4",
+										"Description": "Increases your attack speed by 25% for your next 3 swings after dealing a critical strike."
+									},
+									{
+										"Number": "5",
+										"Description": "Increases your attack speed by 30% for your next 3 swings after dealing a critical strike."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Holy_Devotion",
+							"Name": "Toughness",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "4",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases your armor value from items by 2%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases your armor value from items by 4%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases your armor value from items by 6%."
+									},
+									{
+										"Number": "4",
+										"Description": "Increases your armor value from items by 8%."
+									},
+									{
+										"Number": "5",
+										"Description": "Increases your armor value from items by 10%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Fire_EnchantWeapon",
+							"Name": "Improved Weapon Totems",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "5",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the melee attack power bonus of your Windfury Totem by 15% and increases the damage caused by your Flametongue Totem by 6%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the melee attack power bonus of your Windfury Totem by 30% and increases the damage caused by your Flametongue Totem by 12%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Fire_FlameTounge",
+							"Name": "Elemental Weapons",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "5",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the melee attack power bonus of your Rockbiter Weapon by 7%, your Windfury Weapon effect by 13% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 5%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the melee attack power bonus of your Rockbiter Weapon by 14%, your Windfury Weapon effect by 27% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 10%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases the melee attack power bonus of your Rockbiter Weapon by 20%, your Windfury Weapon effect by 40% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 15%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Ability_Parry",
+							"Name": "Parry",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "5",
+							"Ranks": {
+								"Rank": {
+									"Number": "1",
+									"Description": "Gives a chance to parry enemy melee attacks."
+								}
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Ability_Hunter_SwiftStrike",
+							"Name": "Weapon Mastery",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "6",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the damage you deal with all weapons by 2%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the damage you deal with all weapons by 4%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases the damage you deal with all weapons by 6%."
+									},
+									{
+										"Number": "4",
+										"Description": "Increases the damage you deal with all weapons by 8%."
+									},
+									{
+										"Number": "5",
+										"Description": "Increases the damage you deal with all weapons by 10%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Holy_SealOfMight",
+							"Name": "Stormstrike",
+							"Points": "3",
+							"Dependancy": "Elemental Weapons",
+							"Arrow": {
+								"Name": "ArrowMedium",
+								"X": "88",
+								"Y": "320"
+							},
+							"Tier": "7",
+							"Ranks": {
+								"Rank": {
+									"Number": "1",
+									"Description": "Gives you an extra attack.  In addition, the next 2 sources of Nature damage dealt to the target are increased by 20%.  Lasts 12 sec."
+								}
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						}
+					]
+				}
+			},
+			{
+				"Name": "Restoration",
+				"Talents": {
+					"Talent": [
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Nature_MagicImmunity",
+							"Name": "Improved Healing Wave",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "1",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Reduces the casting time of your Healing Wave spell by 0.1 sec."
+									},
+									{
+										"Number": "2",
+										"Description": "Reduces the casting time of your Healing Wave spell by 0.2 sec."
+									},
+									{
+										"Number": "3",
+										"Description": "Reduces the casting time of your Healing Wave spell by 0.3 sec."
+									},
+									{
+										"Number": "4",
+										"Description": "Reduces the casting time of your Healing Wave spell by 0.4 sec."
+									},
+									{
+										"Number": "5",
+										"Description": "Reduces the casting time of your Healing Wave spell by 0.5 sec."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Frost_ManaRecharge",
+							"Name": "Tidal Focus",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "1",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Reduces the Mana cost of your healing spells by 1%."
+									},
+									{
+										"Number": "2",
+										"Description": "Reduces the Mana cost of your healing spells by 2%."
+									},
+									{
+										"Number": "3",
+										"Description": "Reduces the Mana cost of your healing spells by 3%."
+									},
+									{
+										"Number": "4",
+										"Description": "Reduces the Mana cost of your healing spells by 4%."
+									},
+									{
+										"Number": "5",
+										"Description": "Reduces the Mana cost of your healing spells by 5%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Nature_Reincarnation",
+							"Name": "Improved Reincarnation",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "2",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Reduces the cooldown of your Reincarnation spell by 10 min and increases the amount of health and mana you reincarnate with by an additional 10%."
+									},
+									{
+										"Number": "2",
+										"Description": "Reduces the cooldown of your Reincarnation spell by 20 min and increases the amount of health and mana you reincarnate with by an additional 20%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Nature_UndyingStrength",
+							"Name": "Ancestral Healing",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "2",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases your target's armor value by 8% for 15 sec after getting a critical effect from one of your healing spells."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases your target's armor value by 16% for 15 sec after getting a critical effect from one of your healing spells."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases your target's armor value by 25% for 15 sec after getting a critical effect from one of your healing spells."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Nature_MoonGlow",
+							"Name": "Totemic Focus",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "2",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Reduces the Mana cost of your totems by 5%."
+									},
+									{
+										"Number": "2",
+										"Description": "Reduces the Mana cost of your totems by 10%."
+									},
+									{
+										"Number": "3",
+										"Description": "Reduces the Mana cost of your totems by 15%."
+									},
+									{
+										"Number": "4",
+										"Description": "Reduces the Mana cost of your totems by 20%."
+									},
+									{
+										"Number": "5",
+										"Description": "Reduces the Mana cost of your totems by 25%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Frost_Stun",
+							"Name": "Nature's Guidance",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "3",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases your chance to hit with melee attacks and spells by 1%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases your chance to hit with melee attacks and spells by 2%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases your chance to hit with melee attacks and spells by 3%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Nature_HealingWaveLesser",
+							"Name": "Healing Focus",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "3",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Gives you a 14% chance to avoid interruption caused by damage while casting any healing spell."
+									},
+									{
+										"Number": "2",
+										"Description": "Gives you a 28% chance to avoid interruption caused by damage while casting any healing spell."
+									},
+									{
+										"Number": "3",
+										"Description": "Gives you a 42% chance to avoid interruption caused by damage while casting any healing spell."
+									},
+									{
+										"Number": "4",
+										"Description": "Gives you a 56% chance to avoid interruption caused by damage while casting any healing spell."
+									},
+									{
+										"Number": "5",
+										"Description": "Gives you a 70% chance to avoid interruption caused by damage while casting any healing spell."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Nature_NullWard",
+							"Name": "Totemic Mastery",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "3",
+							"Ranks": {
+								"Rank": {
+									"Number": "1",
+									"Description": "The radius of your totems that affect friendly targets is increased to 30 yd."
+								}
+							}
+						},
+						{
+							"Icon": "Spell_Nature_HealingTouch",
+							"Name": "Healing Grace",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "3",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Reduces the threat generated by your healing spells by 5%."
+									},
+									{
+										"Number": "2",
+										"Description": "Reduces the threat generated by your healing spells by 10%."
+									},
+									{
+										"Number": "3",
+										"Description": "Reduces the threat generated by your healing spells by 15%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Nature_ManaRegenTotem",
+							"Name": "Restorative Totems",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "4",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the effect of your Mana Spring and Healing Stream Totems by 5%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the effect of your Mana Spring and Healing Stream Totems by 10%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases the effect of your Mana Spring and Healing Stream Totems by 15%."
+									},
+									{
+										"Number": "4",
+										"Description": "Increases the effect of your Mana Spring and Healing Stream Totems by 20%."
+									},
+									{
+										"Number": "5",
+										"Description": "Increases the effect of your Mana Spring and Healing Stream Totems by 25%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Nature_Tranquility",
+							"Name": "Tidal Mastery",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "4",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the critical effect chance of your healing and lightning spells by 1%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the critical effect chance of your healing and lightning spells by 2%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases the critical effect chance of your healing and lightning spells by 3%."
+									},
+									{
+										"Number": "4",
+										"Description": "Increases the critical effect chance of your healing and lightning spells by 4%."
+									},
+									{
+										"Number": "5",
+										"Description": "Increases the critical effect chance of your healing and lightning spells by 5%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Nature_HealingWay",
+							"Name": "Healing Way",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "5",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Your Healing Wave spells have a 33% chance to increase the effect of subsequent Healing Wave spells on that target by 6% for 15 sec.  This effect will stack up to 3 times."
+									},
+									{
+										"Number": "2",
+										"Description": "Your Healing Wave spells have a 66% chance to increase the effect of subsequent Healing Wave spells on that target by 6% for 15 sec.  This effect will stack up to 3 times."
+									},
+									{
+										"Number": "3",
+										"Description": "Your Healing Wave spells have a 100% chance to increase the effect of subsequent Healing Wave spells on that target by 6% for 15 sec.  This effect will stack up to 3 times."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Nature_RavenForm",
+							"Name": "Nature's Swiftness",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "5",
+							"Ranks": {
+								"Rank": {
+									"Number": "1",
+									"Description": "When activated, your next Nature spell with a casting time less than 10 sec. becomes an instant cast spell."
+								}
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Frost_WizardMark",
+							"Name": "Purification",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "6",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the effectiveness of your healing spells by 2%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the effectiveness of your healing spells by 4%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases the effectiveness of your healing spells by 6%."
+									},
+									{
+										"Number": "4",
+										"Description": "Increases the effectiveness of your healing spells by 8%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Frost_SummonWaterElemental",
+							"Name": "Mana Tide Totem",
+							"Points": "5",
+							"Dependancy": "Restorative Totems",
+							"Arrow": {
+								"Name": "ArrowLong",
+								"X": "88",
+								"Y": "260"
+							},
+							"Tier": "7",
+							"Ranks": {
+								"Rank": {
+									"Number": "1",
+									"Description": "Summons a Mana Tide Totem with 5 health at the feet of the caster for 12 sec that restores 170 mana every 3 seconds to group members within 20 yards."
+								}
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						}
+					]
+				}
+			}
+		]
+	}
+}

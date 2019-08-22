@@ -1,0 +1,1508 @@
+{
+	"Specializations": {
+		"Specialization": [
+			{
+				"Name": "Arcane",
+				"Talents": {
+					"Talent": [
+						{
+							"Icon": "Spell_Holy_DispelMagic",
+							"Name": "Arcane Subtlety",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "1",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Reduces your target's resistance to all your spells by 5 and reduces the threat caused by your Arcane spells by 20%."
+									},
+									{
+										"Number": "2",
+										"Description": "Reduces your target's resistance to all your spells by 10 and reduces the threat caused by your Arcane spells by 40%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Holy_Devotion",
+							"Name": "Arcane Focus",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "1",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Reduces the chance that the opponent can resist your Arcane spells by 2%."
+									},
+									{
+										"Number": "2",
+										"Description": "Reduces the chance that the opponent can resist your Arcane spells by 4%."
+									},
+									{
+										"Number": "3",
+										"Description": "Reduces the chance that the opponent can resist your Arcane spells by 6%."
+									},
+									{
+										"Number": "4",
+										"Description": "Reduces the chance that the opponent can resist your Arcane spells by 8%."
+									},
+									{
+										"Number": "5",
+										"Description": "Reduces the chance that the opponent can resist your Arcane spells by 10%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Nature_StarFall",
+							"Name": "Improved Arcane Missiles",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "1",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Gives you a 20% chance to avoid interruption caused by damage while channeling Arcane Missiles."
+									},
+									{
+										"Number": "2",
+										"Description": "Gives you a 40% chance to avoid interruption caused by damage while channeling Arcane Missiles."
+									},
+									{
+										"Number": "3",
+										"Description": "Gives you a 60% chance to avoid interruption caused by damage while channeling Arcane Missiles."
+									},
+									{
+										"Number": "4",
+										"Description": "Gives you a 80% chance to avoid interruption caused by damage while channeling Arcane Missiles."
+									},
+									{
+										"Number": "5",
+										"Description": "Gives you a 100% chance to avoid interruption caused by damage while channeling Arcane Missiles."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "INV_Wand_01",
+							"Name": "Wand Specialization",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "2",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases your damage with Wands by 13%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases your damage with Wands by 25%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Nature_AstralRecalGroup",
+							"Name": "Magic Absorption",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "2",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases all resistances by 2 and causes all spells you fully resist to restore 1% of your total mana.  1 sec. cooldown."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases all resistances by 4 and causes all spells you fully resist to restore 2% of your total mana.  1 sec. cooldown."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases all resistances by 6 and causes all spells you fully resist to restore 3% of your total mana.  1 sec. cooldown."
+									},
+									{
+										"Number": "4",
+										"Description": "Increases all resistances by 8 and causes all spells you fully resist to restore 4% of your total mana.  1 sec. cooldown."
+									},
+									{
+										"Number": "5",
+										"Description": "Increases all resistances by 10 and causes all spells you fully resist to restore 5% of your total mana.  1 sec. cooldown."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Shadow_ManaBurn",
+							"Name": "Arcane Concentration",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "2",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Gives you a 2% chance of entering a Clearcasting state after any damage spell hits a target.  The Clearcasting state reduces the mana cost of your next damage spell by 100%."
+									},
+									{
+										"Number": "2",
+										"Description": "Gives you a 4% chance of entering a Clearcasting state after any damage spell hits a target.  The Clearcasting state reduces the mana cost of your next damage spell by 100%."
+									},
+									{
+										"Number": "3",
+										"Description": "Gives you a 6% chance of entering a Clearcasting state after any damage spell hits a target.  The Clearcasting state reduces the mana cost of your next damage spell by 100%."
+									},
+									{
+										"Number": "4",
+										"Description": "Gives you a 8% chance of entering a Clearcasting state after any damage spell hits a target.  The Clearcasting state reduces the mana cost of your next damage spell by 100%."
+									},
+									{
+										"Number": "5",
+										"Description": "Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target.  The Clearcasting state reduces the mana cost of your next damage spell by 100%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Nature_AbolishMagic",
+							"Name": "Magic Attunement",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "3",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the effect of your Amplify Magic and Dampen Magic spells by 25%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the effect of your Amplify Magic and Dampen Magic spells by 50%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Nature_WispSplode",
+							"Name": "Improved Arcane Explosion",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "3",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the critical strike chance of your Arcane Explosion spell by an additional 2%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the critical strike chance of your Arcane Explosion spell by an additional 4%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases the critical strike chance of your Arcane Explosion spell by an additional 6%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Arcane_ArcaneResilience",
+							"Name": "Arcane Resilience",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "3",
+							"Ranks": {
+								"Rank": {
+									"Number": "1",
+									"Description": "Increases your armor by an amount equal to 50% of your Intellect."
+								}
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Shadow_DetectLesserInvisibility",
+							"Name": "Improved Mana Shield",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "4",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Decreases the mana lost per point of damage taken when Mana Shield is active by 10%."
+									},
+									{
+										"Number": "2",
+										"Description": "Decreases the mana lost per point of damage taken when Mana Shield is active by 20%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Frost_IceShock",
+							"Name": "Improved Counterspell",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "4",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Gives your Counterspell a 50% chance to silence the target for 4 sec."
+									},
+									{
+										"Number": "2",
+										"Description": "Gives your Counterspell a 100% chance to silence the target for 4 sec."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Shadow_SiphonMana",
+							"Name": "Arcane Meditation",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "4",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Allows 5% of your Mana regeneration to continue while casting."
+									},
+									{
+										"Number": "2",
+										"Description": "Allows 10% of your Mana regeneration to continue while casting."
+									},
+									{
+										"Number": "3",
+										"Description": "Allows 15% of your Mana regeneration to continue while casting."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Nature_EnchantArmor",
+							"Name": "Presence of Mind",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "5",
+							"Ranks": {
+								"Rank": {
+									"Number": "1",
+									"Description": "When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell."
+								}
+							}
+						},
+						{
+							"Icon": "Spell_Shadow_Charm",
+							"Name": "Arcane Mind",
+							"Points": "1",
+							"Dependancy": "Arcane Resilience",
+							"Arrow": {
+								"Name": "ArrowMedium",
+								"X": "148",
+								"Y": "200"
+							},
+							"Tier": "5",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases your maximum Mana by 2%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases your maximum Mana by 4%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases your maximum Mana by 6%."
+									},
+									{
+										"Number": "4",
+										"Description": "Increases your maximum Mana by 8%."
+									},
+									{
+										"Number": "5",
+										"Description": "Increases your maximum Mana by 10%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Shadow_Teleport",
+							"Name": "Arcane Instability",
+							"Points": "1",
+							"Dependancy": "Presence of Mind",
+							"Arrow": {
+								"Name": "ArrowShort",
+								"X": "88",
+								"Y": "320"
+							},
+							"Tier": "6",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases your spell damage and critical strike chance by 1%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases your spell damage and critical strike chance by 2%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases your spell damage and critical strike chance by 3%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Nature_Lightning",
+							"Name": "Arcane Power",
+							"Points": "3",
+							"Dependancy": "Arcane Instability",
+							"Arrow": {
+								"Name": "ArrowShort",
+								"X": "88",
+								"Y": "380"
+							},
+							"Tier": "7",
+							"Ranks": {
+								"Rank": {
+									"Number": "1",
+									"Description": "When activated, your spells deal 30% more damage while costing 30% more mana to cast.  This effect lasts 15 sec."
+								}
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						}
+					]
+				}
+			},
+			{
+				"Name": "Fire",
+				"Talents": {
+					"Talent": [
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Fire_FlameBolt",
+							"Name": "Improved Fireball",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "1",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Reduces the casting time of your Fireball spell by 0.1 sec."
+									},
+									{
+										"Number": "2",
+										"Description": "Reduces the casting time of your Fireball spell by 0.2 sec."
+									},
+									{
+										"Number": "3",
+										"Description": "Reduces the casting time of your Fireball spell by 0.3 sec."
+									},
+									{
+										"Number": "4",
+										"Description": "Reduces the casting time of your Fireball spell by 0.4 sec."
+									},
+									{
+										"Number": "5",
+										"Description": "Reduces the casting time of your Fireball spell by 0.5 sec."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Fire_MeteorStorm",
+							"Name": "Impact",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "1",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Gives your Fire spells a 2% chance to stun the target for 2 sec."
+									},
+									{
+										"Number": "2",
+										"Description": "Gives your Fire spells a 4% chance to stun the target for 2 sec."
+									},
+									{
+										"Number": "3",
+										"Description": "Gives your Fire spells a 6% chance to stun the target for 2 sec."
+									},
+									{
+										"Number": "4",
+										"Description": "Gives your Fire spells a 8% chance to stun the target for 2 sec."
+									},
+									{
+										"Number": "5",
+										"Description": "Gives your Fire spells a 10% chance to stun the target for 2 sec."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Fire_Incinerate",
+							"Name": "Ignite",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "2",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Your critical strikes from Fire damage spells cause the target to burn for an additional 8% of your spell's damage over 4 sec."
+									},
+									{
+										"Number": "2",
+										"Description": "Your critical strikes from Fire damage spells cause the target to burn for an additional 16% of your spell's damage over 4 sec."
+									},
+									{
+										"Number": "3",
+										"Description": "Your critical strikes from Fire damage spells cause the target to burn for an additional 24% of your spell's damage over 4 sec."
+									},
+									{
+										"Number": "4",
+										"Description": "Your critical strikes from Fire damage spells cause the target to burn for an additional 32% of your spell's damage over 4 sec."
+									},
+									{
+										"Number": "5",
+										"Description": "Your critical strikes from Fire damage spells cause the target to burn for an additional 40% of your spell's damage over 4 sec."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Fire_Flare",
+							"Name": "Flame Throwing",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "2",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the range of your Fire spells by 3 yards."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the range of your Fire spells by 6 yards."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Fire_Fireball",
+							"Name": "Improved Fire Blast",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "2",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Reduces the cooldown of your Fire Blast spell by 0.5 sec."
+									},
+									{
+										"Number": "2",
+										"Description": "Reduces the cooldown of your Fire Blast spell by 1 sec."
+									},
+									{
+										"Number": "3",
+										"Description": "Reduces the cooldown of your Fire Blast spell by 1.5 sec."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Fire_FlameShock",
+							"Name": "Incinerate",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "3",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the critical strike chance of your Fire Blast and Scorch spells by 2%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the critical strike chance of your Fire Blast and Scorch spells by 4%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Fire_SelfDestruct",
+							"Name": "Improved Flamestrike",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "3",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the critical strike chance of your Flamestrike spell by 5%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the critical strike chance of your Flamestrike spell by 10%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases the critical strike chance of your Flamestrike spell by 15%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Fire_Fireball02",
+							"Name": "Pyroblast",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "3",
+							"Ranks": {
+								"Rank": {
+									"Number": "1",
+									"Description": "Hurls an immense fiery boulder that causes 141 to 188 Fire damage and an additional 56 Fire damage over 12 sec."
+								}
+							}
+						},
+						{
+							"Icon": "Spell_Fire_Fire",
+							"Name": "Burning Soul",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "3",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Gives your Fire spells a 35% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 15%."
+									},
+									{
+										"Number": "2",
+										"Description": "Gives your Fire spells a 70% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 30%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Fire_SoulBurn",
+							"Name": "Improved Scorch",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "4",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Your Scorch spells have a 33% chance to cause your target to be vulnerable to Fire damage.  This vulnerability increases the Fire damage dealt to your target by 3% and lasts 30 sec.  Stacks up to 5 times."
+									},
+									{
+										"Number": "2",
+										"Description": "Your Scorch spells have a 66% chance to cause your target to be vulnerable to Fire damage.  This vulnerability increases the Fire damage dealt to your target by 3% and lasts 30 sec.  Stacks up to 5 times."
+									},
+									{
+										"Number": "3",
+										"Description": "Your Scorch spells have a 100% chance to cause your target to be vulnerable to Fire damage.  This vulnerability increases the Fire damage dealt to your target by 3% and lasts 30 sec.  Stacks up to 5 times."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Fire_FireArmor",
+							"Name": "Improved Fire Ward",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "4",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Causes your Fire Ward to have a 10% chance to reflect Fire spells while active."
+									},
+									{
+										"Number": "2",
+										"Description": "Causes your Fire Ward to have a 20% chance to reflect Fire spells while active."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Fire_MasterOfElements",
+							"Name": "Master of Elements",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "4",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Your Fire and Frost spell criticals will refund 10% of their base mana cost."
+									},
+									{
+										"Number": "2",
+										"Description": "Your Fire and Frost spell criticals will refund 20% of their base mana cost."
+									},
+									{
+										"Number": "3",
+										"Description": "Your Fire and Frost spell criticals will refund 30% of their base mana cost."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Nature_WispHeal",
+							"Name": "Critical Mass",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "5",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the critical strike chance of your Fire spells by 2%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the critical strike chance of your Fire spells by 4%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases the critical strike chance of your Fire spells by 6%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Holy_Excorcism_02",
+							"Name": "Blast Wave",
+							"Points": "1",
+							"Dependancy": "Pyroblast",
+							"Arrow": {
+								"Name": "ArrowMedium",
+								"X": "148",
+								"Y": "200"
+							},
+							"Tier": "5",
+							"Ranks": {
+								"Rank": {
+									"Number": "1",
+									"Description": "A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 154 to 187 Fire damage, and dazing them for 6 sec."
+								}
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Fire_Immolation",
+							"Name": "Fire Power",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "6",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the damage done by your Fire spells by 2%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the damage done by your Fire spells by 4%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases the damage done by your Fire spells by 6%."
+									},
+									{
+										"Number": "4",
+										"Description": "Increases the damage done by your Fire spells by 8%."
+									},
+									{
+										"Number": "5",
+										"Description": "Increases the damage done by your Fire spells by 10%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Fire_SealOfFire",
+							"Name": "Combustion",
+							"Points": "3",
+							"Dependancy": "Critical Mass",
+							"Arrow": {
+								"Name": "ArrowMedium",
+								"X": "88",
+								"Y": "320"
+							},
+							"Tier": "7",
+							"Ranks": {
+								"Rank": {
+									"Number": "1",
+									"Description": "When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%.  This effect lasts until you have caused 3 critical strikes with Fire spells."
+								}
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						}
+					]
+				}
+			},
+			{
+				"Name": "Frost",
+				"Talents": {
+					"Talent": [
+						{
+							"Icon": "Spell_Frost_FrostWard",
+							"Name": "Frost Warding",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "1",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the armor and resistances given by your Frost Armor and Ice Armor spells by 15%.  In addition, gives your Frost Ward a 10% chance to reflect Frost spells and effects while active."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the armor and resistances given by your Frost Armor and Ice Armor spells by 30%.  In addition, gives your Frost Ward a 20% chance to reflect Frost spells and effects while active."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Frost_FrostBolt02",
+							"Name": "Improved Frostbolt",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "1",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Reduces the casting time of your Frostbolt spell by 0.1 sec."
+									},
+									{
+										"Number": "2",
+										"Description": "Reduces the casting time of your Frostbolt spell by 0.2 sec."
+									},
+									{
+										"Number": "3",
+										"Description": "Reduces the casting time of your Frostbolt spell by 0.3 sec."
+									},
+									{
+										"Number": "4",
+										"Description": "Reduces the casting time of your Frostbolt spell by 0.4 sec."
+									},
+									{
+										"Number": "5",
+										"Description": "Reduces the casting time of your Frostbolt spell by 0.5 sec."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Ice_MagicDamage",
+							"Name": "Elemental Precision",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "1",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Reduces the chance that the opponent can resist your Frost and Fire spells by 2%."
+									},
+									{
+										"Number": "2",
+										"Description": "Reduces the chance that the opponent can resist your Frost and Fire spells by 4%."
+									},
+									{
+										"Number": "3",
+										"Description": "Reduces the chance that the opponent can resist your Frost and Fire spells by 6%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Frost_IceShard",
+							"Name": "Ice Shards",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "2",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the critical strike damage bonus of your Frost spells by 20%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the critical strike damage bonus of your Frost spells by 40%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases the critical strike damage bonus of your Frost spells by 60%."
+									},
+									{
+										"Number": "4",
+										"Description": "Increases the critical strike damage bonus of your Frost spells by 80%."
+									},
+									{
+										"Number": "5",
+										"Description": "Increases the critical strike damage bonus of your Frost spells by 100%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Frost_FrostArmor",
+							"Name": "Frostbite",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "2",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Gives your Chill effects a 5% chance to freeze the target for 5 sec."
+									},
+									{
+										"Number": "2",
+										"Description": "Gives your Chill effects a 10% chance to freeze the target for 5 sec."
+									},
+									{
+										"Number": "3",
+										"Description": "Gives your Chill effects a 15% chance to freeze the target for 5 sec."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Frost_FreezingBreath",
+							"Name": "Improved Frost Nova",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "2",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Reduces the cooldown of your Frost Nova spell by 2 sec."
+									},
+									{
+										"Number": "2",
+										"Description": "Reduces the cooldown of your Frost Nova spell by 4 sec."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Frost_Wisp",
+							"Name": "Permafrost",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "2",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the duration of your Chill effects by 1 sec; and reduces the target's speed by an additional 4%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the duration of your Chill effects by 2 secs; and reduces the target's speed by an additional 7%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases the duration of your Chill effects by 3 secs; and reduces the target's speed by an additional 10%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Frost_Frostbolt",
+							"Name": "Piercing Ice",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "3",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the damage done by your Frost spells by 2%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the damage done by your Frost spells by 4%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases the damage done by your Frost spells by 6%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Frost_WizardMark",
+							"Name": "Cold Snap",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "3",
+							"Ranks": {
+								"Rank": {
+									"Number": "1",
+									"Description": "When activated, this spell finishes the cooldown on all of your Frost spells."
+								}
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Frost_IceStorm",
+							"Name": "Improved Blizzard",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "3",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Adds a chill effect to your Blizzard spell.  This effect lowers the target's movement speed by 30%.  Lasts 1 sec."
+									},
+									{
+										"Number": "2",
+										"Description": "Adds a chill effect to your Blizzard spell.  This effect lowers the target's movement speed by 50%.  Lasts 1 sec."
+									},
+									{
+										"Number": "3",
+										"Description": "Adds a chill effect to your Blizzard spell.  This effect lowers the target's movement speed by 65%.  Lasts 1 sec."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Shadow_DarkRitual",
+							"Name": "Arctic Reach",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "4",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the range of your Frostbolt and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the range of your Frostbolt and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Frost_Stun",
+							"Name": "Frost Channeling",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "4",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Reduces the mana cost of your Frost spells by 5% and reduces the threat caused by your Frost spells by 10%."
+									},
+									{
+										"Number": "2",
+										"Description": "Reduces the mana cost of your Frost spells by 10% and reduces the threat caused by your Frost spells by 20%."
+									},
+									{
+										"Number": "3",
+										"Description": "Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "Spell_Frost_FrostShock",
+							"Name": "Shatter",
+							"Points": "2",
+							"Dependancy": "Improved Frost Nova",
+							"Arrow": {
+								"Name": "ArrowMedium",
+								"X": "148",
+								"Y": "140"
+							},
+							"Tier": "4",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the critical strike chance of all your spells against frozen targets by 10%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the critical strike chance of all your spells against frozen targets by 20%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases the critical strike chance of all your spells against frozen targets by 30%."
+									},
+									{
+										"Number": "4",
+										"Description": "Increases the critical strike chance of all your spells against frozen targets by 40%."
+									},
+									{
+										"Number": "5",
+										"Description": "Increases the critical strike chance of all your spells against frozen targets by 50%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Frost_Frost",
+							"Name": "Ice Block",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "5",
+							"Ranks": {
+								"Rank": {
+									"Number": "1",
+									"Description": "You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move or cast spells."
+								}
+							}
+						},
+						{
+							"Icon": "Spell_Frost_Glacier",
+							"Name": "Improved Cone of Cold",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "5",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Increases the damage dealt by your Cone of Cold spell by 15%."
+									},
+									{
+										"Number": "2",
+										"Description": "Increases the damage dealt by your Cone of Cold spell by 25%."
+									},
+									{
+										"Number": "3",
+										"Description": "Increases the damage dealt by your Cone of Cold spell by 35%."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Frost_ChillingBlast",
+							"Name": "Winter's Chill",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "6",
+							"Ranks": {
+								"Rank": [
+									{
+										"Number": "1",
+										"Description": "Gives your Frost damage spells a 20% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 sec.  Stacks up to 5 times."
+									},
+									{
+										"Number": "2",
+										"Description": "Gives your Frost damage spells a 40% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 sec.  Stacks up to 5 times."
+									},
+									{
+										"Number": "3",
+										"Description": "Gives your Frost damage spells a 60% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 sec.  Stacks up to 5 times."
+									},
+									{
+										"Number": "4",
+										"Description": "Gives your Frost damage spells a 80% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 sec.  Stacks up to 5 times."
+									}
+								]
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "Spell_Ice_Lament",
+							"Name": "Ice Barrier",
+							"Points": "1",
+							"Dependancy": "Ice Block",
+							"Arrow": {
+								"Name": "ArrowMedium",
+								"X": "88",
+								"Y": "320"
+							},
+							"Tier": "7",
+							"Ranks": {
+								"Rank": {
+									"Number": "1",
+									"Description": "Instantly shields you, absorbing 438 damage.  Lasts 1 min.  While the shield holds, spells will not be interrupted."
+								}
+							}
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						},
+						{
+							"Icon": "",
+							"Name": "",
+							"Points": "",
+							"Dependancy": "",
+							"Arrow": "",
+							"Tier": "",
+							"Ranks": ""
+						}
+					]
+				}
+			}
+		]
+	}
+}

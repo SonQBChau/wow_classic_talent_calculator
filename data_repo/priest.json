@@ -1360,11 +1360,12 @@
 			"Name": "Shadowform",
 			"Points": "1",
 			"Dependancy": "Vampiric Embrace",
-			"Arrow": {
-			  "Name": "ArrowMedium",
-			  "X": "88",
-			  "Y": "320"
-			},
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
 			"Tier": 7,
 			"Ranks": {
 			  "Rank": {

@@ -40,7 +40,6 @@ flutter:
   uses-material-design: true
 
   assets:
-    - data_repo/data.json
     - data_repo/warlock.json
     - assets/Icons/
     - assets/warlock/

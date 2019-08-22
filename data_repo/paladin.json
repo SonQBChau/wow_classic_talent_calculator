@@ -1,1473 +1,1315 @@
-{
-	"Specializations": {
-		"Specialization": [
-			{
-				"Name": "Holy",
-				"Talents": {
-					"Talent": [
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Ability_GolemThunderClap",
-							"Name": "Divine Strength",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "1",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases your Strength by 2%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases your Strength by 4%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases your Strength by 6%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases your Strength by 8%."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases your Strength by 10%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Spell_Nature_Sleep",
-							"Name": "Divine Intellect",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "1",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases your total Intellect by 2%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases your total Intellect by 4%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases your total Intellect by 6%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases your total Intellect by 8%."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases your total Intellect by 10%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Arcane_Blink",
-							"Name": "Spiritual Focus",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "2",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Gives your Flash of Light and Holy Light spells a 14% chance to not lose casting time when you take damage."
-									},
-									{
-										"Number": "2",
-										"Description": "Gives your Flash of Light and Holy Light spells a 28% chance to not lose casting time when you take damage."
-									},
-									{
-										"Number": "3",
-										"Description": "Gives your Flash of Light and Holy Light spells a 42% chance to not lose casting time when you take damage."
-									},
-									{
-										"Number": "4",
-										"Description": "Gives your Flash of Light and Holy Light spells a 56% chance to not lose casting time when you take damage."
-									},
-									{
-										"Number": "5",
-										"Description": "Gives your Flash of Light and Holy Light spells a 70% chance to not lose casting time when you take damage."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Ability_ThunderBolt",
-							"Name": "Improved Seal of Righteousness",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "2",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the damage done by your Seal of Righteousness and Judgement of Righteousness by 3%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the damage done by your Seal of Righteousness and Judgement of Righteousness by 6%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the damage done by your Seal of Righteousness and Judgement of Righteousness by 9%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases the damage done by your Seal of Righteousness and Judgement of Righteousness by 12%."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases the damage done by your Seal of Righteousness and Judgement of Righteousness by 15%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Holy_HolyBolt",
-							"Name": "Healing Light",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "3",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the amount healed by your Holy Light and Flash of Light spells by 4%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the amount healed by your Holy Light and Flash of Light spells by 8%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the amount healed by your Holy Light and Flash of Light spells by 12%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Spell_Holy_InnerFire",
-							"Name": "Consecration",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "3",
-							"Ranks": {
-								"Rank": {
-									"Number": "1",
-									"Description": "Consecrates the land beneath Paladin, doing 64 Holy damage over 8 sec to enemies who enter the area."
-								}
-							}
-						},
-						{
-							"Icon": "Spell_Holy_LayOnHands",
-							"Name": "Improved Lay on Hands",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "3",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Gives the target of your Lay on Hands spell a 15% bonus to their armor value from items for 2 min.  In addition, the cooldown for your Lay on Hands spell is reduced by 10 min."
-									},
-									{
-										"Number": "2",
-										"Description": "Gives the target of your Lay on Hands spell a 30% bonus to their armor value from items for 2 min.  In addition, the cooldown for your Lay on Hands spell is reduced by 20 min."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Spell_Holy_UnyieldingFaith",
-							"Name": "Unyielding Faith",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "3",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases your chance to resist Fear and Disorient effects by an additional 5%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases your chance to resist Fear and Disorient effects by an additional 10%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Holy_GreaterHeal",
-							"Name": "Illumination",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "4",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "After getting a critical effect from your Flash of Light, Holy Light, or Holy Shock heal spell, gives you a 20% chance to gain Mana equal to the base cost of the spell."
-									},
-									{
-										"Number": "2",
-										"Description": "After getting a critical effect from your Flash of Light, Holy Light, or Holy Shock heal spell, gives you a 40% chance to gain Mana equal to the base cost of the spell."
-									},
-									{
-										"Number": "3",
-										"Description": "After getting a critical effect from your Flash of Light, Holy Light, or Holy Shock heal spell, gives you a 60% chance to gain Mana equal to the base cost of the spell."
-									},
-									{
-										"Number": "4",
-										"Description": "After getting a critical effect from your Flash of Light, Holy Light, or Holy Shock heal spell, gives you a 80% chance to gain Mana equal to the base cost of the spell."
-									},
-									{
-										"Number": "5",
-										"Description": "After getting a critical effect from your Flash of Light, Holy Light, or Holy Shock heal spell, gives you a 100% chance to gain Mana equal to the base cost of the spell."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Spell_Holy_SealOfWisdom",
-							"Name": "Improved Blessing of Wisdom",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "4",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the effect of your Blessing of Wisdom spell by 10%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the effect of your Blessing of Wisdom spell by 20%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Holy_Heal",
-							"Name": "Divine Favor",
-							"Points": "5",
-							"Dependancy": "Illumination",
-							"Arrow": {
-								"Name": "ArrowShort",
-								"X": "88",
-								"Y": "260"
-							},
-							"Tier": "5",
-							"Ranks": {
-								"Rank": {
-									"Number": "1",
-									"Description": "When activated, gives your next Flash of Light, Holy Light, or Holy Shock spell a 100% critical effect chance."
-								}
-							}
-						},
-						{
-							"Icon": "Spell_Holy_HealingAura",
-							"Name": "Lasting Judgement",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "5",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the duration of your Judgement of Light and Judgement of Wisdom by 10 sec."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the duration of your Judgement of Light and Judgement of Wisdom by 20 sec."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the duration of your Judgement of Light and Judgement of Wisdom by 30 sec."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Holy_Power",
-							"Name": "Holy Power",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "6",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the critical effect chance of your Holy spells by 1%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the critical effect chance of your Holy spells by 2%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the critical effect chance of your Holy spells by 3%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases the critical effect chance of your Holy spells by 4%."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases the critical effect chance of your Holy spells by 5%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Holy_SearingLight",
-							"Name": "Holy Shock",
-							"Points": "1",
-							"Dependancy": "Divine Favor",
-							"Arrow": {
-								"Name": "ArrowMedium",
-								"X": "88",
-								"Y": "320"
-							},
-							"Tier": "7",
-							"Ranks": {
-								"Rank": {
-									"Number": "1",
-									"Description": "Blasts the target with Holy energy, causing 204 to 221 Holy damage to an enemy, or 204 to 221 healing to an ally."
-								}
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						}
-					]
+[
+	{
+	  "Name": "Holy",
+	  "Icon": "spell_shadow_requiem",
+	  "Background": "affliction_bg",
+	  "Talents": {
+		"Talent": [
+		  {
+			"Icon": "Ability_GolemThunderClap",
+			"Name": "Divine Strength",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 1,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases your Strength by 2%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases your Strength by 4%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases your Strength by 6%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases your Strength by 8%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases your Strength by 10%."
 				}
-			},
-			{
-				"Name": "Protection",
-				"Talents": {
-					"Talent": [
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Holy_DevotionAura",
-							"Name": "Improved Devotion Aura",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "1",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the armor bonus of your Devotion Aura by 5%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the armor bonus of your Devotion Aura by 10%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the armor bonus of your Devotion Aura by 15%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases the armor bonus of your Devotion Aura by 20%."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases the armor bonus of your Devotion Aura by 25%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Ability_Defend",
-							"Name": "Redoubt",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "1",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases your chance to block attacks with your shield by 6% after being the victim of a critical strike.  Lasts 10 sec or 5 blocks."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases your chance to block attacks with your shield by 12% after being the victim of a critical strike.  Lasts 10 sec or 5 blocks."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases your chance to block attacks with your shield by 18% after being the victim of a critical strike.  Lasts 10 sec or 5 blocks."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases your chance to block attacks with your shield by 24% after being the victim of a critical strike.  Lasts 10 sec or 5 blocks."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases your chance to block attacks with your shield by 30% after being the victim of a critical strike.  Lasts 10 sec or 5 blocks."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Ability_Rogue_Ambush",
-							"Name": "Precision",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "2",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases your chance to hit with melee weapons by 1%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases your chance to hit with melee weapons by 2%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases your chance to hit with melee weapons by 3%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Spell_Holy_SealOfProtection",
-							"Name": "Guardian's Favor",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "2",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Reduces the cooldown of your Blessing of Protection by 60 sec and increases the duration of your Blessing of Freedom by 3 sec."
-									},
-									{
-										"Number": "2",
-										"Description": "Reduces the cooldown of your Blessing of Protection by 120 sec and increases the duration of your Blessing of Freedom by 6 sec."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Holy_Devotion",
-							"Name": "Toughness",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "2",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases your armor value from items by 2%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases your armor value from items by 4%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases your armor value from items by 6%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases your armor value from items by 8%."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases your armor value from items by 10%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Spell_Magic_MageArmor",
-							"Name": "Blessing of Kings",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "3",
-							"Ranks": {
-								"Rank": {
-									"Number": "1",
-									"Description": "Places a Blessing on the friendly target, increasing total stats by 10% for 5 min.  Players may only have one Blessing on them per Paladin at any one time."
-								}
-							}
-						},
-						{
-							"Icon": "Spell_Holy_SealOfFury",
-							"Name": "Improved Righteous Fury",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "3",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the amount of threat generated by your Righteous Fury spell by 16%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the amount of threat generated by your Righteous Fury spell by 33%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the amount of threat generated by your Righteous Fury spell by 50%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "INV_Shield_06",
-							"Name": "Shield Specialization",
-							"Points": "5",
-							"Dependancy": "Redoubt",
-							"Arrow": {
-								"Name": "ArrowMedium",
-								"X": "148",
-								"Y": "80"
-							},
-							"Tier": "3",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the amount of damage absorbed by your shield by 10%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the amount of damage absorbed by your shield by 20%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the amount of damage absorbed by your shield by 30%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Spell_Magic_LesserInvisibilty",
-							"Name": "Anticipation",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "3",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases your Defense skill by 2."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases your Defense skill by 4."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases your Defense skill by 6."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases your Defense skill by 8."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases your Defense skill by 10."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Holy_SealOfMight",
-							"Name": "Improved Hammer of Justice",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "4",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Decreases the cooldown of your Hammer of Justice spell by 5 sec."
-									},
-									{
-										"Number": "2",
-										"Description": "Decreases the cooldown of your Hammer of Justice spell by 10 sec."
-									},
-									{
-										"Number": "3",
-										"Description": "Decreases the cooldown of your Hammer of Justice spell by 15 sec."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Spell_Holy_MindSooth",
-							"Name": "Improved Concentration Aura",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "4",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the effect of your Concentration Aura by an additional 5% and gives all group members affected by the aura an additional 5% chance to resist Silence and Interrupt effects."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the effect of your Concentration Aura by an additional 10% and gives all group members affected by the aura an additional 10% chance to resist Silence and Interrupt effects."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the effect of your Concentration Aura by an additional 15% and gives all group members affected by the aura an additional 15% chance to resist Silence and Interrupt effects."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Nature_LightningShield",
-							"Name": "Blessing of Sanctuary",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "5",
-							"Ranks": {
-								"Rank": {
-									"Number": "1",
-									"Description": "Places a Blessing on the friendly target, reducing damage dealt from all sources by up to 10 for 5 min.  In addition, when the target blocks a melee attack the attacker will take 14 Holy damage.  Players may only have one Blessing on them per Paladin at any one time."
-								}
-							}
-						},
-						{
-							"Icon": "Spell_Holy_BlessingOfStrength",
-							"Name": "Reckoning",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "5",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Gives you a 20% chance to gain an extra attack after being the victim of a critical strike."
-									},
-									{
-										"Number": "2",
-										"Description": "Gives you a 40% chance to gain an extra attack after being the victim of a critical strike."
-									},
-									{
-										"Number": "3",
-										"Description": "Gives you a 60% chance to gain an extra attack after being the victim of a critical strike."
-									},
-									{
-										"Number": "4",
-										"Description": "Gives you a 80% chance to gain an extra attack after being the victim of a critical strike."
-									},
-									{
-										"Number": "5",
-										"Description": "Gives you a 100% chance to gain an extra attack after being the victim of a critical strike."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "INV_Sword_20",
-							"Name": "One-Handed Weapon Specialization",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "6",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the damage you deal with one-handed melee weapons by 2%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the damage you deal with one-handed melee weapons by 4%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the damage you deal with one-handed melee weapons by 6%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases the damage you deal with one-handed melee weapons by 8%."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases the damage you deal with one-handed melee weapons by 10%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Holy_BlessingOfProtection",
-							"Name": "Holy Shield",
-							"Points": "1",
-							"Dependancy": "Blessing of Sanctuary",
-							"Arrow": {
-								"Name": "ArrowMedium",
-								"X": "88",
-								"Y": "320"
-							},
-							"Tier": "7",
-							"Ranks": {
-								"Rank": {
-									"Number": "1",
-									"Description": "Increases chance to block by 30% for 10 sec, and deals 65 Holy damage for each attack blocked while active.  Damage caused by Holy Shield causes 20% additional threat.  Each block expends a charge.  4 charges."
-								}
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						}
-					]
-				}
-			},
-			{
-				"Name": "Retribution",
-				"Talents": {
-					"Talent": [
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Holy_FistOfJustice",
-							"Name": "Improved Blessing of Might",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "1",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the melee attack power bonus of your Blessing of Might by 4%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the melee attack power bonus of your Blessing of Might by 8%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the melee attack power bonus of your Blessing of Might by 12%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases the melee attack power bonus of your Blessing of Might by 16%."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases the melee attack power bonus of your Blessing of Might by 20%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Spell_Frost_WindWalkOn",
-							"Name": "Benediction",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "1",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Reduces the Mana cost of your Judgement and Seal spells by 3%."
-									},
-									{
-										"Number": "2",
-										"Description": "Reduces the Mana cost of your Judgement and Seal spells by 6%."
-									},
-									{
-										"Number": "3",
-										"Description": "Reduces the Mana cost of your Judgement and Seal spells by 9%."
-									},
-									{
-										"Number": "4",
-										"Description": "Reduces the Mana cost of your Judgement and Seal spells by 12%."
-									},
-									{
-										"Number": "5",
-										"Description": "Reduces the Mana cost of your Judgement and Seal spells by 15%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Holy_RighteousFury",
-							"Name": "Improved Judgement",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "2",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Decreases the cooldown of your Judgement spell by 1 sec."
-									},
-									{
-										"Number": "2",
-										"Description": "Decreases the cooldown of your Judgement spell by 2 sec."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Spell_Holy_HolySmite",
-							"Name": "Improved Seal of the Crusader",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "2",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the melee attack power bonus of your Seal of the Crusader and the Holy damage increase of your Judgement of the Crusader by 5%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the melee attack power bonus of your Seal of the Crusader and the Holy damage increase of your Judgement of the Crusader by 10%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the melee attack power bonus of your Seal of the Crusader and the Holy damage increase of your Judgement of the Crusader by 15%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Ability_Parry",
-							"Name": "Deflection",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "2",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases your Parry chance by 1%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases your Parry chance by 2%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases your Parry chance by 3%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases your Parry chance by 4%."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases your Parry chance by 5%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Holy_Vindication",
-							"Name": "Vindication",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "3",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Gives the Paladin's damaging melee attacks a chance to reduce the target's Strength and Agility by 5% for 10 sec."
-									},
-									{
-										"Number": "2",
-										"Description": "Gives the Paladin's damaging melee attacks a chance to reduce the target's Strength and Agility by 10% for 10 sec."
-									},
-									{
-										"Number": "3",
-										"Description": "Gives the Paladin's damaging melee attacks a chance to reduce the target's Strength and Agility by 15% for 10 sec."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Spell_Holy_RetributionAura",
-							"Name": "Conviction",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "3",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases your chance to get a critical strike with melee weapons by 1%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases your chance to get a critical strike with melee weapons by 2%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases your chance to get a critical strike with melee weapons by 3%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases your chance to get a critical strike with melee weapons by 4%."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases your chance to get a critical strike with melee weapons by 5%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Ability_Warrior_InnerRage",
-							"Name": "Seal of Command",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "3",
-							"Ranks": {
-								"Rank": {
-									"Number": "1",
-									"Description": "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage.  Only one Seal can be active on the Paladin at any one time.  Lasts 30 sec.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing 46.5 to 55.5 Holy damage, 93 to 102 if the target is stunned or incapacitated."
-								}
-							}
-						},
-						{
-							"Icon": "Spell_Holy_PersuitofJustice",
-							"Name": "Pursuit of Justice",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "3",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases movement and mounted movement speed by 4%.  This does not stack with other movement speed increasing effects."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases movement and mounted movement speed by 8%.  This does not stack with other movement speed increasing effects."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Spell_Holy_EyeforanEye",
-							"Name": "Eye for an Eye",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "4",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "All spell criticals against you cause 15% of the damage taken to the caster as well.  The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health."
-									},
-									{
-										"Number": "2",
-										"Description": "All spell criticals against you cause 30% of the damage taken to the caster as well.  The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Holy_AuraOfLight",
-							"Name": "Improved Retribution Aura",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "4",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the damage done by your Retribution Aura by 25%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the damage done by your Retribution Aura by 50%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "INV_Hammer_04",
-							"Name": "Two-Handed Weapon Specialization",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "5",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the damage you deal with two-handed melee weapons by 2%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the damage you deal with two-handed melee weapons by 4%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the damage you deal with two-handed melee weapons by 6%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Holy_MindVision",
-							"Name": "Sanctity Aura",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "5",
-							"Ranks": {
-								"Rank": {
-									"Number": "1",
-									"Description": "Increases Holy damage done by party members within 30 yards by 10%.  Players may only have one Aura on them per Paladin at any one time."
-								}
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Ability_Racial_Avatar",
-							"Name": "Vengeance",
-							"Points": "5",
-							"Dependancy": "Conviction",
-							"Arrow": {
-								"Name": "ArrowLong",
-								"X": "88",
-								"Y": "200"
-							},
-							"Tier": "6",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Gives you a 3% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability."
-									},
-									{
-										"Number": "2",
-										"Description": "Gives you a 6% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability."
-									},
-									{
-										"Number": "3",
-										"Description": "Gives you a 9% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability."
-									},
-									{
-										"Number": "4",
-										"Description": "Gives you a 12% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Holy_PrayerOfHealing",
-							"Name": "Repentance",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "7",
-							"Ranks": {
-								"Rank": {
-									"Number": "1",
-									"Description": "Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec.  Any damage caused will awaken the target.  Only works against Humanoids."
-								}
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						}
-					]
-				}
+			  ]
 			}
+		  },
+		  {
+			"Icon": "Spell_Nature_Sleep",
+			"Name": "Divine Intellect",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 1,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases your total Intellect by 2%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases your total Intellect by 4%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases your total Intellect by 6%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases your total Intellect by 8%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases your total Intellect by 10%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Arcane_Blink",
+			"Name": "Spiritual Focus",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 2,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Gives your Flash of Light and Holy Light spells a 14% chance to not lose casting time when you take damage."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Gives your Flash of Light and Holy Light spells a 28% chance to not lose casting time when you take damage."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Gives your Flash of Light and Holy Light spells a 42% chance to not lose casting time when you take damage."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Gives your Flash of Light and Holy Light spells a 56% chance to not lose casting time when you take damage."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Gives your Flash of Light and Holy Light spells a 70% chance to not lose casting time when you take damage."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_ThunderBolt",
+			"Name": "Improved Seal of Righteousness",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 2,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the damage done by your Seal of Righteousness and Judgement of Righteousness by 3%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the damage done by your Seal of Righteousness and Judgement of Righteousness by 6%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the damage done by your Seal of Righteousness and Judgement of Righteousness by 9%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases the damage done by your Seal of Righteousness and Judgement of Righteousness by 12%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases the damage done by your Seal of Righteousness and Judgement of Righteousness by 15%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_HolyBolt",
+			"Name": "Healing Light",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 3,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the amount healed by your Holy Light and Flash of Light spells by 4%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the amount healed by your Holy Light and Flash of Light spells by 8%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the amount healed by your Holy Light and Flash of Light spells by 12%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_InnerFire",
+			"Name": "Consecration",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 3,
+			"Ranks": {
+			  "Rank": {
+				"Number": 1,
+				"Description": "Consecrates the land beneath Paladin, doing 64 Holy damage over 8 sec to enemies who enter the area."
+			  }
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_LayOnHands",
+			"Name": "Improved Lay on Hands",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 3,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Gives the target of your Lay on Hands spell a 15% bonus to their armor value from items for 2 min.  In addition, the cooldown for your Lay on Hands spell is reduced by 10 min."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Gives the target of your Lay on Hands spell a 30% bonus to their armor value from items for 2 min.  In addition, the cooldown for your Lay on Hands spell is reduced by 20 min."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_UnyieldingFaith",
+			"Name": "Unyielding Faith",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 3,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases your chance to resist Fear and Disorient effects by an additional 5%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases your chance to resist Fear and Disorient effects by an additional 10%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_GreaterHeal",
+			"Name": "Illumination",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 4,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "After getting a critical effect from your Flash of Light, Holy Light, or Holy Shock heal spell, gives you a 20% chance to gain Mana equal to the base cost of the spell."
+				},
+				{
+				  "Number": 2,
+				  "Description": "After getting a critical effect from your Flash of Light, Holy Light, or Holy Shock heal spell, gives you a 40% chance to gain Mana equal to the base cost of the spell."
+				},
+				{
+				  "Number": 3,
+				  "Description": "After getting a critical effect from your Flash of Light, Holy Light, or Holy Shock heal spell, gives you a 60% chance to gain Mana equal to the base cost of the spell."
+				},
+				{
+				  "Number": 4,
+				  "Description": "After getting a critical effect from your Flash of Light, Holy Light, or Holy Shock heal spell, gives you a 80% chance to gain Mana equal to the base cost of the spell."
+				},
+				{
+				  "Number": 5,
+				  "Description": "After getting a critical effect from your Flash of Light, Holy Light, or Holy Shock heal spell, gives you a 100% chance to gain Mana equal to the base cost of the spell."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_SealOfWisdom",
+			"Name": "Improved Blessing of Wisdom",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 4,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the effect of your Blessing of Wisdom spell by 10%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the effect of your Blessing of Wisdom spell by 20%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_Heal",
+			"Name": "Divine Favor",
+			"Points": 0,
+			"Dependancy": "Illumination",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 5,
+			"Ranks": {
+			  "Rank": {
+				"Number": 1,
+				"Description": "When activated, gives your next Flash of Light, Holy Light, or Holy Shock spell a 100% critical effect chance."
+			  }
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_HealingAura",
+			"Name": "Lasting Judgement",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 5,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the duration of your Judgement of Light and Judgement of Wisdom by 10 sec."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the duration of your Judgement of Light and Judgement of Wisdom by 20 sec."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the duration of your Judgement of Light and Judgement of Wisdom by 30 sec."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_Power",
+			"Name": "Holy Power",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 6,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the critical effect chance of your Holy spells by 1%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the critical effect chance of your Holy spells by 2%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the critical effect chance of your Holy spells by 3%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases the critical effect chance of your Holy spells by 4%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases the critical effect chance of your Holy spells by 5%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_SearingLight",
+			"Name": "Holy Shock",
+			"Points": 0,
+			"Dependancy": "Divine Favor",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 7,
+			"Ranks": {
+			  "Rank": {
+				"Number": 1,
+				"Description": "Blasts the target with Holy energy, causing 204 to 221 Holy damage to an enemy, or 204 to 221 healing to an ally."
+			  }
+			}
+		  }
 		]
+	  }
+	},
+	{
+	  "Name": "Protection",
+	  "Icon": "spell_shadow_requiem",
+	  "Background": "affliction_bg",
+	  "Talents": {
+		"Talent": [
+		  {
+			"Icon": "Spell_Holy_DevotionAura",
+			"Name": "Improved Devotion Aura",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 1,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the armor bonus of your Devotion Aura by 5%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the armor bonus of your Devotion Aura by 10%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the armor bonus of your Devotion Aura by 15%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases the armor bonus of your Devotion Aura by 20%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases the armor bonus of your Devotion Aura by 25%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Defend",
+			"Name": "Redoubt",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 1,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases your chance to block attacks with your shield by 6% after being the victim of a critical strike.  Lasts 10 sec or 5 blocks."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases your chance to block attacks with your shield by 12% after being the victim of a critical strike.  Lasts 10 sec or 5 blocks."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases your chance to block attacks with your shield by 18% after being the victim of a critical strike.  Lasts 10 sec or 5 blocks."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases your chance to block attacks with your shield by 24% after being the victim of a critical strike.  Lasts 10 sec or 5 blocks."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases your chance to block attacks with your shield by 30% after being the victim of a critical strike.  Lasts 10 sec or 5 blocks."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Rogue_Ambush",
+			"Name": "Precision",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 2,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases your chance to hit with melee weapons by 1%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases your chance to hit with melee weapons by 2%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases your chance to hit with melee weapons by 3%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_SealOfProtection",
+			"Name": "Guardian's Favor",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 2,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Reduces the cooldown of your Blessing of Protection by 60 sec and increases the duration of your Blessing of Freedom by 3 sec."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Reduces the cooldown of your Blessing of Protection by 120 sec and increases the duration of your Blessing of Freedom by 6 sec."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_Devotion",
+			"Name": "Toughness",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 2,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases your armor value from items by 2%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases your armor value from items by 4%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases your armor value from items by 6%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases your armor value from items by 8%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases your armor value from items by 10%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Magic_MageArmor",
+			"Name": "Blessing of Kings",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 3,
+			"Ranks": {
+			  "Rank": {
+				"Number": 1,
+				"Description": "Places a Blessing on the friendly target, increasing total stats by 10% for 5 min.  Players may only have one Blessing on them per Paladin at any one time."
+			  }
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_SealOfFury",
+			"Name": "Improved Righteous Fury",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 3,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the amount of threat generated by your Righteous Fury spell by 16%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the amount of threat generated by your Righteous Fury spell by 33%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the amount of threat generated by your Righteous Fury spell by 50%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "INV_Shield_06",
+			"Name": "Shield Specialization",
+			"Points": 0,
+			"Dependancy": "Redoubt",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 3,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the amount of damage absorbed by your shield by 10%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the amount of damage absorbed by your shield by 20%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the amount of damage absorbed by your shield by 30%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Magic_LesserInvisibilty",
+			"Name": "Anticipation",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 3,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases your Defense skill by 2."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases your Defense skill by 4."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases your Defense skill by 6."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases your Defense skill by 8."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases your Defense skill by 10."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_SealOfMight",
+			"Name": "Improved Hammer of Justice",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 4,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Decreases the cooldown of your Hammer of Justice spell by 5 sec."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Decreases the cooldown of your Hammer of Justice spell by 10 sec."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Decreases the cooldown of your Hammer of Justice spell by 15 sec."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_MindSooth",
+			"Name": "Improved Concentration Aura",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 4,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the effect of your Concentration Aura by an additional 5% and gives all group members affected by the aura an additional 5% chance to resist Silence and Interrupt effects."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the effect of your Concentration Aura by an additional 10% and gives all group members affected by the aura an additional 10% chance to resist Silence and Interrupt effects."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the effect of your Concentration Aura by an additional 15% and gives all group members affected by the aura an additional 15% chance to resist Silence and Interrupt effects."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Nature_LightningShield",
+			"Name": "Blessing of Sanctuary",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 5,
+			"Ranks": {
+			  "Rank": {
+				"Number": 1,
+				"Description": "Places a Blessing on the friendly target, reducing damage dealt from all sources by up to 10 for 5 min.  In addition, when the target blocks a melee attack the attacker will take 14 Holy damage.  Players may only have one Blessing on them per Paladin at any one time."
+			  }
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_BlessingOfStrength",
+			"Name": "Reckoning",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 5,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Gives you a 20% chance to gain an extra attack after being the victim of a critical strike."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Gives you a 40% chance to gain an extra attack after being the victim of a critical strike."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Gives you a 60% chance to gain an extra attack after being the victim of a critical strike."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Gives you a 80% chance to gain an extra attack after being the victim of a critical strike."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Gives you a 100% chance to gain an extra attack after being the victim of a critical strike."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "INV_Sword_20",
+			"Name": "One-Handed Weapon Specialization",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 6,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the damage you deal with one-handed melee weapons by 2%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the damage you deal with one-handed melee weapons by 4%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the damage you deal with one-handed melee weapons by 6%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases the damage you deal with one-handed melee weapons by 8%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases the damage you deal with one-handed melee weapons by 10%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_BlessingOfProtection",
+			"Name": "Holy Shield",
+			"Points": 0,
+			"Dependancy": "Blessing of Sanctuary",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 7,
+			"Ranks": {
+			  "Rank": {
+				"Number": 1,
+				"Description": "Increases chance to block by 30% for 10 sec, and deals 65 Holy damage for each attack blocked while active.  Damage caused by Holy Shield causes 20% additional threat.  Each block expends a charge.  4 charges."
+			  }
+			}
+		  }
+		]
+	  }
+	},
+	{
+	  "Name": "Retribution",
+	  "Icon": "spell_shadow_requiem",
+	  "Background": "affliction_bg",
+	  "Talents": {
+		"Talent": [
+		  {
+			"Icon": "Spell_Holy_FistOfJustice",
+			"Name": "Improved Blessing of Might",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 1,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the melee attack power bonus of your Blessing of Might by 4%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the melee attack power bonus of your Blessing of Might by 8%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the melee attack power bonus of your Blessing of Might by 12%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases the melee attack power bonus of your Blessing of Might by 16%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases the melee attack power bonus of your Blessing of Might by 20%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Frost_WindWalkOn",
+			"Name": "Benediction",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 1,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Reduces the Mana cost of your Judgement and Seal spells by 3%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Reduces the Mana cost of your Judgement and Seal spells by 6%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Reduces the Mana cost of your Judgement and Seal spells by 9%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Reduces the Mana cost of your Judgement and Seal spells by 12%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Reduces the Mana cost of your Judgement and Seal spells by 15%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_RighteousFury",
+			"Name": "Improved Judgement",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 2,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Decreases the cooldown of your Judgement spell by 1 sec."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Decreases the cooldown of your Judgement spell by 2 sec."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_HolySmite",
+			"Name": "Improved Seal of the Crusader",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 2,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the melee attack power bonus of your Seal of the Crusader and the Holy damage increase of your Judgement of the Crusader by 5%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the melee attack power bonus of your Seal of the Crusader and the Holy damage increase of your Judgement of the Crusader by 10%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the melee attack power bonus of your Seal of the Crusader and the Holy damage increase of your Judgement of the Crusader by 15%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Parry",
+			"Name": "Deflection",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 2,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases your Parry chance by 1%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases your Parry chance by 2%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases your Parry chance by 3%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases your Parry chance by 4%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases your Parry chance by 5%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_Vindication",
+			"Name": "Vindication",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 3,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Gives the Paladin's damaging melee attacks a chance to reduce the target's Strength and Agility by 5% for 10 sec."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Gives the Paladin's damaging melee attacks a chance to reduce the target's Strength and Agility by 10% for 10 sec."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Gives the Paladin's damaging melee attacks a chance to reduce the target's Strength and Agility by 15% for 10 sec."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_RetributionAura",
+			"Name": "Conviction",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 3,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases your chance to get a critical strike with melee weapons by 1%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases your chance to get a critical strike with melee weapons by 2%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases your chance to get a critical strike with melee weapons by 3%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases your chance to get a critical strike with melee weapons by 4%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases your chance to get a critical strike with melee weapons by 5%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Warrior_InnerRage",
+			"Name": "Seal of Command",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 3,
+			"Ranks": {
+			  "Rank": {
+				"Number": 1,
+				"Description": "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage.  Only one Seal can be active on the Paladin at any one time.  Lasts 30 sec.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing 46.5 to 55.5 Holy damage, 93 to 102 if the target is stunned or incapacitated."
+			  }
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_PersuitofJustice",
+			"Name": "Pursuit of Justice",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 3,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases movement and mounted movement speed by 4%.  This does not stack with other movement speed increasing effects."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases movement and mounted movement speed by 8%.  This does not stack with other movement speed increasing effects."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_EyeforanEye",
+			"Name": "Eye for an Eye",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 4,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "All spell criticals against you cause 15% of the damage taken to the caster as well.  The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health."
+				},
+				{
+				  "Number": 2,
+				  "Description": "All spell criticals against you cause 30% of the damage taken to the caster as well.  The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_AuraOfLight",
+			"Name": "Improved Retribution Aura",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 4,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the damage done by your Retribution Aura by 25%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the damage done by your Retribution Aura by 50%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "INV_Hammer_04",
+			"Name": "Two-Handed Weapon Specialization",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 5,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the damage you deal with two-handed melee weapons by 2%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the damage you deal with two-handed melee weapons by 4%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the damage you deal with two-handed melee weapons by 6%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_MindVision",
+			"Name": "Sanctity Aura",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 5,
+			"Ranks": {
+			  "Rank": {
+				"Number": 1,
+				"Description": "Increases Holy damage done by party members within 30 yards by 10%.  Players may only have one Aura on them per Paladin at any one time."
+			  }
+			}
+		  },
+		  {
+			"Icon": "Ability_Racial_Avatar",
+			"Name": "Vengeance",
+			"Points": 0,
+			"Dependancy": "Conviction",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 6,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Gives you a 3% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Gives you a 6% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Gives you a 9% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Gives you a 12% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_PrayerOfHealing",
+			"Name": "Repentance",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 7,
+			"Ranks": {
+			  "Rank": {
+				"Number": 1,
+				"Description": "Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec.  Any damage caused will awaken the target.  Only works against Humanoids."
+			  }
+			}
+		  }
+		]
+	  }
 	}
-}
+  ]

@@ -1,1515 +1,1381 @@
-{
-	"Specializations": {
-		"Specialization": [
-			{
-				"Name": "Beast Mastery",
-				"Talents": {
-					"Talent": [
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Nature_RavenForm",
-							"Name": "Improved Aspect of the Hawk",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "1",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "While Aspect of the Hawk is active, all normal ranged attacks have a 1% chance of increasing ranged attack speed by 30% for 12 sec."
-									},
-									{
-										"Number": "2",
-										"Description": "While Aspect of the Hawk is active, all normal ranged attacks have a 2% chance of increasing ranged attack speed by 30% for 12 sec."
-									},
-									{
-										"Number": "3",
-										"Description": "While Aspect of the Hawk is active, all normal ranged attacks have a 3% chance of increasing ranged attack speed by 30% for 12 sec."
-									},
-									{
-										"Number": "4",
-										"Description": "While Aspect of the Hawk is active, all normal ranged attacks have a 4% chance of increasing ranged attack speed by 30% for 12 sec."
-									},
-									{
-										"Number": "5",
-										"Description": "While Aspect of the Hawk is active, all normal ranged attacks have a 5% chance of increasing ranged attack speed by 30% for 12 sec."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Spell_Nature_Reincarnation",
-							"Name": "Endurance Training",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "1",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the Health of your pets by 3%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the Health of your pets by 6%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the Health of your pets by 9%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases the Health of your pets by 12%."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases the Health of your pets by 15%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Ability_EyeOfTheOwl",
-							"Name": "Improved Eyes of the Beast",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "2",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the duration of your Eyes of the Beast by 30 sec."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the duration of your Eyes of the Beast by 60 sec."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Ability_Hunter_AspectOfTheMonkey",
-							"Name": "Improved Aspect of the Monkey",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "2",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the Dodge bonus of your Aspect of the Monkey by 1%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the Dodge bonus of your Aspect of the Monkey by 2%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the Dodge bonus of your Aspect of the Monkey by 3%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases the Dodge bonus of your Aspect of the Monkey by 4%."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases the Dodge bonus of your Aspect of the Monkey by 5%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "INV_Misc_Pelt_Bear_03",
-							"Name": "Thick Hide",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "2",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the Armor rating of your pets by 10%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the Armor rating of your pets by 20%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the Armor rating of your pets by 30%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Ability_Hunter_BeastSoothe",
-							"Name": "Improved Revive Pet",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "2",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Revive Pet's casting time is reduced by 3 sec, mana cost is reduced by 20%, and increases the health your pet returns with by an additional 15%."
-									},
-									{
-										"Number": "2",
-										"Description": "Revive Pet's casting time is reduced by 6 sec, mana cost is reduced by 40%, and increases the health your pet returns with by an additional 30%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Ability_Mount_JungleTiger",
-							"Name": "Pathfinding",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "3",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 3%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 6%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Ability_Druid_Dash",
-							"Name": "Bestial Swiftness",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "3",
-							"Ranks": {
-								"Rank": {
-									"Number": "1",
-									"Description": "Increases the outdoor movement speed of your pets by 30%."
-								}
-							}
-						},
-						{
-							"Icon": "Ability_BullRush",
-							"Name": "Unleashed Fury",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "3",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the damage done by your pets by 4%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the damage done by your pets by 8%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the damage done by your pets by 12%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases the damage done by your pets by 16%."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases the damage done by your pets by 20%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Ability_Hunter_MendPet",
-							"Name": "Improved Mend Pet",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "4",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Gives the Mend Pet spell a 15% chance of cleansing 1 Curse, Disease, Magic or Poison effect from the pet each tick."
-									},
-									{
-										"Number": "2",
-										"Description": "Gives the Mend Pet spell a 50% chance of cleansing 1 Curse, Disease, Magic or Poison effect from the pet each tick."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "INV_Misc_MonsterClaw_04",
-							"Name": "Ferocity",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "4",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the critical strike chance of your pets by 3%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the critical strike chance of your pets by 6%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the critical strike chance of your pets by 9%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases the critical strike chance of your pets by 12%."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases the critical strike chance of your pets by 15%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Ability_Druid_DemoralizingRoar",
-							"Name": "Spirit Bond",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "5",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "While your pet is active, you and your pet will regenerate 1% of total health every 10 sec."
-									},
-									{
-										"Number": "2",
-										"Description": "While your pet is active, you and your pet will regenerate 2% of total health every 10 sec."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Ability_Devour",
-							"Name": "Intimidation",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "5",
-							"Ranks": {
-								"Rank": {
-									"Number": "1",
-									"Description": "Command your pet to intimidate the target on the next successful melee attack, causing a high amount of threat and stunning the target for 3 sec."
-								}
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Nature_AbolishMagic",
-							"Name": "Bestial Discipline",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "5",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the Focus regeneration of your pets by 10%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the Focus regeneration of your pets by 20%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "INV_Misc_MonsterClaw_03",
-							"Name": "Frenzy",
-							"Points": "5",
-							"Dependancy": "Ferocity",
-							"Arrow": {
-								"Name": "ArrowMedium",
-								"X": "148",
-								"Y": "260"
-							},
-							"Tier": "6",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Gives your pet a 20% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike."
-									},
-									{
-										"Number": "2",
-										"Description": "Gives your pet a 40% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike."
-									},
-									{
-										"Number": "3",
-										"Description": "Gives your pet a 60% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike."
-									},
-									{
-										"Number": "4",
-										"Description": "Gives your pet a 80% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike."
-									},
-									{
-										"Number": "5",
-										"Description": "Gives your pet a 100% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Ability_Druid_FerociousBite",
-							"Name": "Bestial Wrath",
-							"Points": "1",
-							"Dependancy": "Intimidation",
-							"Arrow": {
-								"Name": "ArrowMedium",
-								"X": "88",
-								"Y": "320"
-							},
-							"Tier": "7",
-							"Ranks": {
-								"Rank": {
-									"Number": "1",
-									"Description": "Send your pet into a rage causing 50% additional damage for 18 sec.  While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed."
-								}
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						}
-					]
+[
+	{
+	  "Name": "Beast Mastery",
+	  "Icon": "spell_shadow_requiem",
+	  "Background": "affliction_bg",
+	  "Talents": {
+		"Talent": [
+		  {
+			"Icon": "Spell_Nature_RavenForm",
+			"Name": "Improved Aspect of the Hawk",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 1,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "While Aspect of the Hawk is active, all normal ranged attacks have a 1% chance of increasing ranged attack speed by 30% for 12 sec."
+				},
+				{
+				  "Number": 2,
+				  "Description": "While Aspect of the Hawk is active, all normal ranged attacks have a 2% chance of increasing ranged attack speed by 30% for 12 sec."
+				},
+				{
+				  "Number": 3,
+				  "Description": "While Aspect of the Hawk is active, all normal ranged attacks have a 3% chance of increasing ranged attack speed by 30% for 12 sec."
+				},
+				{
+				  "Number": 4,
+				  "Description": "While Aspect of the Hawk is active, all normal ranged attacks have a 4% chance of increasing ranged attack speed by 30% for 12 sec."
+				},
+				{
+				  "Number": 5,
+				  "Description": "While Aspect of the Hawk is active, all normal ranged attacks have a 5% chance of increasing ranged attack speed by 30% for 12 sec."
 				}
-			},
-			{
-				"Name": "Marksmanship",
-				"Talents": {
-					"Talent": [
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Frost_Stun",
-							"Name": "Improved Concussive Shot",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "1",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Gives your Concussive Shot a 4% chance to stun the target for 3 sec."
-									},
-									{
-										"Number": "2",
-										"Description": "Gives your Concussive Shot a 8% chance to stun the target for 3 sec."
-									},
-									{
-										"Number": "3",
-										"Description": "Gives your Concussive Shot a 12% chance to stun the target for 3 sec."
-									},
-									{
-										"Number": "4",
-										"Description": "Gives your Concussive Shot a 16% chance to stun the target for 3 sec."
-									},
-									{
-										"Number": "5",
-										"Description": "Gives your Concussive Shot a 20% chance to stun the target for 3 sec."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Spell_Frost_WizardMark",
-							"Name": "Efficiency",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "1",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Reduces the Mana cost of your Shots and Stings by 2%."
-									},
-									{
-										"Number": "2",
-										"Description": "Reduces the Mana cost of your Shots and Stings by 4%."
-									},
-									{
-										"Number": "3",
-										"Description": "Reduces the Mana cost of your Shots and Stings by 6%."
-									},
-									{
-										"Number": "4",
-										"Description": "Reduces the Mana cost of your Shots and Stings by 8%."
-									},
-									{
-										"Number": "5",
-										"Description": "Reduces the Mana cost of your Shots and Stings by 10%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Ability_Hunter_SniperShot",
-							"Name": "Improved Hunter's Mark",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "2",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the Ranged Attack Power bonus of your Hunter's Mark spell by 3%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the Ranged Attack Power bonus of your Hunter's Mark spell by 6%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the Ranged Attack Power bonus of your Hunter's Mark spell by 9%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases the Ranged Attack Power bonus of your Hunter's Mark spell by 12%."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases the Ranged Attack Power bonus of your Hunter's Mark spell by 15%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Ability_SearingArrow",
-							"Name": "Lethal Shots",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "2",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases your critical strike chance with ranged weapons by 1%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases your critical strike chance with ranged weapons by 2%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases your critical strike chance with ranged weapons by 3%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases your critical strike chance with ranged weapons by 4%."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases your critical strike chance with ranged weapons by 5%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "INV_Spear_07",
-							"Name": "Aimed Shot",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "3",
-							"Ranks": {
-								"Rank": {
-									"Number": "1",
-									"Description": "An aimed shot that increases ranged damage by 70."
-								}
-							}
-						},
-						{
-							"Icon": "Ability_ImpalingBolt",
-							"Name": "Improved Arcane Shot",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "3",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Reduces the cooldown of your Arcane Shot by 0.2 sec."
-									},
-									{
-										"Number": "2",
-										"Description": "Reduces the cooldown of your Arcane Shot by 0.4 sec."
-									},
-									{
-										"Number": "3",
-										"Description": "Reduces the cooldown of your Arcane Shot by 0.6 sec."
-									},
-									{
-										"Number": "4",
-										"Description": "Reduces the cooldown of your Arcane Shot by 0.8 sec."
-									},
-									{
-										"Number": "5",
-										"Description": "Reduces the cooldown of your Arcane Shot by 1 sec."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Ability_TownWatch",
-							"Name": "Hawk Eye",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "3",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the range of your ranged weapons by 2 yards."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the range of your ranged weapons by 4 yards."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the range of your ranged weapons by 6 yards."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Ability_Hunter_Quickshot",
-							"Name": "Improved Serpent Sting",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "4",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the damage done by your Serpent Sting by 2%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the damage done by your Serpent Sting by 4%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the damage done by your Serpent Sting by 6%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases the damage done by your Serpent Sting by 8%."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases the damage done by your Serpent Sting by 10%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Ability_PierceDamage",
-							"Name": "Mortal Shots",
-							"Points": "5",
-							"Dependancy": "Lethal Shots",
-							"Arrow": {
-								"Name": "ArrowMedium",
-								"X": "148",
-								"Y": "140"
-							},
-							"Tier": "4",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases your ranged weapon critical strike damage bonus by 6%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases your ranged weapon critical strike damage bonus by 12%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases your ranged weapon critical strike damage bonus by 18%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases your ranged weapon critical strike damage bonus by 24%."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases your ranged weapon critical strike damage bonus by 30%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Ability_GolemStormBolt",
-							"Name": "Scatter Shot",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "5",
-							"Ranks": {
-								"Rank": {
-									"Number": "1",
-									"Description": "A short-range shot that deals 50% weapon damage and disorients the target for 4 sec.  Any damage caused will remove the effect.  Turns off your attack when used."
-								}
-							}
-						},
-						{
-							"Icon": "Ability_UpgradeMoonGlaive",
-							"Name": "Barrage",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "5",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the damage done by your Multi-Shot and Volley spells by 5%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the damage done by your Multi-Shot and Volley spells by 10%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the damage done by your Multi-Shot and Volley spells by 15%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Ability_Hunter_CriticalShot",
-							"Name": "Improved Scorpid Sting",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "5",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Reduces the Stamina of targets affected by your Scorpid Sting by 10% of the amount of Strength reduced."
-									},
-									{
-										"Number": "2",
-										"Description": "Reduces the Stamina of targets affected by your Scorpid Sting by 20% of the amount of Strength reduced."
-									},
-									{
-										"Number": "3",
-										"Description": "Reduces the Stamina of targets affected by your Scorpid Sting by 30% of the amount of Strength reduced."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "INV_Weapon_Rifle_06",
-							"Name": "Ranged Weapon Specialization",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "6",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the damage you deal with ranged weapons by 1%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the damage you deal with ranged weapons by 2%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases the damage you deal with ranged weapons by 3%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases the damage you deal with ranged weapons by 4%."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases the damage you deal with ranged weapons by 5%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Ability_TrueShot",
-							"Name": "Trueshot Aura",
-							"Points": "3",
-							"Dependancy": "Barrage",
-							"Arrow": {
-								"Name": "ArrowMedium",
-								"X": "88",
-								"Y": "320"
-							},
-							"Tier": "7",
-							"Ranks": {
-								"Rank": {
-									"Number": "1",
-									"Description": "Increases the attack power of party members within 45 yards by 50.  Lasts 30 min."
-								}
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						}
-					]
-				}
-			},
-			{
-				"Name": "Survival",
-				"Talents": {
-					"Talent": [
-						{
-							"Icon": "INV_Misc_Head_Dragon_Black",
-							"Name": "Monster Slaying",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "1",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases all damage caused against Beasts, Giants and Dragonkin targets by 1% and increases critical damage caused against Beasts, Giants and Dragonkin targets by an additional 1%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases all damage caused against Beasts, Giants and Dragonkin targets by 2% and increases critical damage caused against Beasts, Giants and Dragonkin targets by an additional 2%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases all damage caused against Beasts, Giants and Dragonkin targets by 3% and increases critical damage caused against Beasts, Giants and Dragonkin targets by an additional 3%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Spell_Holy_PrayerOfHealing",
-							"Name": "Humanoid Slaying",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "1",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases all damage caused against Humanoid targets by 1% and increases critical damage caused against Humanoid targets by an additional 1%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases all damage caused against Humanoid targets by 2% and increases critical damage caused against Humanoid targets by an additional 2%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases all damage caused against Humanoid targets by 3% and increases critical damage caused against Humanoid targets by an additional 3%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Ability_Parry",
-							"Name": "Deflection",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "1",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases your Parry chance by 1%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases your Parry chance by 2%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases your Parry chance by 3%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases your Parry chance by 4%."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases your Parry chance by 5%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Nature_StrangleVines",
-							"Name": "Entrapment",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "2",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Gives your Immolation Trap, Frost Trap, and Explosive Trap a 5% chance to entrap the target, preventing them from moving for 5 sec."
-									},
-									{
-										"Number": "2",
-										"Description": "Gives your Immolation Trap, Frost Trap, and Explosive Trap a 10% chance to entrap the target, preventing them from moving for 5 sec."
-									},
-									{
-										"Number": "3",
-										"Description": "Gives your Immolation Trap, Frost Trap, and Explosive Trap a 15% chance to entrap the target, preventing them from moving for 5 sec."
-									},
-									{
-										"Number": "4",
-										"Description": "Gives your Immolation Trap, Frost Trap, and Explosive Trap a 20% chance to entrap the target, preventing them from moving for 5 sec."
-									},
-									{
-										"Number": "5",
-										"Description": "Gives your Immolation Trap, Frost Trap, and Explosive Trap a 25% chance to entrap the target, preventing them from moving for 5 sec."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Ability_Racial_BloodRage",
-							"Name": "Savage Strikes",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "2",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the critical strike chance of Raptor Strike and Mongoose Bite by 10%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the critical strike chance of Raptor Strike and Mongoose Bite by 20%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Ability_Rogue_Trip",
-							"Name": "Improved Wing Clip",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "2",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Gives your Wing Clip ability a 4% chance to immobilize the target for 5 sec."
-									},
-									{
-										"Number": "2",
-										"Description": "Gives your Wing Clip ability a 8% chance to immobilize the target for 5 sec."
-									},
-									{
-										"Number": "3",
-										"Description": "Gives your Wing Clip ability a 12% chance to immobilize the target for 5 sec."
-									},
-									{
-										"Number": "4",
-										"Description": "Gives your Wing Clip ability a 16% chance to immobilize the target for 5 sec."
-									},
-									{
-										"Number": "5",
-										"Description": "Gives your Wing Clip ability a 20% chance to immobilize the target for 5 sec."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Nature_TimeStop",
-							"Name": "Clever Traps",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "3",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases the duration of Freezing and Frost trap effects by 15% and the damage of Immolation and Explosive trap effects by 15%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases the duration of Freezing and Frost trap effects by 30% and the damage of Immolation and Explosive trap effects by 30%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Spell_Shadow_Twilight",
-							"Name": "Survivalist",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "3",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases total health by 2%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases total health by 4%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases total health by 6%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases total health by 8%."
-									},
-									{
-										"Number": "5",
-										"Description": "Increases total health by 10%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Ability_Whirlwind",
-							"Name": "Deterrence",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "3",
-							"Ranks": {
-								"Rank": {
-									"Number": "1",
-									"Description": "When activated, increases your Dodge and Parry chance by 25% for 10 sec."
-								}
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Ability_Ensnare",
-							"Name": "Trap Mastery",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "4",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Decreases the chance enemies will resist trap effects by 5%."
-									},
-									{
-										"Number": "2",
-										"Description": "Decreases the chance enemies will resist trap effects by 10%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Ability_Kick",
-							"Name": "Surefooted",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "4",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases hit chance by 1% and increases the chance movement impairing effects will be resisted by an additional 5%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases hit chance by 2% and increases the chance movement impairing effects will be resisted by an additional 10%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases hit chance by 3% and increases the chance movement impairing effects will be resisted by an additional 15%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Ability_Rogue_FeignDeath",
-							"Name": "Improved Feign Death",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "4",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Reduces the chance your Feign Death ability will be resisted by 2%."
-									},
-									{
-										"Number": "2",
-										"Description": "Reduces the chance your Feign Death ability will be resisted by 4%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Holy_BlessingOfStamina",
-							"Name": "Killer Instinct",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "5",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases your critical strike chance with all attacks by 1%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases your critical strike chance with all attacks by 2%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases your critical strike chance with all attacks by 3%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "Ability_Warrior_Challange",
-							"Name": "Counterattack",
-							"Points": "1",
-							"Dependancy": "Deterrence",
-							"Arrow": {
-								"Name": "ArrowMedium",
-								"X": "148",
-								"Y": "200"
-							},
-							"Tier": "5",
-							"Ranks": {
-								"Rank": {
-									"Number": "1",
-									"Description": "A strike that becomes active after parrying an opponent's attack.  This attack deals 40 damage and immobilizes the target for 5 sec.  Counterattack cannot be blocked, dodged, or parried."
-								}
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "Spell_Nature_Invisibilty",
-							"Name": "Lightning Reflexes",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "6",
-							"Ranks": {
-								"Rank": [
-									{
-										"Number": "1",
-										"Description": "Increases your Agility by 3%."
-									},
-									{
-										"Number": "2",
-										"Description": "Increases your Agility by 6%."
-									},
-									{
-										"Number": "3",
-										"Description": "Increases your Agility by 9%."
-									},
-									{
-										"Number": "4",
-										"Description": "Increases your Agility by 12%."
-									}
-								]
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "INV_Spear_02",
-							"Name": "Wyvern Sting",
-							"Points": "3",
-							"Dependancy": "Killer Instinct",
-							"Arrow": {
-								"Name": "ArrowMedium",
-								"X": "88",
-								"Y": "320"
-							},
-							"Tier": "7",
-							"Ranks": {
-								"Rank": {
-									"Number": "1",
-									"Description": "A stinging shot that puts the target to sleep for 12 sec.  Any damage will cancel the effect.  When the target wakes up, the Sting causes 300 Nature damage over 12 sec.  Only usable out of combat.  Only one Sting per Hunter can be active on the target at a time."
-								}
-							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						}
-					]
-				}
+			  ]
 			}
+		  },
+		  {
+			"Icon": "Spell_Nature_Reincarnation",
+			"Name": "Endurance Training",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 1,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the Health of your pets by 3%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the Health of your pets by 6%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the Health of your pets by 9%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases the Health of your pets by 12%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases the Health of your pets by 15%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_EyeOfTheOwl",
+			"Name": "Improved Eyes of the Beast",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 2,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the duration of your Eyes of the Beast by 30 sec."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the duration of your Eyes of the Beast by 60 sec."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Hunter_AspectOfTheMonkey",
+			"Name": "Improved Aspect of the Monkey",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 2,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the Dodge bonus of your Aspect of the Monkey by 1%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the Dodge bonus of your Aspect of the Monkey by 2%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the Dodge bonus of your Aspect of the Monkey by 3%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases the Dodge bonus of your Aspect of the Monkey by 4%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases the Dodge bonus of your Aspect of the Monkey by 5%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "INV_Misc_Pelt_Bear_03",
+			"Name": "Thick Hide",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 2,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the Armor rating of your pets by 10%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the Armor rating of your pets by 20%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the Armor rating of your pets by 30%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Hunter_BeastSoothe",
+			"Name": "Improved Revive Pet",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 2,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Revive Pet's casting time is reduced by 3 sec, mana cost is reduced by 20%, and increases the health your pet returns with by an additional 15%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Revive Pet's casting time is reduced by 6 sec, mana cost is reduced by 40%, and increases the health your pet returns with by an additional 30%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Mount_JungleTiger",
+			"Name": "Pathfinding",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 3,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 3%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 6%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Druid_Dash",
+			"Name": "Bestial Swiftness",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 3,
+			"Ranks": {
+			  "Rank": {
+				"Number": 1,
+				"Description": "Increases the outdoor movement speed of your pets by 30%."
+			  }
+			}
+		  },
+		  {
+			"Icon": "Ability_BullRush",
+			"Name": "Unleashed Fury",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 3,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the damage done by your pets by 4%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the damage done by your pets by 8%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the damage done by your pets by 12%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases the damage done by your pets by 16%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases the damage done by your pets by 20%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Hunter_MendPet",
+			"Name": "Improved Mend Pet",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 4,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Gives the Mend Pet spell a 15% chance of cleansing 1 Curse, Disease, Magic or Poison effect from the pet each tick."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Gives the Mend Pet spell a 50% chance of cleansing 1 Curse, Disease, Magic or Poison effect from the pet each tick."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "INV_Misc_MonsterClaw_04",
+			"Name": "Ferocity",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 4,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the critical strike chance of your pets by 3%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the critical strike chance of your pets by 6%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the critical strike chance of your pets by 9%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases the critical strike chance of your pets by 12%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases the critical strike chance of your pets by 15%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Druid_DemoralizingRoar",
+			"Name": "Spirit Bond",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 5,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "While your pet is active, you and your pet will regenerate 1% of total health every 10 sec."
+				},
+				{
+				  "Number": 2,
+				  "Description": "While your pet is active, you and your pet will regenerate 2% of total health every 10 sec."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Devour",
+			"Name": "Intimidation",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 5,
+			"Ranks": {
+			  "Rank": {
+				"Number": 1,
+				"Description": "Command your pet to intimidate the target on the next successful melee attack, causing a high amount of threat and stunning the target for 3 sec."
+			  }
+			}
+		  },
+		  {
+			"Icon": "Spell_Nature_AbolishMagic",
+			"Name": "Bestial Discipline",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 5,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the Focus regeneration of your pets by 10%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the Focus regeneration of your pets by 20%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "INV_Misc_MonsterClaw_03",
+			"Name": "Frenzy",
+			"Points": 5,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 6,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Gives your pet a 20% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Gives your pet a 40% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Gives your pet a 60% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Gives your pet a 80% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Gives your pet a 100% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Druid_FerociousBite",
+			"Name": "Bestial Wrath",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 7,
+			"Ranks": {
+			  "Rank": {
+				"Number": 1,
+				"Description": "Send your pet into a rage causing 50% additional damage for 18 sec.  While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed."
+			  }
+			}
+		  }
 		]
+	  }
+	},
+	{
+	  "Name": "Marksmanship",
+	  "Icon": "spell_shadow_requiem",
+	  "Background": "affliction_bg",
+	  "Talents": {
+		"Talent": [
+		  {
+			"Icon": "Spell_Frost_Stun",
+			"Name": "Improved Concussive Shot",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 1,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Gives your Concussive Shot a 4% chance to stun the target for 3 sec."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Gives your Concussive Shot a 8% chance to stun the target for 3 sec."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Gives your Concussive Shot a 12% chance to stun the target for 3 sec."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Gives your Concussive Shot a 16% chance to stun the target for 3 sec."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Gives your Concussive Shot a 20% chance to stun the target for 3 sec."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Frost_WizardMark",
+			"Name": "Efficiency",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 1,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Reduces the Mana cost of your Shots and Stings by 2%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Reduces the Mana cost of your Shots and Stings by 4%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Reduces the Mana cost of your Shots and Stings by 6%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Reduces the Mana cost of your Shots and Stings by 8%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Reduces the Mana cost of your Shots and Stings by 10%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Hunter_SniperShot",
+			"Name": "Improved Hunter's Mark",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 2,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the Ranged Attack Power bonus of your Hunter's Mark spell by 3%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the Ranged Attack Power bonus of your Hunter's Mark spell by 6%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the Ranged Attack Power bonus of your Hunter's Mark spell by 9%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases the Ranged Attack Power bonus of your Hunter's Mark spell by 12%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases the Ranged Attack Power bonus of your Hunter's Mark spell by 15%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_SearingArrow",
+			"Name": "Lethal Shots",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 2,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases your critical strike chance with ranged weapons by 1%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases your critical strike chance with ranged weapons by 2%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases your critical strike chance with ranged weapons by 3%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases your critical strike chance with ranged weapons by 4%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases your critical strike chance with ranged weapons by 5%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "INV_Spear_07",
+			"Name": "Aimed Shot",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 3,
+			"Ranks": {
+			  "Rank": {
+				"Number": 1,
+				"Description": "An aimed shot that increases ranged damage by 70."
+			  }
+			}
+		  },
+		  {
+			"Icon": "Ability_ImpalingBolt",
+			"Name": "Improved Arcane Shot",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 3,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Reduces the cooldown of your Arcane Shot by 0.2 sec."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Reduces the cooldown of your Arcane Shot by 0.4 sec."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Reduces the cooldown of your Arcane Shot by 0.6 sec."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Reduces the cooldown of your Arcane Shot by 0.8 sec."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Reduces the cooldown of your Arcane Shot by 1 sec."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_TownWatch",
+			"Name": "Hawk Eye",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 3,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the range of your ranged weapons by 2 yards."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the range of your ranged weapons by 4 yards."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the range of your ranged weapons by 6 yards."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Hunter_Quickshot",
+			"Name": "Improved Serpent Sting",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 4,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the damage done by your Serpent Sting by 2%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the damage done by your Serpent Sting by 4%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the damage done by your Serpent Sting by 6%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases the damage done by your Serpent Sting by 8%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases the damage done by your Serpent Sting by 10%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_PierceDamage",
+			"Name": "Mortal Shots",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 4,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases your ranged weapon critical strike damage bonus by 6%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases your ranged weapon critical strike damage bonus by 12%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases your ranged weapon critical strike damage bonus by 18%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases your ranged weapon critical strike damage bonus by 24%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases your ranged weapon critical strike damage bonus by 30%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_GolemStormBolt",
+			"Name": "Scatter Shot",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 5,
+			"Ranks": {
+			  "Rank": {
+				"Number": 1,
+				"Description": "A short-range shot that deals 50% weapon damage and disorients the target for 4 sec.  Any damage caused will remove the effect.  Turns off your attack when used."
+			  }
+			}
+		  },
+		  {
+			"Icon": "Ability_UpgradeMoonGlaive",
+			"Name": "Barrage",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 5,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the damage done by your Multi-Shot and Volley spells by 5%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the damage done by your Multi-Shot and Volley spells by 10%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the damage done by your Multi-Shot and Volley spells by 15%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Hunter_CriticalShot",
+			"Name": "Improved Scorpid Sting",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 5,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Reduces the Stamina of targets affected by your Scorpid Sting by 10% of the amount of Strength reduced."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Reduces the Stamina of targets affected by your Scorpid Sting by 20% of the amount of Strength reduced."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Reduces the Stamina of targets affected by your Scorpid Sting by 30% of the amount of Strength reduced."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "INV_Weapon_Rifle_06",
+			"Name": "Ranged Weapon Specialization",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 6,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the damage you deal with ranged weapons by 1%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the damage you deal with ranged weapons by 2%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases the damage you deal with ranged weapons by 3%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases the damage you deal with ranged weapons by 4%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases the damage you deal with ranged weapons by 5%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_TrueShot",
+			"Name": "Trueshot Aura",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 7,
+			"Ranks": {
+			  "Rank": {
+				"Number": 1,
+				"Description": "Increases the attack power of party members within 45 yards by 50.  Lasts 30 min."
+			  }
+			}
+		  }
+		]
+	  }
+	},
+	{
+	  "Name": "Survival",
+	  "Icon": "spell_shadow_requiem",
+	  "Background": "affliction_bg",
+	  "Talents": {
+		"Talent": [
+		  {
+			"Icon": "INV_Misc_Head_Dragon_Black",
+			"Name": "Monster Slaying",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 1,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases all damage caused against Beasts, Giants and Dragonkin targets by 1% and increases critical damage caused against Beasts, Giants and Dragonkin targets by an additional 1%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases all damage caused against Beasts, Giants and Dragonkin targets by 2% and increases critical damage caused against Beasts, Giants and Dragonkin targets by an additional 2%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases all damage caused against Beasts, Giants and Dragonkin targets by 3% and increases critical damage caused against Beasts, Giants and Dragonkin targets by an additional 3%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_PrayerOfHealing",
+			"Name": "Humanoid Slaying",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 1,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases all damage caused against Humanoid targets by 1% and increases critical damage caused against Humanoid targets by an additional 1%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases all damage caused against Humanoid targets by 2% and increases critical damage caused against Humanoid targets by an additional 2%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases all damage caused against Humanoid targets by 3% and increases critical damage caused against Humanoid targets by an additional 3%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Parry",
+			"Name": "Deflection",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 1,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases your Parry chance by 1%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases your Parry chance by 2%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases your Parry chance by 3%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases your Parry chance by 4%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases your Parry chance by 5%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Nature_StrangleVines",
+			"Name": "Entrapment",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 2,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Gives your Immolation Trap, Frost Trap, and Explosive Trap a 5% chance to entrap the target, preventing them from moving for 5 sec."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Gives your Immolation Trap, Frost Trap, and Explosive Trap a 10% chance to entrap the target, preventing them from moving for 5 sec."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Gives your Immolation Trap, Frost Trap, and Explosive Trap a 15% chance to entrap the target, preventing them from moving for 5 sec."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Gives your Immolation Trap, Frost Trap, and Explosive Trap a 20% chance to entrap the target, preventing them from moving for 5 sec."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Gives your Immolation Trap, Frost Trap, and Explosive Trap a 25% chance to entrap the target, preventing them from moving for 5 sec."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Racial_BloodRage",
+			"Name": "Savage Strikes",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 2,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the critical strike chance of Raptor Strike and Mongoose Bite by 10%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the critical strike chance of Raptor Strike and Mongoose Bite by 20%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Rogue_Trip",
+			"Name": "Improved Wing Clip",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 2,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Gives your Wing Clip ability a 4% chance to immobilize the target for 5 sec."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Gives your Wing Clip ability a 8% chance to immobilize the target for 5 sec."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Gives your Wing Clip ability a 12% chance to immobilize the target for 5 sec."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Gives your Wing Clip ability a 16% chance to immobilize the target for 5 sec."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Gives your Wing Clip ability a 20% chance to immobilize the target for 5 sec."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Nature_TimeStop",
+			"Name": "Clever Traps",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 3,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases the duration of Freezing and Frost trap effects by 15% and the damage of Immolation and Explosive trap effects by 15%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases the duration of Freezing and Frost trap effects by 30% and the damage of Immolation and Explosive trap effects by 30%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Shadow_Twilight",
+			"Name": "Survivalist",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 3,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases total health by 2%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases total health by 4%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases total health by 6%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases total health by 8%."
+				},
+				{
+				  "Number": 5,
+				  "Description": "Increases total health by 10%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Whirlwind",
+			"Name": "Deterrence",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 3,
+			"Ranks": {
+			  "Rank": {
+				"Number": 1,
+				"Description": "When activated, increases your Dodge and Parry chance by 25% for 10 sec."
+			  }
+			}
+		  },
+		  {
+			"Icon": "Ability_Ensnare",
+			"Name": "Trap Mastery",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 4,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Decreases the chance enemies will resist trap effects by 5%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Decreases the chance enemies will resist trap effects by 10%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Kick",
+			"Name": "Surefooted",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 4,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases hit chance by 1% and increases the chance movement impairing effects will be resisted by an additional 5%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases hit chance by 2% and increases the chance movement impairing effects will be resisted by an additional 10%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases hit chance by 3% and increases the chance movement impairing effects will be resisted by an additional 15%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Rogue_FeignDeath",
+			"Name": "Improved Feign Death",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 4,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Reduces the chance your Feign Death ability will be resisted by 2%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Reduces the chance your Feign Death ability will be resisted by 4%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Spell_Holy_BlessingOfStamina",
+			"Name": "Killer Instinct",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 5,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases your critical strike chance with all attacks by 1%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases your critical strike chance with all attacks by 2%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases your critical strike chance with all attacks by 3%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "Ability_Warrior_Challange",
+			"Name": "Counterattack",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 5,
+			"Ranks": {
+			  "Rank": {
+				"Number": 1,
+				"Description": "A strike that becomes active after parrying an opponent's attack.  This attack deals 40 damage and immobilizes the target for 5 sec.  Counterattack cannot be blocked, dodged, or parried."
+			  }
+			}
+		  },
+		  {
+			"Icon": "Spell_Nature_Invisibilty",
+			"Name": "Lightning Reflexes",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 6,
+			"Ranks": {
+			  "Rank": [
+				{
+				  "Number": 1,
+				  "Description": "Increases your Agility by 3%."
+				},
+				{
+				  "Number": 2,
+				  "Description": "Increases your Agility by 6%."
+				},
+				{
+				  "Number": 3,
+				  "Description": "Increases your Agility by 9%."
+				},
+				{
+				  "Number": 4,
+				  "Description": "Increases your Agility by 12%."
+				}
+			  ]
+			}
+		  },
+		  {
+			"Icon": "INV_Spear_02",
+			"Name": "Wyvern Sting",
+			"Points": 0,
+			"Dependancy": "",
+			"Support": "",
+			"Position": [
+			  1,
+			  1
+			],
+			"Enable": false,
+			"Tier": 7,
+			"Ranks": {
+			  "Rank": {
+				"Number": 1,
+				"Description": "A stinging shot that puts the target to sleep for 12 sec.  Any damage will cancel the effect.  When the target wakes up, the Sting causes 300 Nature damage over 12 sec.  Only usable out of combat.  Only one Sting per Hunter can be active on the target at a time."
+			  }
+			}
+		  }
+		]
+	  }
 	}
-}
+  ]

@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/detail_screen.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
 import 'package:wow_classic_talent_calculator/provider/TalentProvider.dart';
+import 'package:wow_classic_talent_calculator/utils/colors.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -27,11 +28,11 @@ class HomeScreen extends StatelessWidget {
     talentTrees = await loadTalent();
   }
 
-  _handleOnTap(BuildContext context, String className) {
+  _handleOnTap(BuildContext context, String className, Color classColor) {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => DetailScreen(className: className),
+        builder: (context) => DetailScreen(className: className, classColor: classColor),
       ),
     );
   }
@@ -47,26 +48,98 @@ class HomeScreen extends StatelessWidget {
           title: Text('WoW Classic Talent Calculator'),
           backgroundColor: Color(0xFF673AB7),
         ),
-        body: ListView(
+        body: Column(
+          mainAxisSize: MainAxisSize.max,
           children: <Widget>[
-            GestureDetector(
-              onTap: () => _handleOnTap(context, 'warlock'),
-              child: Container(
-                height: 150,
-                color: Colors.amber[600],
-                child: const Center(child: Text('Warlock')),
+            Expanded(
+              child: GestureDetector(
+                onTap: () => _handleOnTap(context, 'druid', kColorOrangeDruid),
+                child: Container(
+                  color: kColorOrangeDruid,
+                  child: const Center(child: Text('Druid')),
+                ),
               ),
             ),
-            Container(
-              height: 150,
-              color: Colors.amber[500],
-              child: const Center(child: Text('Warrior')),
+            Expanded(
+              child: GestureDetector(
+                onTap: () => _handleOnTap(context, 'hunter', kColorGreenHunter),
+                child: Container(
+                  color: kColorGreenHunter,
+                  child: const Center(child: Text('Hunter')),
+                ),
+              ),
             ),
-            Container(
-              height: 150,
-              color: Colors.amber[100],
-              child: const Center(child: Text('Priest')),
+            Expanded(
+              child: GestureDetector(
+                onTap: () => _handleOnTap(context, 'mage', kColorBlueMage),
+                child: Container(
+
+                  color: kColorBlueMage,
+                  child: const Center(child: Text('Mage')),
+                ),
+              ),
             ),
+            Expanded(
+              child: GestureDetector(
+                onTap: () => _handleOnTap(context, 'paladin', kColorPinkPaladin),
+                child: Container(
+
+                  color: kColorPinkPaladin,
+                  child: const Center(child: Text('Paladin')),
+                ),
+              ),
+            ),
+            Expanded(
+              child: GestureDetector(
+                onTap: () => _handleOnTap(context, 'priest', kColorWhitePriest),
+                child: Container(
+
+                  color: kColorWhitePriest,
+                  child: const Center(child: Text('Priest')),
+                ),
+              ),
+            ),
+            Expanded(
+              child: GestureDetector(
+                onTap: () => _handleOnTap(context, 'rogue', kColorYellowRogue),
+                child: Container(
+
+                  color: kColorYellowRogue,
+                  child: const Center(child: Text('Rogue')),
+                ),
+              ),
+            ),
+            Expanded(
+              child: GestureDetector(
+                onTap: () => _handleOnTap(context, 'shaman', kColorBlueShaman),
+                child: Container(
+
+                  color: kColorBlueShaman,
+                  child: const Center(child: Text('Shaman')),
+                ),
+              ),
+            ),
+            Expanded(
+              child: GestureDetector(
+                onTap: () => _handleOnTap(context, 'warlock', kColorPurpleWarlock),
+                child: Container(
+
+                  color: kColorPurpleWarlock,
+                  child: const Center(child: Text('Warlock')),
+                ),
+              ),
+            ),
+            Expanded(
+              child: GestureDetector(
+                onTap: () => _handleOnTap(context, 'warrior', kColorTanWarrior),
+                child: Container(
+
+                  color: kColorTanWarrior,
+                  child: const Center(child: Text('Warrior')),
+                ),
+              ),
+            ),
+
           ],
         ));
   }

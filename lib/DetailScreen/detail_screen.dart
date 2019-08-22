@@ -14,14 +14,14 @@ import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 
 class DetailScreen extends StatefulWidget {
   final String className;
-  DetailScreen({this.className});
+  final Color classColor;
+  DetailScreen({this.className, this.classColor});
 
   @override
   _DetailScreenState createState() => _DetailScreenState();
 }
 
-class _DetailScreenState extends State<DetailScreen>
-    with SingleTickerProviderStateMixin {
+class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderStateMixin {
   TabController _tabController;
   TalentTrees talentTrees;
   var arrowTrees;
@@ -63,12 +63,18 @@ class _DetailScreenState extends State<DetailScreen>
   @override
   Widget build(BuildContext context) {
     return talentTrees == null
-        ? CircularProgressIndicator()
+        ? Scaffold(
+        appBar: AppBar(
+            title: Text(widget.className),
+          backgroundColor: widget.classColor,
+        ),
+        body: Center(child: CircularProgressIndicator())
+    )
+
+
         : ChangeNotifierProvider<TalentProvider>(
             builder: (_) => TalentProvider(talentTrees),
             child: DetailScreenContent(
-                className: widget.className,
-                talentTrees: talentTrees,
-                arrowTrees: arrowTrees));
+                className: widget.className, talentTrees: talentTrees, arrowTrees: arrowTrees));
   }
 }

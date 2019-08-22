@@ -21,7 +21,7 @@ class ClassWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Container(
-              padding: EdgeInsets.symmetric(horizontal: 40),
+              padding: EdgeInsets.only(left: 40),
               child: Text(
                 str.capitalize(className),
                 style: TextStyle(
@@ -32,8 +32,10 @@ class ClassWidget extends StatelessWidget {
           ShaderMask(
             shaderCallback: (rect) {
               return LinearGradient(
-                begin: Alignment.centerRight,
-                end: Alignment.centerLeft,
+                // begin: Alignment.centerRight,
+                // end: Alignment.centerLeft,
+                begin: Alignment(0.4, 0),
+                end: Alignment(-1, 0),
                 colors: [Colors.black, Colors.transparent],
               ).createShader(Rect.fromLTRB(0, 0, rect.width, rect.height));
             },

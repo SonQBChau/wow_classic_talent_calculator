@@ -16,7 +16,6 @@
 			  1
 			],
 			"Enable": true,
-			"Arrow": "",
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -54,7 +53,6 @@
 			  1
 			],
 			"Enable": true,
-			"Arrow": "",
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": {
@@ -66,13 +64,14 @@
 		  {
 			"Icon": "Spell_Nature_NaturesWrath",
 			"Name": "Improved Nature's Grasp",
-			"Points": "1",
-			"Dependancy": "Nature's Grasp",
-			"Arrow": {
-			  "Name": "ArrowRightShort",
-			  "X": "120",
-			  "Y": "48"
-			},
+			"Points": 0,
+			"Dependency": "",
+			"Support": "",
+			"Position": [
+			  0,
+			  1
+			],
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -105,8 +104,8 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
+			
 			"Tier": 2,
 			"Ranks": {
 			  "Rank": [
@@ -135,8 +134,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 2,
 			"Ranks": {
 			  "Rank": [
@@ -173,8 +171,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 2,
 			"Ranks": {
 			  "Rank": [
@@ -211,8 +208,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 2,
 			"Ranks": {
 			  "Rank": [
@@ -241,8 +237,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
 			  "Rank": [
@@ -264,13 +259,14 @@
 		  {
 			"Icon": "Spell_Nature_CrystalBall",
 			"Name": "Omen of Clarity",
-			"Points": "5",
-			"Dependancy": "Natural Weapons",
-			"Arrow": {
-			  "Name": "ArrowShort",
-			  "X": "148",
-			  "Y": "140"
-			},
+			"Points": 0,
+			"Dependency": "",
+			"Support": "",
+			"Position": [
+			  0,
+			  1
+			],
+			"Enable": true,
 			"Tier": 3,
 			"Ranks": {
 			  "Rank": {
@@ -289,8 +285,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
 			  "Rank": [
@@ -308,13 +303,14 @@
 		  {
 			"Icon": "Spell_Nature_Purge",
 			"Name": "Vengeance",
-			"Points": "5",
-			"Dependancy": "Improved Moonfire",
-			"Arrow": {
-			  "Name": "ArrowMedium",
-			  "X": "88",
-			  "Y": "140"
-			},
+			"Points": 0,
+			"Dependency": "",
+			"Support": "",
+			"Position": [
+			  0,
+			  1
+			],
+			"Enable": true,
 			"Tier": 4,
 			"Ranks": {
 			  "Rank": [
@@ -351,8 +347,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 4,
 			"Ranks": {
 			  "Rank": [
@@ -389,8 +384,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
 			  "Rank": {
@@ -409,8 +403,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
 			  "Rank": [
@@ -432,13 +425,14 @@
 		  {
 			"Icon": "Spell_Nature_MoonGlow",
 			"Name": "Moonfury",
-			"Points": "1",
-			"Dependancy": "Nature's Grace",
-			"Arrow": {
-			  "Name": "ArrowShort",
-			  "X": "88",
-			  "Y": "320"
-			},
+			"Points": 0,
+			"Dependency": "",
+			"Support": "",
+			"Position": [
+			  0,
+			  1
+			],
+			"Enable": true,
 			"Tier": 6,
 			"Ranks": {
 			  "Rank": [
@@ -475,8 +469,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 7,
 			"Ranks": {
 			  "Rank": {
@@ -505,7 +498,6 @@
 			  1
 			],
 			"Enable": true,
-			"Arrow": "",
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -543,7 +535,6 @@
 			  1
 			],
 			"Enable": true,
-			"Arrow": "",
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -580,8 +571,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 2,
 			"Ranks": {
 			  "Rank": [
@@ -618,8 +608,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 2,
 			"Ranks": {
 			  "Rank": [
@@ -644,8 +633,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 2,
 			"Ranks": {
 			  "Rank": [
@@ -682,8 +670,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
 			  "Rank": [
@@ -708,8 +695,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
 			  "Rank": {
@@ -728,8 +714,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
 			  "Rank": [
@@ -758,8 +743,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 4,
 			"Ranks": {
 			  "Rank": [
@@ -784,8 +768,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 4,
 			"Ranks": {
 			  "Rank": [
@@ -807,13 +790,14 @@
 		  {
 			"Icon": "Ability_GhoulFrenzy",
 			"Name": "Blood Frenzy",
-			"Points": "3",
-			"Dependancy": "Sharpened Claws",
-			"Arrow": {
-			  "Name": "ArrowShort",
-			  "X": "148",
-			  "Y": "200"
-			},
+			"Points": 0,
+			"Dependency": "",
+			"Support": "",
+			"Position": [
+			  0,
+			  1
+			],
+			"Enable": true,
 			"Tier": 4,
 			"Ranks": {
 			  "Rank": [
@@ -831,13 +815,14 @@
 		  {
 			"Icon": "Ability_Racial_Cannibalize",
 			"Name": "Primal Fury",
-			"Points": "3",
-			"Dependancy": "Sharpened Claws",
-			"Arrow": {
-			  "Name": "ArrowRightMedium",
-			  "X": "180",
-			  "Y": "170"
-			},
+			"Points": 0,
+			"Dependency": "",
+			"Support": "",
+			"Position": [
+			  0,
+			  1
+			],
+			"Enable": true,
 			"Tier": 4,
 			"Ranks": {
 			  "Rank": [
@@ -862,8 +847,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
 			  "Rank": [
@@ -888,8 +872,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
 			  "Rank": {
@@ -901,13 +884,14 @@
 		  {
 			"Icon": "Spell_Holy_BlessingOfAgility",
 			"Name": "Heart of the Wild",
-			"Points": "3",
-			"Dependancy": "Predatory Strikes",
-			"Arrow": {
-			  "Name": "ArrowMedium",
-			  "X": "88",
-			  "Y": "260"
-			},
+			"Points": 0,
+			"Dependency": "",
+			"Support": "",
+			"Position": [
+			  0,
+			  1
+			],
+			"Enable": true,
 			"Tier": 6,
 			"Ranks": {
 			  "Rank": [
@@ -944,8 +928,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 7,
 			"Ranks": {
 			  "Rank": {
@@ -974,7 +957,6 @@
 			  1
 			],
 			"Enable": true,
-			"Arrow": "",
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -1012,7 +994,6 @@
 			  1
 			],
 			"Enable": true,
-			"Arrow": "",
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -1049,8 +1030,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 2,
 			"Ranks": {
 			  "Rank": [
@@ -1087,8 +1067,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 2,
 			"Ranks": {
 			  "Rank": [
@@ -1125,8 +1104,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 2,
 			"Ranks": {
 			  "Rank": [
@@ -1151,8 +1129,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
 			  "Rank": [
@@ -1181,8 +1158,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
 			  "Rank": {
@@ -1201,8 +1177,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
 			  "Rank": [
@@ -1239,8 +1214,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 4,
 			"Ranks": {
 			  "Rank": [
@@ -1277,8 +1251,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 4,
 			"Ranks": {
 			  "Rank": [
@@ -1300,13 +1273,14 @@
 		  {
 			"Icon": "Spell_Nature_RavenForm",
 			"Name": "Nature's Swiftness",
-			"Points": "5",
-			"Dependancy": "Improved Healing Touch",
-			"Arrow": {
-			  "Name": "ArrowLong",
-			  "X": "28",
-			  "Y": "140"
-			},
+			"Points": 0,
+			"Dependency": "",
+			"Support": "",
+			"Position": [
+			  0,
+			  1
+			],
+			"Enable": true,
 			"Tier": 5,
 			"Ranks": {
 			  "Rank": {
@@ -1318,13 +1292,14 @@
 		  {
 			"Icon": "Spell_Nature_ProtectionformNature",
 			"Name": "Gift of Nature",
-			"Points": "1",
-			"Dependancy": "Insect Swarm",
-			"Arrow": {
-			  "Name": "ArrowMedium",
-			  "X": "148",
-			  "Y": "200"
-			},
+			"Points": 0,
+			"Dependency": "",
+			"Support": "",
+			"Position": [
+			  0,
+			  1
+			],
+			"Enable": true,
 			"Tier": 5,
 			"Ranks": {
 			  "Rank": [
@@ -1361,8 +1336,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
 			  "Rank": [
@@ -1387,8 +1361,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
-			"Arrow": "",
+			"Enable": false,
 			"Tier": 6,
 			"Ranks": {
 			  "Rank": [
@@ -1414,13 +1387,14 @@
 		  {
 			"Icon": "INV_Relics_IdolofRejuvenation",
 			"Name": "Swiftmend",
-			"Points": "5",
-			"Dependancy": "Tranquil Spirit",
-			"Arrow": {
-			  "Name": "ArrowLong",
-			  "X": "88",
-			  "Y": "260"
-			},
+			"Points": 0,
+			"Dependency": "",
+			"Support": "",
+			"Position": [
+			  0,
+			  1
+			],
+			"Enable": true,
 			"Tier": 7,
 			"Ranks": {
 			  "Rank": {

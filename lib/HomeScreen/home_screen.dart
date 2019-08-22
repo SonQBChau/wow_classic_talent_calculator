@@ -45,27 +45,54 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
         appBar: AppBar(
-          title: Text('WoW Classic Talent Calculator'),
-          backgroundColor: Color(0xFF673AB7),
+          title: Text('Classic Talent Calculator'),
+            centerTitle: true,
+          backgroundColor: Color(0xFFe6cc80),
         ),
         body: Column(
           mainAxisSize: MainAxisSize.max,
           children: <Widget>[
             Expanded(
-              child: GestureDetector(
-                onTap: () => _handleOnTap(context, 'druid', kColorOrangeDruid),
+              child: Container(
+                padding:  EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
                 child: Container(
-                  color: kColorOrangeDruid,
-                  child: const Center(child: Text('Druid')),
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.grey),
+                    borderRadius: BorderRadius.circular(5.0),
+                  ),
+                  child: ListTile(
+                    title: Text('Druid'),
+                    trailing: Image.asset('assets/Class/class_druid.png'),
+                    onTap: () => _handleOnTap(context, 'druid', kColorOrangeDruid),
+                  ),
                 ),
               ),
             ),
+//            Expanded(
+//              child: GestureDetector(
+//                onTap: () => _handleOnTap(context, 'druid', kColorOrangeDruid),
+//                child: Container(
+//                  color: kColorOrangeDruid,
+//                  child:  Row(
+//                    children: <Widget>[
+//                      Image.asset('assets/Class/class_druid.png'),
+//                      Text('Druid'),
+//                    ],
+//                  ),
+//                ),
+//              ),
+//            ),
             Expanded(
               child: GestureDetector(
                 onTap: () => _handleOnTap(context, 'hunter', kColorGreenHunter),
                 child: Container(
                   color: kColorGreenHunter,
-                  child: const Center(child: Text('Hunter')),
+                  child: Row(
+                    children: <Widget>[
+                      Image.asset('assets/Class/class_hunter.png'),
+                      Text('Hunter'),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -75,7 +102,12 @@ class HomeScreen extends StatelessWidget {
                 child: Container(
 
                   color: kColorBlueMage,
-                  child: const Center(child: Text('Mage')),
+                  child: Row(
+                    children: <Widget>[
+                      Image.asset('assets/Class/class_mage.png'),
+                      Text('Mage'),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -85,7 +117,12 @@ class HomeScreen extends StatelessWidget {
                 child: Container(
 
                   color: kColorPinkPaladin,
-                  child: const Center(child: Text('Paladin')),
+                  child: Row(
+                    children: <Widget>[
+                      Image.asset('assets/Class/class_paladin.png'),
+                      Text('Paladin'),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -95,7 +132,12 @@ class HomeScreen extends StatelessWidget {
                 child: Container(
 
                   color: kColorWhitePriest,
-                  child: const Center(child: Text('Priest')),
+                  child: Row(
+                    children: <Widget>[
+                      Image.asset('assets/Class/class_priest.png'),
+                      Text('Priest'),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -105,7 +147,12 @@ class HomeScreen extends StatelessWidget {
                 child: Container(
 
                   color: kColorYellowRogue,
-                  child: const Center(child: Text('Rogue')),
+                  child: Row(
+                    children: <Widget>[
+                      Image.asset('assets/Class/class_rogue.png'),
+                      Text('Rogue'),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -115,7 +162,12 @@ class HomeScreen extends StatelessWidget {
                 child: Container(
 
                   color: kColorBlueShaman,
-                  child: const Center(child: Text('Shaman')),
+                  child: Row(
+                    children: <Widget>[
+                      Image.asset('assets/Class/class_shaman.png'),
+                      Text('Shaman'),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -125,7 +177,12 @@ class HomeScreen extends StatelessWidget {
                 child: Container(
 
                   color: kColorPurpleWarlock,
-                  child: const Center(child: Text('Warlock')),
+                  child: Row(
+                    children: <Widget>[
+                      Image.asset('assets/Class/class_warlock.png'),
+                      Text('Warlock'),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -135,7 +192,12 @@ class HomeScreen extends StatelessWidget {
                 child: Container(
 
                   color: kColorTanWarrior,
-                  child: const Center(child: Text('Warrior')),
+                  child: Row(
+                    children: <Widget>[
+                      Image.asset('assets/Class/class_warrior.png'),
+                      Text('Warrior'),
+                    ],
+                  ),
                 ),
               ),
             ),

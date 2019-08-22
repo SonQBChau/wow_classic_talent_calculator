@@ -49,158 +49,63 @@ class HomeScreen extends StatelessWidget {
             centerTitle: true,
           backgroundColor: Color(0xFFe6cc80),
         ),
-        body: Column(
-          mainAxisSize: MainAxisSize.max,
+        body: ListView(
           children: <Widget>[
-            Expanded(
-              child: Container(
-                padding:  EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-                child: Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(color: Colors.grey),
-                    borderRadius: BorderRadius.circular(5.0),
-                  ),
-                  child: ListTile(
-                    title: Text('Druid'),
-                    trailing: Image.asset('assets/Class/class_druid.png'),
-                    onTap: () => _handleOnTap(context, 'druid', kColorOrangeDruid),
-                  ),
-                ),
-              ),
+            Container(
+              height: 150,
+              width: SizeConfig.screenWidth,
+              color: kColorGreenHunter,
+              child: Image.asset('assets/Class/druid.png', fit: BoxFit.fitWidth),
             ),
-//            Expanded(
-//              child: GestureDetector(
-//                onTap: () => _handleOnTap(context, 'druid', kColorOrangeDruid),
-//                child: Container(
-//                  color: kColorOrangeDruid,
-//                  child:  Row(
-//                    children: <Widget>[
-//                      Image.asset('assets/Class/class_druid.png'),
-//                      Text('Druid'),
-//                    ],
-//                  ),
-//                ),
-//              ),
-//            ),
-            Expanded(
-              child: GestureDetector(
-                onTap: () => _handleOnTap(context, 'hunter', kColorGreenHunter),
-                child: Container(
-                  color: kColorGreenHunter,
-                  child: Row(
-                    children: <Widget>[
-                      Image.asset('assets/Class/class_hunter.png'),
-                      Text('Hunter'),
-                    ],
-                  ),
-                ),
-              ),
+            Container(
+              height: 150,
+              width: SizeConfig.screenWidth,
+              color: kColorGreenHunter,
+              child: Image.asset('assets/Class/hunter.png', fit: BoxFit.fitWidth),
             ),
-            Expanded(
-              child: GestureDetector(
-                onTap: () => _handleOnTap(context, 'mage', kColorBlueMage),
-                child: Container(
+            Container(
+              height: 150,
+              width: SizeConfig.screenWidth,
+              color: kColorGreenHunter,
+              child: Image.asset('assets/Class/mage.png', fit: BoxFit.fitWidth),
+            ),
+            Container(
+              height: 150,
+              width: SizeConfig.screenWidth,
+              color: kColorGreenHunter,
+              child: Image.asset('assets/Class/paladin.png', fit: BoxFit.fitWidth),
+            ),
+            Container(
+              height: 150,
+              width: SizeConfig.screenWidth,
+              color: kColorGreenHunter,
+              child: Image.asset('assets/Class/priest.png', fit: BoxFit.fitWidth),
+            ),
+            Container(
+              height: 150,
+              width: SizeConfig.screenWidth,
+              color: kColorGreenHunter,
+              child: Image.asset('assets/Class/rogue.png', fit: BoxFit.fitWidth),
+            ),
+            Container(
+              height: 150,
+              width: SizeConfig.screenWidth,
+              color: kColorGreenHunter,
+              child: Image.asset('assets/Class/shaman.png', fit: BoxFit.fitWidth),
+            ),
+            Container(
+              height: 150,
+              width: SizeConfig.screenWidth,
+              color: kColorGreenHunter,
+              child: Image.asset('assets/Class/warlock.png', fit: BoxFit.fitWidth),
+            ),
+            Container(
+              height: 150,
+              width: SizeConfig.screenWidth,
+              color: kColorGreenHunter,
+              child: Image.asset('assets/Class/warrior.png', fit: BoxFit.fitWidth),
+            ),
 
-                  color: kColorBlueMage,
-                  child: Row(
-                    children: <Widget>[
-                      Image.asset('assets/Class/class_mage.png'),
-                      Text('Mage'),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            Expanded(
-              child: GestureDetector(
-                onTap: () => _handleOnTap(context, 'paladin', kColorPinkPaladin),
-                child: Container(
-
-                  color: kColorPinkPaladin,
-                  child: Row(
-                    children: <Widget>[
-                      Image.asset('assets/Class/class_paladin.png'),
-                      Text('Paladin'),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            Expanded(
-              child: GestureDetector(
-                onTap: () => _handleOnTap(context, 'priest', kColorWhitePriest),
-                child: Container(
-
-                  color: kColorWhitePriest,
-                  child: Row(
-                    children: <Widget>[
-                      Image.asset('assets/Class/class_priest.png'),
-                      Text('Priest'),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            Expanded(
-              child: GestureDetector(
-                onTap: () => _handleOnTap(context, 'rogue', kColorYellowRogue),
-                child: Container(
-
-                  color: kColorYellowRogue,
-                  child: Row(
-                    children: <Widget>[
-                      Image.asset('assets/Class/class_rogue.png'),
-                      Text('Rogue'),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            Expanded(
-              child: GestureDetector(
-                onTap: () => _handleOnTap(context, 'shaman', kColorBlueShaman),
-                child: Container(
-
-                  color: kColorBlueShaman,
-                  child: Row(
-                    children: <Widget>[
-                      Image.asset('assets/Class/class_shaman.png'),
-                      Text('Shaman'),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            Expanded(
-              child: GestureDetector(
-                onTap: () => _handleOnTap(context, 'warlock', kColorPurpleWarlock),
-                child: Container(
-
-                  color: kColorPurpleWarlock,
-                  child: Row(
-                    children: <Widget>[
-                      Image.asset('assets/Class/class_warlock.png'),
-                      Text('Warlock'),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            Expanded(
-              child: GestureDetector(
-                onTap: () => _handleOnTap(context, 'warrior', kColorTanWarrior),
-                child: Container(
-
-                  color: kColorTanWarrior,
-                  child: Row(
-                    children: <Widget>[
-                      Image.asset('assets/Class/class_warrior.png'),
-                      Text('Warrior'),
-                    ],
-                  ),
-                ),
-              ),
-            ),
 
           ],
         ));

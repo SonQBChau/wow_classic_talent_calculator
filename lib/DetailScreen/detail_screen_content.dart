@@ -39,18 +39,17 @@ class _DetailScreenContentState extends State<DetailScreenContent>
 
   @override
   Widget build(BuildContext context) {
+    int level = Provider.of<TalentProvider>(context).getTotalTalentPoints();
     return Scaffold(
       appBar: AppBar(
         title: Text('Warlock'),
         actions: <Widget>[
           Center(
             child: Container(
-              padding: EdgeInsets.only(right: 10),
+              padding: EdgeInsets.only(right: 20),
               child: Text(
-                Provider.of<TalentProvider>(context)
-                    .getTotalTalentPoints()
-                    .toString(),
-                style: TextStyle(fontSize: 17, fontWeight: FontWeight.w500),
+                'Level $level',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
               ),
             ),
           )

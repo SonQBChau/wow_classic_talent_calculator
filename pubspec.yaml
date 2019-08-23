@@ -40,8 +40,24 @@ flutter:
   uses-material-design: true
 
   assets:
+    - data_repo/druid.json
+    - data_repo/hunter.json
+    - data_repo/mage.json
+    - data_repo/paladin.json
+    - data_repo/priest.json
+    - data_repo/rogue.json
+    - data_repo/shaman.json
     - data_repo/warlock.json
-    - assets/Icons/
+    - data_repo/warrior.json
+    - assets/druid/
+    - assets/hunter/
+    - assets/mage/
+    - assets/paladin/
+    - assets/priest/
+    - assets/rogue/
+    - assets/shaman/
     - assets/warlock/
+    - assets/warrior/
+    - assets/Icons/
     - assets/Arrows/
     - assets/Class/

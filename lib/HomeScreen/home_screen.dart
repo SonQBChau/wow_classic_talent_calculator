@@ -58,32 +58,59 @@ class HomeScreen extends StatelessWidget {
         ),
         body: ListView(
           children: <Widget>[
-            ClassWidget(
-              className: 'druid',
+            GestureDetector(
+              onTap: () => _handleOnTap(context, 'druid', kColorOrangeDruid),
+              child: ClassWidget(
+                className: 'druid',
+              ),
             ),
-            ClassWidget(
-              className: 'hunter',
+            GestureDetector(
+              onTap: () => _handleOnTap(context, 'hunter', kColorGreenHunter),
+              child: ClassWidget(
+                className: 'hunter',
+              ),
             ),
-            ClassWidget(
-              className: 'mage',
+            GestureDetector(
+              onTap: () => _handleOnTap(context, 'mage', kColorBlueMage),
+              child: ClassWidget(
+                className: 'mage',
+              ),
             ),
-            ClassWidget(
-              className: 'paladin',
+            GestureDetector(
+              onTap: () => _handleOnTap(context, 'paladin', kColorPinkPaladin),
+              child: ClassWidget(
+                className: 'paladin',
+              ),
             ),
-            ClassWidget(
-              className: 'priest',
+            GestureDetector(
+              onTap: () => _handleOnTap(context, 'priest', kColorWhitePriest),
+              child: ClassWidget(
+                className: 'priest',
+              ),
             ),
-            ClassWidget(
-              className: 'rogue',
+            GestureDetector(
+              onTap: () => _handleOnTap(context, 'rogue', kColorYellowRogue),
+              child: ClassWidget(
+                className: 'rogue',
+              ),
             ),
-            ClassWidget(
-              className: 'shaman',
+            GestureDetector(
+              onTap: () => _handleOnTap(context, 'shaman', kColorBlueShaman),
+              child: ClassWidget(
+                className: 'shaman',
+              ),
             ),
-            ClassWidget(
-              className: 'warlock',
+            GestureDetector(
+              onTap: () => _handleOnTap(context, 'warlock', kColorPurpleWarlock),
+              child: ClassWidget(
+                className: 'warlock',
+              ),
             ),
-            ClassWidget(
-              className: 'warrior',
+            GestureDetector(
+              onTap: () => _handleOnTap(context, 'warrior', kColorTanWarrior),
+              child: ClassWidget(
+                className: 'warrior',
+              ),
             ),
           ],
         ));

@@ -208,10 +208,10 @@
 			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is capable of a critical effect."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -384,10 +384,10 @@
 			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "Holy power infuses the target, increasing their Spirit by 17 for 30 min."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -440,10 +440,10 @@
 			"Enable": false,
 			"Tier": 7,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "Infuses the target with power, increasing their spell damage and healing by 20%.  Lasts 15 sec."
-			  }
+			  }]
 			}
 		  }
 		]
@@ -633,10 +633,10 @@
 			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "Causes an explosion of holy light around the caster, causing 28 to 33 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 52 to 61.  These effects cause no threat."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -814,10 +814,10 @@
 			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
-			  "Rank": {
+			  "Rank":[ {
 				"Number": 1,
 				"Description": "Upon death, the priest becomes the Spirit of Redemption for 10 sec.  The Spirit of Redemption cannot move, attack, be attacked or targeted by any spells or effects.  While in this form the priest can cast any healing spell free of cost.  When the effect ends, the priest dies."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -907,10 +907,10 @@
 			"Enable": false,
 			"Tier": 7,
 			"Ranks": {
-			  "Rank": {
+			  "Rank":[ {
 				"Number": 1,
 				"Description": "Creates a holy Lightwell near the priest.  Members of your raid or party can click the Lightwell to restore 800 health over 10 sec.  Being attacked cancels the effect.  Lightwell lasts for 3 min or 5 charges."
-			  }
+			  }]
 			}
 		  }
 		]
@@ -1162,10 +1162,10 @@
 			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
-			  "Rank": {
+			  "Rank":[ {
 				"Number": 1,
 				"Description": "Assault the target's mind with Shadow energy, causing 75 Shadow damage over 3 sec and slowing their movement speed by 50%."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -1272,10 +1272,10 @@
 			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
-			  "Rank": {
+			  "Rank":[ {
 				"Number": 1,
 				"Description": "Silences the target, preventing them from casting spells for 5 sec."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -1291,10 +1291,10 @@
 			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
-			  "Rank": {
+			  "Rank":[ {
 				"Number": 1,
 				"Description": "Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 1 min."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -1368,10 +1368,10 @@
 			"Enable": false,
 			"Tier": 7,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "Assume a Shadowform, increasing your Shadow damage by 15% and reducing Physical damage done to you by 15%.  However, you may not cast Holy spells while in this form."
-			  }
+			  }]
 			}
 		  }
 		]

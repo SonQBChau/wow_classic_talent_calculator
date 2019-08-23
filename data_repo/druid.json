@@ -15,7 +15,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
+			"Enable": false,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -52,13 +52,15 @@
 			  0,
 			  1
 			],
-			"Enable": true,
+			"Enable": false,
 			"Tier": 1,
 			"Ranks": {
-			  "Rank": {
-				"Number": 1,
-				"Description": "While active, any time an enemy strikes the caster they have a 35% chance to become afflicted by Entangling Roots (Rank 1).  Only useable outdoors.  1 charge.  Lasts 45 sec."
-			  }
+				"Rank": [
+					{
+						"Number": 1,
+						"Description": "While active, any time an enemy strikes the caster they have a 35% chance to become afflicted by Entangling Roots (Rank 1).  Only useable outdoors.  1 charge.  Lasts 45 sec."
+					}
+				]
 			}
 		  },
 		  {
@@ -71,7 +73,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
+			"Enable": false,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -266,13 +268,13 @@
 			  0,
 			  1
 			],
-			"Enable": true,
+			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "Imbues the Druid with natural energy.  Each of the Druid's melee attacks has a chance of causing the caster to enter a Clearcasting state.  The Clearcasting state reduces the Mana, Rage or Energy cost of your next damage or healing spell or offensive ability by 100%.  Lasts 10 min."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -310,7 +312,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
+			"Enable": false,
 			"Tier": 4,
 			"Ranks": {
 			  "Rank": [
@@ -387,10 +389,10 @@
 			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "All spell criticals grace you with a blessing of nature, reducing the casting time of your next spell by 0.5 sec."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -432,7 +434,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
+			"Enable": false,
 			"Tier": 6,
 			"Ranks": {
 			  "Rank": [
@@ -472,10 +474,10 @@
 			"Enable": false,
 			"Tier": 7,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "Transforms the Druid into Moonkin Form.  While in this form the armor contribution from items is increased by 360% and all party members within 30 yards have their spell critical chance increased by 3%.  The Moonkin can only cast Balance spells while shapeshifted.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
-			  }
+			  }]
 			}
 		  }
 		]
@@ -698,10 +700,10 @@
 			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -797,7 +799,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
+			"Enable": false,
 			"Tier": 4,
 			"Ranks": {
 			  "Rank": [
@@ -822,7 +824,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
+			"Enable": false,
 			"Tier": 4,
 			"Ranks": {
 			  "Rank": [
@@ -875,10 +877,10 @@
 			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "Decrease the armor of the target by 175 for 40 sec.  While affected, the target cannot stealth or turn invisible."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -891,7 +893,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
+			"Enable": false,
 			"Tier": 6,
 			"Ranks": {
 			  "Rank": [
@@ -931,10 +933,10 @@
 			"Enable": false,
 			"Tier": 7,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "While in Cat, Bear or Dire Bear Form, the Leader of the Pack increases ranged and melee critical chance of all party members within 45 yards by 3%."
-			  }
+			  }]
 			}
 		  }
 		]
@@ -1161,10 +1163,10 @@
 			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "The enemy target is swarmed by insects, decreasing their chance to hit by 2% and causing 66 Nature damage over 12 sec."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -1280,13 +1282,13 @@
 			  0,
 			  1
 			],
-			"Enable": true,
+			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "When activated, your next Nature spell becomes an instant cast spell."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -1299,7 +1301,7 @@
 			  0,
 			  1
 			],
-			"Enable": true,
+			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
 			  "Rank": [
@@ -1394,13 +1396,13 @@
 			  0,
 			  1
 			],
-			"Enable": true,
+			"Enable": false,
 			"Tier": 7,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth."
-			  }
+			  }]
 			}
 		  }
 		]

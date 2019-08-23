@@ -192,10 +192,10 @@
 			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
-			  "Rank": {
+			  "Rank":[{
 				"Number": 1,
 				"Description": "Your finishing moves have a 20% chance per combo point to restore 25 energy."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -347,10 +347,10 @@
 			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
-			  "Rank": {
+			  "Rank":[{
 				"Number": 1,
 				"Description": "When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, or Eviscerate by 100%."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -432,10 +432,10 @@
 			"Enable": false,
 			"Tier": 7,
 			"Ranks": {
-			  "Rank": {
+			  "Rank":[ {
 				"Number": 1,
 				"Description": "Increases your maximum Energy by 10."
-			  }
+			  }]
 			}
 		  }
 		]
@@ -679,10 +679,10 @@
 			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
-			  "Rank": {
+			  "Rank":[ {
 				"Number": 1,
 				"Description": "A strike that becomes active after parrying an opponent's attack.  This attack deals 150% weapon damage and disarms the target for 6 sec."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -859,10 +859,10 @@
 			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
-			  "Rank": {
+			  "Rank":[ {
 				"Number": 1,
 				"Description": "Increases your attack speed by 20%.  In addition, attacks strike an additional nearby opponent.  Lasts 15 sec."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -1006,10 +1006,10 @@
 			"Enable": false,
 			"Tier": 7,
 			"Ranks": {
-			  "Rank": {
+			  "Rank":[ {
 				"Number": 1,
 				"Description": "Increases your Energy regeneration rate by 100% for 15 sec."
-			  }
+			  }]
 			}
 		  }
 		]
@@ -1224,10 +1224,10 @@
 			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
-			  "Rank": {
+			  "Rank":[ {
 				"Number": 1,
 				"Description": "A strike that deals 125% weapon damage and increases your chance to dodge by 15% for 7 sec.  Awards 1 combo point;."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -1384,10 +1384,10 @@
 			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
-			  "Rank": {
+			  "Rank":[{
 				"Number": 1,
 				"Description": "When activated, this ability immediately finishes the cooldown on your other Rogue abilities."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -1428,10 +1428,10 @@
 			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
-			  "Rank": {
+			  "Rank":[ {
 				"Number": 1,
 				"Description": "An instant strike that damages the opponent and causes the target to hemorrhage, increasing any Physical damage dealt to the target by up to 3.  Lasts 30 charges or 15 sec.  Awards 1 combo point."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -1480,10 +1480,10 @@
 			"Enable": false,
 			"Tier": 7,
 			"Ranks": {
-			  "Rank": {
+			  "Rank":[{
 				"Number": 1,
 				"Description": "When used, adds 2 combo points to your target.  You must add to or use those combo points within 10 sec or the combo points are lost."
-			  }
+			  }]
 			}
 		  }
 		]

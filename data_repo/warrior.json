@@ -229,10 +229,10 @@
 					"Enable": false,
 					"Tier": 3,
 					"Ranks": {
-						"Rank": {
+						"Rank":[ {
 							"Number": 1,
 							"Description": "Increases the time required for your rage to decay while out of combat by 30%."
-						}
+						}]
 					}
 				},
 				{
@@ -376,10 +376,10 @@
 					"Enable": false,
 					"Tier": 5,
 					"Ranks": {
-						"Rank": {
+						"Rank":[ {
 							"Number": 1,
 							"Description": "Your next 5 melee attacks strike an additional nearby opponent."
-						}
+						}]
 					}
 				},
 				{
@@ -535,10 +535,10 @@
 					"Enable": false,
 					"Tier": 7,
 					"Ranks": {
-						"Rank": {
+						"Rank":[ {
 							"Number": 1,
 							"Description": "A vicious strike that deals weapon damage plus 85 and wounds the target, reducing the effectiveness of any healing by 50% for 10 sec."
-						}
+						}]
 					}
 				}
 			]
@@ -740,10 +740,10 @@
 					"Enable": false,
 					"Tier": 3,
 					"Ranks": {
-						"Rank": {
+						"Rank":[ {
 							"Number": 1,
 							"Description": "Causes all enemies near the warrior to be dazed, reducing movement speed by 50% for 6 sec."
-						}
+						}]
 					}
 				},
 				{
@@ -961,10 +961,10 @@
 					"Enable": false,
 					"Tier": 5,
 					"Ranks": {
-						"Rank": {
+						"Rank":[ {
 							"Number": 1,
 							"Description": "When activated, increases your physical damage by 20% and makes you immune to Fear effects, but lowers your armor and all resistances by 20%.  Lasts 30 sec."
-						}
+						}]
 					}
 				},
 				{
@@ -1067,10 +1067,10 @@
 					"Enable": false,
 					"Tier": 7,
 					"Ranks": {
-						"Rank": {
+						"Rank":[{
 							"Number": 1,
 							"Description": "Instantly attack the target causing damage equal to 45% of your attack power.  In addition, the next 5 successful melee attacks will restore 10 health.  This effect lasts 8 sec."
-						}
+						}]
 					}
 				}
 			]
@@ -1268,10 +1268,10 @@
 					"Enable": false,
 					"Tier": 3,
 					"Ranks": {
-						"Rank": {
+						"Rank":[ {
 							"Number": 1,
 							"Description": "When activated, this ability temporarily grants you 30% of your maximum hit points for 20 seconds.  After the effect expires, the hit points are lost."
-						}
+						}]
 					}
 				},
 				{
@@ -1490,10 +1490,10 @@
 					"Enable": false,
 					"Tier": 5,
 					"Ranks": {
-						"Rank": {
+						"Rank":[ {
 							"Number": 1,
 							"Description": "Stuns the opponent for 5 sec."
-						}
+						}]
 					}
 				},
 				{
@@ -1567,10 +1567,10 @@
 					"Enable": false,
 					"Tier": 7,
 					"Ranks": {
-						"Rank": {
+						"Rank":[ {
 							"Number": 1,
 							"Description": "Slam the target with your shield, causing 225 to 236 damage, modified by your shield block value, and has a 50% chance of dispelling 1 magic effect on the target.  Also causes a high amount of threat."
-						}
+						}]
 					}
 				}
 			]

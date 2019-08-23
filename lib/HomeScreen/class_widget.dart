@@ -32,11 +32,21 @@ class ClassWidget extends StatelessWidget {
           ShaderMask(
             shaderCallback: (rect) {
               return LinearGradient(
-                // begin: Alignment.centerRight,
-                // end: Alignment.centerLeft,
+//                 begin: Alignment.centerRight,
+//                 end: Alignment.centerLeft,
                 begin: Alignment(0.4, 0),
                 end: Alignment(-1, 0),
-                colors: [Colors.black, Colors.transparent],
+//                colors: [Colors.black, Colors.transparent],
+                // Add one stop for each color. Stops should increase from 0 to 1
+//                stops: [0.1, 0.5, 0.7, 0.9],
+                stops: [0.1, 0.6, 0.7, 1],
+                colors: [
+                  // Colors are easy thanks to Flutter's Colors class.
+                  Colors.black,
+                  Colors.black26,
+                  Colors.black12,
+                  Colors.transparent,
+                ],
               ).createShader(Rect.fromLTRB(0, 0, rect.width, rect.height));
             },
             blendMode: BlendMode.dstIn,

@@ -175,10 +175,10 @@
 					"Enable": false,
 					"Tier": 3,
 					"Ranks": {
-						"Rank": {
+						"Rank":[ {
 							"Number": 1,
 							"Description": "Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell.  The Clearcasting state reduces the mana cost of your next damage spell by 100%."
-						}
+						}]
 					}
 				},
 				{
@@ -376,10 +376,10 @@
 					"Enable": false,
 					"Tier": 5,
 					"Ranks": {
-						"Rank": {
+						"Rank":[ {
 							"Number": 1,
 							"Description": "Increases the critical strike damage bonus of your Searing, Magma, and Fire Nova Totems and your Fire, Frost, and Nature spells by 100%."
-						}
+						}]
 					}
 				},
 				{
@@ -432,10 +432,10 @@
 					"Enable": false,
 					"Tier": 7,
 					"Ranks": {
-						"Rank": {
+						"Rank":[ {
 							"Number": 1,
 							"Description": "When activated, this spell gives your next Fire, Frost, or Nature damage spell a 100% critical strike chance and reduces the mana cost by 100%."
-						}
+						}]
 					}
 				}
 			]
@@ -675,10 +675,10 @@
 					"Enable": false,
 					"Tier": 3,
 					"Ranks": {
-						"Rank": {
+						"Rank": [{
 							"Number": 1,
 							"Description": "Allows you to use Two-Handed Axes and Two-Handed Maces."
-						}
+						}]
 					}
 				},
 				{
@@ -859,10 +859,10 @@
 					"Enable": false,
 					"Tier": 5,
 					"Ranks": {
-						"Rank": {
+						"Rank":[ {
 							"Number": 1,
 							"Description": "Gives a chance to parry enemy melee attacks."
-						}
+						}]
 					}
 				},
 				{
@@ -915,10 +915,10 @@
 					"Enable": false,
 					"Tier": 7,
 					"Ranks": {
-						"Rank": {
+						"Rank":[ {
 							"Number": 1,
 							"Description": "Gives you an extra attack.  In addition, the next 2 sources of Nature damage dealt to the target are increased by 20%.  Lasts 12 sec."
-						}
+						}]
 					}
 				}
 			]
@@ -1174,10 +1174,10 @@
 					"Enable": false,
 					"Tier": 3,
 					"Ranks": {
-						"Rank": {
+						"Rank":[ {
 							"Number": 1,
 							"Description": "The radius of your totems that affect friendly targets is increased to 30 yd."
-						}
+						}]
 					}
 				},
 				{
@@ -1325,10 +1325,10 @@
 					"Enable": false,
 					"Tier": 5,
 					"Ranks": {
-						"Rank": {
+						"Rank":[{
 							"Number": 1,
 							"Description": "When activated, your next Nature spell with a casting time less than 10 sec. becomes an instant cast spell."
-						}
+						}]
 					}
 				},
 				{
@@ -1377,10 +1377,10 @@
 					"Enable": false,
 					"Tier": 7,
 					"Ranks": {
-						"Rank": {
+						"Rank":[{
 							"Number": 1,
 							"Description": "Summons a Mana Tide Totem with 5 health at the feet of the caster for 12 sec that restores 170 mana every 3 seconds to group members within 20 yards."
-						}
+						}]
 					}
 				}
 			]

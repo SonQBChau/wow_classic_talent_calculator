@@ -233,10 +233,10 @@
 			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "Increases the outdoor movement speed of your pets by 30%."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -376,10 +376,10 @@
 			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "Command your pet to intimidate the target on the next successful melee attack, causing a high amount of threat and stunning the target for 3 sec."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -457,10 +457,10 @@
 			"Enable": false,
 			"Tier": 7,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "Send your pet into a rage causing 50% additional damage for 18 sec.  While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed."
-			  }
+			  }]
 			}
 		  }
 		]
@@ -633,10 +633,10 @@
 			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "An aimed shot that increases ranged damage by 70."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -792,10 +792,10 @@
 			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "A short-range shot that deals 50% weapon damage and disorients the target for 4 sec.  Any damage caused will remove the effect.  Turns off your attack when used."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -906,10 +906,10 @@
 			"Enable": false,
 			"Tier": 7,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "Increases the attack power of party members within 45 yards by 50.  Lasts 30 min."
-			  }
+			  }]
 			}
 		  }
 		]
@@ -1190,10 +1190,10 @@
 			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "When activated, increases your Dodge and Parry chance by 25% for 10 sec."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -1317,10 +1317,10 @@
 			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "A strike that becomes active after parrying an opponent's attack.  This attack deals 40 damage and immobilizes the target for 5 sec.  Counterattack cannot be blocked, dodged, or parried."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -1369,10 +1369,10 @@
 			"Enable": false,
 			"Tier": 7,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "A stinging shot that puts the target to sleep for 12 sec.  Any damage will cancel the effect.  When the target wakes up, the Sting causes 300 Nature damage over 12 sec.  Only usable out of combat.  Only one Sting per Hunter can be active on the target at a time."
-			  }
+			  }]
 			}
 		  }
 		]

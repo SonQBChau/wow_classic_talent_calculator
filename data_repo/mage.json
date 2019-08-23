@@ -270,10 +270,10 @@
 			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "Increases your armor by an amount equal to 50% of your Intellect."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -368,10 +368,10 @@
 			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -453,10 +453,10 @@
 			"Enable": false,
 			"Tier": 7,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "When activated, your spells deal 30% more damage while costing 30% more mana to cast.  This effect lasts 15 sec."
-			  }
+			  }]
 			}
 		  }
 		]
@@ -700,10 +700,10 @@
 			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "Hurls an immense fiery boulder that causes 141 to 188 Fire damage and an additional 56 Fire damage over 12 sec."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -856,10 +856,10 @@
 			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 154 to 187 Fire damage, and dazing them for 6 sec."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -912,10 +912,10 @@
 			"Enable": false,
 			"Tier": 7,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%.  This effect lasts until you have caused 3 critical strikes with Fire spells."
-			  }
+			  }]
 			}
 		  }
 		]
@@ -1180,10 +1180,10 @@
 			"Enable": false,
 			"Tier": 3,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "When activated, this spell finishes the cooldown on all of your Frost spells."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -1319,10 +1319,10 @@
 			"Enable": false,
 			"Tier": 5,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move or cast spells."
-			  }
+			  }]
 			}
 		  },
 		  {
@@ -1400,10 +1400,10 @@
 			"Enable": false,
 			"Tier": 7,
 			"Ranks": {
-			  "Rank": {
+			  "Rank": [{
 				"Number": 1,
 				"Description": "Instantly shields you, absorbing 438 damage.  Lasts 1 min.  While the shield holds, spells will not be interrupted."
-			  }
+			  }]
 			}
 		  }
 		]

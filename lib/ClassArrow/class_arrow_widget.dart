@@ -22,7 +22,9 @@ getArrowClassByName(String className) {
     default:
       {
         //statements;
-        return [[], [], []];
+        return [ getAfflictionArrowList(),
+          getDemonologyArrowList(),
+          getDestructionArrowList(),];
       }
       break;
   }

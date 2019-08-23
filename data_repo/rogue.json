@@ -9,7 +9,7 @@
 			"Icon": "Ability_Rogue_Eviscerate",
 			"Name": "Improved Eviscerate",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -38,7 +38,7 @@
 			"Icon": "Ability_FiegnDead",
 			"Name": "Remorseless Attacks",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -63,7 +63,7 @@
 			"Icon": "Ability_Racial_BloodRage",
 			"Name": "Malice",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -100,7 +100,7 @@
 			"Icon": "Ability_Druid_Disembowel",
 			"Name": "Ruthlessness",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -129,7 +129,7 @@
 			"Icon": "Spell_Shadow_DeathScream",
 			"Name": "Murder",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -154,7 +154,7 @@
 			"Icon": "Ability_Rogue_SliceDice",
 			"Name": "Improved Slice and Dice",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -183,7 +183,7 @@
 			"Icon": "Ability_Warrior_DecisiveStrike",
 			"Name": "Relentless Strikes",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -202,7 +202,7 @@
 			"Icon": "Ability_Warrior_Riposte",
 			"Name": "Improved Expose Armor",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -227,7 +227,7 @@
 			"Icon": "Ability_CriticalStrike",
 			"Name": "Lethality",
 			"Points": 0,
-			"Dependancy": "Malice",
+			"Dependency": "Malice",
 			"Support": "",
 			"Position": [
 			  1,
@@ -264,7 +264,7 @@
 			"Icon": "Ability_Rogue_FeignDeath",
 			"Name": "Vile Poisons",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -301,7 +301,7 @@
 			"Icon": "Ability_Poisons",
 			"Name": "Improved Poisons",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -338,7 +338,7 @@
 			"Icon": "Spell_Ice_Lament",
 			"Name": "Cold Blood",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -357,7 +357,7 @@
 			"Icon": "Ability_Rogue_KidneyShot",
 			"Name": "Improved Kidney Shot",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -386,7 +386,7 @@
 			"Icon": "Spell_Shadow_ChillTouch",
 			"Name": "Seal Fate",
 			"Points": 0,
-			"Dependancy": "Cold Blood",
+			"Dependency": "Cold Blood",
 			"Support": "",
 			"Position": [
 			  1,
@@ -423,7 +423,7 @@
 			"Icon": "Spell_Nature_EarthBindTotem",
 			"Name": "Vigor",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -451,7 +451,7 @@
 			"Icon": "Ability_Gouge",
 			"Name": "Improved Gouge",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -480,7 +480,7 @@
 			"Icon": "Spell_Shadow_RitualOfSacrifice",
 			"Name": "Improved Sinister Strike",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -505,7 +505,7 @@
 			"Icon": "Spell_Nature_Invisibilty",
 			"Name": "Lightning Reflexes",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -542,7 +542,7 @@
 			"Icon": "Ability_BackStab",
 			"Name": "Improved Backstab",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -571,7 +571,7 @@
 			"Icon": "Ability_Parry",
 			"Name": "Deflection",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -608,7 +608,7 @@
 			"Icon": "Ability_Marksmanship",
 			"Name": "Precision",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -645,7 +645,7 @@
 			"Icon": "Spell_Shadow_ShadowWard",
 			"Name": "Endurance",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -670,7 +670,7 @@
 			"Icon": "Ability_Warrior_Challange",
 			"Name": "Riposte",
 			"Points": 0,
-			"Dependancy": "Deflection",
+			"Dependency": "Deflection",
 			"Support": "",
 			"Position": [
 			  1,
@@ -689,7 +689,7 @@
 			"Icon": "Ability_Rogue_Sprint",
 			"Name": "Improved Sprint",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -714,7 +714,7 @@
 			"Icon": "Ability_Kick",
 			"Name": "Improved Kick",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -739,7 +739,7 @@
 			"Icon": "INV_Weapon_ShortBlade_05",
 			"Name": "Dagger Specialization",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -776,7 +776,7 @@
 			"Icon": "Ability_DualWield",
 			"Name": "Dual Wield Specialization",
 			"Points": 0,
-			"Dependancy": "Precision",
+			"Dependency": "Precision",
 			"Support": "",
 			"Position": [
 			  1,
@@ -813,7 +813,7 @@
 			"Icon": "INV_Mace_01",
 			"Name": "Mace Specialization",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -850,7 +850,7 @@
 			"Icon": "Ability_Warrior_PunishingBlow",
 			"Name": "Blade Flurry",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -869,7 +869,7 @@
 			"Icon": "INV_Sword_27",
 			"Name": "Sword Specialization",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -906,7 +906,7 @@
 			"Icon": "INV_Gauntlets_04",
 			"Name": "Fist Weapon Specialization",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -943,7 +943,7 @@
 			"Icon": "Spell_Holy_BlessingOfStrength",
 			"Name": "Weapon Expertise",
 			"Points": 0,
-			"Dependancy": "Blade Flurry",
+			"Dependency": "Blade Flurry",
 			"Support": "",
 			"Position": [
 			  1,
@@ -968,7 +968,7 @@
 			"Icon": "Ability_Racial_Avatar",
 			"Name": "Aggression",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -997,7 +997,7 @@
 			"Icon": "Spell_Shadow_ShadowWordDominate",
 			"Name": "Adrenaline Rush",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1025,7 +1025,7 @@
 			"Icon": "Spell_Shadow_Charm",
 			"Name": "Master of Deception",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1062,7 +1062,7 @@
 			"Icon": "Ability_Warrior_WarCry",
 			"Name": "Opportunity",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1099,7 +1099,7 @@
 			"Icon": "Ability_Rogue_Feint",
 			"Name": "Sleight of Hand",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1124,7 +1124,7 @@
 			"Icon": "Spell_Magic_LesserInvisibilty",
 			"Name": "Elusiveness",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1149,7 +1149,7 @@
 			"Icon": "Ability_Stealth",
 			"Name": "Camouflage",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1186,7 +1186,7 @@
 			"Icon": "Spell_Shadow_Fumble",
 			"Name": "Initiative",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1215,7 +1215,7 @@
 			"Icon": "Spell_Shadow_Curse",
 			"Name": "Ghostly Strike",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1234,7 +1234,7 @@
 			"Icon": "Ability_Rogue_Ambush",
 			"Name": "Improved Ambush",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1263,7 +1263,7 @@
 			"Icon": "Spell_Nature_MirrorImage",
 			"Name": "Setup",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1292,7 +1292,7 @@
 			"Icon": "Ability_Sap",
 			"Name": "Improved Sap",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1321,7 +1321,7 @@
 			"Icon": "INV_Sword_17",
 			"Name": "Serrated Blades",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1350,7 +1350,7 @@
 			"Icon": "Ability_Ambush",
 			"Name": "Heightened Senses",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1375,7 +1375,7 @@
 			"Icon": "Spell_Shadow_AntiShadow",
 			"Name": "Preparation",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1394,7 +1394,7 @@
 			"Icon": "Spell_Shadow_SummonSuccubus",
 			"Name": "Dirty Deeds",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1419,7 +1419,7 @@
 			"Icon": "Spell_Shadow_LifeDrain",
 			"Name": "Hemorrhage",
 			"Points": 0,
-			"Dependancy": "Serrated Blades",
+			"Dependency": "Serrated Blades",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1438,7 +1438,7 @@
 			"Icon": "INV_Weapon_Crossbow_11",
 			"Name": "Deadliness",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1471,7 +1471,7 @@
 			"Icon": "Spell_Shadow_Possession",
 			"Name": "Premeditation",
 			"Points": 0,
-			"Dependancy": "Preparation",
+			"Dependency": "Preparation",
 			"Support": "",
 			"Position": [
 			  1,

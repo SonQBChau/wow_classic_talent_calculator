@@ -9,7 +9,7 @@
 			"Icon": "Ability_GolemThunderClap",
 			"Name": "Divine Strength",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -46,7 +46,7 @@
 			"Icon": "Spell_Nature_Sleep",
 			"Name": "Divine Intellect",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -83,7 +83,7 @@
 			"Icon": "Spell_Arcane_Blink",
 			"Name": "Spiritual Focus",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -120,7 +120,7 @@
 			"Icon": "Ability_ThunderBolt",
 			"Name": "Improved Seal of Righteousness",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -157,7 +157,7 @@
 			"Icon": "Spell_Holy_HolyBolt",
 			"Name": "Healing Light",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -186,7 +186,7 @@
 			"Icon": "Spell_Holy_InnerFire",
 			"Name": "Consecration",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -205,7 +205,7 @@
 			"Icon": "Spell_Holy_LayOnHands",
 			"Name": "Improved Lay on Hands",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -230,7 +230,7 @@
 			"Icon": "Spell_Holy_UnyieldingFaith",
 			"Name": "Unyielding Faith",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -255,7 +255,7 @@
 			"Icon": "Spell_Holy_GreaterHeal",
 			"Name": "Illumination",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -292,7 +292,7 @@
 			"Icon": "Spell_Holy_SealOfWisdom",
 			"Name": "Improved Blessing of Wisdom",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -317,7 +317,7 @@
 			"Icon": "Spell_Holy_Heal",
 			"Name": "Divine Favor",
 			"Points": 0,
-			"Dependancy": "Illumination",
+			"Dependency": "Illumination",
 			"Support": "",
 			"Position": [
 			  1,
@@ -336,7 +336,7 @@
 			"Icon": "Spell_Holy_HealingAura",
 			"Name": "Lasting Judgement",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -365,7 +365,7 @@
 			"Icon": "Spell_Holy_Power",
 			"Name": "Holy Power",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -402,7 +402,7 @@
 			"Icon": "Spell_Holy_SearingLight",
 			"Name": "Holy Shock",
 			"Points": 0,
-			"Dependancy": "Divine Favor",
+			"Dependency": "Divine Favor",
 			"Support": "",
 			"Position": [
 			  1,
@@ -430,7 +430,7 @@
 			"Icon": "Spell_Holy_DevotionAura",
 			"Name": "Improved Devotion Aura",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -467,7 +467,7 @@
 			"Icon": "Ability_Defend",
 			"Name": "Redoubt",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -504,7 +504,7 @@
 			"Icon": "Ability_Rogue_Ambush",
 			"Name": "Precision",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -533,7 +533,7 @@
 			"Icon": "Spell_Holy_SealOfProtection",
 			"Name": "Guardian's Favor",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -558,7 +558,7 @@
 			"Icon": "Spell_Holy_Devotion",
 			"Name": "Toughness",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -595,7 +595,7 @@
 			"Icon": "Spell_Magic_MageArmor",
 			"Name": "Blessing of Kings",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -614,7 +614,7 @@
 			"Icon": "Spell_Holy_SealOfFury",
 			"Name": "Improved Righteous Fury",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -643,7 +643,7 @@
 			"Icon": "INV_Shield_06",
 			"Name": "Shield Specialization",
 			"Points": 0,
-			"Dependancy": "Redoubt",
+			"Dependency": "Redoubt",
 			"Support": "",
 			"Position": [
 			  1,
@@ -672,7 +672,7 @@
 			"Icon": "Spell_Magic_LesserInvisibilty",
 			"Name": "Anticipation",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -709,7 +709,7 @@
 			"Icon": "Spell_Holy_SealOfMight",
 			"Name": "Improved Hammer of Justice",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -738,7 +738,7 @@
 			"Icon": "Spell_Holy_MindSooth",
 			"Name": "Improved Concentration Aura",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -767,7 +767,7 @@
 			"Icon": "Spell_Nature_LightningShield",
 			"Name": "Blessing of Sanctuary",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -786,7 +786,7 @@
 			"Icon": "Spell_Holy_BlessingOfStrength",
 			"Name": "Reckoning",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -823,7 +823,7 @@
 			"Icon": "INV_Sword_20",
 			"Name": "One-Handed Weapon Specialization",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -860,7 +860,7 @@
 			"Icon": "Spell_Holy_BlessingOfProtection",
 			"Name": "Holy Shield",
 			"Points": 0,
-			"Dependancy": "Blessing of Sanctuary",
+			"Dependency": "Blessing of Sanctuary",
 			"Support": "",
 			"Position": [
 			  1,
@@ -888,7 +888,7 @@
 			"Icon": "Spell_Holy_FistOfJustice",
 			"Name": "Improved Blessing of Might",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -925,7 +925,7 @@
 			"Icon": "Spell_Frost_WindWalkOn",
 			"Name": "Benediction",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -962,7 +962,7 @@
 			"Icon": "Spell_Holy_RighteousFury",
 			"Name": "Improved Judgement",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -987,7 +987,7 @@
 			"Icon": "Spell_Holy_HolySmite",
 			"Name": "Improved Seal of the Crusader",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1016,7 +1016,7 @@
 			"Icon": "Ability_Parry",
 			"Name": "Deflection",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1053,7 +1053,7 @@
 			"Icon": "Spell_Holy_Vindication",
 			"Name": "Vindication",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1082,7 +1082,7 @@
 			"Icon": "Spell_Holy_RetributionAura",
 			"Name": "Conviction",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1119,7 +1119,7 @@
 			"Icon": "Ability_Warrior_InnerRage",
 			"Name": "Seal of Command",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1138,7 +1138,7 @@
 			"Icon": "Spell_Holy_PersuitofJustice",
 			"Name": "Pursuit of Justice",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1163,7 +1163,7 @@
 			"Icon": "Spell_Holy_EyeforanEye",
 			"Name": "Eye for an Eye",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1188,7 +1188,7 @@
 			"Icon": "Spell_Holy_AuraOfLight",
 			"Name": "Improved Retribution Aura",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1213,7 +1213,7 @@
 			"Icon": "INV_Hammer_04",
 			"Name": "Two-Handed Weapon Specialization",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1242,7 +1242,7 @@
 			"Icon": "Spell_Holy_MindVision",
 			"Name": "Sanctity Aura",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1261,7 +1261,7 @@
 			"Icon": "Ability_Racial_Avatar",
 			"Name": "Vengeance",
 			"Points": 0,
-			"Dependancy": "Conviction",
+			"Dependency": "Conviction",
 			"Support": "",
 			"Position": [
 			  1,
@@ -1294,7 +1294,7 @@
 			"Icon": "Spell_Holy_PrayerOfHealing",
 			"Name": "Repentance",
 			"Points": 0,
-			"Dependancy": "",
+			"Dependency": "",
 			"Support": "",
 			"Position": [
 			  1,

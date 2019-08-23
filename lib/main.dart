@@ -5,6 +5,10 @@ import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 import 'DetailScreen/detail_screen.dart';
 import 'HomeScreen/home_screen.dart';
 import 'list_json.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+/// onboarding page
+///https://stackoverflow.com/questions/50654195/flutter-one-time-intro-screen
 
 void main() => runApp(MyApp());
 
@@ -18,8 +22,67 @@ class MyApp extends StatelessWidget {
 //        brightness: Brightness.dark,
         primarySwatch: Colors.blue,
       ),
-      // home: DetailScreen(),
-      home: HomeScreen(),
+      home: Splash(),
+      // home: HomeScreen(),
+    );
+  }
+}
+
+class Splash extends StatefulWidget {
+  @override
+  SplashState createState() => SplashState();
+}
+
+class SplashState extends State<Splash> {
+  Future checkFirstSeen() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    bool _seen = (prefs.getBool('seen') ?? false);
+
+    if (_seen) {
+      Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => HomeScreen()));
+    } else {
+      prefs.setBool('seen', true);
+      Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => IntroScreen()));
+    }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    checkFirstSeen();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Text('Loading...'),
+      ),
+    );
+  }
+}
+
+class IntroScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            Text('This is the intro page'),
+            MaterialButton(
+              child: Text('Got it!'),
+              onPressed: () {
+                Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) => HomeScreen()));
+              },
+            )
+          ],
+        ),
+      ),
     );
   }
 }

@@ -49,15 +49,7 @@ flutter:
     - data_repo/shaman.json
     - data_repo/warlock.json
     - data_repo/warrior.json
-    - assets/druid/
-    - assets/hunter/
-    - assets/mage/
-    - assets/paladin/
-    - assets/priest/
-    - assets/rogue/
-    - assets/shaman/
-    - assets/warlock/
-    - assets/warrior/
+    - assets/background/
     - assets/Icons/
     - assets/Arrows/
     - assets/Class/

@@ -1,1411 +1,1269 @@
-[
-    {
-        "Name": "Balance",
-        "Icon": "spell_shadow_requiem",
-        "Background": "affliction_bg",
-        "Talents": {
-            "Talent": [
-                {
-                    "Icon": "Spell_Nature_AbolishMagic",
-                    "Name": "Improved Wrath",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 1,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Reduces the cast time of your Wrath spell by 0.1 sec."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Reduces the cast time of your Wrath spell by 0.2 sec."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Reduces the cast time of your Wrath spell by 0.3 sec."
-                            },
-                            {
-                                "Number": 4,
-                                "Description": "Reduces the cast time of your Wrath spell by 0.4 sec."
-                            },
-                            {
-                                "Number": 5,
-                                "Description": "Reduces the cast time of your Wrath spell by 0.5 sec."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_NaturesWrath",
-                    "Name": "Nature's Grasp",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 1,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "While active, any time an enemy strikes the caster they have a 35% chance to become afflicted by Entangling Roots (Rank 1).  Only useable outdoors.  1 charge.  Lasts 45 sec."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_NaturesWrath",
-                    "Name": "Improved Nature's Grasp",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 1,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Increases the chance for your Nature's Grasp to entangle an enemy by 15%."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Increases the chance for your Nature's Grasp to entangle an enemy by 30%."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Increases the chance for your Nature's Grasp to entangle an enemy by 45%."
-                            },
-                            {
-                                "Number": 4,
-                                "Description": "Increases the chance for your Nature's Grasp to entangle an enemy by 65%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_StrangleVines",
-                    "Name": "Improved Entangling Roots",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-
-                    "Tier": 2,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Gives you a 40% chance to avoid interruption caused by damage while casting Entangling Roots."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Gives you a 70% chance to avoid interruption caused by damage while casting Entangling Roots."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Gives you a 100% chance to avoid interruption caused by damage while casting Entangling Roots."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_StarFall",
-                    "Name": "Improved Moonfire",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 2,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Increases the damage and critical strike chance of your Moonfire spell by 2%."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Increases the damage and critical strike chance of your Moonfire spell by 4%."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Increases the damage and critical strike chance of your Moonfire spell by 6%."
-                            },
-                            {
-                                "Number": 4,
-                                "Description": "Increases the damage and critical strike chance of your Moonfire spell by 8%."
-                            },
-                            {
-                                "Number": 5,
-                                "Description": "Increases the damage and critical strike chance of your Moonfire spell by 10%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "INV_Staff_01",
-                    "Name": "Natural Weapons",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 2,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Increases the damage you deal with physical attacks in all forms by 2%."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Increases the damage you deal with physical attacks in all forms by 4%."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Increases the damage you deal with physical attacks in all forms by 6%."
-                            },
-                            {
-                                "Number": 4,
-                                "Description": "Increases the damage you deal with physical attacks in all forms by 8%."
-                            },
-                            {
-                                "Number": 5,
-                                "Description": "Increases the damage you deal with physical attacks in all forms by 10%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_WispSplode",
-                    "Name": "Natural Shapeshifter",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 2,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Reduces the mana cost of all shapeshifting by 10%."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Reduces the mana cost of all shapeshifting by 20%."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Reduces the mana cost of all shapeshifting by 30%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_Thorns",
-                    "Name": "Improved Thorns",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 3,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Increases damage caused by your Thorns spell by 25%."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Increases damage caused by your Thorns spell by 50%."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Increases damage caused by your Thorns spell by 75%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_CrystalBall",
-                    "Name": "Omen of Clarity",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 3,
-                    "Ranks": {
-                        "Rank": [{
+[{
+    "Name": "Affliction",
+    "Icon": "spell_shadow_requiem",
+    "Background": "warlock_affliction",
+    "Talents": {
+        "Talent": [{
+                "Icon": "Spell_Shadow_UnsummonBuilding",
+                "Name": "Suppression",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [0, 1],
+                "Tier": 1,
+                "Enable": true,
+                "Ranks": {
+                    "Rank": [{
                             "Number": 1,
-                            "Description": "Imbues the Druid with natural energy.  Each of the Druid's melee attacks has a chance of causing the caster to enter a Clearcasting state.  The Clearcasting state reduces the Mana, Rage or Energy cost of your next damage or healing spell or offensive ability by 100%.  Lasts 10 min."
-                        }]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_NatureTouchGrow",
-                    "Name": "Nature's Reach",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 3,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Increases the range of your Wrath, Entangling Roots, Faerie Fire, Moonfire, Starfire, and Hurricane spells by 10%."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Increases the range of your Wrath, Entangling Roots, Faerie Fire, Moonfire, Starfire, and Hurricane spells by 20%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_Purge",
-                    "Name": "Vengeance",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 4,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Increases the critical strike damage bonus of your Starfire, Moonfire, and Wrath spells by 20%."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Increases the critical strike damage bonus of your Starfire, Moonfire, and Wrath spells by 40%."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Increases the critical strike damage bonus of your Starfire, Moonfire, and Wrath spells by 60%."
-                            },
-                            {
-                                "Number": 4,
-                                "Description": "Increases the critical strike damage bonus of your Starfire, Moonfire, and Wrath spells by 80%."
-                            },
-                            {
-                                "Number": 5,
-                                "Description": "Increases the critical strike damage bonus of your Starfire, Moonfire, and Wrath spells by 100%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Arcane_StarFire",
-                    "Name": "Improved Starfire",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 4,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Reduces the cast time of Starfire by 0.1 sec and has a 3% chance to stun the target for 3 sec."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Reduces the cast time of Starfire by 0.2 sec and has a 6% chance to stun the target for 3 sec."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Reduces the cast time of Starfire by 0.3 sec and has a 9% chance to stun the target for 3 sec."
-                            },
-                            {
-                                "Number": 4,
-                                "Description": "Reduces the cast time of Starfire by 0.4 sec and has a 12% chance to stun the target for 3 sec."
-                            },
-                            {
-                                "Number": 5,
-                                "Description": "Reduces the cast time of Starfire by 0.5 sec and has a 15% chance to stun the target for 3 sec."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_NaturesBlessing",
-                    "Name": "Nature's Grace",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 5,
-                    "Ranks": {
-                        "Rank": [{
-                            "Number": 1,
-                            "Description": "All spell criticals grace you with a blessing of nature, reducing the casting time of your next spell by 0.5 sec."
-                        }]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_Sentinal",
-                    "Name": "Moonglow",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 5,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Reduces the Mana cost of your Moonfire, Starfire, Wrath, Healing Touch, Regrowth and Rejuvenation spells by 3%."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Reduces the Mana cost of your Moonfire, Starfire, Wrath, Healing Touch, Regrowth and Rejuvenation spells by 6%."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Reduces the Mana cost of your Moonfire, Starfire, Wrath, Healing Touch, Regrowth and Rejuvenation spells by 9%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_MoonGlow",
-                    "Name": "Moonfury",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 6,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Increases the damage done by your Starfire, Moonfire and Wrath spells by 2%."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Increases the damage done by your Starfire, Moonfire and Wrath spells by 4%."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Increases the damage done by your Starfire, Moonfire and Wrath spells by 6%."
-                            },
-                            {
-                                "Number": 4,
-                                "Description": "Increases the damage done by your Starfire, Moonfire and Wrath spells by 8%."
-                            },
-                            {
-                                "Number": 5,
-                                "Description": "Increases the damage done by your Starfire, Moonfire and Wrath spells by 10%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_ForceOfNature",
-                    "Name": "Moonkin Form",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 7,
-                    "Ranks": {
-                        "Rank": [{
-                            "Number": 1,
-                            "Description": "Transforms the Druid into Moonkin Form.  While in this form the armor contribution from items is increased by 360% and all party members within 30 yards have their spell critical chance increased by 3%.  The Moonkin can only cast Balance spells while shapeshifted.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
-                        }]
-                    }
+                            "Description": "Reduces the chance for enemies to resist your Affliction spells by 2%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Reduces the chance for enemies to resist your Affliction spells by 4%."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Reduces the chance for enemies to resist your Affliction spells by 6%."
+                        },
+                        {
+                            "Number": 4,
+                            "Description": "Reduces the chance for enemies to resist your Affliction spells by 8%."
+                        },
+                        {
+                            "Number": 5,
+                            "Description": "Reduces the chance for enemies to resist your Affliction spells by 10%."
+                        }
+                    ]
                 }
-            ]
-        }
-    },
-    {
-        "Name": "Feral Combat",
-        "Icon": "spell_shadow_requiem",
-        "Background": "affliction_bg",
-        "Talents": {
-            "Talent": [
-                {
-                    "Icon": "Ability_Hunter_Pet_Hyena",
-                    "Name": "Ferocity",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": true,
-                    "Tier": 1,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 1 Rage or Energy."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 2 Rage or Energy."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 3 Rage or Energy."
-                            },
-                            {
-                                "Number": 4,
-                                "Description": "Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 4 Rage or Energy."
-                            },
-                            {
-                                "Number": 5,
-                                "Description": "Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 5 Rage or Energy."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Ability_Druid_DemoralizingRoar",
-                    "Name": "Feral Aggression",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": true,
-                    "Tier": 1,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Increases the Attack Power reduction of your Demoralizing Roar by 8% and the damage caused by your Ferocious Bite by 3%."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Increases the Attack Power reduction of your Demoralizing Roar by 16% and the damage caused by your Ferocious Bite by 6%."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Increases the Attack Power reduction of your Demoralizing Roar by 24% and the damage caused by your Ferocious Bite by 9%."
-                            },
-                            {
-                                "Number": 4,
-                                "Description": "Increases the Attack Power reduction of your Demoralizing Roar by 32% and the damage caused by your Ferocious Bite by 12%."
-                            },
-                            {
-                                "Number": 5,
-                                "Description": "Increases the Attack Power reduction of your Demoralizing Roar by 40% and the damage caused by your Ferocious Bite by 15%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Ability_Ambush",
-                    "Name": "Feral Instinct",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 2,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Increases threat caused in Bear and Dire Bear Form by 3% and reduces the chance enemies have to detect you while Prowling."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Increases threat caused in Bear and Dire Bear Form by 6% and reduces the chance enemies have to detect you while Prowling."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Increases threat caused in Bear and Dire Bear Form by 9% and reduces the chance enemies have to detect you while Prowling."
-                            },
-                            {
-                                "Number": 4,
-                                "Description": "Increases threat caused in Bear and Dire Bear Form by 12% and reduces the chance enemies have to detect you while Prowling."
-                            },
-                            {
-                                "Number": 5,
-                                "Description": "Increases threat caused in Bear and Dire Bear Form by 15% and reduces the chance enemies have to detect you while Prowling."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Ability_Druid_Bash",
-                    "Name": "Brutal Impact",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 2,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Increases the stun duration of your Bash and Pounce abilities by 0.5 sec."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Increases the stun duration of your Bash and Pounce abilities by 1 sec."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "INV_Misc_Pelt_Bear_03",
-                    "Name": "Thick Hide",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 2,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Increases your Armor contribution from items by 2%."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Increases your Armor contribution from items by 4%."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Increases your Armor contribution from items by 6%."
-                            },
-                            {
-                                "Number": 4,
-                                "Description": "Increases your Armor contribution from items by 8%."
-                            },
-                            {
-                                "Number": 5,
-                                "Description": "Increases your Armor contribution from items by 10%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_SpiritWolf",
-                    "Name": "Feline Swiftness",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 3,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Increases your movement speed by 15% while outdoors in Cat Form and increases your chance to dodge while in Cat Form by 2%."
-                            },
-                            {
-                                "Number": 1,
-                                "Description": "Increases your movement speed by 30% while outdoors in Cat Form and increases your chance to dodge while in Cat Form by 4%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Ability_Hunter_Pet_Bear",
-                    "Name": "Feral Charge",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 3,
-                    "Ranks": {
-                        "Rank": [{
+            },
+            {
+                "Icon": "Spell_Shadow_AbominationExplosion",
+                "Name": "Improved Corruption",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [0, 2],
+                "Tier": 1,
+                "Enable": true,
+                "Ranks": {
+                    "Rank": [{
                             "Number": 1,
-                            "Description": "Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec."
-                        }]
-                    }
-                },
-                {
-                    "Icon": "INV_Misc_MonsterClaw_04",
-                    "Name": "Sharpened Claws",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 3,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Increases your critical strike chance while in Bear, Dire Bear or Cat Form by 2%."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Increases your critical strike chance while in Bear, Dire Bear or Cat Form by 4%."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Increases your critical strike chance while in Bear, Dire Bear or Cat Form by 6%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Shadow_VampiricAura",
-                    "Name": "Improved Shred",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 4,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Reduces the Energy cost of your Shred ability by 6."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Reduces the Energy cost of your Shred ability by 12."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Ability_Hunter_Pet_Cat",
-                    "Name": "Predatory Strikes",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 4,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Increases your melee attack power in Cat, Bear and Dire Bear Forms by 50% of your level."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Increases your melee attack power in Cat, Bear and Dire Bear Forms by 100% of your level."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Increases your melee attack power in Cat, Bear and Dire Bear Forms by 150% of your level."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Ability_GhoulFrenzy",
-                    "Name": "Blood Frenzy",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 4,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Your critical strikes from Cat Form abilities that add combo points  have a 50% chance to add an additional combo point."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Your critical strikes from Cat Form abilities that add combo points  have a 100% chance to add an additional combo point."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Ability_Racial_Cannibalize",
-                    "Name": "Primal Fury",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 4,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Gives you a 50% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear and Dire Bear Form."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Gives you a 100% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear and Dire Bear Form."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Ability_Druid_Ravage",
-                    "Name": "Savage Fury",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 5,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Increases the damage caused by your Claw, Rake, Maul and Swipe abilities by 10%."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Increases the damage caused by your Claw, Rake, Maul and Swipe abilities by 20%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_FaerieFire",
-                    "Name": "Faerie Fire (Feral)",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 5,
-                    "Ranks": {
-                        "Rank": [{
-                            "Number": 1,
-                            "Description": "Decrease the armor of the target by 175 for 40 sec.  While affected, the target cannot stealth or turn invisible."
-                        }]
-                    }
-                },
-                {
-                    "Icon": "Spell_Holy_BlessingOfAgility",
-                    "Name": "Heart of the Wild",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 6,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Increases your Intellect by 4%.  In addition, while in Bear or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 4%."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Increases your Intellect by 8%.  In addition, while in Bear or Dire Bear Form your Stamina is increased by 8% and while in Cat Form your Strength is increased by 8%."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Increases your Intellect by 12%.  In addition, while in Bear or Dire Bear Form your Stamina is increased by 12% and while in Cat Form your Strength is increased by 12%."
-                            },
-                            {
-                                "Number": 4,
-                                "Description": "Increases your Intellect by 16%.  In addition, while in Bear or Dire Bear Form your Stamina is increased by 16% and while in Cat Form your Strength is increased by 16%."
-                            },
-                            {
-                                "Number": 5,
-                                "Description": "Increases your Intellect by 20%.  In addition, while in Bear or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 20%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_UnyeildingStamina",
-                    "Name": "Leader of the Pack",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 7,
-                    "Ranks": {
-                        "Rank": [{
-                            "Number": 1,
-                            "Description": "While in Cat, Bear or Dire Bear Form, the Leader of the Pack increases ranged and melee critical chance of all party members within 45 yards by 3%."
-                        }]
-                    }
+                            "Description": "Reduces the casting time of your Corruption spell by 0.4 sec."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Reduces the casting time of your Corruption spell by 0.8 sec."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Reduces the casting time of your Corruption spell by 1.2 sec."
+                        },
+                        {
+                            "Number": 4,
+                            "Description": "Reduces the casting time of your Corruption spell by 1.6 sec."
+                        },
+                        {
+                            "Number": 5,
+                            "Description": "Reduces the casting time of your Corruption spell by 2 sec."
+                        }
+                    ]
                 }
-            ]
-        }
-    },
-    {
-        "Name": "Restoration",
-        "Icon": "spell_shadow_requiem",
-        "Background": "affliction_bg",
-        "Talents": {
-            "Talent": [
-                {
-                    "Icon": "Spell_Nature_Regeneration",
-                    "Name": "Improved Mark of the Wild",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": true,
-                    "Tier": 1,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Increases the effects of your Mark of the Wild and Gift of the Wild spells by 7%."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Increases the effects of your Mark of the Wild and Gift of the Wild spells by 14%."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Increases the effects of your Mark of the Wild and Gift of the Wild spells by 21%."
-                            },
-                            {
-                                "Number": 4,
-                                "Description": "Increases the effects of your Mark of the Wild and Gift of the Wild spells by 28%."
-                            },
-                            {
-                                "Number": 5,
-                                "Description": "Increases the effects of your Mark of the Wild and Gift of the Wild spells by 35%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Holy_BlessingOfStamina",
-                    "Name": "Furor",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": true,
-                    "Tier": 1,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Gives you 20% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Gives you 40% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Gives you 60% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form."
-                            },
-                            {
-                                "Number": 4,
-                                "Description": "Gives you 80% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form."
-                            },
-                            {
-                                "Number": 5,
-                                "Description": "Gives you 100% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_HealingTouch",
-                    "Name": "Improved Healing Touch",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 2,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Reduces the cast time of your Healing Touch spell by 0.1 sec."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Reduces the cast time of your Healing Touch spell by 0.2 sec."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Reduces the cast time of your Healing Touch spell by 0.3 sec."
-                            },
-                            {
-                                "Number": 4,
-                                "Description": "Reduces the cast time of your Healing Touch spell by 0.4 sec."
-                            },
-                            {
-                                "Number": 5,
-                                "Description": "Reduces the cast time of your Healing Touch spell by 0.5 sec."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_HealingWaveGreater",
-                    "Name": "Nature's Focus",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 2,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Gives you a 14% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Gives you a 28% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Gives you a 42% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells."
-                            },
-                            {
-                                "Number": 4,
-                                "Description": "Gives you a 56% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells."
-                            },
-                            {
-                                "Number": 5,
-                                "Description": "Gives you a 70% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Ability_Druid_Enrage",
-                    "Name": "Improved Enrage",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 2,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "The Enrage ability now instantly generates 5 Rage."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "The Enrage ability now instantly generates 10 Rage."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Frost_WindWalkOn",
-                    "Name": "Reflection",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 3,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Allows 5% of your Mana regeneration to continue while casting."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Allows 10% of your Mana regeneration to continue while casting."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Allows 15% of your Mana regeneration to continue while casting."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_InsectSwarm",
-                    "Name": "Insect Swarm",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 3,
-                    "Ranks": {
-                        "Rank": [{
+            },
+            {
+                "Icon": "Spell_Shadow_CurseOfMannoroth",
+                "Name": "Improved Curse of Weakness",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [1, 0],
+                "Tier": 2,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
                             "Number": 1,
-                            "Description": "The enemy target is swarmed by insects, decreasing their chance to hit by 2% and causing 66 Nature damage over 12 sec."
-                        }]
-                    }
-                },
-                {
-                    "Icon": "Ability_EyeOfTheOwl",
-                    "Name": "Subtlety",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 3,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Reduces the threat generated by your Healing spells by 4%."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Reduces the threat generated by your Healing spells by 8%."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Reduces the threat generated by your Healing spells by 12%."
-                            },
-                            {
-                                "Number": 4,
-                                "Description": "Reduces the threat generated by your Healing spells by 16%."
-                            },
-                            {
-                                "Number": 5,
-                                "Description": "Reduces the threat generated by your Healing spells by 20%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Holy_ElunesGrace",
-                    "Name": "Tranquil Spirit",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 4,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Reduces the mana cost of your Healing Touch and Tranquility spells by 2%."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Reduces the mana cost of your Healing Touch and Tranquility spells by 4%."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Reduces the mana cost of your Healing Touch and Tranquility spells by 6%."
-                            },
-                            {
-                                "Number": 4,
-                                "Description": "Reduces the mana cost of your Healing Touch and Tranquility spells by 8%."
-                            },
-                            {
-                                "Number": 5,
-                                "Description": "Reduces the mana cost of your Healing Touch and Tranquility spells by 10%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_Rejuvenation",
-                    "Name": "Improved Rejuvenation",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 4,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Increases the effect of your Rejuvenation spell by 5%."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Increases the effect of your Rejuvenation spell by 10%."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Increases the effect of your Rejuvenation spell by 15%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_RavenForm",
-                    "Name": "Nature's Swiftness",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 5,
-                    "Ranks": {
-                        "Rank": [{
-                            "Number": 1,
-                            "Description": "When activated, your next Nature spell becomes an instant cast spell."
-                        }]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_ProtectionformNature",
-                    "Name": "Gift of Nature",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 5,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Increases the effect of all healing spells by 2%."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Increases the effect of all healing spells by 4%."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Increases the effect of all healing spells by 6%."
-                            },
-                            {
-                                "Number": 4,
-                                "Description": "Increases the effect of all healing spells by 8%."
-                            },
-                            {
-                                "Number": 5,
-                                "Description": "Increases the effect of all healing spells by 10%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_Tranquility",
-                    "Name": "Improved Tranquility",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 5,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Reduces threat caused by Tranquility by 50%."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Reduces threat caused by Tranquility by 100%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "Spell_Nature_ResistNature",
-                    "Name": "Improved Regrowth",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 6,
-                    "Ranks": {
-                        "Rank": [
-                            {
-                                "Number": 1,
-                                "Description": "Increases the critical effect chance of your Regrowth spell by 10%."
-                            },
-                            {
-                                "Number": 2,
-                                "Description": "Increases the critical effect chance of your Regrowth spell by 20%."
-                            },
-                            {
-                                "Number": 3,
-                                "Description": "Increases the critical effect chance of your Regrowth spell by 30%."
-                            },
-                            {
-                                "Number": 4,
-                                "Description": "Increases the critical effect chance of your Regrowth spell by 40%."
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Icon": "INV_Relics_IdolofRejuvenation",
-                    "Name": "Swiftmend",
-                    "Points": 0,
-                    "Dependency": "",
-                    "Support": "",
-                    "Position": [
-                        0,
-                        1
-                    ],
-                    "Enable": false,
-                    "Tier": 7,
-                    "Ranks": {
-                        "Rank": [{
-                            "Number": 1,
-                            "Description": "Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth."
-                        }]
-                    }
+                            "Description": "Increases the effect of your Curse of Weakness by 6%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the effect of your Curse of Weakness by 13%."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Increases the effect of your Curse of Weakness by 20%."
+                        }
+                    ]
                 }
-            ]
-        }
+            },
+            {
+                "Icon": "Spell_Shadow_Haunting",
+                "Name": "Improved Drain Soul",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [1, 1],
+                "Tier": 2,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Gives you a 50% chance to get a 100% increase to your Mana regeneration for 10 sec if the target is killed by you while you drain its soul.  In addition your Mana may continue to regenerate while casting at 50% of normal."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Gives you a 100% chance to get a 100% increase to your Mana regeneration for 10 sec if the target is killed by you while you drain its soul.  In addition your Mana may continue to regenerate while casting at 50% of normal."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_BurningSpirit",
+                "Name": "Improved Life Tap",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [1, 2],
+                "Tier": 2,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases the amount of Mana awarded by your Life Tap spell by 10%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the amount of Mana awarded by your Life Tap spell by 20%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_LifeDrain02",
+                "Name": "Improved Drain Life",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [1, 3],
+                "Tier": 2,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases the Health drained by your Drain Life spell by 2%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the Health drained by your Drain Life spell by 4%."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Increases the Health drained by your Drain Life spell by 6%."
+                        },
+                        {
+                            "Number": 4,
+                            "Description": "Increases the Health drained by your Drain Life spell by 8%."
+                        },
+                        {
+                            "Number": 5,
+                            "Description": "Increases the Health drained by your Drain Life spell by 10%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_CurseOfSargeras",
+                "Name": "Improved Curse of Agony",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [2, 0],
+                "Tier": 3,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases the damage done by your Curse of Agony by 2%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the damage done by your Curse of Agony by 4%."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Increases the damage done by your Curse of Agony by 6%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_FingerOfDeath",
+                "Name": "Fel Concentration",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [2, 1],
+                "Tier": 3,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Gives you a 14% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Gives you a 28% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Gives you a 42% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell."
+                        },
+                        {
+                            "Number": 4,
+                            "Description": "Gives you a 56% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell."
+                        },
+                        {
+                            "Number": 5,
+                            "Description": "Gives you a 70% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_Contagion",
+                "Name": "Amplify Curse",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "Curse of Exhaustion",
+                "Position": [2, 2],
+                "Tier": 3,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                        "Number": 1,
+                        "Description": "Increases the effect of your next Curse of Weakness or Curse of Agony by 50%, or your next Curse of Exhaustion by 20%.  Lasts 30 sec."
+                    }]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_CallofBone",
+                "Name": "Grim Reach",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [3, 0],
+                "Tier": 4,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases the range of your Affliction spells by 10%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the range of your Affliction spells by 20%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_Twilight",
+                "Name": "Nightfall",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [3, 1],
+                "Tier": 4,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Gives your Corruption and Drain Life spells a 2% chance to cause you to enter a Shadow Trance state after damaging the opponent.  The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Gives your Corruption and Drain Life spells a 4% chance to cause you to enter a Shadow Trance state after damaging the opponent.  The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_SiphonMana",
+                "Name": "Improved Drain Mana",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [3, 3],
+                "Tier": 4,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Causes 15% of the Mana drained by your Drain Mana spell to damage the opponent."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Causes 30% of the Mana drained by your Drain Mana spell to damage the opponent."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_Requiem",
+                "Name": "Siphon Life",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "Shadow Mastery",
+                "Position": [4, 1],
+                "Tier": 5,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                        "Number": 1,
+                        "Description": "Transfers 15 health from the target to the caster every 3 sec.  Lasts 30 sec."
+                    }]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_GrimWard",
+                "Name": "Curse of Exhaustion",
+                "Points": 0,
+                "Dependency": "Amplify Curse",
+                "Support": "Improved Curse of Exhaustion",
+                "Position": [4, 2],
+                "Tier": 5,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                        "Number": 1,
+                        "Description": "Reduces the target's movement speed by 10% for 12 sec.  Only one Curse per Warlock can be active on any one target."
+                    }]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_GrimWard",
+                "Name": "Improved Curse of Exhaustion",
+                "Points": 0,
+                "Dependency": "Curse of Exhaustion",
+                "Support": "",
+                "Position": [4, 3],
+                "Tier": 5,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases the speed reduction of your Curse of Exhaustion by 5%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the speed reduction of your Curse of Exhaustion by 10%."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Increases the speed reduction of your Curse of Exhaustion by 15%."
+                        },
+                        {
+                            "Number": 4,
+                            "Description": "Increases the speed reduction of your Curse of Exhaustion by 20%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_ShadeTrueSight",
+                "Name": "Shadow Mastery",
+                "Points": 0,
+                "Dependency": "Siphon Life",
+                "Support": "",
+                "Position": [5, 1],
+                "Tier": 6,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases the damage dealt or life drained by your Shadow spells by 2%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the damage dealt or life drained by your Shadow spells by 4%."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Increases the damage dealt or life drained by your Shadow spells by 6%."
+                        },
+                        {
+                            "Number": 4,
+                            "Description": "Increases the damage dealt or life drained by your Shadow spells by 8%."
+                        },
+                        {
+                            "Number": 5,
+                            "Description": "Increases the damage dealt or life drained by your Shadow spells by 10%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_DarkRitual",
+                "Name": "Dark Pact",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [6, 1],
+                "Tier": 7,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                        "Number": 1,
+                        "Description": "Drains 150 of your pet's Mana, returning 100% to you."
+                    }]
+                }
+            }
+        ]
     }
+},
+{
+    "Name": "Demonology",
+    "Icon": "spell_shadow_metamorphosis",
+    "Background": "warlock_demonology",
+    "Talents": {
+        "Talent": [{
+                "Icon": "INV_Stone_04",
+                "Name": "Improved Healthstone",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [0, 0],
+                "Tier": 1,
+                "Enable": true,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases the amount of Health restored by your Healthstone by 10%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the amount of Health restored by your Healthstone by 20%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_SummonImp",
+                "Name": "Improved Imp",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [0, 1],
+                "Tier": 1,
+                "Enable": true,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases the effect of your Imp's Firebolt, Fire Shield, and Blood Pact spells by 10%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the effect of your Imp's Firebolt, Fire Shield, and Blood Pact spells by 20%."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Increases the effect of your Imp's Firebolt, Fire Shield, and Blood Pact spells by 30%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_Metamorphosis",
+                "Name": "Demonic Embrace",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [0, 2],
+                "Tier": 1,
+                "Enable": true,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases your total Stamina by 3% but reduces your total Spirit by 1%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases your total Stamina by 6% but reduces your total Spirit by 2%."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Increases your total Stamina by 9% but reduces your total Spirit by 3%."
+                        },
+                        {
+                            "Number": 4,
+                            "Description": "Increases your total Stamina by 12% but reduces your total Spirit by 4%."
+                        },
+                        {
+                            "Number": 5,
+                            "Description": "Increases your total Stamina by 15% but reduces your total Spirit by 5%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_LifeDrain",
+                "Name": "Improved Health Funnel",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [1, 0],
+                "Tier": 2,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases the amount of Health transferred by your Health Funnel spell by 10%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the amount of Health transferred by your Health Funnel spell by 20%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_SummonVoidWalker",
+                "Name": "Improved Voidwalker",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [1, 1],
+                "Tier": 2,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice and Suffering spells by 10%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice and Suffering spells by 20%."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice and Suffering spells by 30%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Holy_MagicalSentry",
+                "Name": "Fel Intellect",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [1, 2],
+                "Tier": 2,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases the maximum Mana of your Imp, Voidwalker, Succubus, and Felhunter by 3%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the maximum Mana of your Imp, Voidwalker, Succubus, and Felhunter by 6%."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Increases the maximum Mana of your Imp, Voidwalker, Succubus, and Felhunter by 9%."
+                        },
+                        {
+                            "Number": 4,
+                            "Description": "Increases the maximum Mana of your Imp, Voidwalker, Succubus, and Felhunter by 12%."
+                        },
+                        {
+                            "Number": 5,
+                            "Description": "Increases the maximum Mana of your Imp, Voidwalker, Succubus, and Felhunter by 15%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_SummonSuccubus",
+                "Name": "Improved Succubus",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [2, 0],
+                "Tier": 3,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases the effect of your Succubus' Lash of Pain and Soothing Kiss spells by 10%, and increases the duration of your Succubus' Seduction and Lesser Invisibility spells by 10%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the effect of your Succubus' Lash of Pain and Soothing Kiss spells by 20%, and increases the duration of your Succubus' Seduction and Lesser Invisibility spells by 20%."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Increases the effect of your Succubus' Lash of Pain and Soothing Kiss spells by 30%, and increases the duration of your Succubus' Seduction and Lesser Invisibility spells by 30%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Nature_RemoveCurse",
+                "Name": "Fel Domination",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [2, 1],
+                "Tier": 3,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                        "Number": 1,
+                        "Description": "Your next Imp, Voidwalker, Succubus, or Felhunter Summon spell has its casting time reduced by 5.5 sec and its Mana cost reduced by 50%."
+                    }]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_AntiShadow",
+                "Name": "Fel Stamina",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [2, 2],
+                "Tier": 3,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases the maximum Health of your Imp, Voidwalker, Succubus, and Felhunter by 3%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the maximum Health of your Imp, Voidwalker, Succubus, and Felhunter by 6%."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Increases the maximum Health of your Imp, Voidwalker, Succubus, and Felhunter by 9%."
+                        },
+                        {
+                            "Number": 4,
+                            "Description": "Increases the maximum Health of your Imp, Voidwalker, Succubus, and Felhunter by 12%."
+                        },
+                        {
+                            "Number": 5,
+                            "Description": "Increases the maximum Health of your Imp, Voidwalker, Succubus, and Felhunter by 15%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_ImpPhaseShift",
+                "Name": "Master Summoner",
+                "Points": 0,
+                "Dependency": "Fel Domination",
+                "Support": "",
+                "Position": [3, 1],
+                "Tier": 4,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Reduces the casting time of your Imp, Voidwalker, Succubus, and Felhunter Summoning spells by 2 sec and the Mana cost by 20%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Reduces the casting time of your Imp, Voidwalker, Succubus, and Felhunter Summoning spells by 4 sec and the Mana cost by 40%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_ShadowWordDominate",
+                "Name": "Unholy Power",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [3, 2],
+                "Tier": 4,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases the damage done by your Voidwalker, Succubus, and Felhunter's melee attacks by 4%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the damage done by your Voidwalker, Succubus, and Felhunter's melee attacks by 8%."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Increases the damage done by your Voidwalker, Succubus, and Felhunter's melee attacks by 12%."
+                        },
+                        {
+                            "Number": 4,
+                            "Description": "Increases the damage done by your Voidwalker, Succubus, and Felhunter's melee attacks by 16%."
+                        },
+                        {
+                            "Number": 5,
+                            "Description": "Increases the damage done by your Voidwalker, Succubus, and Felhunter's melee attacks by 20%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_EnslaveDemon",
+                "Name": "Improved Enslave Demon",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [4, 0],
+                "Tier": 5,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Reduces the Attack Speed and Casting Speed penalty of your Enslave Demon spell by 2% and reduces the resist chance by 2%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Reduces the Attack Speed and Casting Speed penalty of your Enslave Demon spell by 4% and reduces the resist chance by 4%."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Reduces the Attack Speed and Casting Speed penalty of your Enslave Demon spell by 6% and reduces the resist chance by 6%."
+                        },
+                        {
+                            "Number": 4,
+                            "Description": "Reduces the Attack Speed and Casting Speed penalty of your Enslave Demon spell by 8% and reduces the resist chance by 8%."
+                        },
+                        {
+                            "Number": 5,
+                            "Description": "Reduces the Attack Speed and Casting Speed penalty of your Enslave Demon spell by 10% and reduces the resist chance by 10%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_PsychicScream",
+                "Name": "Demonic Sacrifice",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [4, 1],
+                "Tier": 5,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                        "Number": 1,
+                        "Description": "When activated, sacrifices your summoned demon to grant you an effect that lasts 30 min.  The effect is canceled if any Demon is summoned.\n\nImp: Increases your Fire damage by 15%.\n\nVoidwalker: Restores 3% of total Health every 4 sec.\n\nSuccubus: Increases your Shadow damage by 15%.\n\nFelhunter: Restores 2% of total Mana every 4 sec."
+                    }]
+                }
+            },
+            {
+                "Icon": "INV_Ammo_FireTar",
+                "Name": "Improved Firestone",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [4, 3],
+                "Tier": 5,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases the bonus Fire damage from Firestones and the Firestone effect by 15%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the bonus Fire damage from Firestones and the Firestone effect by 30%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_ShadowPact",
+                "Name": "Master Demonologist",
+                "Points": 0,
+                "Dependency": "Unholy Power",
+                "Support": "",
+                "Position": [5, 2],
+                "Tier": 6,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Reduces threat caused by 4%.\n\nVoidwalker - Reduces physical damage taken by 2%.\n\nSuccubus - Increases all damage caused by 2%.\n\nFelhunter - Increases all resistances by .2 per level."
+                        },
+                        {
+                            "Number": 1,
+                            "Description": "Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Reduces threat caused by 8%.\n\nVoidwalker - Reduces physical damage taken by 4%.\n\nSuccubus - Increases all damage caused by 4%.\n\nFelhunter - Increases all resistances by .4 per level."
+                        },
+                        {
+                            "Number": 1,
+                            "Description": "Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Reduces threat caused by 12%.\n\nVoidwalker - Reduces physical damage taken by 6%.\n\nSuccubus - Increases all damage caused by 6%.\n\nFelhunter - Increases all resistances by .6 per level."
+                        },
+                        {
+                            "Number": 1,
+                            "Description": "Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Reduces threat caused by 16%.\n\nVoidwalker - Reduces physical damage taken by 8%.\n\nSuccubus - Increases all damage caused by 8%.\n\nFelhunter - Increases all resistances by .8 per level."
+                        },
+                        {
+                            "Number": 1,
+                            "Description": "Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Reduces threat caused by 20%.\n\nVoidwalker - Reduces physical damage taken by 10%.\n\nSuccubus - Increases all damage caused by 10%.\n\nFelhunter - Increases all resistances by 1 per level."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_GatherShadows",
+                "Name": "Soul Link",
+                "Points": 0,
+                "Dependency": "Demonic Sacrifice",
+                "Support": "",
+                "Position": [6, 1],
+                "Tier": 7,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                        "Number": 1,
+                        "Description": "When active, 30% of all damage taken by the caster is taken by your Imp, Voidwalker, Succubus, or Felhunter demon instead.  In addition, both the demon and master will inflict 3% more damage.  Lasts as long as the demon is active."
+                    }]
+                }
+            },
+            {
+                "Icon": "INV_Misc_Gem_Sapphire_01",
+                "Name": "Improved Spellstone",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [6, 2],
+                "Tier": 7,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases the amount of damage absorbed by your Spellstone by 15%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the amount of damage absorbed by your Spellstone by 30%."
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+},
+{
+    "Name": "Destruction",
+    "Icon": "spell_fire_fireball",
+    "Background": "warlock_destruction",
+    "Talents": {
+        "Talent": [{
+                "Icon": "Spell_Shadow_ShadowBolt",
+                "Name": "Improved Shadow Bolt",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [0, 1],
+                "Tier": 1,
+                "Enable": true,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 4% until 4 non-periodic damage sources are applied.  Effect lasts a maximum of 12 sec."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 8% until 4 non-periodic damage sources are applied.  Effect lasts a maximum of 12 sec."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 12% until 4 non-periodic damage sources are applied.  Effect lasts a maximum of 12 sec."
+                        },
+                        {
+                            "Number": 4,
+                            "Description": "Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 16% until 4 non-periodic damage sources are applied.  Effect lasts a maximum of 12 sec."
+                        },
+                        {
+                            "Number": 5,
+                            "Description": "Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 20% until 4 non-periodic damage sources are applied.  Effect lasts a maximum of 12 sec."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Fire_WindsofWoe",
+                "Name": "Cataclysm",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [0, 2],
+                "Tier": 1,
+                "Enable": true,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Reduces the Mana cost of your Destruction spells by 1%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Reduces the Mana cost of your Destruction spells by 2%."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Reduces the Mana cost of your Destruction spells by 3%."
+                        },
+                        {
+                            "Number": 4,
+                            "Description": "Reduces the Mana cost of your Destruction spells by 4%."
+                        },
+                        {
+                            "Number": 5,
+                            "Description": "Reduces the Mana cost of your Destruction spells by 5%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_DeathPact",
+                "Name": "Bane",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [1, 1],
+                "Tier": 2,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Reduces the casting time of your Shadow Bolt and Immolate spells by 0.1 sec and your Soul Fire spell by 0.4 sec."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Reduces the casting time of your Shadow Bolt and Immolate spells by 0.2 sec and your Soul Fire spell by 0.8 sec."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Reduces the casting time of your Shadow Bolt and Immolate spells by 0.3 sec and your Soul Fire spell by 1.2 sec."
+                        },
+                        {
+                            "Number": 4,
+                            "Description": "Reduces the casting time of your Shadow Bolt and Immolate spells by 0.4 sec and your Soul Fire spell by 1.6 sec."
+                        },
+                        {
+                            "Number": 5,
+                            "Description": "Reduces the casting time of your Shadow Bolt and Immolate spells by 0.5 sec and your Soul Fire spell by 2 sec."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Fire_Fire",
+                "Name": "Aftermath",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [1, 2],
+                "Tier": 2,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Gives your Destruction spells a 2% chance to daze the target for 5 sec."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Gives your Destruction spells a 4% chance to daze the target for 5 sec."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Gives your Destruction spells a 6% chance to daze the target for 5 sec."
+                        },
+                        {
+                            "Number": 4,
+                            "Description": "Gives your Destruction spells a 8% chance to daze the target for 5 sec."
+                        },
+                        {
+                            "Number": 5,
+                            "Description": "Gives your Destruction spells a 10% chance to daze the target for 5 sec."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Fire_FireBolt",
+                "Name": "Improved Firebolt",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [2, 0],
+                "Tier": 3,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Reduces the casting time of your Imp's Firebolt spell by 0.5 sec."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Reduces the casting time of your Imp's Firebolt spell by 1 sec."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_Curse",
+                "Name": "Improved Lash of Pain",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [2, 1],
+                "Tier": 3,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Reduces the cooldown of your Succubus' Lash of Pain spell by 3 sec."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Reduces the cooldown of your Succubus' Lash of Pain spell by 6 sec."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Fire_FlameShock",
+                "Name": "Devastation",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [2, 2],
+                "Tier": 3,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases the critical strike chance of your Destruction spells by 1%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the critical strike chance of your Destruction spells by 2%."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Increases the critical strike chance of your Destruction spells by 3%."
+                        },
+                        {
+                            "Number": 4,
+                            "Description": "Increases the critical strike chance of your Destruction spells by 4%."
+                        },
+                        {
+                            "Number": 5,
+                            "Description": "Increases the critical strike chance of your Destruction spells by 5%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_ScourgeBuild",
+                "Name": "Shadowburn",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [2, 3],
+                "Tier": 3,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                        "Number": 1,
+                        "Description": "Instantly blasts the target for 87 to 100 Shadow damage.  If the target dies within 5 sec of Shadowburn, and yields experience or honor, the caster gains a Soul Shard."
+                    }]
+                }
+            },
+            {
+                "Icon": "Spell_Fire_LavaSpawn",
+                "Name": "Intensity",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [3, 0],
+                "Tier": 4,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Gives you a 35% chance to resist interruption caused by damage while channeling the Rain of Fire, Hellfire or Soul Fire spell."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Gives you a 70% chance to resist interruption caused by damage while channeling the Rain of Fire, Hellfire or Soul Fire spell."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_CorpseExplode",
+                "Name": "Destructive Reach",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [3, 1],
+                "Tier": 4,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases the range of your Destruction spells by 10%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the range of your Destruction spells by 20%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Fire_SoulBurn",
+                "Name": "Improved Searing Pain",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [3, 3],
+                "Tier": 4,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases the critical strike chance of your Searing Pain spell by 2%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the critical strike chance of your Searing Pain spell by 4%."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Increases the critical strike chance of your Searing Pain spell by 6%."
+                        },
+                        {
+                            "Number": 4,
+                            "Description": "Increases the critical strike chance of your Searing Pain spell by 8%."
+                        },
+                        {
+                            "Number": 5,
+                            "Description": "Increases the critical strike chance of your Searing Pain spell by 10%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Fire_Volcano",
+                "Name": "Pyroclasm",
+                "Points": 0,
+                "Dependency": "Intensity",
+                "Support": "",
+                "Position": [4, 0],
+                "Tier": 5,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Gives your Rain of Fire, Hellfire, and Soul Fire spells a 13% chance to stun the target for 3 sec."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Gives your Rain of Fire, Hellfire, and Soul Fire spells a 26% chance to stun the target for 3 sec."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Fire_Immolation",
+                "Name": "Improved Immolate",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [4, 1],
+                "Tier": 5,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases the initial damage of your Immolate spell by 5%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the initial damage of your Immolate spell by 10%."
+                        },
+                        {
+                            "Number": 3,
+                            "Description": "Increases the initial damage of your Immolate spell by 15%."
+                        },
+                        {
+                            "Number": 4,
+                            "Description": "Increases the initial damage of your Immolate spell by 20%."
+                        },
+                        {
+                            "Number": 5,
+                            "Description": "Increases the initial damage of your Immolate spell by 25%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Shadow_ShadowWordPain",
+                "Name": "Ruin",
+                "Points": 0,
+                "Dependency": "Devastation",
+                "Support": "",
+                "Position": [4, 2],
+                "Tier": 5,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                        "Number": 1,
+                        "Description": "Increases the critical strike damage bonus of your Destruction spells by 100%."
+                    }]
+                }
+            },
+            {
+                "Icon": "Spell_Fire_SelfDestruct",
+                "Name": "Emberstorm",
+                "Points": 0,
+                "Dependency": "",
+                "Support": "",
+                "Position": [5, 2],
+                "Tier": 6,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                            "Number": 1,
+                            "Description": "Increases the damage done by your Fire spells by 2%."
+                        },
+                        {
+                            "Number": 2,
+                            "Description": "Increases the damage done by your Fire spells by 4%."
+                        }
+                    ]
+                }
+            },
+            {
+                "Icon": "Spell_Fire_Fireball",
+                "Name": "Conflagrate",
+                "Points": 0,
+                "Dependency": "Improved Immolate",
+                "Support": "",
+                "Position": [6, 1],
+                "Tier": 7,
+                "Enable": false,
+                "Ranks": {
+                    "Rank": [{
+                        "Number": 1,
+                        "Description": "Ignites a target that is already afflicted by Immolate, dealing 240 to 307 Fire damage and consuming the Immolate spell."
+                    }]
+                }
+            }
+        ]
+    }
+}
 ]

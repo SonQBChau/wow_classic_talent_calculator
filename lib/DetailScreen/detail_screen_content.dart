@@ -13,9 +13,11 @@ import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 
 class DetailScreenContent extends StatefulWidget {
   final String className;
+  final Color classColor;
   TalentTrees talentTrees;
   var arrowTrees;
-  DetailScreenContent({this.className, this.talentTrees, this.arrowTrees});
+  DetailScreenContent(
+      {this.className, this.talentTrees, this.arrowTrees, this.classColor});
 
   @override
   _DetailScreenContentState createState() => _DetailScreenContentState();
@@ -42,7 +44,7 @@ class _DetailScreenContentState extends State<DetailScreenContent>
     int level = Provider.of<TalentProvider>(context).getTotalTalentPoints();
     return Scaffold(
       appBar: AppBar(
-        title: Text('Warlock'),
+        title: Text(widget.className),
         actions: <Widget>[
           Center(
             child: Container(
@@ -54,7 +56,7 @@ class _DetailScreenContentState extends State<DetailScreenContent>
             ),
           )
         ],
-        backgroundColor: Color(0xFF673AB7),
+        backgroundColor: widget.classColor,
         bottom: TabBar(
           controller: _tabController,
           tabs: [
@@ -83,7 +85,7 @@ class _DetailScreenContentState extends State<DetailScreenContent>
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(
-                    "assets/${widget.className}/${widget.talentTrees.specTrees[0].background}.png"),
+                    "assets/background/${widget.talentTrees.specTrees[0].background}.png"),
                 fit: BoxFit.cover,
               ),
             ),
@@ -95,7 +97,7 @@ class _DetailScreenContentState extends State<DetailScreenContent>
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(
-                    "assets/${widget.className}/${widget.talentTrees.specTrees[1].background}.png"),
+                    "assets/background/${widget.talentTrees.specTrees[1].background}.png"),
                 fit: BoxFit.cover,
               ),
             ),
@@ -107,7 +109,7 @@ class _DetailScreenContentState extends State<DetailScreenContent>
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(
-                    "assets/${widget.className}/${widget.talentTrees.specTrees[2].background}.png"),
+                    "assets/background/${widget.talentTrees.specTrees[2].background}.png"),
                 fit: BoxFit.cover,
               ),
             ),

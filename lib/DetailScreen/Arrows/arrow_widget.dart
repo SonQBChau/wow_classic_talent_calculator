@@ -61,7 +61,9 @@ class _ArrowWidgetState extends State<ArrowWidget> {
 
     talentProvider = Provider.of<TalentProvider>(context);
 
-    if (widget.lengthType == 'medium') {
+    if (widget.lengthType == 'long') {
+      arrowBodyHeight = SizeConfig.cellSize * 2.15; //magic number
+    } else if (widget.lengthType == 'medium') {
       arrowBodyHeight = SizeConfig.cellSize * 1.15; //magic number
     } else if (widget.lengthType == 'short') {
       arrowBodyHeight = SizeConfig.cellSize * 0.15; //magic number
@@ -97,64 +99,3 @@ class _ArrowWidgetState extends State<ArrowWidget> {
     );
   }
 }
-
-// class RightArrowWidget extends StatelessWidget {
-//   final Position startPosition;
-//   final Position endPosition;
-//   final String lengthType;
-//   RightArrowWidget({
-//     @required this.startPosition,
-//     @required this.endPosition,
-//     @required this.lengthType,
-//   });
-
-//   @override
-//   Widget build(BuildContext context) {
-//     final double arrowBodyTop =
-//         SizeConfig.cellSize * startPosition.row - SizeConfig.cellSize / 1.6;
-//     final double arrowBodyLeft =
-//         SizeConfig.cellSize * startPosition.column - SizeConfig.cellSize / 7;
-//     final double arrowBodyHeight = kArrowWidthSize;
-//     double arrowBodyWidth = 0;
-//     final double arrowHeadTop =
-//         SizeConfig.cellSize * endPosition.row - SizeConfig.cellSize / 1.6;
-//     final double arrowHeadLeft = SizeConfig.cellSize * startPosition.column;
-//     final double arrowHeadHeight = kArrowWidthSize;
-
-//     if (lengthType == 'short') {
-//       arrowBodyWidth = SizeConfig.cellSize * 0.15; //magic number
-//     }
-
-//     return Stack(
-//       children: <Widget>[
-//         Positioned(
-//           top: arrowBodyTop,
-//           left: arrowBodyLeft,
-//           child: Container(
-//               width: arrowBodyWidth,
-//               height: arrowBodyHeight,
-//               child: RotatedBox(
-//                 quarterTurns: 1,
-//                 child: Image.asset(
-//                   'assets/Arrows/ArrowBody.png',
-//                   fit: BoxFit.fill,
-//                 ),
-//               )),
-//         ),
-//         Positioned(
-//           top: arrowHeadTop,
-//           left: arrowHeadLeft,
-//           child: Container(
-//               height: arrowHeadHeight,
-//               child: RotatedBox(
-//                 quarterTurns: 3,
-//                 child: Image.asset(
-//                   'assets/Arrows/ArrowHead.png',
-//                   fit: BoxFit.fill,
-//                 ),
-//               )),
-//         )
-//       ],
-//     );
-//   }
-// }

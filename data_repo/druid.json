@@ -1,8 +1,8 @@
 [
 	{
 		"Name": "Balance",
-		"Icon": "spell_shadow_requiem",
-		"Background": "balance_bg",
+		"Icon": "spell_nature_starfall",
+		"Background": "druid_balance",
 		"Talents": {
 			"Talent": [
 				{
@@ -13,9 +13,9 @@
 					"Support": "",
 					"Position": [
 						0,
-						1
+						0
 					],
-					"Enable": false,
+					"Enable": true,
 					"Tier": 1,
 					"Ranks": {
 						"Rank": [
@@ -47,12 +47,12 @@
 					"Name": "Nature's Grasp",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": "Improved Nature's Grasp",
 					"Position": [
 						0,
 						1
 					],
-					"Enable": false,
+					"Enable": true,
 					"Tier": 1,
 					"Ranks": {
 						"Rank": [
@@ -67,11 +67,11 @@
 					"Icon": "Spell_Nature_NaturesWrath",
 					"Name": "Improved Nature's Grasp",
 					"Points": 0,
-					"Dependency": "",
+					"Dependency": "Nature's Grasp",
 					"Support": "",
 					"Position": [
 						0,
-						1
+						2
 					],
 					"Enable": false,
 					"Tier": 1,
@@ -103,8 +103,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						1,
+						0
 					],
 					"Enable": false,
 
@@ -131,9 +131,9 @@
 					"Name": "Improved Moonfire",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": "Vengeance",
 					"Position": [
-						0,
+						1,
 						1
 					],
 					"Enable": false,
@@ -168,10 +168,10 @@
 					"Name": "Natural Weapons",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": "Omen of Clarity",
 					"Position": [
-						0,
-						1
+						1,
+						2
 					],
 					"Enable": false,
 					"Tier": 2,
@@ -207,8 +207,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						1,
+						3
 					],
 					"Enable": false,
 					"Tier": 2,
@@ -236,8 +236,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						2,
+						0
 					],
 					"Enable": false,
 					"Tier": 3,
@@ -262,11 +262,11 @@
 					"Icon": "Spell_Nature_CrystalBall",
 					"Name": "Omen of Clarity",
 					"Points": 0,
-					"Dependency": "",
+					"Dependency": "Natural Weapons",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						2,
+						2
 					],
 					"Enable": false,
 					"Tier": 3,
@@ -284,8 +284,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						2,
+						3
 					],
 					"Enable": false,
 					"Tier": 3,
@@ -306,10 +306,10 @@
 					"Icon": "Spell_Nature_Purge",
 					"Name": "Vengeance",
 					"Points": 0,
-					"Dependency": "",
+					"Dependency": "Improved Moonfire",
 					"Support": "",
 					"Position": [
-						0,
+						3,
 						1
 					],
 					"Enable": false,
@@ -346,8 +346,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						3,
+						2
 					],
 					"Enable": false,
 					"Tier": 4,
@@ -381,9 +381,9 @@
 					"Name": "Nature's Grace",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": "Moonfury",
 					"Position": [
-						0,
+						4,
 						1
 					],
 					"Enable": false,
@@ -402,8 +402,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						4,
+						2
 					],
 					"Enable": false,
 					"Tier": 5,
@@ -428,10 +428,10 @@
 					"Icon": "Spell_Nature_MoonGlow",
 					"Name": "Moonfury",
 					"Points": 0,
-					"Dependency": "",
+					"Dependency": "Nature's Grace",
 					"Support": "",
 					"Position": [
-						0,
+						5,
 						1
 					],
 					"Enable": false,
@@ -468,7 +468,7 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
+						6,
 						1
 					],
 					"Enable": false,
@@ -485,8 +485,8 @@
 	},
 	{
 		"Name": "Feral Combat",
-		"Icon": "spell_shadow_requiem",
-		"Background": "feral_bg",
+		"Icon": "ability_druid_demoralizingroar",
+		"Background": "druid_feral",
 		"Talents": {
 			"Talent": [
 				{
@@ -534,7 +534,7 @@
 					"Support": "",
 					"Position": [
 						0,
-						1
+						2
 					],
 					"Enable": true,
 					"Tier": 1,
@@ -570,8 +570,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						1,
+						0
 					],
 					"Enable": false,
 					"Tier": 2,
@@ -607,7 +607,7 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
+						1,
 						1
 					],
 					"Enable": false,
@@ -632,8 +632,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						1,
+						2
 					],
 					"Enable": false,
 					"Tier": 2,
@@ -669,8 +669,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						2,
+						0
 					],
 					"Enable": false,
 					"Tier": 3,
@@ -694,7 +694,7 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
+						2,
 						1
 					],
 					"Enable": false,
@@ -713,8 +713,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						2,
+						2
 					],
 					"Enable": false,
 					"Tier": 3,
@@ -742,8 +742,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						3,
+						0
 					],
 					"Enable": false,
 					"Tier": 4,
@@ -767,7 +767,7 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
+						3,
 						1
 					],
 					"Enable": false,
@@ -796,8 +796,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						3,
+						2
 					],
 					"Enable": false,
 					"Tier": 4,
@@ -821,8 +821,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						3,
+						3
 					],
 					"Enable": false,
 					"Tier": 4,
@@ -846,8 +846,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						4,
+						0
 					],
 					"Enable": false,
 					"Tier": 5,
@@ -871,8 +871,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						4,
+						2
 					],
 					"Enable": false,
 					"Tier": 5,
@@ -890,7 +890,7 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
+						5,
 						1
 					],
 					"Enable": false,
@@ -927,7 +927,7 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
+						6,
 						1
 					],
 					"Enable": false,
@@ -944,8 +944,8 @@
 	},
 	{
 		"Name": "Restoration",
-		"Icon": "spell_shadow_requiem",
-		"Background": "restoration_bg",
+		"Icon": "spell_nature_healingtouch",
+		"Background": "druid_restoration",
 		"Talents": {
 			"Talent": [
 				{
@@ -993,7 +993,7 @@
 					"Support": "",
 					"Position": [
 						0,
-						1
+						2
 					],
 					"Enable": true,
 					"Tier": 1,
@@ -1029,8 +1029,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						1,
+						0
 					],
 					"Enable": false,
 					"Tier": 2,
@@ -1066,7 +1066,7 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
+						1,
 						1
 					],
 					"Enable": false,
@@ -1103,8 +1103,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						1,
+						2
 					],
 					"Enable": false,
 					"Tier": 2,
@@ -1128,7 +1128,7 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
+						2,
 						1
 					],
 					"Enable": false,
@@ -1157,8 +1157,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						2,
+						2
 					],
 					"Enable": false,
 					"Tier": 3,
@@ -1176,8 +1176,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						2,
+						3
 					],
 					"Enable": false,
 					"Tier": 3,
@@ -1213,7 +1213,7 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
+						3,
 						1
 					],
 					"Enable": false,
@@ -1250,8 +1250,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						3,
+						3
 					],
 					"Enable": false,
 					"Tier": 4,
@@ -1279,8 +1279,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						4,
+						0
 					],
 					"Enable": false,
 					"Tier": 5,
@@ -1298,8 +1298,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						4,
+						2
 					],
 					"Enable": false,
 					"Tier": 5,
@@ -1335,8 +1335,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						4,
+						3
 					],
 					"Enable": false,
 					"Tier": 5,
@@ -1360,8 +1360,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
-						1
+						5,
+						2
 					],
 					"Enable": false,
 					"Tier": 6,
@@ -1382,6 +1382,10 @@
 							{
 								"Number": 4,
 								"Description": "Increases the critical effect chance of your Regrowth spell by 40%."
+							},
+							{
+								"Number": 5,
+								"Description": "Increases the critical effect chance of your Regrowth spell by 50%."
 							}
 						]
 					}
@@ -1393,7 +1397,7 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						0,
+						6,
 						1
 					],
 					"Enable": false,

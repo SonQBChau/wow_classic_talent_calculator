@@ -21,7 +21,8 @@ class DetailScreen extends StatefulWidget {
   _DetailScreenState createState() => _DetailScreenState();
 }
 
-class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderStateMixin {
+class _DetailScreenState extends State<DetailScreen>
+    with SingleTickerProviderStateMixin {
   TabController _tabController;
   TalentTrees talentTrees;
   var arrowTrees;
@@ -64,17 +65,17 @@ class _DetailScreenState extends State<DetailScreen> with SingleTickerProviderSt
   Widget build(BuildContext context) {
     return talentTrees == null
         ? Scaffold(
-        appBar: AppBar(
-            title: Text(widget.className),
-          backgroundColor: widget.classColor,
-        ),
-        body: Center(child: CircularProgressIndicator())
-    )
-
-
+            appBar: AppBar(
+              title: Text(widget.className),
+              backgroundColor: widget.classColor,
+            ),
+            body: Center(child: CircularProgressIndicator()))
         : ChangeNotifierProvider<TalentProvider>(
             builder: (_) => TalentProvider(talentTrees),
             child: DetailScreenContent(
-                className: widget.className, talentTrees: talentTrees, arrowTrees: arrowTrees));
+                className: widget.className,
+                classColor: widget.classColor,
+                talentTrees: talentTrees,
+                arrowTrees: arrowTrees));
   }
 }

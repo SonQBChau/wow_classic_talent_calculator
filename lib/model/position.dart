@@ -1,10 +1,11 @@
 ///User for arrow position on the screen
 class Position {
-  int row;
-  int column;
+  final int row;
+  final int column;
 
   Position({
-    this.row,
-    this.column,
-});
+    int row,
+    int column,
+  })  : row = row + 1,
+        column = column + 1;
 }

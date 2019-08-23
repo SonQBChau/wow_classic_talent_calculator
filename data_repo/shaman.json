@@ -1,19 +1,9 @@
-{
-	"Specializations": {
-		"Specialization": [
+[
 			{
 				"Name": "Elemental",
 				"Talents": {
 					"Talent": [
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
+					
 						{
 							"Icon": "Spell_Nature_WispSplode",
 							"Name": "Convection",
@@ -78,15 +68,7 @@
 								]
 							}
 						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
+					
 						{
 							"Icon": "Spell_Nature_StoneClawTotem",
 							"Name": "Earth's Grasp",
@@ -155,15 +137,7 @@
 								]
 							}
 						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
+					
 						{
 							"Icon": "Spell_Shadow_ManaBurn",
 							"Name": "Elemental Focus",
@@ -242,15 +216,7 @@
 								]
 							}
 						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
+					
 						{
 							"Icon": "Spell_Fire_SealOfFire",
 							"Name": "Improved Fire Totems",
@@ -295,15 +261,7 @@
 								]
 							}
 						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
+					
 						{
 							"Icon": "Spell_Fire_ElementalDevastation",
 							"Name": "Elemental Devastation",
@@ -362,42 +320,9 @@
 								}
 							}
 						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
+						
+					
+						
 						{
 							"Icon": "Spell_Lightning_LightningBolt01",
 							"Name": "Lightning Mastery",
@@ -434,24 +359,8 @@
 								]
 							}
 						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
+					
+					
 						{
 							"Icon": "Spell_Nature_WispHeal",
 							"Name": "Elemental Mastery",
@@ -469,24 +378,6 @@
 									"Description": "When activated, this spell gives your next Fire, Frost, or Nature damage spell a 100% critical strike chance and reduces the mana cost by 100%."
 								}
 							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
 						}
 					]
 				}
@@ -495,15 +386,7 @@
 				"Name": "Enhancement",
 				"Talents": {
 					"Talent": [
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
+					
 						{
 							"Icon": "Spell_Shadow_GrimWard",
 							"Name": "Ancestral Knowledge",
@@ -568,15 +451,7 @@
 								]
 							}
 						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
+					
 						{
 							"Icon": "Spell_Nature_StoneSkinTotem",
 							"Name": "Guardian Totems",
@@ -693,15 +568,7 @@
 								]
 							}
 						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
+						
 						{
 							"Icon": "INV_Axe_10",
 							"Name": "Two-Handed Axes and Maces",
@@ -748,15 +615,7 @@
 								]
 							}
 						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
+					
 						{
 							"Icon": "Ability_GhoulFrenzy",
 							"Name": "Flurry",
@@ -825,15 +684,7 @@
 								]
 							}
 						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
+						
 						{
 							"Icon": "Spell_Fire_EnchantWeapon",
 							"Name": "Improved Weapon Totems",
@@ -892,33 +743,9 @@
 								}
 							}
 						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
+					
+					
+					
 						{
 							"Icon": "Ability_Hunter_SwiftStrike",
 							"Name": "Weapon Mastery",
@@ -951,24 +778,8 @@
 								]
 							}
 						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
+					
+					
 						{
 							"Icon": "Spell_Holy_SealOfMight",
 							"Name": "Stormstrike",
@@ -986,24 +797,6 @@
 									"Description": "Gives you an extra attack.  In addition, the next 2 sources of Nature damage dealt to the target are increased by 20%.  Lasts 12 sec."
 								}
 							}
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
 						}
 					]
 				}
@@ -1012,15 +805,7 @@
 				"Name": "Restoration",
 				"Talents": {
 					"Talent": [
-						{
-							"Icon": "",
-							"Name": "",
-							"Points": "",
-							"Dependancy": "",
-							"Arrow": "",
-							"Tier": "",
-							"Ranks": ""
-						},
+						
 						{
 							"Icon": "Spell_Nature_MagicImmunity",
 							"Name": "Improved Healing Wave",
@@ -1515,5 +1300,3 @@
 				}
 			}
 		]
-	}
-}

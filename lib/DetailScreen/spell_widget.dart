@@ -63,7 +63,7 @@ class _SpellWidgetState extends State<SpellWidget> {
     // 2. if this talent has support, check if that support is checked
     // if yes, cannot decrease
     if (widget.talent.support != '') {
-      ///Druid is is the only special exception that has 2 dependency spells
+      ///Druid is is the ONLY special exception that has 2 dependency spells
       if (widget.talent.support == 'Blood Frenzy AND Primal Fury'){
         Talent bloodFrenzyTalent =
         talentProvider.findTalentByName('Blood Frenzy');
@@ -95,7 +95,7 @@ class _SpellWidgetState extends State<SpellWidget> {
             (highestTalent.tier * 5 - 5) + highestTalent.points;
         int talentTreePoints =
         talentProvider.getTalentTreePoints(widget.talentTreeName);
-        if (requiredTreePoints > talentTreePoints) {
+        if (requiredTreePoints >= talentTreePoints) {
           canDecrease = false;
         }
       }

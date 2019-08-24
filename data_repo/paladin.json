@@ -1,8 +1,8 @@
 [
 	{
 	  "Name": "Holy",
-	  "Icon": "spell_shadow_requiem",
-	  "Background": "affliction_bg",
+	  "Icon": "spell_holy_holybolt",
+	  "Background": "paladin_holy",
 	  "Talents": {
 		"Talent": [
 		  {
@@ -12,10 +12,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  0,
 			  1
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -49,10 +49,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  0,
+			  2
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -124,7 +124,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  2
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -160,8 +160,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  0
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -189,7 +189,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  2,
 			  1
 			],
 			"Enable": false,
@@ -208,8 +208,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  2
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -233,8 +233,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  3
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -256,9 +256,9 @@
 			"Name": "Illumination",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Divine Favor",
 			"Position": [
-			  1,
+			  3,
 			  1
 			],
 			"Enable": false,
@@ -295,8 +295,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  2
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -318,9 +318,9 @@
 			"Name": "Divine Favor",
 			"Points": 0,
 			"Dependency": "Illumination",
-			"Support": "",
+			"Support": "Holy Shock",
 			"Position": [
-			  1,
+			  4,
 			  1
 			],
 			"Enable": false,
@@ -339,8 +339,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  2
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -368,8 +368,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  5,
+			  2
 			],
 			"Enable": false,
 			"Tier": 6,
@@ -405,7 +405,7 @@
 			"Dependency": "Divine Favor",
 			"Support": "",
 			"Position": [
-			  1,
+			  6,
 			  1
 			],
 			"Enable": false,
@@ -422,8 +422,8 @@
 	},
 	{
 	  "Name": "Protection",
-	  "Icon": "spell_shadow_requiem",
-	  "Background": "affliction_bg",
+	  "Icon": "spell_holy_devotionaura",
+	  "Background": "paladin_protection",
 	  "Talents": {
 		"Talent": [
 		  {
@@ -433,10 +433,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  0,
 			  1
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -468,12 +468,12 @@
 			"Name": "Redoubt",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Shield Specialization",
 			"Position": [
-			  1,
-			  1
+			  0,
+			  2
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -508,7 +508,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  0
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -562,7 +562,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  3
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -598,8 +598,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  0
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -617,7 +617,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  2,
 			  1
 			],
 			"Enable": false,
@@ -646,8 +646,8 @@
 			"Dependency": "Redoubt",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  2
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -675,8 +675,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  3
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -712,7 +712,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  3,
 			  1
 			],
 			"Enable": false,
@@ -741,8 +741,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  2
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -768,9 +768,9 @@
 			"Name": "Blessing of Sanctuary",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Holy Shield",
 			"Position": [
-			  1,
+			  4,
 			  1
 			],
 			"Enable": false,
@@ -789,8 +789,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  2
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -826,8 +826,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  5,
+			  2
 			],
 			"Enable": false,
 			"Tier": 6,
@@ -863,7 +863,7 @@
 			"Dependency": "Blessing of Sanctuary",
 			"Support": "",
 			"Position": [
-			  1,
+			  6,
 			  1
 			],
 			"Enable": false,
@@ -880,8 +880,8 @@
 	},
 	{
 	  "Name": "Retribution",
-	  "Icon": "spell_shadow_requiem",
-	  "Background": "affliction_bg",
+	  "Icon": "spell_holy_fistofjustice",
+	  "Background": "paladin_retribution",
 	  "Talents": {
 		"Talent": [
 		  {
@@ -891,10 +891,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  0,
 			  1
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -928,10 +928,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  0,
+			  2
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -966,7 +966,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  0
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -1020,7 +1020,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  2
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -1056,8 +1056,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  0
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -1083,9 +1083,9 @@
 			"Name": "Conviction",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Vengeance",
 			"Position": [
-			  1,
+			  2,
 			  1
 			],
 			"Enable": false,
@@ -1122,8 +1122,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  2
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -1141,8 +1141,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  3
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -1166,8 +1166,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  0
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -1191,8 +1191,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  2
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -1216,8 +1216,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  0
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -1245,8 +1245,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  2
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -1264,7 +1264,7 @@
 			"Dependency": "Conviction",
 			"Support": "",
 			"Position": [
-			  1,
+			  5,
 			  1
 			],
 			"Enable": false,
@@ -1297,7 +1297,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  6,
 			  1
 			],
 			"Enable": false,

@@ -15,7 +15,7 @@ class TalentProvider extends ChangeNotifier {
   // getThirdTalentTree() => specTreeList.specTrees[2].talents.talent;
 
   getTotalTalentPoints() =>
-      10 +
+      9 +
       _firstTalentTreePoints +
       _secondTalentTreePoints +
       _thirdTalentTreePoints;

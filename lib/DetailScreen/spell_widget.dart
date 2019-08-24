@@ -41,7 +41,7 @@ class _SpellWidgetState extends State<SpellWidget> {
   }
 
   void _increaseRank() {
-    if (currentRank < maxRank) {
+    if (currentRank < maxRank && talentProvider.getTotalTalentPoints() < 60) {
       talentProvider.increaseTalentPoints(
           widget.talent, currentRank, widget.talentTreeName);
     }
@@ -55,30 +55,51 @@ class _SpellWidgetState extends State<SpellWidget> {
 
     bool canDecrease = true;
 
-    // 1. currentRank > 0
+    // 1. if currentRank is 0, then cannot decrease
     if (currentRank <= 0) {
       canDecrease = false;
     }
 
-    // 2. has no talent dependency
+    // 2. if this talent has support, check if that support is checked
+    // if yes, cannot decrease
     if (widget.talent.support != '') {
-      Talent dependencyTalent =
-          talentProvider.findTalentByName(widget.talent.support);
-      if (dependencyTalent.points > 0) {
-        canDecrease = false;
+      ///Druid is is the only special exception that has 2 dependency spells
+      if (widget.talent.support == 'Blood Frenzy AND Primal Fury'){
+        Talent bloodFrenzyTalent =
+        talentProvider.findTalentByName('Blood Frenzy');
+        Talent primalFuryTalent =
+        talentProvider.findTalentByName('Primal Fury');
+        if (bloodFrenzyTalent.points > 0 || primalFuryTalent.points > 0){
+          canDecrease = false;
+        }
       }
+      else {
+        Talent dependencyTalent =
+        talentProvider.findTalentByName(widget.talent.support);
+        if (dependencyTalent.points > 0) {
+          canDecrease = false;
+        }
+      }
+
     }
 
     // 3. retain enough points for higher tier if checked
+    // need to check if it is not the current spell
+    // if the current spell is not highest, check retain points
+    // if required points is higher total point, cannot decrease
     Talent highestTalent =
         talentProvider.findHighestTierSpell(widget.talentTreeName);
-    int requiredTreePoints =
-        (highestTalent.tier * 5 - 5) + highestTalent.points;
-    int talentTreePoints =
+    if(highestTalent != null && widget.talent.name != highestTalent.name)
+      {
+        int requiredTreePoints =
+            (highestTalent.tier * 5 - 5) + highestTalent.points;
+        int talentTreePoints =
         talentProvider.getTalentTreePoints(widget.talentTreeName);
-    if (requiredTreePoints > talentTreePoints) {
-      canDecrease = false;
-    }
+        if (requiredTreePoints > talentTreePoints) {
+          canDecrease = false;
+        }
+      }
+
 
     if (canDecrease) {
       talentProvider.decreaseTalentPoints(

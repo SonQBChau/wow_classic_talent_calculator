@@ -711,7 +711,7 @@
 					"Name": "Sharpened Claws",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": "Blood Frenzy AND Primal Fury",
 					"Position": [
 						2,
 						2
@@ -765,7 +765,7 @@
 					"Name": "Predatory Strikes",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": "Heart of the Wild",
 					"Position": [
 						3,
 						1
@@ -793,7 +793,7 @@
 					"Icon": "Ability_GhoulFrenzy",
 					"Name": "Blood Frenzy",
 					"Points": 0,
-					"Dependency": "",
+					"Dependency": "Sharpened Claws",
 					"Support": "",
 					"Position": [
 						3,
@@ -818,7 +818,7 @@
 					"Icon": "Ability_Racial_Cannibalize",
 					"Name": "Primal Fury",
 					"Points": 0,
-					"Dependency": "",
+					"Dependency": "Sharpened Claws",
 					"Support": "",
 					"Position": [
 						3,
@@ -887,7 +887,7 @@
 					"Icon": "Spell_Holy_BlessingOfAgility",
 					"Name": "Heart of the Wild",
 					"Points": 0,
-					"Dependency": "",
+					"Dependency": "Predatory Strikes",
 					"Support": "",
 					"Position": [
 						5,
@@ -1027,7 +1027,7 @@
 					"Name": "Improved Healing Touch",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": "Nature's Swiftness",
 					"Position": [
 						1,
 						0
@@ -1155,7 +1155,7 @@
 					"Name": "Insect Swarm",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": "Gift of Nature",
 					"Position": [
 						2,
 						2
@@ -1211,7 +1211,7 @@
 					"Name": "Tranquil Spirit",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": "Swiftmend",
 					"Position": [
 						3,
 						1
@@ -1276,7 +1276,7 @@
 					"Icon": "Spell_Nature_RavenForm",
 					"Name": "Nature's Swiftness",
 					"Points": 0,
-					"Dependency": "",
+					"Dependency": "Improved Healing Touch",
 					"Support": "",
 					"Position": [
 						4,
@@ -1295,7 +1295,7 @@
 					"Icon": "Spell_Nature_ProtectionformNature",
 					"Name": "Gift of Nature",
 					"Points": 0,
-					"Dependency": "",
+					"Dependency": "Insect Swarm",
 					"Support": "",
 					"Position": [
 						4,
@@ -1394,7 +1394,7 @@
 					"Icon": "INV_Relics_IdolofRejuvenation",
 					"Name": "Swiftmend",
 					"Points": 0,
-					"Dependency": "",
+					"Dependency": "Tranquil Spirit",
 					"Support": "",
 					"Position": [
 						6,

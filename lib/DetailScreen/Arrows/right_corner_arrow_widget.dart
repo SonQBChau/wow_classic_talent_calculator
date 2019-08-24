@@ -39,12 +39,10 @@ class _RightCornerArrowWidgetState extends State<RightCornerArrowWidget> {
           arrowCornerImg = 'assets/Arrows/ArrowCorner.png';
         });
       } else {
-//        arrowBodyImg = 'assets/Arrows/GreyArrowBody.png';
-//        arrowHeadImg = 'assets/Arrows/GreyArrowHead.png';
-//        arrowCornerImg = 'assets/Arrows/GreyArrowCorner.png';
-        arrowBodyImg = 'assets/Arrows/ArrowBody.png';
-        arrowHeadImg = 'assets/Arrows/ArrowHead.png';
-        arrowCornerImg = 'assets/Arrows/ArrowCorner.png';
+        arrowBodyImg = 'assets/Arrows/GreyArrowBody.png';
+        arrowHeadImg = 'assets/Arrows/GreyArrowHead.png';
+        arrowCornerImg = 'assets/Arrows/GreyArrowCorner.png';
+
       }
     }
   }

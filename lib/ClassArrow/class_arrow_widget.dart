@@ -1,6 +1,7 @@
 import 'package:wow_classic_talent_calculator/ClassArrow/warlock_arrow.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/Arrows/arrow_widget.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/Arrows/right_arrow_widget.dart';
+import 'package:wow_classic_talent_calculator/DetailScreen/Arrows/right_corner_arrow_widget.dart';
 import 'package:wow_classic_talent_calculator/model/position.dart';
 
 getArrowClassByName(String className) {
@@ -131,12 +132,12 @@ getDruidArrowList() {
         lengthType: 'medium',
         dependencyTalent: 'Heart of the Wild',
       ),
-      // ArrowWidget(
-      //   startPosition: Position(row: 5, column: 2),
-      //   endPosition: Position(row: 7, column: 2),
-      //   lengthType: 'medium',
-      //   dependencyTalent: 'Soul Link',
-      // ),
+       RightCornerArrowWidget(
+         startPosition: Position(row: 2, column: 2),
+         endPosition: Position(row: 3, column: 3),
+         lengthType: 'short',
+         dependencyTalent: 'Primal Fury',
+       ),
     ],
     [
       ArrowWidget(

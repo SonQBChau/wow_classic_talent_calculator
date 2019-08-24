@@ -2,6 +2,7 @@ import 'package:wow_classic_talent_calculator/ClassArrow/druid_arrow.dart';
 import 'package:wow_classic_talent_calculator/ClassArrow/hunter_arrow.dart';
 import 'package:wow_classic_talent_calculator/ClassArrow/mage_arrow.dart';
 import 'package:wow_classic_talent_calculator/ClassArrow/paladin_arrow.dart';
+import 'package:wow_classic_talent_calculator/ClassArrow/priest_arrow.dart';
 import 'package:wow_classic_talent_calculator/ClassArrow/warlock_arrow.dart';
 
 getArrowClassByName(String className) {
@@ -30,6 +31,11 @@ getArrowClassByName(String className) {
     case 'paladin':
       {
         return getPaladinArrowList();
+      }
+      break;
+    case 'priest':
+      {
+        return getPriestArrowList();
       }
       break;
 

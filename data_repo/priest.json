@@ -1,8 +1,8 @@
 [
 	{
 	  "Name": "Discipline",
-	  "Icon": "spell_shadow_requiem",
-	  "Background": "affliction_bg",
+	  "Icon": "spell_holy_wordfortitude",
+	  "Background": "priest_discipline",
 	  "Talents": {
 		"Talent": [
 		  {
@@ -12,10 +12,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  0,
 			  1
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -49,10 +49,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  0,
+			  2
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -87,7 +87,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  0
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -149,7 +149,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  2
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -178,7 +178,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  3
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -202,7 +202,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  2,
 			  1
 			],
 			"Enable": false,
@@ -219,10 +219,10 @@
 			"Name": "Meditation",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Divine Spirit",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  2
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -250,8 +250,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  0
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -279,7 +279,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  3,
 			  1
 			],
 			"Enable": false,
@@ -316,8 +316,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  3
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -339,9 +339,9 @@
 			"Name": "Mental Strength",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Power Infusion",
 			"Position": [
-			  1,
+			  4,
 			  1
 			],
 			"Enable": false,
@@ -378,8 +378,8 @@
 			"Dependency": "Meditation",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  2
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -397,8 +397,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  5,
+			  2
 			],
 			"Enable": false,
 			"Tier": 6,
@@ -434,7 +434,7 @@
 			"Dependency": "Mental Strength",
 			"Support": "",
 			"Position": [
-			  1,
+			  6,
 			  1
 			],
 			"Enable": false,
@@ -451,8 +451,8 @@
 	},
 	{
 	  "Name": "Holy",
-	  "Icon": "spell_shadow_requiem",
-	  "Background": "affliction_bg",
+	  "Icon": "spell_holy_renew",
+	  "Background": "priest_holy",
 	  "Talents": {
 		"Talent": [
 		  {
@@ -462,10 +462,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  0,
+			  0
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -487,10 +487,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  0,
 			  1
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -516,10 +516,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  0,
+			  2
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -588,10 +588,10 @@
 			"Name": "Divine Fury",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Searing Light",
 			"Position": [
 			  1,
-			  1
+			  2
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -627,8 +627,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  0
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -646,7 +646,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  2,
 			  1
 			],
 			"Enable": false,
@@ -675,8 +675,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  3
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -704,8 +704,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  0
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -729,7 +729,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  3,
 			  1
 			],
 			"Enable": false,
@@ -758,8 +758,8 @@
 			"Dependency": "Divine Fury",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  2
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -783,8 +783,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  0
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -806,9 +806,9 @@
 			"Name": "Spirit of Redemption",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Lightwell",
 			"Position": [
-			  1,
+			  4,
 			  1
 			],
 			"Enable": false,
@@ -827,8 +827,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  2
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -864,8 +864,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  5,
+			  2
 			],
 			"Enable": false,
 			"Tier": 6,
@@ -901,7 +901,7 @@
 			"Dependency": "Spirit of Redemption",
 			"Support": "",
 			"Position": [
-			  1,
+			  6,
 			  1
 			],
 			"Enable": false,
@@ -918,8 +918,8 @@
 	},
 	{
 	  "Name": "Shadow",
-	  "Icon": "spell_shadow_requiem",
-	  "Background": "affliction_bg",
+	  "Icon": "spell_shadow_shadowwordpain",
+	  "Background": "priest_shadow",
 	  "Talents": {
 		"Talent": [
 		  {
@@ -929,10 +929,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  0,
 			  1
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -966,10 +966,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  0,
+			  2
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -1004,7 +1004,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  0
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -1058,7 +1058,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  2
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -1092,10 +1092,10 @@
 			"Name": "Improved Psychic Scream",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Silence",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  0
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -1119,7 +1119,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  2,
 			  1
 			],
 			"Enable": false,
@@ -1156,8 +1156,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  2
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -1175,7 +1175,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  3,
 			  1
 			],
 			"Enable": false,
@@ -1200,8 +1200,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  2
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -1229,8 +1229,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  3
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -1266,8 +1266,8 @@
 			"Dependency": "Improved Psychic Scream",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  0
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -1283,9 +1283,9 @@
 			"Name": "Vampiric Embrace",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Shadowform AND Improved Vampiric Embrace",
 			"Position": [
-			  1,
+			  4,
 			  1
 			],
 			"Enable": false,
@@ -1304,8 +1304,8 @@
 			"Dependency": "Vampiric Embrace",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  2
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -1329,8 +1329,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  5,
+			  2
 			],
 			"Enable": false,
 			"Tier": 6,
@@ -1351,18 +1351,22 @@
 				{
 				  "Number": 4,
 				  "Description": "Increases your Shadow spell damage by 8%."
-				}
+				},
+				  {
+					  "Number": 5,
+					  "Description": "Increases your Shadow spell damage by 10%."
+				  }
 			  ]
 			}
 		  },
 		  {
 			"Icon": "Spell_Shadow_Shadowform",
 			"Name": "Shadowform",
-			"Points": "1",
+			"Points": 0,
 			"Dependency": "Vampiric Embrace",
 			"Support": "",
 			"Position": [
-			  1,
+			  6,
 			  1
 			],
 			"Enable": false,

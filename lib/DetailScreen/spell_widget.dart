@@ -73,6 +73,15 @@ class _SpellWidgetState extends State<SpellWidget> {
           canDecrease = false;
         }
       }
+      else if (widget.talent.support == 'Shadowform AND Improved Vampiric Embrace'){
+        Talent shadowformTalent =
+        talentProvider.findTalentByName('Shadowform');
+        Talent impVampiricEmbraceTalent =
+        talentProvider.findTalentByName('Improved Vampiric Embrace');
+        if (shadowformTalent.points > 0 || impVampiricEmbraceTalent.points > 0){
+          canDecrease = false;
+        }
+      }
       else {
         Talent dependencyTalent =
         talentProvider.findTalentByName(widget.talent.support);

@@ -1,8 +1,8 @@
 [
 	{
 	  "Name": "Beast Mastery",
-	  "Icon": "spell_shadow_requiem",
-	  "Background": "affliction_bg",
+	  "Icon": "spell_nature_ravenform",
+	  "Background": "hunter_beast",
 	  "Talents": {
 		"Talent": [
 		  {
@@ -12,10 +12,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  0,
 			  1
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -49,10 +49,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  0,
+			  2
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -87,7 +87,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  0
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -149,7 +149,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  2
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -178,7 +178,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  3
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -202,8 +202,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  0
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -227,7 +227,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  2,
 			  1
 			],
 			"Enable": false,
@@ -246,8 +246,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  2
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -283,7 +283,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  3,
 			  1
 			],
 			"Enable": false,
@@ -306,10 +306,10 @@
 			"Name": "Ferocity",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Frenzy",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  2
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -345,8 +345,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  0
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -368,9 +368,9 @@
 			"Name": "Intimidation",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Bestial Wrath",
 			"Position": [
-			  1,
+			  4,
 			  1
 			],
 			"Enable": false,
@@ -389,8 +389,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  3
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -410,12 +410,12 @@
 		  {
 			"Icon": "INV_Misc_MonsterClaw_03",
 			"Name": "Frenzy",
-			"Points": 5,
-			"Dependency": "",
+			"Points": 0,
+			"Dependency": "Ferocity",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  5,
+			  2
 			],
 			"Enable": false,
 			"Tier": 6,
@@ -448,10 +448,10 @@
 			"Icon": "Ability_Druid_FerociousBite",
 			"Name": "Bestial Wrath",
 			"Points": 0,
-			"Dependency": "",
+			"Dependency": "Intimidation",
 			"Support": "",
 			"Position": [
-			  1,
+			  6,
 			  1
 			],
 			"Enable": false,
@@ -468,8 +468,8 @@
 	},
 	{
 	  "Name": "Marksmanship",
-	  "Icon": "spell_shadow_requiem",
-	  "Background": "affliction_bg",
+	  "Icon": "ability_hunter_snipershot",
+	  "Background": "hunter_marksmanship",
 	  "Talents": {
 		"Talent": [
 		  {
@@ -479,10 +479,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  0,
 			  1
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -516,10 +516,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  0,
+			  2
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -588,10 +588,10 @@
 			"Name": "Lethal Shots",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Mortal Shots",
 			"Position": [
 			  1,
-			  1
+			  2
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -627,8 +627,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  0
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -646,7 +646,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  2,
 			  1
 			],
 			"Enable": false,
@@ -683,8 +683,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  3
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -712,7 +712,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  3,
 			  1
 			],
 			"Enable": false,
@@ -746,11 +746,11 @@
 			"Icon": "Ability_PierceDamage",
 			"Name": "Mortal Shots",
 			"Points": 0,
-			"Dependency": "",
+			"Dependency": "Lethal Shots",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  2
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -786,8 +786,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  0
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -803,9 +803,9 @@
 			"Name": "Barrage",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Trueshot Aura",
 			"Position": [
-			  1,
+			  4,
 			  1
 			],
 			"Enable": false,
@@ -834,8 +834,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  2
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -863,8 +863,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  5,
+			  2
 			],
 			"Enable": false,
 			"Tier": 6,
@@ -897,10 +897,10 @@
 			"Icon": "Ability_TrueShot",
 			"Name": "Trueshot Aura",
 			"Points": 0,
-			"Dependency": "",
+			"Dependency": "Barrage",
 			"Support": "",
 			"Position": [
-			  1,
+			  6,
 			  1
 			],
 			"Enable": false,
@@ -917,8 +917,8 @@
 	},
 	{
 	  "Name": "Survival",
-	  "Icon": "spell_shadow_requiem",
-	  "Background": "affliction_bg",
+	  "Icon": "ability_parry",
+	  "Background": "hunter_survival",
 	  "Talents": {
 		"Talent": [
 		  {
@@ -928,10 +928,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  0,
+			  0
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -957,10 +957,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  0,
 			  1
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -986,10 +986,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  0,
+			  2
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -1024,7 +1024,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  0
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -1086,7 +1086,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  2
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -1122,8 +1122,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  0
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -1147,7 +1147,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  2,
 			  1
 			],
 			"Enable": false,
@@ -1182,10 +1182,10 @@
 			"Name": "Deterrence",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Counterattack",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  2
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -1203,8 +1203,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  0
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -1228,7 +1228,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  3,
 			  1
 			],
 			"Enable": false,
@@ -1257,8 +1257,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  3
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -1280,9 +1280,9 @@
 			"Name": "Killer Instinct",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Wyvern Sting",
 			"Position": [
-			  1,
+			  4,
 			  1
 			],
 			"Enable": false,
@@ -1308,11 +1308,11 @@
 			"Icon": "Ability_Warrior_Challange",
 			"Name": "Counterattack",
 			"Points": 0,
-			"Dependency": "",
+			"Dependency": "Deterrence",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  2
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -1330,8 +1330,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  5,
+			  2
 			],
 			"Enable": false,
 			"Tier": 6,
@@ -1360,10 +1360,10 @@
 			"Icon": "INV_Spear_02",
 			"Name": "Wyvern Sting",
 			"Points": 0,
-			"Dependency": "",
+			"Dependency": "Killer Instinct",
 			"Support": "",
 			"Position": [
-			  1,
+			  6,
 			  1
 			],
 			"Enable": false,

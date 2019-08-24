@@ -1,8 +1,8 @@
 [
 	{
 	  "Name": "Arcane",
-	  "Icon": "spell_shadow_requiem",
-	  "Background": "affliction_bg",
+	  "Icon": "spell_nature_starfall",
+	  "Background": "mage_arcane",
 	  "Talents": {
 		"Talent": [
 		  {
@@ -12,10 +12,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  0,
+			  0
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -37,10 +37,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  0,
 			  1
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -74,10 +74,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  0,
+			  2
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -112,7 +112,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  0
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -174,7 +174,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  2
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -210,8 +210,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  0
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -235,7 +235,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  2,
 			  1
 			],
 			"Enable": false,
@@ -262,10 +262,10 @@
 			"Name": "Arcane Resilience",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Arcane Mind",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  2
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -283,8 +283,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  0
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -308,7 +308,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  3,
 			  1
 			],
 			"Enable": false,
@@ -333,8 +333,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  3
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -360,9 +360,9 @@
 			"Name": "Presence of Mind",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Arcane Instability",
 			"Position": [
-			  1,
+			  4,
 			  1
 			],
 			"Enable": false,
@@ -378,11 +378,11 @@
 			"Icon": "Spell_Shadow_Charm",
 			"Name": "Arcane Mind",
 			"Points": 0,
-			"Dependency": "",
+			"Dependency": "Arcane Resilience",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  2
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -415,10 +415,10 @@
 			"Icon": "Spell_Shadow_Teleport",
 			"Name": "Arcane Instability",
 			"Points": 0,
-			"Dependency": "",
-			"Support": "",
+			"Dependency": "Presence of Mind",
+			"Support": "Arcane Power",
 			"Position": [
-			  1,
+			  5,
 			  1
 			],
 			"Enable": false,
@@ -444,10 +444,10 @@
 			"Icon": "Spell_Nature_Lightning",
 			"Name": "Arcane Power",
 			"Points": 0,
-			"Dependency": "",
+			"Dependency": "Arcane Instability",
 			"Support": "",
 			"Position": [
-			  1,
+			  6,
 			  1
 			],
 			"Enable": false,
@@ -464,8 +464,8 @@
 	},
 	{
 	  "Name": "Fire",
-	  "Icon": "spell_shadow_requiem",
-	  "Background": "affliction_bg",
+	  "Icon": "spell_fire_flamebolt",
+	  "Background": "mage_fire",
 	  "Talents": {
 		"Talent": [
 		  {
@@ -475,10 +475,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  0,
 			  1
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -512,10 +512,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  0,
+			  2
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -550,7 +550,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  0
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -612,7 +612,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  2
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -640,8 +640,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  0
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -665,7 +665,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  2,
 			  1
 			],
 			"Enable": false,
@@ -692,10 +692,10 @@
 			"Name": "Pyroblast",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Blast Wave",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  2
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -713,8 +713,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  3
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -738,8 +738,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  0
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -767,7 +767,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  3,
 			  1
 			],
 			"Enable": false,
@@ -792,8 +792,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  3
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -819,9 +819,9 @@
 			"Name": "Critical Mass",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Combustion",
 			"Position": [
-			  1,
+			  4,
 			  1
 			],
 			"Enable": false,
@@ -847,11 +847,11 @@
 			"Icon": "Spell_Holy_Excorcism_02",
 			"Name": "Blast Wave",
 			"Points": 0,
-			"Dependency": "",
+			"Dependency": "Pyroblast",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  2
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -869,8 +869,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  5,
+			  2
 			],
 			"Enable": false,
 			"Tier": 6,
@@ -903,10 +903,10 @@
 			"Icon": "Spell_Fire_SealOfFire",
 			"Name": "Combustion",
 			"Points": 0,
-			"Dependency": "",
+			"Dependency": "Critical Mass",
 			"Support": "",
 			"Position": [
-			  1,
+			  6,
 			  1
 			],
 			"Enable": false,
@@ -923,8 +923,8 @@
 	},
 	{
 	  "Name": "Frost",
-	  "Icon": "spell_shadow_requiem",
-	  "Background": "affliction_bg",
+	  "Icon": "spell_frost_frostbolt02",
+	  "Background": "mage_frost",
 	  "Talents": {
 		"Talent": [
 		  {
@@ -934,10 +934,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  0,
+			  0
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -959,10 +959,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  0,
 			  1
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -996,10 +996,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  0,
+			  2
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -1026,7 +1026,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  0
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -1089,10 +1089,10 @@
 			"Name": "Improved Frost Nova",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Shatter",
 			"Position": [
 			  1,
-			  1
+			  2
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -1117,7 +1117,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  3
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -1145,8 +1145,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  0
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -1174,7 +1174,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  2,
 			  1
 			],
 			"Enable": false,
@@ -1193,8 +1193,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  3
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -1222,8 +1222,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  0
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -1247,7 +1247,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  3,
 			  1
 			],
 			"Enable": false,
@@ -1273,11 +1273,11 @@
 			"Icon": "Spell_Frost_FrostShock",
 			"Name": "Shatter",
 			"Points": 0,
-			"Dependency": "",
+			"Dependency": "improved Frost Nova",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  2
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -1311,9 +1311,9 @@
 			"Name": "Ice Block",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Ice Barrier",
 			"Position": [
-			  1,
+			  4,
 			  1
 			],
 			"Enable": false,
@@ -1332,8 +1332,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  2
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -1361,8 +1361,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  5,
+			  2
 			],
 			"Enable": false,
 			"Tier": 6,
@@ -1391,10 +1391,10 @@
 			"Icon": "Spell_Ice_Lament",
 			"Name": "Ice Barrier",
 			"Points": 0,
-			"Dependency": "",
+			"Dependency": "Ice Block",
 			"Support": "",
 			"Position": [
-			  1,
+			  6,
 			  1
 			],
 			"Enable": false,

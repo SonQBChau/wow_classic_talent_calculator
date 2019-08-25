@@ -30,7 +30,7 @@ class _RightCornerArrowWidgetState extends State<RightCornerArrowWidget> {
 
   setEnable() {
     Talent dependencyTalent =
-    talentProvider.findTalentByName(widget.dependencyTalent);
+        talentProvider.findTalentByName(widget.dependencyTalent);
     if (dependencyTalent != null) {
       if (dependencyTalent.enable) {
         setState(() {
@@ -42,15 +42,15 @@ class _RightCornerArrowWidgetState extends State<RightCornerArrowWidget> {
         arrowBodyImg = 'assets/Arrows/GreyArrowBody.png';
         arrowHeadImg = 'assets/Arrows/GreyArrowHead.png';
         arrowCornerImg = 'assets/Arrows/GreyArrowCorner.png';
-
       }
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    final double arrowBodyTop = SizeConfig.cellSize * (widget.startPosition.row ) -
-        SizeConfig.cellSize/2 ;
+    final double arrowBodyTop =
+        SizeConfig.cellSize * (widget.startPosition.row) -
+            SizeConfig.cellSize / 2;
     final double arrowBodyLeft =
         SizeConfig.cellSize * (widget.startPosition.column + 1) -
             SizeConfig.cellSize / 1.6;
@@ -63,17 +63,19 @@ class _RightCornerArrowWidgetState extends State<RightCornerArrowWidget> {
         SizeConfig.cellSize * (widget.startPosition.column + 1) -
             SizeConfig.cellSize / 1.6;
     final double arrowHeadWidth = kArrowWidthSize;
-    final double rightArrowBodyTop = SizeConfig.cellSize * widget.startPosition.row -
-        SizeConfig.cellSize / 1.6;
+    final double rightArrowBodyTop =
+        SizeConfig.cellSize * widget.startPosition.row -
+            SizeConfig.cellSize / 1.6;
     final double rightArrowBodyLeft =
         SizeConfig.cellSize * widget.startPosition.column -
             SizeConfig.cellSize / 7;
 
-    final double rightArrowBodyHeight = kArrowWidthSize ;
+    final double rightArrowBodyHeight = kArrowWidthSize;
     final double rightArrowBodyWidth = SizeConfig.cellSize * 0.52;
 
-    final double arrowCornerTop = SizeConfig.cellSize * (widget.startPosition.row ) -
-        SizeConfig.cellSize/1.67 ;
+    final double arrowCornerTop =
+        SizeConfig.cellSize * (widget.startPosition.row) -
+            SizeConfig.cellSize / 1.68;
     final double arrowCornerLeft =
         SizeConfig.cellSize * (widget.startPosition.column + 1) -
             SizeConfig.cellSize / 1.6;
@@ -121,10 +123,11 @@ class _RightCornerArrowWidgetState extends State<RightCornerArrowWidget> {
                 fit: BoxFit.fill,
               )),
         ),
+
         /// right corner piece
         Positioned(
           top: arrowCornerTop,
-          left: arrowCornerLeft ,
+          left: arrowCornerLeft,
           child: Container(
               width: SizeConfig.cellSize * 0.2,
               height: SizeConfig.cellSize * 0.2,
@@ -133,6 +136,7 @@ class _RightCornerArrowWidgetState extends State<RightCornerArrowWidget> {
                 fit: BoxFit.fill,
               )),
         ),
+
         /// arrow piece
         Positioned(
           top: arrowHeadTop,
@@ -144,7 +148,6 @@ class _RightCornerArrowWidgetState extends State<RightCornerArrowWidget> {
                 fit: BoxFit.fill,
               )),
         ),
-
       ],
     );
   }

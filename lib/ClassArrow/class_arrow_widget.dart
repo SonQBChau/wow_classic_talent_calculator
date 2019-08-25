@@ -3,54 +3,39 @@ import 'package:wow_classic_talent_calculator/ClassArrow/hunter_arrow.dart';
 import 'package:wow_classic_talent_calculator/ClassArrow/mage_arrow.dart';
 import 'package:wow_classic_talent_calculator/ClassArrow/paladin_arrow.dart';
 import 'package:wow_classic_talent_calculator/ClassArrow/priest_arrow.dart';
+import 'package:wow_classic_talent_calculator/ClassArrow/rogue_arrow.dart';
 import 'package:wow_classic_talent_calculator/ClassArrow/warlock_arrow.dart';
 
 getArrowClassByName(String className) {
   switch (className) {
     case 'warlock':
-      {
-        return getWarlockArrowList();
-      }
+      return getWarlockArrowList();
       break;
 
     case 'druid':
-      {
-        return getDruidArrowList();
-      }
+      return getDruidArrowList();
       break;
     case 'hunter':
-      {
-        return getHunterArrowList();
-      }
+      return getHunterArrowList();
       break;
     case 'mage':
-      {
-        return getMageArrowList();
-      }
+      return getMageArrowList();
       break;
     case 'paladin':
-      {
-        return getPaladinArrowList();
-      }
+      return getPaladinArrowList();
       break;
     case 'priest':
-      {
-        return getPriestArrowList();
-      }
+      return getPriestArrowList();
+      break;
+    case 'rogue':
+      return getRogueArrowList();
       break;
 
     default:
       {
         //statements;
-        return [
-          [],
-          [],
-          []
-        ];
+        return [[], [], []];
       }
       break;
   }
 }
-
-
-

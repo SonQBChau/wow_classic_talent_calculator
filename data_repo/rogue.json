@@ -1,8 +1,8 @@
 [
 	{
 	  "Name": "Assassination",
-	  "Icon": "spell_shadow_requiem",
-	  "Background": "affliction_bg",
+	  "Icon": "ability_rogue_eviscerate",
+	  "Background": "rogue_assassination",
 	  "Talents": {
 		"Talent": [
 		  {
@@ -12,10 +12,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  0,
+			  0
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -41,10 +41,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  0,
 			  1
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -64,12 +64,12 @@
 			"Name": "Malice",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Lethality",
 			"Position": [
-			  1,
-			  1
+			  0,
+			  2
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -104,7 +104,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  0
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -158,7 +158,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  3
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -186,8 +186,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  0
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -205,7 +205,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  2,
 			  1
 			],
 			"Enable": false,
@@ -230,8 +230,8 @@
 			"Dependency": "Malice",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  2
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -267,7 +267,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  3,
 			  1
 			],
 			"Enable": false,
@@ -304,8 +304,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  2
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -339,9 +339,9 @@
 			"Name": "Cold Blood",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Seal Fate",
 			"Position": [
-			  1,
+			  4,
 			  1
 			],
 			"Enable": false,
@@ -360,8 +360,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  2
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -389,7 +389,7 @@
 			"Dependency": "Cold Blood",
 			"Support": "",
 			"Position": [
-			  1,
+			  5,
 			  1
 			],
 			"Enable": false,
@@ -426,7 +426,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  6,
 			  1
 			],
 			"Enable": false,
@@ -443,8 +443,8 @@
 	},
 	{
 	  "Name": "Combat",
-	  "Icon": "spell_shadow_requiem",
-	  "Background": "affliction_bg",
+	  "Icon": "ability_backstab",
+	  "Background": "rogue_combat",
 	  "Talents": {
 		"Talent": [
 		  {
@@ -454,10 +454,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  0,
+			  0
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -483,10 +483,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  0,
 			  1
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -508,10 +508,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  0,
+			  2
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -546,7 +546,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  0
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -572,7 +572,7 @@
 			"Name": "Deflection",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Riposte",
 			"Position": [
 			  1,
 			  1
@@ -609,10 +609,10 @@
 			"Name": "Precision",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Dual Wield Specialization",
 			"Position": [
 			  1,
-			  1
+			  2
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -648,8 +648,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  0
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -673,7 +673,7 @@
 			"Dependency": "Deflection",
 			"Support": "",
 			"Position": [
-			  1,
+			  2,
 			  1
 			],
 			"Enable": false,
@@ -692,8 +692,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  3
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -717,8 +717,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  0
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -742,7 +742,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  3,
 			  1
 			],
 			"Enable": false,
@@ -779,8 +779,8 @@
 			"Dependency": "Precision",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  2
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -816,8 +816,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  0
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -851,9 +851,9 @@
 			"Name": "Blade Flurry",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Weapon Expertise",
 			"Position": [
-			  1,
+			  4,
 			  1
 			],
 			"Enable": false,
@@ -872,8 +872,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  2
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -909,8 +909,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  3
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -946,7 +946,7 @@
 			"Dependency": "Blade Flurry",
 			"Support": "",
 			"Position": [
-			  1,
+			  5,
 			  1
 			],
 			"Enable": false,
@@ -971,8 +971,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  5,
+			  2
 			],
 			"Enable": false,
 			"Tier": 6,
@@ -1000,7 +1000,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  6,
 			  1
 			],
 			"Enable": false,
@@ -1017,8 +1017,8 @@
 	},
 	{
 	  "Name": "Subtlety",
-	  "Icon": "spell_shadow_requiem",
-	  "Background": "affliction_bg",
+	  "Icon": "ability_stealth",
+	  "Background": "rogue_subtlety",
 	  "Talents": {
 		"Talent": [
 		  {
@@ -1028,10 +1028,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  0,
 			  1
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -1065,10 +1065,10 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  0,
+			  2
 			],
-			"Enable": false,
+			"Enable": true,
 			"Tier": 1,
 			"Ranks": {
 			  "Rank": [
@@ -1103,7 +1103,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  0
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -1153,7 +1153,7 @@
 			"Support": "",
 			"Position": [
 			  1,
-			  1
+			  2
 			],
 			"Enable": false,
 			"Tier": 2,
@@ -1189,8 +1189,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  0
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -1218,7 +1218,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  2,
 			  1
 			],
 			"Enable": false,
@@ -1237,8 +1237,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  2,
+			  2
 			],
 			"Enable": false,
 			"Tier": 3,
@@ -1266,8 +1266,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  0
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -1295,7 +1295,7 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
+			  3,
 			  1
 			],
 			"Enable": false,
@@ -1322,10 +1322,10 @@
 			"Name": "Serrated Blades",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Hemorrhage",
 			"Position": [
-			  1,
-			  1
+			  3,
+			  2
 			],
 			"Enable": false,
 			"Tier": 4,
@@ -1353,8 +1353,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  0
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -1376,9 +1376,9 @@
 			"Name": "Preparation",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": "Premeditation",
 			"Position": [
-			  1,
+			  4,
 			  1
 			],
 			"Enable": false,
@@ -1397,8 +1397,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  2
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -1422,8 +1422,8 @@
 			"Dependency": "Serrated Blades",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  4,
+			  3
 			],
 			"Enable": false,
 			"Tier": 5,
@@ -1441,8 +1441,8 @@
 			"Dependency": "",
 			"Support": "",
 			"Position": [
-			  1,
-			  1
+			  5,
+			  2
 			],
 			"Enable": false,
 			"Tier": 6,
@@ -1463,7 +1463,11 @@
 				{
 				  "Number": 4,
 				  "Description": "Increases your Attack Power by 8%."
-				}
+				},
+				{
+					"Number": 5,
+					"Description": "Increases your Attack Power by 10%."
+				  }
 			  ]
 			}
 		  },
@@ -1474,7 +1478,7 @@
 			"Dependency": "Preparation",
 			"Support": "",
 			"Position": [
-			  1,
+			  6,
 			  1
 			],
 			"Enable": false,

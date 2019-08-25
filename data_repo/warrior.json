@@ -1,8 +1,8 @@
 [
 	{
 		"Name": "Arms",
-		"Icon": "spell_shadow_requiem",
-		"Background": "affliction_bg",
+		"Icon": "ability_rogue_eviscerate",
+		"Background": "warrior_arms",
 		"Talents": {
 			"Talent": [
 				{
@@ -12,10 +12,10 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						0,
+						0
 					],
-					"Enable": false,
+					"Enable": true,
 					"Tier": 1,
 					"Ranks": {
 						"Rank": [
@@ -41,10 +41,10 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
+						0,
 						1
 					],
-					"Enable": false,
+					"Enable": true,
 					"Tier": 1,
 					"Ranks": {
 						"Rank": [
@@ -76,12 +76,12 @@
 					"Name": "Improved Rend",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": "Deep Wounds",
 					"Position": [
-						1,
-						1
+						0,
+						2
 					],
-					"Enable": false,
+					"Enable": true,
 					"Tier": 1,
 					"Ranks": {
 						"Rank": [
@@ -108,7 +108,7 @@
 					"Support": "",
 					"Position": [
 						1,
-						1
+						0
 					],
 					"Enable": false,
 					"Tier": 2,
@@ -130,7 +130,7 @@
 					"Name": "Tactical Mastery",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": "Anger Management",
 					"Position": [
 						1,
 						1
@@ -170,7 +170,7 @@
 					"Support": "",
 					"Position": [
 						1,
-						1
+						3
 					],
 					"Enable": false,
 					"Tier": 2,
@@ -198,8 +198,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						2,
+						0
 					],
 					"Enable": false,
 					"Tier": 3,
@@ -223,7 +223,7 @@
 					"Dependency": "Tactical Mastery",
 					"Support": "",
 					"Position": [
-						1,
+						2,
 						1
 					],
 					"Enable": false,
@@ -240,10 +240,10 @@
 					"Name": "Deep Wounds",
 					"Points": 0,
 					"Dependency": "Improved Rend",
-					"Support": "",
+					"Support": "Impale",
 					"Position": [
-						1,
-						1
+						2,
+						2
 					],
 					"Enable": false,
 					"Tier": 3,
@@ -271,7 +271,7 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
+						3,
 						1
 					],
 					"Enable": false,
@@ -308,8 +308,8 @@
 					"Dependency": "Deep Wounds",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						3,
+						2
 					],
 					"Enable": false,
 					"Tier": 4,
@@ -333,8 +333,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						4,
+						0
 					],
 					"Enable": false,
 					"Tier": 5,
@@ -368,9 +368,9 @@
 					"Name": "Sweeping Strikes",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": "Mortal Strike",
 					"Position": [
-						1,
+						4,
 						1
 					],
 					"Enable": false,
@@ -389,8 +389,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						4,
+						2
 					],
 					"Enable": false,
 					"Tier": 5,
@@ -426,8 +426,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						4,
+						3
 					],
 					"Enable": false,
 					"Tier": 5,
@@ -463,8 +463,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						5,
+						0
 					],
 					"Enable": false,
 					"Tier": 6,
@@ -500,8 +500,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						5,
+						2
 					],
 					"Enable": false,
 					"Tier": 6,
@@ -529,7 +529,7 @@
 					"Dependency": "Sweeping Strikes",
 					"Support": "",
 					"Position": [
-						1,
+						6,
 						1
 					],
 					"Enable": false,
@@ -546,8 +546,8 @@
 	},
 	{
 		"Name": "Fury",
-		"Icon": "spell_shadow_requiem",
-		"Background": "affliction_bg",
+		"Icon": "ability_warrior_warcry",
+		"Background": "warrior_fury",
 		"Talents": {
 			"Talent": [
 				{
@@ -557,10 +557,10 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
+						0,
 						1
 					],
-					"Enable": false,
+					"Enable": true,
 					"Tier": 1,
 					"Ranks": {
 						"Rank": [
@@ -594,10 +594,10 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						0,
+						2
 					],
-					"Enable": false,
+					"Enable": true,
 					"Tier": 1,
 					"Ranks": {
 						"Rank": [
@@ -669,7 +669,7 @@
 					"Support": "",
 					"Position": [
 						1,
-						1
+						2
 					],
 					"Enable": false,
 					"Tier": 2,
@@ -705,8 +705,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						2,
+						0
 					],
 					"Enable": false,
 					"Tier": 3,
@@ -734,7 +734,7 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
+						2,
 						1
 					],
 					"Enable": false,
@@ -753,8 +753,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						2,
+						2
 					],
 					"Enable": false,
 					"Tier": 3,
@@ -782,8 +782,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						2,
+						3
 					],
 					"Enable": false,
 					"Tier": 3,
@@ -819,8 +819,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						3,
+						0
 					],
 					"Enable": false,
 					"Tier": 4,
@@ -856,7 +856,7 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
+						3,
 						1
 					],
 					"Enable": false,
@@ -879,10 +879,10 @@
 					"Name": "Enrage",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": "Flurry",
 					"Position": [
-						1,
-						1
+						3,
+						2
 					],
 					"Enable": false,
 					"Tier": 4,
@@ -918,8 +918,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						4,
+						0
 					],
 					"Enable": false,
 					"Tier": 5,
@@ -953,9 +953,9 @@
 					"Name": "Death Wish",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": "Bloodthirst",
 					"Position": [
-						1,
+						4,
 						1
 					],
 					"Enable": false,
@@ -974,8 +974,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						4,
+						3
 					],
 					"Enable": false,
 					"Tier": 5,
@@ -999,8 +999,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						5,
+						0
 					],
 					"Enable": false,
 					"Tier": 6,
@@ -1024,8 +1024,8 @@
 					"Dependency": "Enrage",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						5,
+						2
 					],
 					"Enable": false,
 					"Tier": 6,
@@ -1061,7 +1061,7 @@
 					"Dependency": "Death Wish",
 					"Support": "",
 					"Position": [
-						1,
+						6,
 						1
 					],
 					"Enable": false,
@@ -1078,8 +1078,8 @@
 	},
 	{
 		"Name": "Protection",
-		"Icon": "spell_shadow_requiem",
-		"Background": "affliction_bg",
+		"Icon": "inv_shield_06",
+		"Background": "warrior_protection",
 		"Talents": {
 			"Talent": [
 				{
@@ -1087,12 +1087,12 @@
 					"Name": "Shield Specialization",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": "Improved Shield Block",
 					"Position": [
-						1,
+						0,
 						1
 					],
-					"Enable": false,
+					"Enable": true,
 					"Tier": 1,
 					"Ranks": {
 						"Rank": [
@@ -1126,10 +1126,10 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						0,
+						2
 					],
-					"Enable": false,
+					"Enable": true,
 					"Tier": 1,
 					"Ranks": {
 						"Rank": [
@@ -1161,10 +1161,10 @@
 					"Name": "Improved Bloodrage",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": "Last Stand",
 					"Position": [
 						1,
-						1
+						0
 					],
 					"Enable": false,
 					"Tier": 2,
@@ -1189,7 +1189,7 @@
 					"Support": "",
 					"Position": [
 						1,
-						1
+						2
 					],
 					"Enable": false,
 					"Tier": 2,
@@ -1226,7 +1226,7 @@
 					"Support": "",
 					"Position": [
 						1,
-						1
+						3
 					],
 					"Enable": false,
 					"Tier": 2,
@@ -1262,8 +1262,8 @@
 					"Dependency": "Improved Bloodrage",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						2,
+						0
 					],
 					"Enable": false,
 					"Tier": 3,
@@ -1281,7 +1281,7 @@
 					"Dependency": "Shield Specialization",
 					"Support": "",
 					"Position": [
-						1,
+						2,
 						1
 					],
 					"Enable": false,
@@ -1310,8 +1310,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						2,
+						2
 					],
 					"Enable": false,
 					"Tier": 3,
@@ -1339,8 +1339,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						2,
+						3
 					],
 					"Enable": false,
 					"Tier": 3,
@@ -1376,8 +1376,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						3,
+						0
 					],
 					"Enable": false,
 					"Tier": 4,
@@ -1405,7 +1405,7 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
+						3,
 						1
 					],
 					"Enable": false,
@@ -1434,8 +1434,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						3,
+						2
 					],
 					"Enable": false,
 					"Tier": 4,
@@ -1459,8 +1459,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						4,
+						0
 					],
 					"Enable": false,
 					"Tier": 5,
@@ -1482,9 +1482,9 @@
 					"Name": "Concussion Blow",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": "Shield Slamm",
 					"Position": [
-						1,
+						4,
 						1
 					],
 					"Enable": false,
@@ -1503,8 +1503,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						4,
+						2
 					],
 					"Enable": false,
 					"Tier": 5,
@@ -1528,8 +1528,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						5,
+						2
 					],
 					"Enable": false,
 					"Tier": 6,
@@ -1550,6 +1550,10 @@
 							{
 								"Number": 4,
 								"Description": "Increases the damage you deal with One-Handed Melee weapons by 8%."
+							},
+							{
+								"Number": 5,
+								"Description": "Increases the damage you deal with One-Handed Melee weapons by 10%."
 							}
 						]
 					}
@@ -1561,7 +1565,7 @@
 					"Dependency": "Concussion Blow",
 					"Support": "",
 					"Position": [
-						1,
+						6,
 						1
 					],
 					"Enable": false,

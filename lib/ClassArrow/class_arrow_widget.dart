@@ -6,6 +6,7 @@ import 'package:wow_classic_talent_calculator/ClassArrow/priest_arrow.dart';
 import 'package:wow_classic_talent_calculator/ClassArrow/rogue_arrow.dart';
 import 'package:wow_classic_talent_calculator/ClassArrow/shaman_arrow.dart';
 import 'package:wow_classic_talent_calculator/ClassArrow/warlock_arrow.dart';
+import 'package:wow_classic_talent_calculator/ClassArrow/warrior_arrow.dart';
 
 getArrowClassByName(String className) {
   switch (className) {
@@ -34,6 +35,9 @@ getArrowClassByName(String className) {
     case 'shaman':
       return getShamanArrowList();
     break;
+    case 'warrior':
+      return getWarriorArrowList();
+      break;
 
     default:
       {

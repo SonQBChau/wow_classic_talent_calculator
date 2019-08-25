@@ -44,6 +44,9 @@ class _DetailScreenContentState extends State<DetailScreenContent>
   @override
   Widget build(BuildContext context) {
     int level = Provider.of<TalentProvider>(context).getTotalTalentPoints();
+    if (level == 9){
+      level = 10;
+    }
     return Scaffold(
       appBar: AppBar(
         title: Text(str.capitalize(widget.className),

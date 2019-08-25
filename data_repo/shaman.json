@@ -15,7 +15,7 @@
 						0,
 						1
 					],
-					"Enable": false,
+					"Enable": true,
 					"Tier": 1,
 					"Ranks": {
 						"Rank": [
@@ -52,7 +52,7 @@
 						0,
 						2
 					],
-					"Enable": false,
+					"Enable": true,
 					"Tier": 1,
 					"Ranks": {
 						"Rank": [
@@ -288,7 +288,7 @@
 					"Support": "",
 					"Position": [
 						3,
-						2
+						1
 					],
 					"Enable": false,
 					"Tier": 4,
@@ -457,7 +457,7 @@
 						0,
 						1
 					],
-					"Enable": false,
+					"Enable": true,
 					"Tier": 1,
 					"Ranks": {
 						"Rank": [
@@ -494,7 +494,7 @@
 						0,
 						2
 					],
-					"Enable": false,
+					"Enable": true,
 					"Tier": 1,
 					"Ranks": {
 						"Rank": [
@@ -937,10 +937,10 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
+						0,
 						1
 					],
-					"Enable": false,
+					"Enable": true,
 					"Tier": 1,
 					"Ranks": {
 						"Rank": [
@@ -974,10 +974,10 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						0,
+						2
 					],
-					"Enable": false,
+					"Enable": true,
 					"Tier": 1,
 					"Ranks": {
 						"Rank": [
@@ -1012,7 +1012,7 @@
 					"Support": "",
 					"Position": [
 						1,
-						1
+						0
 					],
 					"Enable": false,
 					"Tier": 2,
@@ -1066,7 +1066,7 @@
 					"Support": "",
 					"Position": [
 						1,
-						1
+						2
 					],
 					"Enable": false,
 					"Tier": 2,
@@ -1102,8 +1102,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						2,
+						0
 					],
 					"Enable": false,
 					"Tier": 3,
@@ -1131,7 +1131,7 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
+						2,
 						1
 					],
 					"Enable": false,
@@ -1168,8 +1168,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						2,
+						2
 					],
 					"Enable": false,
 					"Tier": 3,
@@ -1187,8 +1187,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						2,
+						3
 					],
 					"Enable": false,
 					"Tier": 3,
@@ -1214,9 +1214,9 @@
 					"Name": "Restorative Totems",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": "Mana Tide Totem",
 					"Position": [
-						1,
+						3,
 						1
 					],
 					"Enable": false,
@@ -1253,8 +1253,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						3,
+						2
 					],
 					"Enable": false,
 					"Tier": 4,
@@ -1290,8 +1290,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						4,
+						0
 					],
 					"Enable": false,
 					"Tier": 5,
@@ -1319,8 +1319,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						4,
+						2
 					],
 					"Enable": false,
 					"Tier": 5,
@@ -1338,8 +1338,8 @@
 					"Dependency": "",
 					"Support": "",
 					"Position": [
-						1,
-						1
+						5,
+						2
 					],
 					"Enable": false,
 					"Tier": 6,
@@ -1360,6 +1360,10 @@
 							{
 								"Number": 4,
 								"Description": "Increases the effectiveness of your healing spells by 8%."
+							},
+							{
+								"Number": 5,
+								"Description": "Increases the effectiveness of your healing spells by 10%."
 							}
 						]
 					}
@@ -1371,7 +1375,7 @@
 					"Dependency": "Restorative Totems",
 					"Support": "",
 					"Position": [
-						1,
+						6,
 						1
 					],
 					"Enable": false,

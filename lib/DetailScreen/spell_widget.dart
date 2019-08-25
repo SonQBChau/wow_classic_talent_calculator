@@ -7,6 +7,9 @@ import 'package:wow_classic_talent_calculator/provider/TalentProvider.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 // import 'package:transparent_image/transparent_image.dart';
 
+//add ripple effect
+//https://medium.com/@RayLiVerified/create-a-rounded-image-icon-with-ripple-effect-in-flutter-eb0f4a720b90
+
 class SpellWidget extends StatefulWidget {
   final Talent talent;
   final String talentTreeName;
@@ -118,11 +121,28 @@ class _SpellWidgetState extends State<SpellWidget> {
 
   _buildSpellWidget() {
     if (widget.talent.enable) {
-      return GestureDetector(
-          onTap: () => _increaseRank(),
+//      return GestureDetector(
+//          onTap: () => _increaseRank(),
+//          onDoubleTap: () => _decreaseRank(),
+//          onLongPress: () => _showDescription(),
+//          child: Container(child: Image.asset(imgLocation)));
+  return Material(
+    color: Colors.transparent,
+    child: Ink.image(
+      image: AssetImage(imgLocation),
+//      fit: BoxFit.cover,
+//      width: 120.0,
+//      height: 120.0,
+      child: InkWell(
+        onTap: () => _increaseRank(),
           onDoubleTap: () => _decreaseRank(),
           onLongPress: () => _showDescription(),
-          child: Container(child: Image.asset(imgLocation)));
+//      child: null,
+      borderRadius: BorderRadius.circular(10),
+
+    ),
+  ),
+    );
     } else {
       return GestureDetector(
         onLongPress: () => _showDescription(),

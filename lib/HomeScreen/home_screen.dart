@@ -51,6 +51,7 @@ class HomeScreen extends StatelessWidget {
             'Classic Talent Calculator',
             style: TextStyle(
               color: kColorSelectiveYellow,
+              fontSize: 24,
             ),
           ),
           centerTitle: true,

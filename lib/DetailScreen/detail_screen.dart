@@ -11,6 +11,7 @@ import 'dart:convert';
 import 'package:wow_classic_talent_calculator/utils/constants.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
+import 'package:wow_classic_talent_calculator/utils/string.dart' as str;
 
 class DetailScreen extends StatefulWidget {
   final String className;
@@ -66,7 +67,7 @@ class _DetailScreenState extends State<DetailScreen>
     return talentTrees == null
         ? Scaffold(
             appBar: AppBar(
-              title: Text(widget.className),
+              title: Text(str.capitalize(widget.className)),
               backgroundColor: widget.classColor,
             ),
             body: Center(child: CircularProgressIndicator()))

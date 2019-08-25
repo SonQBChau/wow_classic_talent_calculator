@@ -6,10 +6,12 @@ import 'package:wow_classic_talent_calculator/ClassArrow/class_arrow_widget.dart
 import 'package:wow_classic_talent_calculator/ClassArrow/warlock_arrow.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/talent_tree_widget.dart';
 import 'package:wow_classic_talent_calculator/provider/TalentProvider.dart';
+import 'package:wow_classic_talent_calculator/utils/colors.dart';
 import 'dart:convert';
 import 'package:wow_classic_talent_calculator/utils/constants.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
+import 'package:wow_classic_talent_calculator/utils/string.dart' as str;
 
 class DetailScreenContent extends StatefulWidget {
   final String className;
@@ -44,21 +46,29 @@ class _DetailScreenContentState extends State<DetailScreenContent>
     int level = Provider.of<TalentProvider>(context).getTotalTalentPoints();
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.className),
+        title: Text(str.capitalize(widget.className),
+            style: TextStyle(color: kColorSelectiveYellow),
+          ),
+        leading:  IconButton(
+          icon:  Icon(Icons.arrow_back, color: kColorSelectiveYellow),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
         actions: <Widget>[
           Center(
             child: Container(
               padding: EdgeInsets.only(right: 20),
               child: Text(
                 'Level $level',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600, color: kColorSelectiveYellow),
               ),
             ),
           )
         ],
-        backgroundColor: widget.classColor,
+//        backgroundColor: kColorSelectiveYellow,
+        backgroundColor: kColorLightLicorice,
         bottom: TabBar(
           controller: _tabController,
+          indicatorColor: widget.classColor,
           tabs: [
             Tab(
                 icon: Image.asset(

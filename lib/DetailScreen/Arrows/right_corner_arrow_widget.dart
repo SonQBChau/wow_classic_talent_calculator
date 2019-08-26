@@ -75,10 +75,10 @@ class _RightCornerArrowWidgetState extends State<RightCornerArrowWidget> {
 
     final double arrowCornerTop =
         SizeConfig.cellSize * (widget.startPosition.row) -
-            SizeConfig.cellSize / 1.68;
+            SizeConfig.cellSize / 1.67;
     final double arrowCornerLeft =
         SizeConfig.cellSize * (widget.startPosition.column + 1) -
-            SizeConfig.cellSize / 1.6;
+            SizeConfig.cellSize / 1.58;
 
     talentProvider = Provider.of<TalentProvider>(context);
 

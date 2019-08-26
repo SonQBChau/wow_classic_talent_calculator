@@ -35,9 +35,9 @@ dev_dependencies:
 flutter_icons:
   ios: true
   android: true
-  image_path_ios: "AppIcon/icon.jpg"
-  image_path_android: "AppIcon/icon.jpg"
-  image_path: "AppIcon/icon.jpg"
+  image_path_ios: "assets/AppIcons/icon_2.jpg"
+  image_path_android: "assets/AppIcons/icon_2.jpg"
+  image_path: "assets/AppIcons/icon_2.jpg"
 
 
 # For information on the generic Dart part of this file, see the

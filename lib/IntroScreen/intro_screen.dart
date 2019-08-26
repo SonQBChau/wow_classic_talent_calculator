@@ -46,9 +46,18 @@ class IntroScreen extends StatelessWidget {
                 height: 20,
               ),
               MaterialButton(
-                child: Text(
-                  'Got it!',
-                  style: TextStyle(fontSize: 30, color: kColorLicorice),
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+                  decoration: BoxDecoration(
+                    border: Border.all(width: 0.5),
+                    borderRadius: BorderRadius.all(
+                        Radius.circular(5.0) //         <--- border radius here
+                        ),
+                  ),
+                  child: Text(
+                    'Got it!',
+                    style: TextStyle(fontSize: 30, color: kColorLicorice),
+                  ),
                 ),
                 onPressed: () {
                   Navigator.of(context)

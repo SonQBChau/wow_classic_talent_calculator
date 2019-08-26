@@ -25,8 +25,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: Splash(),
-//       home: IntroScreen(),
+      // home: Splash(),
+      home: IntroScreen(),
     );
   }
 }
@@ -42,10 +42,12 @@ class SplashState extends State<Splash> {
     bool _seen = (prefs.getBool('seen') ?? false);
 
     if (_seen) {
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => HomeScreen()));
+      Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => HomeScreen()));
     } else {
       prefs.setBool('seen', true);
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => IntroScreen()));
+      Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => IntroScreen()));
     }
   }
 
@@ -64,4 +66,3 @@ class SplashState extends State<Splash> {
     );
   }
 }
-

@@ -68,10 +68,13 @@ class _DetailScreenState extends State<DetailScreen>
     return talentTrees == null
         ? Scaffold(
             appBar: AppBar(
-              title: Text(str.capitalize(widget.className)),
+              title: Text(
+                str.capitalize(widget.className),
+                style: TextStyle(color: kColorSelectiveYellow),
+              ),
               backgroundColor: kColorLightLicorice,
-              leading:  IconButton(
-                icon:  Icon(Icons.arrow_back, color: kColorSelectiveYellow),
+              leading: IconButton(
+                icon: Icon(Icons.arrow_back, color: kColorSelectiveYellow),
                 onPressed: () => Navigator.of(context).pop(),
               ),
             ),

@@ -55,7 +55,7 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           centerTitle: true,
-          backgroundColor: kColorLicorice,
+          backgroundColor: kColorLightLicorice,
         ),
         body: ListView(
           children: <Widget>[

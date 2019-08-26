@@ -7,6 +7,7 @@ import 'package:wow_classic_talent_calculator/ClassArrow/warlock_arrow.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/detail_screen_content.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/talent_tree_widget.dart';
 import 'package:wow_classic_talent_calculator/provider/TalentProvider.dart';
+import 'package:wow_classic_talent_calculator/utils/colors.dart';
 import 'dart:convert';
 import 'package:wow_classic_talent_calculator/utils/constants.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
@@ -68,7 +69,11 @@ class _DetailScreenState extends State<DetailScreen>
         ? Scaffold(
             appBar: AppBar(
               title: Text(str.capitalize(widget.className)),
-              backgroundColor: widget.classColor,
+              backgroundColor: kColorLightLicorice,
+              leading:  IconButton(
+                icon:  Icon(Icons.arrow_back, color: kColorSelectiveYellow),
+                onPressed: () => Navigator.of(context).pop(),
+              ),
             ),
             body: Center(child: CircularProgressIndicator()))
         : ChangeNotifierProvider<TalentProvider>(

@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
 //        brightness: Brightness.dark,
         primarySwatch: Colors.blue,
       ),
+      debugShowCheckedModeBanner: false,
       home: Splash(),
       // home: HomeScreen(),
     );
@@ -39,12 +40,10 @@ class SplashState extends State<Splash> {
     bool _seen = (prefs.getBool('seen') ?? false);
 
     if (_seen) {
-      Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => HomeScreen()));
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => HomeScreen()));
     } else {
       prefs.setBool('seen', true);
-      Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => IntroScreen()));
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => IntroScreen()));
     }
   }
 
@@ -76,8 +75,8 @@ class IntroScreen extends StatelessWidget {
             MaterialButton(
               child: Text('Got it!'),
               onPressed: () {
-                Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (context) => HomeScreen()));
+                Navigator.of(context)
+                    .pushReplacement(MaterialPageRoute(builder: (context) => HomeScreen()));
               },
             )
           ],

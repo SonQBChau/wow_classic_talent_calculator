@@ -67,7 +67,6 @@ class _DetailScreenContentState extends State<DetailScreenContent>
             ),
           )
         ],
-//        backgroundColor: kColorSelectiveYellow,
         backgroundColor: kColorLightLicorice,
         bottom: TabBar(
           controller: _tabController,

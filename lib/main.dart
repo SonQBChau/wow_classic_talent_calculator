@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:wow_classic_talent_calculator/IntroScreen/intro_screen.dart';
+import 'package:wow_classic_talent_calculator/utils/colors.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 
 import 'DetailScreen/detail_screen.dart';
@@ -23,8 +25,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: Splash(),
-      // home: HomeScreen(),
+//      home: Splash(),
+       home: IntroScreen(),
     );
   }
 }
@@ -63,25 +65,3 @@ class SplashState extends State<Splash> {
   }
 }
 
-class IntroScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            Text('This is the intro page'),
-            MaterialButton(
-              child: Text('Got it!'),
-              onPressed: () {
-                Navigator.of(context)
-                    .pushReplacement(MaterialPageRoute(builder: (context) => HomeScreen()));
-              },
-            )
-          ],
-        ),
-      ),
-    );
-  }
-}

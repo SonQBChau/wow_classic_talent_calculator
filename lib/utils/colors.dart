@@ -16,3 +16,4 @@ final kColorSelectiveYellow = const Color(0xFFF8B700);
 final kColorLicorice = const Color(0xFF211510);
 final kColorLightLicorice = const Color(0xFF241512);
 final kColorSmokyBlack = const Color(0xFF0B0A08);
+final kColorPageIntro = const Color(0xFFF3BC7A);

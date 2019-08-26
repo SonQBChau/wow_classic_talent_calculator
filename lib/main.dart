@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:wow_classic_talent_calculator/IntroScreen/intro_screen.dart';
 import 'package:wow_classic_talent_calculator/utils/colors.dart';
+import 'package:wow_classic_talent_calculator/utils/fade_transition.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 
 import 'DetailScreen/detail_screen.dart';
@@ -48,12 +49,14 @@ class SplashState extends State<Splash> {
     bool _seen = (prefs.getBool('seen') ?? false);
 
     if (_seen) {
-      Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => HomeScreen()));
+      // Navigator.of(context).pushReplacement(
+      // MaterialPageRoute(builder: (context) => HomeScreen()));
+      Navigator.of(context).pushReplacement(FadeRoute(page: HomeScreen()));
     } else {
       prefs.setBool('seen', true);
-      Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => IntroScreen()));
+      // Navigator.of(context).pushReplacement(
+      //     MaterialPageRoute(builder: (context) => IntroScreen()));
+      Navigator.of(context).pushReplacement(FadeRoute(page: IntroScreen()));
     }
   }
 

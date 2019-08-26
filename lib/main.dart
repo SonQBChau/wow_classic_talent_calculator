@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:wow_classic_talent_calculator/IntroScreen/intro_screen.dart';
 import 'package:wow_classic_talent_calculator/utils/colors.dart';
@@ -12,7 +13,13 @@ import 'package:shared_preferences/shared_preferences.dart';
 /// onboarding page
 ///https://stackoverflow.com/questions/50654195/flutter-one-time-intro-screen
 
-void main() => runApp(MyApp());
+Future main() async {
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
+      .then((_) {
+    runApp(MyApp());
+  });
+}
+// void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.

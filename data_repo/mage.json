@@ -1383,7 +1383,11 @@
 				{
 				  "Number": 4,
 				  "Description": "Gives your Frost damage spells a 80% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 sec.  Stacks up to 5 times."
-				}
+				},
+				{
+					"Number": 5,
+					"Description": "Gives your Frost damage spells a 100% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 sec.  Stacks up to 5 times."
+				  }
 			  ]
 			}
 		  },

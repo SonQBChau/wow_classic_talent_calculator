@@ -1352,7 +1352,11 @@
 				{
 				  "Number": 4,
 				  "Description": "Increases your Agility by 12%."
-				}
+				},
+				{
+					"Number": 5,
+					"Description": "Increases your Agility by 15%."
+				  }
 			  ]
 			}
 		  },

@@ -1286,7 +1286,11 @@
 				{
 				  "Number": 4,
 				  "Description": "Gives you a 12% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability."
-				}
+				},
+				{
+					"Number": 5,
+					"Description": "Gives you a 15% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability."
+				  }
 			  ]
 			}
 		  },

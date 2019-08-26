@@ -26,9 +26,18 @@ dependencies:
   provider: ^3.0.0+1
   shared_preferences: ^0.5.3
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.7.2
+
+flutter_icons:
+  ios: true
+  android: true
+  image_path_ios: "AppIcon/icon.jpg"
+  image_path_android: "AppIcon/icon.jpg"
+  image_path: "AppIcon/icon.jpg"
 
 
 # For information on the generic Dart part of this file, see the

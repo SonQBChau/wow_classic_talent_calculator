@@ -8,7 +8,7 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="wow_classic_talent_calculator"
+        android:label="ClassicTalents"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

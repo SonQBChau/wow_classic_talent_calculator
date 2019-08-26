@@ -1,5 +1,6 @@
-import 'package:wow_classic_talent_calculator/DetailScreen/Arrows/arrow_widget.dart';
-import 'package:wow_classic_talent_calculator/DetailScreen/Arrows/right_arrow_widget.dart';
+import 'package:wow_classic_talent_calculator/ClassArrow/arrow_widget.dart';
+import 'package:wow_classic_talent_calculator/ClassArrow/right_arrow_widget.dart';
+import 'package:wow_classic_talent_calculator/ClassArrow/right_corner_arrow_widget.dart';
 import 'package:wow_classic_talent_calculator/model/position.dart';
 
 getPaladinArrowList() {
@@ -17,7 +18,6 @@ getPaladinArrowList() {
         lengthType: 'medium',
         dependencyTalent: 'Holy Shock',
       )
-
     ],
     [
       ArrowWidget(

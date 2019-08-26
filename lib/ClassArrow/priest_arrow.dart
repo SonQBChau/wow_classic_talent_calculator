@@ -1,5 +1,6 @@
-import 'package:wow_classic_talent_calculator/DetailScreen/Arrows/arrow_widget.dart';
-import 'package:wow_classic_talent_calculator/DetailScreen/Arrows/right_arrow_widget.dart';
+import 'package:wow_classic_talent_calculator/ClassArrow/arrow_widget.dart';
+import 'package:wow_classic_talent_calculator/ClassArrow/right_arrow_widget.dart';
+import 'package:wow_classic_talent_calculator/ClassArrow/right_corner_arrow_widget.dart';
 import 'package:wow_classic_talent_calculator/model/position.dart';
 
 getPriestArrowList() {
@@ -11,14 +12,12 @@ getPriestArrowList() {
         lengthType: 'medium',
         dependencyTalent: 'Divine Spirit',
       ),
-
       ArrowWidget(
         startPosition: Position(row: 4, column: 1),
         endPosition: Position(row: 6, column: 1),
         lengthType: 'medium',
         dependencyTalent: 'Power Infusion',
       )
-
     ],
     [
       ArrowWidget(

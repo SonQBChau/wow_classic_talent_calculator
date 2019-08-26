@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wow_classic_talent_calculator/DetailScreen/Arrows/arrow_widget.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/spell_widget.dart';
-import 'package:wow_classic_talent_calculator/model/position.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
 import 'package:wow_classic_talent_calculator/provider/TalentProvider.dart';
 import 'package:wow_classic_talent_calculator/utils/constants.dart';

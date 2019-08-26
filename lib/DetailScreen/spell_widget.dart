@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:wow_classic_talent_calculator/DetailScreen/Arrows/arrow_widget.dart';
-import 'package:wow_classic_talent_calculator/model/position.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
 import 'package:wow_classic_talent_calculator/provider/TalentProvider.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
@@ -40,12 +38,14 @@ class _SpellWidgetState extends State<SpellWidget> {
       displayRank = 0;
       return '${widget.talent.name}: ${widget.talent.ranks.rank[displayRank].description}';
     }
-    return 'Rank ${widget.talent.ranks.rank[displayRank].number}: ' + widget.talent.ranks.rank[displayRank].description;
+    return 'Rank ${widget.talent.ranks.rank[displayRank].number}: ' +
+        widget.talent.ranks.rank[displayRank].description;
   }
 
   void _increaseRank() {
     if (currentRank < maxRank && talentProvider.getTotalTalentPoints() < 60) {
-      talentProvider.increaseTalentPoints(widget.talent, currentRank, widget.talentTreeName);
+      talentProvider.increaseTalentPoints(
+          widget.talent, currentRank, widget.talentTreeName);
     }
   }
 
@@ -67,20 +67,25 @@ class _SpellWidgetState extends State<SpellWidget> {
     if (widget.talent.support != '') {
       ///Druid is is the ONLY special exception that has 2 dependency spells
       if (widget.talent.support == 'Blood Frenzy AND Primal Fury') {
-        Talent bloodFrenzyTalent = talentProvider.findTalentByName('Blood Frenzy');
-        Talent primalFuryTalent = talentProvider.findTalentByName('Primal Fury');
+        Talent bloodFrenzyTalent =
+            talentProvider.findTalentByName('Blood Frenzy');
+        Talent primalFuryTalent =
+            talentProvider.findTalentByName('Primal Fury');
         if (bloodFrenzyTalent.points > 0 || primalFuryTalent.points > 0) {
           canDecrease = false;
         }
-      } else if (widget.talent.support == 'Shadowform AND Improved Vampiric Embrace') {
+      } else if (widget.talent.support ==
+          'Shadowform AND Improved Vampiric Embrace') {
         Talent shadowformTalent = talentProvider.findTalentByName('Shadowform');
         Talent impVampiricEmbraceTalent =
             talentProvider.findTalentByName('Improved Vampiric Embrace');
-        if (shadowformTalent.points > 0 || impVampiricEmbraceTalent.points > 0) {
+        if (shadowformTalent.points > 0 ||
+            impVampiricEmbraceTalent.points > 0) {
           canDecrease = false;
         }
       } else {
-        Talent dependencyTalent = talentProvider.findTalentByName(widget.talent.support);
+        Talent dependencyTalent =
+            talentProvider.findTalentByName(widget.talent.support);
         if (dependencyTalent.points > 0) {
           canDecrease = false;
         }
@@ -91,17 +96,21 @@ class _SpellWidgetState extends State<SpellWidget> {
     // need to check if it is not the current spell
     // if the current spell is not highest, check retain points
     // if required points is higher total point, cannot decrease
-    Talent highestTalent = talentProvider.findHighestTierSpell(widget.talentTreeName);
+    Talent highestTalent =
+        talentProvider.findHighestTierSpell(widget.talentTreeName);
     if (highestTalent != null && widget.talent.name != highestTalent.name) {
-      int requiredTreePoints = (highestTalent.tier * 5 - 5) + highestTalent.points;
-      int talentTreePoints = talentProvider.getTalentTreePoints(widget.talentTreeName);
+      int requiredTreePoints =
+          (highestTalent.tier * 5 - 5) + highestTalent.points;
+      int talentTreePoints =
+          talentProvider.getTalentTreePoints(widget.talentTreeName);
       if (requiredTreePoints >= talentTreePoints) {
         canDecrease = false;
       }
     }
 
     if (canDecrease) {
-      talentProvider.decreaseTalentPoints(widget.talent, currentRank, widget.talentTreeName);
+      talentProvider.decreaseTalentPoints(
+          widget.talent, currentRank, widget.talentTreeName);
     }
   }
 
@@ -127,7 +136,8 @@ class _SpellWidgetState extends State<SpellWidget> {
           foregroundDecoration: BoxDecoration(
             color: Colors.grey,
             backgroundBlendMode: BlendMode.saturation,
-            borderRadius: BorderRadius.circular(14), // icon curve border magic number
+            borderRadius:
+                BorderRadius.circular(14), // icon curve border magic number
           ),
           child: Ink.image(
             image: AssetImage(imgLocation),

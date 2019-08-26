@@ -7,7 +7,6 @@ import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 
 import 'DetailScreen/detail_screen.dart';
 import 'HomeScreen/home_screen.dart';
-import 'list_json.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// onboarding page

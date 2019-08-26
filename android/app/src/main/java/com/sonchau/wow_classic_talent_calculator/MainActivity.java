@@ -1,4 +1,4 @@
-package com.example.wow_classic_talent_calculator;
+package com.sonchau.wow_classic_talent_calculator;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

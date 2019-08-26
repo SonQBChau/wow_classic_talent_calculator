@@ -62,7 +62,7 @@ class _DetailScreenContentState extends State<DetailScreenContent>
               padding: EdgeInsets.only(right: 20),
               child: Text(
                 'Level $level',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600, color: kColorSelectiveYellow),
+                style: TextStyle(fontSize: 19, fontWeight: FontWeight.w600, color: kColorSelectiveYellow),
               ),
             ),
           )

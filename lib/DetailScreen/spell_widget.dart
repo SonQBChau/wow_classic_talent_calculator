@@ -45,8 +45,7 @@ class _SpellWidgetState extends State<SpellWidget> {
 
   void _increaseRank() {
     if (currentRank < maxRank && talentProvider.getTotalTalentPoints() < 60) {
-      talentProvider.increaseTalentPoints(
-          widget.talent, currentRank, widget.talentTreeName);
+      talentProvider.increaseTalentPoints(widget.talent, currentRank, widget.talentTreeName);
     }
   }
 
@@ -67,94 +66,89 @@ class _SpellWidgetState extends State<SpellWidget> {
     // if yes, cannot decrease
     if (widget.talent.support != '') {
       ///Druid is is the ONLY special exception that has 2 dependency spells
-      if (widget.talent.support == 'Blood Frenzy AND Primal Fury'){
-        Talent bloodFrenzyTalent =
-        talentProvider.findTalentByName('Blood Frenzy');
-        Talent primalFuryTalent =
-        talentProvider.findTalentByName('Primal Fury');
-        if (bloodFrenzyTalent.points > 0 || primalFuryTalent.points > 0){
+      if (widget.talent.support == 'Blood Frenzy AND Primal Fury') {
+        Talent bloodFrenzyTalent = talentProvider.findTalentByName('Blood Frenzy');
+        Talent primalFuryTalent = talentProvider.findTalentByName('Primal Fury');
+        if (bloodFrenzyTalent.points > 0 || primalFuryTalent.points > 0) {
           canDecrease = false;
         }
-      }
-      else if (widget.talent.support == 'Shadowform AND Improved Vampiric Embrace'){
-        Talent shadowformTalent =
-        talentProvider.findTalentByName('Shadowform');
+      } else if (widget.talent.support == 'Shadowform AND Improved Vampiric Embrace') {
+        Talent shadowformTalent = talentProvider.findTalentByName('Shadowform');
         Talent impVampiricEmbraceTalent =
-        talentProvider.findTalentByName('Improved Vampiric Embrace');
-        if (shadowformTalent.points > 0 || impVampiricEmbraceTalent.points > 0){
+            talentProvider.findTalentByName('Improved Vampiric Embrace');
+        if (shadowformTalent.points > 0 || impVampiricEmbraceTalent.points > 0) {
           canDecrease = false;
         }
-      }
-      else {
-        Talent dependencyTalent =
-        talentProvider.findTalentByName(widget.talent.support);
+      } else {
+        Talent dependencyTalent = talentProvider.findTalentByName(widget.talent.support);
         if (dependencyTalent.points > 0) {
           canDecrease = false;
         }
       }
-
     }
 
     // 3. retain enough points for higher tier if checked
     // need to check if it is not the current spell
     // if the current spell is not highest, check retain points
     // if required points is higher total point, cannot decrease
-    Talent highestTalent =
-        talentProvider.findHighestTierSpell(widget.talentTreeName);
-    if(highestTalent != null && widget.talent.name != highestTalent.name)
-      {
-        int requiredTreePoints =
-            (highestTalent.tier * 5 - 5) + highestTalent.points;
-        int talentTreePoints =
-        talentProvider.getTalentTreePoints(widget.talentTreeName);
-        if (requiredTreePoints >= talentTreePoints) {
-          canDecrease = false;
-        }
+    Talent highestTalent = talentProvider.findHighestTierSpell(widget.talentTreeName);
+    if (highestTalent != null && widget.talent.name != highestTalent.name) {
+      int requiredTreePoints = (highestTalent.tier * 5 - 5) + highestTalent.points;
+      int talentTreePoints = talentProvider.getTalentTreePoints(widget.talentTreeName);
+      if (requiredTreePoints >= talentTreePoints) {
+        canDecrease = false;
       }
-
+    }
 
     if (canDecrease) {
-      talentProvider.decreaseTalentPoints(
-          widget.talent, currentRank, widget.talentTreeName);
+      talentProvider.decreaseTalentPoints(widget.talent, currentRank, widget.talentTreeName);
     }
   }
 
   _buildSpellWidget() {
     if (widget.talent.enable) {
-//      return GestureDetector(
-//          onTap: () => _increaseRank(),
-//          onDoubleTap: () => _decreaseRank(),
-//          onLongPress: () => _showDescription(),
-//          child: Container(child: Image.asset(imgLocation)));
-  return Material(
-    color: Colors.transparent,
-    child: Ink.image(
-      image: AssetImage(imgLocation),
-//      fit: BoxFit.cover,
-//      width: 120.0,
-//      height: 120.0,
-      child: InkWell(
-        onTap: () => _increaseRank(),
-          onDoubleTap: () => _decreaseRank(),
-          onLongPress: () => _showDescription(),
-//      child: null,
-      borderRadius: BorderRadius.circular(10),
-
-    ),
-  ),
-    );
+      return Material(
+        color: Colors.transparent,
+        child: Ink.image(
+          image: AssetImage(imgLocation),
+          fit: BoxFit.cover,
+          child: InkWell(
+            onTap: () => _increaseRank(),
+            onDoubleTap: () => _decreaseRank(),
+            onLongPress: () => _showDescription(),
+            borderRadius: BorderRadius.circular(10),
+          ),
+        ),
+      );
     } else {
-      return GestureDetector(
-        onLongPress: () => _showDescription(),
+//      return GestureDetector(
+//        onLongPress: () => _showDescription(),
+//        child: Container(
+//            foregroundDecoration: BoxDecoration(
+//              color: Colors.grey,
+//              backgroundBlendMode: BlendMode.saturation,
+//              borderRadius: BorderRadius.circular(14), // icon curve border magic number
+//              // color: Colors.red,
+//            ),
+//            child: Image.asset(imgLocation)),
+//      );
+      return Material(
+        color: Colors.transparent,
         child: Container(
-            foregroundDecoration: BoxDecoration(
-              color: Colors.grey,
-              backgroundBlendMode: BlendMode.saturation,
-              borderRadius:
-                  BorderRadius.circular(14), // icon curve border magic number
-              // color: Colors.red,
+          foregroundDecoration: BoxDecoration(
+            color: Colors.grey,
+            backgroundBlendMode: BlendMode.saturation,
+            borderRadius: BorderRadius.circular(14), // icon curve border magic number
+          ),
+          child: Ink.image(
+            image: AssetImage(imgLocation),
+            fit: BoxFit.cover,
+            child: InkWell(
+              onLongPress: () => _showDescription(),
+              borderRadius: BorderRadius.circular(10),
             ),
-            child: Image.asset(imgLocation)),
+          ),
+        ),
       );
     }
   }

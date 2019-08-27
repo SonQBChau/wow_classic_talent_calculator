@@ -3,17 +3,14 @@ import 'dart:async' show Future;
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:provider/provider.dart';
 import 'package:wow_classic_talent_calculator/ClassArrow/class_arrow_widget.dart';
-import 'package:wow_classic_talent_calculator/ClassArrow/warlock_arrow.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/detail_screen_content.dart';
-import 'package:wow_classic_talent_calculator/DetailScreen/talent_tree_widget.dart';
 import 'package:wow_classic_talent_calculator/provider/TalentProvider.dart';
 import 'package:wow_classic_talent_calculator/utils/colors.dart';
 import 'dart:convert';
-import 'package:wow_classic_talent_calculator/utils/constants.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
-import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 import 'package:wow_classic_talent_calculator/utils/string.dart' as str;
 
+/// show a class talent with 3 tabs, each tab contains a spec tree
 class DetailScreen extends StatefulWidget {
   final String className;
   final Color classColor;

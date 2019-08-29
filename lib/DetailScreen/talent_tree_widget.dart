@@ -6,6 +6,7 @@ import 'package:wow_classic_talent_calculator/utils/constants.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 import 'package:provider/provider.dart';
 
+// display talent tree for each specialization
 class TalentTreeWidget extends StatelessWidget {
   final List<Widget> arrowList;
   final String talentTreeName;
@@ -26,7 +27,6 @@ class TalentTreeWidget extends StatelessWidget {
           ));
       talentTree.add(spell);
     }
-    //need to associate talent spell with arrow
     return talentTree;
   }
 

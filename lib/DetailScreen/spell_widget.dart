@@ -8,6 +8,7 @@ import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 //add ripple effect
 //https://medium.com/@RayLiVerified/create-a-rounded-image-icon-with-ripple-effect-in-flutter-eb0f4a720b90
 
+// Main widget for spell icons
 class SpellWidget extends StatefulWidget {
   final Talent talent;
   final String talentTreeName;
@@ -27,6 +28,7 @@ class _SpellWidgetState extends State<SpellWidget> {
   String imgLocation;
   bool enableState = false;
 
+  // show spell tooltip description on long press
   void _showDescription() {
     final dynamic tooltip = key.currentState;
     tooltip.ensureTooltipVisible();
@@ -42,6 +44,7 @@ class _SpellWidgetState extends State<SpellWidget> {
         widget.talent.ranks.rank[displayRank].description;
   }
 
+  // onTap, increase spell rank if it's not max and not over 60
   void _increaseRank() {
     if (currentRank < maxRank && talentProvider.getTotalTalentPoints() < 60) {
       talentProvider.increaseTalentPoints(
@@ -53,7 +56,7 @@ class _SpellWidgetState extends State<SpellWidget> {
     // rules: can decrease if
     // 1. currentRank > 0
     // 2. has no talent dependency
-    // 3. retain enough points for higher tier if checked
+    // 3. retain enough points for higher tier spell if it is checked
 
     bool canDecrease = true;
 
@@ -114,6 +117,8 @@ class _SpellWidgetState extends State<SpellWidget> {
     }
   }
 
+  // check if spell talent is enable or not
+  // disable Tap action if grey out
   _buildSpellWidget() {
     if (widget.talent.enable) {
       return Material(
@@ -160,9 +165,6 @@ class _SpellWidgetState extends State<SpellWidget> {
     spellName = widget.talent.icon.toLowerCase();
     imgLocation = 'assets/Icons/$spellName.png';
 
-//    _setEnable();
-    //draw arrow
-
     return Container(
       width: SizeConfig.cellSize,
       height: SizeConfig.cellSize,
@@ -177,9 +179,10 @@ class _SpellWidgetState extends State<SpellWidget> {
           ),
           Align(
             alignment: Alignment.center,
-            child: _buildSpellWidget(),
+            child: _buildSpellWidget(), //spell icon
           ),
           Align(
+            // spell rank
             alignment: Alignment.bottomRight,
             child: Container(
               padding: EdgeInsets.symmetric(vertical: 2, horizontal: 3),

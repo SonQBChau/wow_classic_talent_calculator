@@ -55,13 +55,15 @@ class _DetailScreenState extends State<DetailScreen>
 
   @override
   void dispose() {
-    // TODO: implement dispose
     _tabController.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
+    // wait for talentTrees to load
+    // show CircularProgressIndicator while loading
+    // else show DetailScreen content
     return talentTrees == null
         ? Scaffold(
             appBar: AppBar(

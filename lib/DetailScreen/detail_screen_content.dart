@@ -1,18 +1,13 @@
 import 'package:flutter/material.dart';
-import 'dart:async' show Future;
-import 'package:flutter/services.dart' show rootBundle;
 import 'package:provider/provider.dart';
-import 'package:wow_classic_talent_calculator/ClassArrow/class_arrow_widget.dart';
-import 'package:wow_classic_talent_calculator/ClassArrow/warlock_arrow.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/talent_tree_widget.dart';
 import 'package:wow_classic_talent_calculator/provider/TalentProvider.dart';
 import 'package:wow_classic_talent_calculator/utils/colors.dart';
-import 'dart:convert';
 import 'package:wow_classic_talent_calculator/utils/constants.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
-import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 import 'package:wow_classic_talent_calculator/utils/string.dart' as str;
 
+// detail screen content below the tabs bar
 class DetailScreenContent extends StatefulWidget {
   final String className;
   final Color classColor;
@@ -43,17 +38,20 @@ class _DetailScreenContentState extends State<DetailScreenContent>
 
   @override
   Widget build(BuildContext context) {
+    // get the current level to display at the top corner
+    // display level 10 for starting
     int level = Provider.of<TalentProvider>(context).getTotalTalentPoints();
-    if (level == 9){
+    if (level == 9) {
       level = 10;
     }
     return Scaffold(
       appBar: AppBar(
-        title: Text(str.capitalize(widget.className),
-            style: TextStyle(color: kColorSelectiveYellow),
-          ),
-        leading:  IconButton(
-          icon:  Icon(Icons.arrow_back, color: kColorSelectiveYellow),
+        title: Text(
+          str.capitalize(widget.className),
+          style: TextStyle(color: kColorSelectiveYellow),
+        ),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: kColorSelectiveYellow),
           onPressed: () => Navigator.of(context).pop(),
         ),
         actions: <Widget>[
@@ -62,7 +60,10 @@ class _DetailScreenContentState extends State<DetailScreenContent>
               padding: EdgeInsets.only(right: 20),
               child: Text(
                 'Level $level',
-                style: TextStyle(fontSize: 19, fontWeight: FontWeight.w600, color: kColorSelectiveYellow),
+                style: TextStyle(
+                    fontSize: 19,
+                    fontWeight: FontWeight.w600,
+                    color: kColorSelectiveYellow),
               ),
             ),
           )

@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
-import 'package:wow_classic_talent_calculator/utils/constants.dart';
 
 class TalentProvider extends ChangeNotifier {
   int _firstTalentTreePoints;
@@ -13,12 +12,14 @@ class TalentProvider extends ChangeNotifier {
         _secondTalentTreePoints = talentTrees.specTrees[1].points,
         _thirdTalentTreePoints = talentTrees.specTrees[2].points;
 
+  /// return total points of talent selected
   getTotalTalentPoints() =>
-      9 +
+      9 + // first level to get talent is 10
       _firstTalentTreePoints +
       _secondTalentTreePoints +
       _thirdTalentTreePoints;
 
+  /// return the total points of selected tree
   getTalentTreePoints(String talentTreeName) {
     if (talentTreeName == talentTrees.specTrees[0].name) {
       return _firstTalentTreePoints;
@@ -30,6 +31,7 @@ class TalentProvider extends ChangeNotifier {
     }
   }
 
+  /// increase the total talent points of selected tree
   void increaseTreePoints(String talentTreeName) {
     if (talentTreeName == talentTrees.specTrees[0].name) {
       _firstTalentTreePoints++;
@@ -42,6 +44,7 @@ class TalentProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// decrease the total talent points of selected tree
   void decreaseTreePoints(String talentTree) {
     if (talentTree == talentTrees.specTrees[0].name) {
       _firstTalentTreePoints--;
@@ -53,6 +56,7 @@ class TalentProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// increase the talent points of selected spell
   void increaseTalentPoints(
       Talent talent, int currentRank, String talentTreeName) {
     talent.points = currentRank + 1;
@@ -61,6 +65,7 @@ class TalentProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// decrease the talent points of selected spell
   void decreaseTalentPoints(
       Talent talent, int currentRank, String talentTreeName) {
     talent.points = currentRank - 1;
@@ -69,6 +74,7 @@ class TalentProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// run update for the entire talent trees for enable or disable
   void updateTalentTree() {
     List<TalentTree> specTrees = talentTrees.specTrees;
     for (int i = 0; i < specTrees.length; i++) {
@@ -80,6 +86,7 @@ class TalentProvider extends ChangeNotifier {
     }
   }
 
+  /// set talent spell enable or disable depend on condition
   void updateTalentEnable(Talent talent, String specTreeName) {
     final int currentPoints = getTalentTreePoints(specTreeName);
     final int tierPoints = talent.tier * 5 - 5;
@@ -101,7 +108,7 @@ class TalentProvider extends ChangeNotifier {
     }
   }
 
-  /// return the talent tree by name
+  /// return the talent tree by tree name
   List<Talent> findTalentTreeByName(String name) {
     List<TalentTree> specTrees = talentTrees.specTrees;
     List<Talent> talentTree = [];
@@ -114,7 +121,7 @@ class TalentProvider extends ChangeNotifier {
     return talentTree;
   }
 
-  /// return the talent by name
+  /// return the talent spell by name
   Talent findTalentByName(String name) {
     List<TalentTree> specTrees = talentTrees.specTrees;
     for (int i = 0; i < specTrees.length; i++) {
@@ -128,7 +135,7 @@ class TalentProvider extends ChangeNotifier {
     return null;
   }
 
-  /// find highest tier spell checked
+  /// find highest tier spell checked in curent tree spec
   Talent findHighestTierSpell(String specTreeName) {
     Talent highestTierSpell;
     List<TalentTree> specTrees = talentTrees.specTrees;

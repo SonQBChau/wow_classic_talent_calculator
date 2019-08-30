@@ -3,6 +3,7 @@
 	  "Name": "Assassination",
 	  "Icon": "ability_rogue_eviscerate",
 	  "Background": "rogue_assassination",
+	  "Points": 0,
 	  "Talents": {
 		"Talent": [
 		  {
@@ -445,6 +446,7 @@
 	  "Name": "Combat",
 	  "Icon": "ability_backstab",
 	  "Background": "rogue_combat",
+	  "Points": 0,
 	  "Talents": {
 		"Talent": [
 		  {
@@ -1019,6 +1021,7 @@
 	  "Name": "Subtlety",
 	  "Icon": "ability_stealth",
 	  "Background": "rogue_subtlety",
+	  "Points": 0,
 	  "Talents": {
 		"Talent": [
 		  {

@@ -3,6 +3,7 @@
 		"Name": "Arms",
 		"Icon": "ability_rogue_eviscerate",
 		"Background": "warrior_arms",
+		"Points": 0,
 		"Talents": {
 			"Talent": [
 				{
@@ -548,6 +549,7 @@
 		"Name": "Fury",
 		"Icon": "ability_warrior_warcry",
 		"Background": "warrior_fury",
+		"Points": 0,
 		"Talents": {
 			"Talent": [
 				{
@@ -1080,6 +1082,7 @@
 		"Name": "Protection",
 		"Icon": "inv_shield_06",
 		"Background": "warrior_protection",
+		"Points": 0,
 		"Talents": {
 			"Talent": [
 				{

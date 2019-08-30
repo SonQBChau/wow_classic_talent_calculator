@@ -3,6 +3,7 @@
 	  "Name": "Discipline",
 	  "Icon": "spell_holy_wordfortitude",
 	  "Background": "priest_discipline",
+	  "Points": 0,
 	  "Talents": {
 		"Talent": [
 		  {
@@ -453,6 +454,7 @@
 	  "Name": "Holy",
 	  "Icon": "spell_holy_renew",
 	  "Background": "priest_holy",
+	  "Points": 0,
 	  "Talents": {
 		"Talent": [
 		  {
@@ -920,6 +922,7 @@
 	  "Name": "Shadow",
 	  "Icon": "spell_shadow_shadowwordpain",
 	  "Background": "priest_shadow",
+	  "Points": 0,
 	  "Talents": {
 		"Talent": [
 		  {

@@ -17,6 +17,7 @@ class TalentTree {
   String name;
   String icon;
   String background;
+  int points;
   Talents talents;
 
   TalentTree({this.name, this.icon, this.background, this.talents});
@@ -24,6 +25,7 @@ class TalentTree {
   TalentTree.fromJson(Map<String, dynamic> json) {
     name = json['Name'];
     icon = json['Icon'];
+    points = json['Points'];
     background = json['Background'];
     talents =
         json['Talents'] != null ? new Talents.fromJson(json['Talents']) : null;

@@ -2,6 +2,7 @@
     "Name": "Affliction",
     "Icon": "spell_shadow_requiem",
     "Background": "warlock_affliction",
+    "Points": 0,
     "Talents": {
         "Talent": [{
                 "Icon": "Spell_Shadow_UnsummonBuilding",
@@ -423,6 +424,7 @@
     "Name": "Demonology",
     "Icon": "spell_shadow_metamorphosis",
     "Background": "warlock_demonology",
+    "Points": 0,
     "Talents": {
         "Talent": [{
                 "Icon": "INV_Stone_04",
@@ -857,6 +859,7 @@
     "Name": "Destruction",
     "Icon": "spell_fire_fireball",
     "Background": "warlock_destruction",
+    "Points": 0,
     "Talents": {
         "Talent": [{
                 "Icon": "Spell_Shadow_ShadowBolt",

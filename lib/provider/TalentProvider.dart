@@ -3,12 +3,15 @@ import 'package:wow_classic_talent_calculator/model/talent.dart';
 import 'package:wow_classic_talent_calculator/utils/constants.dart';
 
 class TalentProvider extends ChangeNotifier {
-  int _firstTalentTreePoints = 0;
-  int _secondTalentTreePoints = 0;
-  int _thirdTalentTreePoints = 0;
-  TalentTrees specTreeList;
+  int _firstTalentTreePoints;
+  int _secondTalentTreePoints;
+  int _thirdTalentTreePoints;
+  TalentTrees talentTrees;
 
-  TalentProvider(this.specTreeList);
+  TalentProvider(this.talentTrees)
+      : _firstTalentTreePoints = talentTrees.specTrees[0].points,
+        _secondTalentTreePoints = talentTrees.specTrees[1].points,
+        _thirdTalentTreePoints = talentTrees.specTrees[2].points;
 
   getTotalTalentPoints() =>
       9 +
@@ -17,22 +20,22 @@ class TalentProvider extends ChangeNotifier {
       _thirdTalentTreePoints;
 
   getTalentTreePoints(String talentTreeName) {
-    if (talentTreeName == specTreeList.specTrees[0].name) {
+    if (talentTreeName == talentTrees.specTrees[0].name) {
       return _firstTalentTreePoints;
-    } else if (talentTreeName == specTreeList.specTrees[1].name) {
+    } else if (talentTreeName == talentTrees.specTrees[1].name) {
       return _secondTalentTreePoints;
     }
-    if (talentTreeName == specTreeList.specTrees[2].name) {
+    if (talentTreeName == talentTrees.specTrees[2].name) {
       return _thirdTalentTreePoints;
     }
   }
 
   void increaseTreePoints(String talentTreeName) {
-    if (talentTreeName == specTreeList.specTrees[0].name) {
+    if (talentTreeName == talentTrees.specTrees[0].name) {
       _firstTalentTreePoints++;
-    } else if (talentTreeName == specTreeList.specTrees[1].name) {
+    } else if (talentTreeName == talentTrees.specTrees[1].name) {
       _secondTalentTreePoints++;
-    } else if (talentTreeName == specTreeList.specTrees[2].name) {
+    } else if (talentTreeName == talentTrees.specTrees[2].name) {
       _thirdTalentTreePoints++;
     }
 
@@ -40,11 +43,11 @@ class TalentProvider extends ChangeNotifier {
   }
 
   void decreaseTreePoints(String talentTree) {
-    if (talentTree == specTreeList.specTrees[0].name) {
+    if (talentTree == talentTrees.specTrees[0].name) {
       _firstTalentTreePoints--;
-    } else if (talentTree == specTreeList.specTrees[1].name) {
+    } else if (talentTree == talentTrees.specTrees[1].name) {
       _secondTalentTreePoints--;
-    } else if (talentTree == specTreeList.specTrees[2].name) {
+    } else if (talentTree == talentTrees.specTrees[2].name) {
       _thirdTalentTreePoints--;
     }
     notifyListeners();
@@ -67,7 +70,7 @@ class TalentProvider extends ChangeNotifier {
   }
 
   void updateTalentTree() {
-    List<TalentTree> specTrees = specTreeList.specTrees;
+    List<TalentTree> specTrees = talentTrees.specTrees;
     for (int i = 0; i < specTrees.length; i++) {
       String specTreeName = specTrees[i].name;
       List<Talent> talents = specTrees[i].talents.talent;
@@ -98,9 +101,9 @@ class TalentProvider extends ChangeNotifier {
     }
   }
 
-  /// return the talent by name
+  /// return the talent tree by name
   List<Talent> findTalentTreeByName(String name) {
-    List<TalentTree> specTrees = specTreeList.specTrees;
+    List<TalentTree> specTrees = talentTrees.specTrees;
     List<Talent> talentTree = [];
     for (int i = 0; i < specTrees.length; i++) {
       if (specTrees[i].name == name) {
@@ -113,7 +116,7 @@ class TalentProvider extends ChangeNotifier {
 
   /// return the talent by name
   Talent findTalentByName(String name) {
-    List<TalentTree> specTrees = specTreeList.specTrees;
+    List<TalentTree> specTrees = talentTrees.specTrees;
     for (int i = 0; i < specTrees.length; i++) {
       List<Talent> talents = specTrees[i].talents.talent;
       for (int j = 0; j < talents.length; j++) {
@@ -128,7 +131,7 @@ class TalentProvider extends ChangeNotifier {
   /// find highest tier spell checked
   Talent findHighestTierSpell(String specTreeName) {
     Talent highestTierSpell;
-    List<TalentTree> specTrees = specTreeList.specTrees;
+    List<TalentTree> specTrees = talentTrees.specTrees;
     for (int i = 0; i < specTrees.length; i++) {
       if (specTrees[i].name == specTreeName) {
         List<Talent> talents = specTrees[i].talents.talent;

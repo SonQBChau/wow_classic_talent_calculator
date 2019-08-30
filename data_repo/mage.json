@@ -3,6 +3,7 @@
 	  "Name": "Arcane",
 	  "Icon": "spell_nature_starfall",
 	  "Background": "mage_arcane",
+	  "Points": 0,
 	  "Talents": {
 		"Talent": [
 		  {
@@ -466,6 +467,7 @@
 	  "Name": "Fire",
 	  "Icon": "spell_fire_flamebolt",
 	  "Background": "mage_fire",
+	  "Points": 0,
 	  "Talents": {
 		"Talent": [
 		  {
@@ -925,6 +927,7 @@
 	  "Name": "Frost",
 	  "Icon": "spell_frost_frostbolt02",
 	  "Background": "mage_frost",
+	  "Points": 0,
 	  "Talents": {
 		"Talent": [
 		  {

@@ -3,6 +3,7 @@
 	  "Name": "Holy",
 	  "Icon": "spell_holy_holybolt",
 	  "Background": "paladin_holy",
+	  "Points": 0,
 	  "Talents": {
 		"Talent": [
 		  {
@@ -424,6 +425,7 @@
 	  "Name": "Protection",
 	  "Icon": "spell_holy_devotionaura",
 	  "Background": "paladin_protection",
+	  "Points": 0,
 	  "Talents": {
 		"Talent": [
 		  {
@@ -882,6 +884,7 @@
 	  "Name": "Retribution",
 	  "Icon": "spell_holy_fistofjustice",
 	  "Background": "paladin_retribution",
+	  "Points": 0,
 	  "Talents": {
 		"Talent": [
 		  {

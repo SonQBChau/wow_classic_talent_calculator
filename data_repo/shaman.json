@@ -3,6 +3,7 @@
 		"Name": "Elemental",
 		"Icon": "spell_fire_fireball",
 		"Background": "shaman_elemental",
+		"Points": 0,
 		"Talents": {
 			"Talent": [
 				{
@@ -445,6 +446,7 @@
 		"Name": "Enhancement",
 		"Icon": "spell_nature_lightningshield",
 		"Background": "shaman_enhancement",
+		"Points": 0,
 		"Talents": {
 			"Talent": [
 				{
@@ -928,6 +930,7 @@
 		"Name": "Restoration",
 		"Icon": "spell_nature_magicimmunity",
 		"Background": "shaman_restoration",
+		"Points": 0,
 		"Talents": {
 			"Talent": [
 				{

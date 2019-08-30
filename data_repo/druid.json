@@ -3,6 +3,7 @@
 		"Name": "Balance",
 		"Icon": "spell_nature_starfall",
 		"Background": "druid_balance",
+		"Points": 0,
 		"Talents": {
 			"Talent": [
 				{
@@ -487,6 +488,7 @@
 		"Name": "Feral Combat",
 		"Icon": "ability_druid_demoralizingroar",
 		"Background": "druid_feral",
+		"Points": 0,
 		"Talents": {
 			"Talent": [
 				{
@@ -946,6 +948,7 @@
 		"Name": "Restoration",
 		"Icon": "spell_nature_healingtouch",
 		"Background": "druid_restoration",
+		"Points": 0,
 		"Talents": {
 			"Talent": [
 				{

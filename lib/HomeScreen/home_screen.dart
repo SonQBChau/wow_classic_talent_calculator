@@ -1,10 +1,7 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:wow_classic_talent_calculator/ClassArrow/class_arrow_widget.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/detail_screen.dart';
 import 'package:wow_classic_talent_calculator/HomeScreen/class_widget.dart';
-import 'package:wow_classic_talent_calculator/model/talent.dart';
 import 'package:wow_classic_talent_calculator/utils/colors.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 
@@ -38,9 +35,11 @@ class HomeScreen extends StatelessWidget {
       context,
       MaterialPageRoute(
         builder: (context) => DetailScreen(
-            className: className,
-            classColor: classColor,
-            talentTrees: talentTrees),
+          className: className,
+          classColor: classColor,
+          talentTrees: talentTrees,
+          arrowTrees: getArrowClassByName(className),
+        ),
       ),
     );
   }

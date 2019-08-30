@@ -13,7 +13,6 @@ getArrowClassByName(String className) {
     case 'warlock':
       return getWarlockArrowList();
       break;
-
     case 'druid':
       return getDruidArrowList();
       break;
@@ -34,7 +33,7 @@ getArrowClassByName(String className) {
       break;
     case 'shaman':
       return getShamanArrowList();
-    break;
+      break;
     case 'warrior':
       return getWarriorArrowList();
       break;

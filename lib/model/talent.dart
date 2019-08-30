@@ -5,16 +5,6 @@ class TalentTrees {
     this.specTrees,
   });
 
-  // // TalentTrees.clone(TalentTrees talentTrees){
-  // //   return new TalentTrees(specTrees: talentTrees.specTrees);
-  // // }
-  // factory TalentTrees.clone(TalentTrees talentTrees) {
-  //   List<TalentTree> specTrees = new List<TalentTree>();
-  //   specTrees = talentTrees.specTrees;
-
-  //   return new TalentTrees(specTrees: specTrees);
-  // }
-
   factory TalentTrees.fromJson(List<dynamic> parsedJson) {
     List<TalentTree> specTrees = new List<TalentTree>();
     specTrees = parsedJson.map((i) => TalentTree.fromJson(i)).toList();

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:wow_classic_talent_calculator/HomeScreen/home_screen.dart';
+import 'package:wow_classic_talent_calculator/HomeScreen/load_home_screen.dart';
 import 'package:wow_classic_talent_calculator/IntroScreen/intro_screen.dart';
 import 'package:wow_classic_talent_calculator/utils/fade_transition.dart';
 
@@ -21,7 +22,7 @@ class WelcomeScreenState extends State<WelcomeScreen> {
     if (_seen) {
       // Navigator.of(context).pushReplacement(
       // MaterialPageRoute(builder: (context) => HomeScreen()));
-      Navigator.of(context).pushReplacement(FadeRoute(page: HomeScreen()));
+      Navigator.of(context).pushReplacement(FadeRoute(page: LoadHomeScreen()));
     } else {
       prefs.setBool('seen', true);
       // Navigator.of(context).pushReplacement(

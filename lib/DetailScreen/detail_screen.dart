@@ -14,7 +14,8 @@ import 'package:wow_classic_talent_calculator/utils/string.dart' as str;
 class DetailScreen extends StatefulWidget {
   final String className;
   final Color classColor;
-  DetailScreen({this.className, this.classColor});
+  final Future<TalentTrees> talentTrees;
+  DetailScreen({this.className, this.classColor, this.talentTrees});
 
   @override
   _DetailScreenState createState() => _DetailScreenState();
@@ -23,25 +24,25 @@ class DetailScreen extends StatefulWidget {
 class _DetailScreenState extends State<DetailScreen>
     with SingleTickerProviderStateMixin {
   TabController _tabController;
-  TalentTrees talentTrees;
   var arrowTrees;
+  // TalentTrees talentTrees;
 
-  Future<String> loadJson() async {
-    return await rootBundle.loadString('data_repo/${widget.className}.json');
-  }
+  // Future<String> loadJson() async {
+  //   return await rootBundle.loadString('data_repo/${widget.className}.json');
+  // }
 
-  ///parse json to object
-  Future<TalentTrees> loadTalent() async {
-    String jsonTalent = await loadJson();
-    final jsonResponse = json.decode(jsonTalent);
-    TalentTrees localSpecTreeList = TalentTrees.fromJson(jsonResponse);
-    return localSpecTreeList;
-  }
+  // ///parse json to object
+  // Future<TalentTrees> loadTalent() async {
+  //   String jsonTalent = await loadJson();
+  //   final jsonResponse = json.decode(jsonTalent);
+  //   TalentTrees localSpecTreeList = TalentTrees.fromJson(jsonResponse);
+  //   return localSpecTreeList;
+  // }
 
   Future _buildTalentList() async {
-    TalentTrees loadedSpecTreeList = await loadTalent();
+    // TalentTrees loadedSpecTreeList = await loadTalent();
     setState(() {
-      talentTrees = loadedSpecTreeList;
+      // talentTrees = loadedSpecTreeList;
       arrowTrees = getArrowClassByName(widget.className);
     });
   }
@@ -64,7 +65,7 @@ class _DetailScreenState extends State<DetailScreen>
     // wait for talentTrees to load
     // show CircularProgressIndicator while loading
     // else show DetailScreen content
-    return talentTrees == null
+    return widget.talentTrees == null
         ? Scaffold(
             appBar: AppBar(
               title: Text(
@@ -79,11 +80,11 @@ class _DetailScreenState extends State<DetailScreen>
             ),
             body: Center(child: CircularProgressIndicator()))
         : ChangeNotifierProvider<TalentProvider>(
-            builder: (_) => TalentProvider(talentTrees),
+            builder: (_) => TalentProvider(widget.talentTrees),
             child: DetailScreenContent(
                 className: widget.className,
                 classColor: widget.classColor,
-                talentTrees: talentTrees,
+                talentTrees: widget.talentTrees,
                 arrowTrees: arrowTrees));
   }
 }

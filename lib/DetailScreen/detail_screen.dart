@@ -14,7 +14,7 @@ import 'package:wow_classic_talent_calculator/utils/string.dart' as str;
 class DetailScreen extends StatefulWidget {
   final String className;
   final Color classColor;
-  final Future<TalentTrees> talentTrees;
+  final Future<List> talentTrees;
   DetailScreen({this.className, this.classColor, this.talentTrees});
 
   @override
@@ -62,29 +62,49 @@ class _DetailScreenState extends State<DetailScreen>
 
   @override
   Widget build(BuildContext context) {
-    // wait for talentTrees to load
-    // show CircularProgressIndicator while loading
-    // else show DetailScreen content
-    return widget.talentTrees == null
-        ? Scaffold(
-            appBar: AppBar(
-              title: Text(
-                str.capitalize(widget.className),
-                style: TextStyle(color: kColorSelectiveYellow),
-              ),
-              backgroundColor: kColorLightLicorice,
-              leading: IconButton(
-                icon: Icon(Icons.arrow_back, color: kColorSelectiveYellow),
-                onPressed: () => Navigator.of(context).pop(),
-              ),
-            ),
-            body: Center(child: CircularProgressIndicator()))
-        : ChangeNotifierProvider<TalentProvider>(
-            builder: (_) => TalentProvider(widget.talentTrees),
-            child: DetailScreenContent(
-                className: widget.className,
-                classColor: widget.classColor,
-                talentTrees: widget.talentTrees,
-                arrowTrees: arrowTrees));
+    return FutureBuilder<List>(
+      future: widget.talentTrees,
+      builder: (context, snapshot) {
+        if (snapshot.hasData) {
+          TalentTrees talentTreesObject = TalentTrees.fromJson(snapshot.data);
+          return ChangeNotifierProvider<TalentProvider>(
+              builder: (_) => TalentProvider(talentTreesObject),
+              child: DetailScreenContent(
+                  className: widget.className,
+                  classColor: widget.classColor,
+                  talentTrees: talentTreesObject,
+                  arrowTrees: arrowTrees));
+        } else if (snapshot.hasError) {
+          return Text("${snapshot.error}");
+        }
+
+        // By default, show a loading spinner.
+        return Center(child: CircularProgressIndicator());
+      },
+    );
   }
+
+  //   return widget.talentTrees == null
+  //       ? Scaffold(
+  //           appBar: AppBar(
+  //             title: Text(
+  //               str.capitalize(widget.className),
+  //               style: TextStyle(color: kColorSelectiveYellow),
+  //             ),
+  //             backgroundColor: kColorLightLicorice,
+  //             leading: IconButton(
+  //               icon: Icon(Icons.arrow_back, color: kColorSelectiveYellow),
+  //               onPressed: () => Navigator.of(context).pop(),
+  //             ),
+  //           ),
+  //           body: Center(child: CircularProgressIndicator()))
+  //       : ChangeNotifierProvider<TalentProvider>(
+  //           builder: (_) => TalentProvider(widget.talentTrees),
+  //           child: DetailScreenContent(
+  //               className: widget.className,
+  //               classColor: widget.classColor,
+  //               talentTrees: widget.talentTrees,
+  //               arrowTrees: arrowTrees));
+  // }
+
 }

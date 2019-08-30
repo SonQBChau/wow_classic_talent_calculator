@@ -10,15 +10,15 @@ import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 
 /// Main Home Page, show for normal log in
 class HomeScreen extends StatelessWidget {
-  final Future<TalentTrees> druidTalentTrees;
-  final Future<TalentTrees> hunterTalentTrees;
-  final Future<TalentTrees> mageTalentTrees;
-  final Future<TalentTrees> paladinTalentTrees;
-  final Future<TalentTrees> priestTalentTrees;
-  final Future<TalentTrees> rogueTalentTrees;
-  final Future<TalentTrees> shamanTalentTrees;
-  final Future<TalentTrees> warlockTalentTrees;
-  final Future<TalentTrees> warriorTalentTrees;
+  final Future<List> druidTalentTrees;
+  final Future<List> hunterTalentTrees;
+  final Future<List> mageTalentTrees;
+  final Future<List> paladinTalentTrees;
+  final Future<List> priestTalentTrees;
+  final Future<List> rogueTalentTrees;
+  final Future<List> shamanTalentTrees;
+  final Future<List> warlockTalentTrees;
+  final Future<List> warriorTalentTrees;
 
   HomeScreen(
       {this.druidTalentTrees,
@@ -32,8 +32,8 @@ class HomeScreen extends StatelessWidget {
       this.warriorTalentTrees});
 
   /// open class talents
-  _handleOnTap(BuildContext context, String className,
-      Future<TalentTrees> talentTrees, Color classColor) {
+  _handleOnTap(BuildContext context, String className, Future<List> talentTrees,
+      Color classColor) {
     Navigator.push(
       context,
       MaterialPageRoute(
@@ -49,8 +49,6 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     //home_screen is the first page render that can calculate screen size
     SizeConfig().init(context);
-
-    print(druidTalentTrees);
 
     return Scaffold(
         appBar: AppBar(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wow_classic_talent_calculator/ClassArrow/class_arrow_widget.dart';
+import 'package:wow_classic_talent_calculator/ArrowWidgets/class_arrow_widget.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/detail_screen.dart';
 import 'package:wow_classic_talent_calculator/HomeScreen/class_widget.dart';
 import 'package:wow_classic_talent_calculator/utils/colors.dart';

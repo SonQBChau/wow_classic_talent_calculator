@@ -12,10 +12,10 @@ class TalentTreeWidget extends StatelessWidget {
   final String talentTreeName;
   TalentTreeWidget({@required this.arrowList, this.talentTreeName});
 
-  /// contain talent list for this tree/page
-  List<Talent> talentList;
-
-  _buildTalentTree() {
+  _buildTalentTree(talentProvider) {
+    /// contain talent list for this tree/page
+    List<Talent> talentList =
+        talentProvider.findTalentTreeByName(talentTreeName);
     List<Widget> talentTree = [];
     for (int i = 0; i < talentList.length; i++) {
       Widget spell = Positioned(
@@ -33,7 +33,6 @@ class TalentTreeWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final talentProvider = Provider.of<TalentProvider>(context);
-    talentList = talentProvider.findTalentTreeByName(talentTreeName);
 
     return LayoutBuilder(
         builder: (BuildContext context, BoxConstraints viewportConstraints) {
@@ -49,7 +48,7 @@ class TalentTreeWidget extends StatelessWidget {
                       vertical: kTalentScreenPadding,
                       horizontal: kTalentScreenPadding),
                   child: Stack(children: <Widget>[
-                    ..._buildTalentTree(),
+                    ..._buildTalentTree(talentProvider),
                     ...arrowList
                   ]))));
     });

@@ -1,6 +1,4 @@
-import 'package:wow_classic_talent_calculator/ClassArrow/arrow_widget.dart';
-import 'package:wow_classic_talent_calculator/ClassArrow/right_arrow_widget.dart';
-import 'package:wow_classic_talent_calculator/ClassArrow/right_corner_arrow_widget.dart';
+import 'package:wow_classic_talent_calculator/ArrowWidgets/arrow_widget.dart';
 import 'package:wow_classic_talent_calculator/model/position.dart';
 
 getHunterArrowList() {

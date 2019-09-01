@@ -1,12 +1,12 @@
-import 'package:wow_classic_talent_calculator/ClassArrow/druid_arrow.dart';
-import 'package:wow_classic_talent_calculator/ClassArrow/hunter_arrow.dart';
-import 'package:wow_classic_talent_calculator/ClassArrow/mage_arrow.dart';
-import 'package:wow_classic_talent_calculator/ClassArrow/paladin_arrow.dart';
-import 'package:wow_classic_talent_calculator/ClassArrow/priest_arrow.dart';
-import 'package:wow_classic_talent_calculator/ClassArrow/rogue_arrow.dart';
-import 'package:wow_classic_talent_calculator/ClassArrow/shaman_arrow.dart';
-import 'package:wow_classic_talent_calculator/ClassArrow/warlock_arrow.dart';
-import 'package:wow_classic_talent_calculator/ClassArrow/warrior_arrow.dart';
+import 'package:wow_classic_talent_calculator/ArrowWidgets/druid_arrow.dart';
+import 'package:wow_classic_talent_calculator/ArrowWidgets/hunter_arrow.dart';
+import 'package:wow_classic_talent_calculator/ArrowWidgets/mage_arrow.dart';
+import 'package:wow_classic_talent_calculator/ArrowWidgets/paladin_arrow.dart';
+import 'package:wow_classic_talent_calculator/ArrowWidgets/priest_arrow.dart';
+import 'package:wow_classic_talent_calculator/ArrowWidgets/rogue_arrow.dart';
+import 'package:wow_classic_talent_calculator/ArrowWidgets/shaman_arrow.dart';
+import 'package:wow_classic_talent_calculator/ArrowWidgets/warlock_arrow.dart';
+import 'package:wow_classic_talent_calculator/ArrowWidgets/warrior_arrow.dart';
 
 getArrowClassByName(String className) {
   switch (className) {

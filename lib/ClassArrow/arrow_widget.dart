@@ -26,6 +26,13 @@ class _ArrowWidgetState extends State<ArrowWidget> {
   String arrowBodyImg = 'assets/Arrows/GreyArrowBody.png';
   String arrowHeadImg = 'assets/Arrows/GreyArrowHead.png';
   var talentProvider;
+  double arrowBodyTop;
+  double arrowBodyLeft;
+  double arrowBodyWidth;
+  double arrowBodyHeight;
+  double arrowHeadTop;
+  double arrowHeadLeft;
+  double arrowHeadWidth;
 
   setEnable() {
     Talent dependencyTalent =
@@ -43,23 +50,17 @@ class _ArrowWidgetState extends State<ArrowWidget> {
     }
   }
 
-  @override
-  Widget build(BuildContext context) {
-    final double arrowBodyTop = SizeConfig.cellSize * widget.startPosition.row -
+  void _calculatePositions() {
+    arrowBodyTop = SizeConfig.cellSize * widget.startPosition.row -
         SizeConfig.cellSize / 7;
-    final double arrowBodyLeft =
-        SizeConfig.cellSize * widget.startPosition.column -
-            SizeConfig.cellSize / 1.6;
-    final double arrowBodyWidth = kArrowWidthSize;
-    double arrowBodyHeight = 0;
-    final double arrowHeadTop =
-        SizeConfig.cellSize * (widget.endPosition.row - 1);
-    final double arrowHeadLeft =
-        SizeConfig.cellSize * widget.startPosition.column -
-            SizeConfig.cellSize / 1.6;
-    final double arrowHeadWidth = kArrowWidthSize;
-
-    talentProvider = Provider.of<TalentProvider>(context);
+    arrowBodyLeft = SizeConfig.cellSize * widget.startPosition.column -
+        SizeConfig.cellSize / 1.6;
+    arrowBodyWidth = kArrowWidthSize;
+    arrowBodyHeight = 0;
+    arrowHeadTop = SizeConfig.cellSize * (widget.endPosition.row - 1);
+    arrowHeadLeft = SizeConfig.cellSize * widget.startPosition.column -
+        SizeConfig.cellSize / 1.6;
+    arrowHeadWidth = kArrowWidthSize;
 
     if (widget.lengthType == 'long') {
       arrowBodyHeight = SizeConfig.cellSize * 2.15; //magic number
@@ -68,7 +69,17 @@ class _ArrowWidgetState extends State<ArrowWidget> {
     } else if (widget.lengthType == 'short') {
       arrowBodyHeight = SizeConfig.cellSize * 0.15; //magic number
     }
+  }
 
+  @override
+  void initState() {
+    _calculatePositions();
+    super.initState();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    talentProvider = Provider.of<TalentProvider>(context);
     // set arrow enable or disable depend on the state of talent spell
     setEnable();
 

@@ -26,7 +26,7 @@ class _SpellWidgetState extends State<SpellWidget> {
   int currentRank;
   String spellName;
   String imgLocation;
-  bool enableState = false;
+  // bool enableState = false;
 
   // show spell tooltip description on long press
   void _showDescription() {

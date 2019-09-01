@@ -74,7 +74,7 @@ class TalentProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// run update for the entire talent trees for enable or disable
+  /// run update for the entire talent trees for enable or disable spell
   void updateTalentTree() {
     List<TalentTree> specTrees = talentTrees.specTrees;
     for (int i = 0; i < specTrees.length; i++) {
@@ -86,7 +86,10 @@ class TalentProvider extends ChangeNotifier {
     }
   }
 
-  /// set talent spell enable or disable depend on condition
+  /// enable or disable spell talent depend on conditions
+  /// enable if:
+  /// have enough talent points: current talent tree points  >= required tier (e.g tier 3 requires 10 points)
+  /// if talent have dependency, check if dependency is selected
   void updateTalentEnable(Talent talent, String specTreeName) {
     final int currentPoints = getTalentTreePoints(specTreeName);
     final int tierPoints = talent.tier * 5 - 5;

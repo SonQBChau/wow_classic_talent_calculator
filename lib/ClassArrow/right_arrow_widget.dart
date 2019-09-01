@@ -26,6 +26,13 @@ class _RightArrowWidgetState extends State<RightArrowWidget> {
   String arrowBodyImg = 'assets/Arrows/GreyArrowBody.png';
   String arrowHeadImg = 'assets/Arrows/GreyArrowHead.png';
   var talentProvider;
+  double arrowBodyTop;
+  double arrowBodyLeft;
+  double arrowBodyHeight;
+  double arrowBodyWidth;
+  double arrowHeadTop;
+  double arrowHeadLeft;
+  double arrowHeadHeight;
 
   setEnable() {
     Talent dependencyTalent =
@@ -43,25 +50,31 @@ class _RightArrowWidgetState extends State<RightArrowWidget> {
     }
   }
 
-  @override
-  Widget build(BuildContext context) {
-    final double arrowBodyTop = SizeConfig.cellSize * widget.startPosition.row -
+  void _calculatePositions() {
+    arrowBodyTop = SizeConfig.cellSize * widget.startPosition.row -
         SizeConfig.cellSize / 1.6;
-    final double arrowBodyLeft =
-        SizeConfig.cellSize * widget.startPosition.column -
-            SizeConfig.cellSize / 7;
-    final double arrowBodyHeight = kArrowWidthSize;
-    double arrowBodyWidth = 0;
-    final double arrowHeadTop = SizeConfig.cellSize * widget.endPosition.row -
+    arrowBodyLeft = SizeConfig.cellSize * widget.startPosition.column -
+        SizeConfig.cellSize / 7;
+    arrowBodyHeight = kArrowWidthSize;
+    arrowBodyWidth = 0;
+    arrowHeadTop = SizeConfig.cellSize * widget.endPosition.row -
         SizeConfig.cellSize / 1.6;
-    final double arrowHeadLeft =
-        SizeConfig.cellSize * widget.startPosition.column;
-    final double arrowHeadHeight = kArrowWidthSize;
+    arrowHeadLeft = SizeConfig.cellSize * widget.startPosition.column;
+    arrowHeadHeight = kArrowWidthSize;
 
     if (widget.lengthType == 'short') {
       arrowBodyWidth = SizeConfig.cellSize * 0.15; //magic number
     }
+  }
 
+  @override
+  void initState() {
+    _calculatePositions();
+    super.initState();
+  }
+
+  @override
+  Widget build(BuildContext context) {
     talentProvider = Provider.of<TalentProvider>(context);
 
     // set arrow enable or disable depend on the state of talent spell

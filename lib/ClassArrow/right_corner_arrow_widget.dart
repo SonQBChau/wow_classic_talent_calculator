@@ -27,6 +27,19 @@ class _RightCornerArrowWidgetState extends State<RightCornerArrowWidget> {
   String arrowHeadImg = 'assets/Arrows/GreyArrowHead.png';
   String arrowCornerImg = 'assets/Arrows/GreyArrowCorner.png';
   var talentProvider;
+  double arrowBodyTop;
+  double arrowBodyLeft;
+  double arrowBodyWidth;
+  double arrowBodyHeight;
+  double arrowHeadTop;
+  double arrowHeadLeft;
+  double arrowHeadWidth;
+  double rightArrowBodyTop;
+  double rightArrowBodyLeft;
+  double rightArrowBodyHeight;
+  double rightArrowBodyWidth;
+  double arrowCornerTop;
+  double arrowCornerLeft;
 
   setEnable() {
     Talent dependencyTalent =
@@ -46,41 +59,30 @@ class _RightCornerArrowWidgetState extends State<RightCornerArrowWidget> {
     }
   }
 
-  @override
-  Widget build(BuildContext context) {
-    final double arrowBodyTop =
-        SizeConfig.cellSize * (widget.startPosition.row) -
-            SizeConfig.cellSize / 2;
-    final double arrowBodyLeft =
-        SizeConfig.cellSize * (widget.startPosition.column + 1) -
-            SizeConfig.cellSize / 1.6;
-    final double arrowBodyWidth = kArrowWidthSize;
-    double arrowBodyHeight = 0;
+  void _calculatePositions() {
+    arrowBodyTop = SizeConfig.cellSize * (widget.startPosition.row) -
+        SizeConfig.cellSize / 2;
+    arrowBodyLeft = SizeConfig.cellSize * (widget.startPosition.column + 1) -
+        SizeConfig.cellSize / 1.6;
+    arrowBodyWidth = kArrowWidthSize;
+    arrowBodyHeight = 0;
 
-    final double arrowHeadTop =
-        SizeConfig.cellSize * (widget.endPosition.row - 1);
-    final double arrowHeadLeft =
-        SizeConfig.cellSize * (widget.startPosition.column + 1) -
-            SizeConfig.cellSize / 1.6;
-    final double arrowHeadWidth = kArrowWidthSize;
-    final double rightArrowBodyTop =
-        SizeConfig.cellSize * widget.startPosition.row -
-            SizeConfig.cellSize / 1.6;
-    final double rightArrowBodyLeft =
-        SizeConfig.cellSize * widget.startPosition.column -
-            SizeConfig.cellSize / 7;
+    arrowHeadTop = SizeConfig.cellSize * (widget.endPosition.row - 1);
+    arrowHeadLeft = SizeConfig.cellSize * (widget.startPosition.column + 1) -
+        SizeConfig.cellSize / 1.6;
+    arrowHeadWidth = kArrowWidthSize;
+    rightArrowBodyTop = SizeConfig.cellSize * widget.startPosition.row -
+        SizeConfig.cellSize / 1.6;
+    rightArrowBodyLeft = SizeConfig.cellSize * widget.startPosition.column -
+        SizeConfig.cellSize / 7;
 
-    final double rightArrowBodyHeight = kArrowWidthSize;
-    final double rightArrowBodyWidth = SizeConfig.cellSize * 0.52;
+    rightArrowBodyHeight = kArrowWidthSize;
+    rightArrowBodyWidth = SizeConfig.cellSize * 0.52;
 
-    final double arrowCornerTop =
-        SizeConfig.cellSize * (widget.startPosition.row) -
-            SizeConfig.cellSize / 1.67;
-    final double arrowCornerLeft =
-        SizeConfig.cellSize * (widget.startPosition.column + 1) -
-            SizeConfig.cellSize / 1.58;
-
-    talentProvider = Provider.of<TalentProvider>(context);
+    arrowCornerTop = SizeConfig.cellSize * (widget.startPosition.row) -
+        SizeConfig.cellSize / 1.67;
+    arrowCornerLeft = SizeConfig.cellSize * (widget.startPosition.column + 1) -
+        SizeConfig.cellSize / 1.58;
 
     if (widget.lengthType == 'long') {
       arrowBodyHeight = SizeConfig.cellSize * 2.15; //magic number
@@ -89,6 +91,17 @@ class _RightCornerArrowWidgetState extends State<RightCornerArrowWidget> {
     } else if (widget.lengthType == 'short') {
       arrowBodyHeight = SizeConfig.cellSize * 0.5; //magic number
     }
+  }
+
+  @override
+  void initState() {
+    _calculatePositions();
+    super.initState();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    talentProvider = Provider.of<TalentProvider>(context);
 
     // set arrow enable or disable depend on the state of talent spell
     setEnable();

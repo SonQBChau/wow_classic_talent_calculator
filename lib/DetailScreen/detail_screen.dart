@@ -19,7 +19,7 @@ class DetailScreen extends StatelessWidget {
       future: talentTrees,
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          /// make new talent object everytime we go to detail view
+          /// make new talent object every time we go to detail view
           TalentTrees talentTreesObject = TalentTrees.fromJson(snapshot.data);
           return ChangeNotifierProvider<TalentProvider>(
               builder: (_) => TalentProvider(talentTreesObject),

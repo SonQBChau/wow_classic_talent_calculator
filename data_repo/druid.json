@@ -11,7 +11,7 @@
 					"Name": "Improved Wrath",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						0,
 						0
@@ -48,7 +48,7 @@
 					"Name": "Nature's Grasp",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Improved Nature's Grasp",
+					"Support": ["Improved Nature's Grasp"],
 					"Position": [
 						0,
 						1
@@ -69,7 +69,7 @@
 					"Name": "Improved Nature's Grasp",
 					"Points": 0,
 					"Dependency": "Nature's Grasp",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						0,
 						2
@@ -102,7 +102,7 @@
 					"Name": "Improved Entangling Roots",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						0
@@ -206,7 +206,7 @@
 					"Name": "Natural Shapeshifter",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						3
@@ -235,7 +235,7 @@
 					"Name": "Improved Thorns",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						0
@@ -264,7 +264,7 @@
 					"Name": "Omen of Clarity",
 					"Points": 0,
 					"Dependency": "Natural Weapons",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						2
@@ -283,7 +283,7 @@
 					"Name": "Nature's Reach",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						3
@@ -308,7 +308,7 @@
 					"Name": "Vengeance",
 					"Points": 0,
 					"Dependency": "Improved Moonfire",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						3,
 						1
@@ -345,7 +345,7 @@
 					"Name": "Improved Starfire",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						3,
 						2
@@ -401,7 +401,7 @@
 					"Name": "Moonglow",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						4,
 						2
@@ -430,7 +430,7 @@
 					"Name": "Moonfury",
 					"Points": 0,
 					"Dependency": "Nature's Grace",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						5,
 						1
@@ -467,7 +467,7 @@
 					"Name": "Moonkin Form",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						6,
 						1
@@ -496,7 +496,7 @@
 					"Name": "Ferocity",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						0,
 						1
@@ -533,7 +533,7 @@
 					"Name": "Feral Aggression",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						0,
 						2
@@ -570,7 +570,7 @@
 					"Name": "Feral Instinct",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						0
@@ -607,7 +607,7 @@
 					"Name": "Brutal Impact",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						1
@@ -632,7 +632,7 @@
 					"Name": "Thick Hide",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						2
@@ -669,7 +669,7 @@
 					"Name": "Feline Swiftness",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						0
@@ -694,7 +694,7 @@
 					"Name": "Feral Charge",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						1
@@ -742,7 +742,7 @@
 					"Name": "Improved Shred",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						3,
 						0
@@ -796,7 +796,7 @@
 					"Name": "Blood Frenzy",
 					"Points": 0,
 					"Dependency": "Sharpened Claws",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						3,
 						2
@@ -821,7 +821,7 @@
 					"Name": "Primal Fury",
 					"Points": 0,
 					"Dependency": "Sharpened Claws",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						3,
 						3
@@ -846,7 +846,7 @@
 					"Name": "Savage Fury",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						4,
 						0
@@ -871,7 +871,7 @@
 					"Name": "Faerie Fire (Feral)",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						4,
 						2
@@ -890,7 +890,7 @@
 					"Name": "Heart of the Wild",
 					"Points": 0,
 					"Dependency": "Predatory Strikes",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						5,
 						1
@@ -927,7 +927,7 @@
 					"Name": "Leader of the Pack",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						6,
 						1
@@ -956,7 +956,7 @@
 					"Name": "Improved Mark of the Wild",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						0,
 						1
@@ -993,7 +993,7 @@
 					"Name": "Furor",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						0,
 						2
@@ -1067,7 +1067,7 @@
 					"Name": "Nature's Focus",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						1
@@ -1104,7 +1104,7 @@
 					"Name": "Improved Enrage",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						2
@@ -1129,7 +1129,7 @@
 					"Name": "Reflection",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						1
@@ -1177,7 +1177,7 @@
 					"Name": "Subtlety",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						3
@@ -1251,7 +1251,7 @@
 					"Name": "Improved Rejuvenation",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						3,
 						3
@@ -1280,7 +1280,7 @@
 					"Name": "Nature's Swiftness",
 					"Points": 0,
 					"Dependency": "Improved Healing Touch",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						4,
 						0
@@ -1299,7 +1299,7 @@
 					"Name": "Gift of Nature",
 					"Points": 0,
 					"Dependency": "Insect Swarm",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						4,
 						2
@@ -1336,7 +1336,7 @@
 					"Name": "Improved Tranquility",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						4,
 						3
@@ -1361,7 +1361,7 @@
 					"Name": "Improved Regrowth",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						5,
 						2
@@ -1398,7 +1398,7 @@
 					"Name": "Swiftmend",
 					"Points": 0,
 					"Dependency": "Tranquil Spirit",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						6,
 						1

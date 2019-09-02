@@ -55,6 +55,7 @@ class _DetailScreenContentState extends State<DetailScreenContent>
           onPressed: () => Navigator.of(context).pop(),
         ),
         actions: <Widget>[
+          // level label
           Center(
             child: Container(
               padding: EdgeInsets.only(right: 20),
@@ -66,7 +67,24 @@ class _DetailScreenContentState extends State<DetailScreenContent>
                     color: kColorSelectiveYellow),
               ),
             ),
-          )
+          ),
+          // overflow menu
+          PopupMenuButton<int>(
+            itemBuilder: (context) => [
+              PopupMenuItem(
+                value: 1,
+                child: Text("Load"),
+              ),
+              PopupMenuItem(
+                value: 2,
+                child: Text("Save"),
+              ),
+              PopupMenuItem(
+                value: 2,
+                child: Text("Reset"),
+              ),
+            ],
+          ),
         ],
         backgroundColor: kColorLightLicorice,
         bottom: TabBar(

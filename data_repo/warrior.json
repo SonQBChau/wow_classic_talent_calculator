@@ -11,7 +11,7 @@
 					"Name": "Improved Heroic Strike",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						0,
 						0
@@ -40,7 +40,7 @@
 					"Name": "Deflection",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						0,
 						1
@@ -77,7 +77,7 @@
 					"Name": "Improved Rend",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Deep Wounds",
+					"Support": ["Deep Wounds"],
 					"Position": [
 						0,
 						2
@@ -106,7 +106,7 @@
 					"Name": "Improved Charge",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						0
@@ -131,7 +131,7 @@
 					"Name": "Tactical Mastery",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Anger Management",
+					"Support": ["Anger Management"],
 					"Position": [
 						1,
 						1
@@ -168,7 +168,7 @@
 					"Name": "Improved Thunder Clap",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						3
@@ -197,7 +197,7 @@
 					"Name": "Improved Overpower",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						0
@@ -222,7 +222,7 @@
 					"Name": "Anger Management",
 					"Points": 0,
 					"Dependency": "Tactical Mastery",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						1
@@ -241,7 +241,7 @@
 					"Name": "Deep Wounds",
 					"Points": 0,
 					"Dependency": "Improved Rend",
-					"Support": "Impale",
+					"Support": ["Impale"],
 					"Position": [
 						2,
 						2
@@ -270,7 +270,7 @@
 					"Name": "Two-Handed Weapon Specialization",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						3,
 						1
@@ -307,7 +307,7 @@
 					"Name": "Impale",
 					"Points": 0,
 					"Dependency": "Deep Wounds",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						3,
 						2
@@ -332,7 +332,7 @@
 					"Name": "Axe Specialization",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						4,
 						0
@@ -369,7 +369,7 @@
 					"Name": "Sweeping Strikes",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Mortal Strike",
+					"Support": ["Mortal Strike"],
 					"Position": [
 						4,
 						1
@@ -388,7 +388,7 @@
 					"Name": "Mace Specialization",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						4,
 						2
@@ -425,7 +425,7 @@
 					"Name": "Sword Specialization",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						4,
 						3
@@ -462,7 +462,7 @@
 					"Name": "Polearm Specialization",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						5,
 						0
@@ -499,7 +499,7 @@
 					"Name": "Improved Hamstring",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						5,
 						2
@@ -528,7 +528,7 @@
 					"Name": "Mortal Strike",
 					"Points": 0,
 					"Dependency": "Sweeping Strikes",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						6,
 						1
@@ -557,7 +557,7 @@
 					"Name": "Booming Voice",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						0,
 						1
@@ -594,7 +594,7 @@
 					"Name": "Cruelty",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						0,
 						2
@@ -631,7 +631,7 @@
 					"Name": "Improved Demoralizing Shout",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						1
@@ -668,7 +668,7 @@
 					"Name": "Unbridled Wrath",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						2
@@ -705,7 +705,7 @@
 					"Name": "Improved Cleave",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						0
@@ -734,7 +734,7 @@
 					"Name": "Piercing Howl",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						1
@@ -753,7 +753,7 @@
 					"Name": "Blood Craze",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						2
@@ -782,7 +782,7 @@
 					"Name": "Improved Battle Shout",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						3
@@ -819,7 +819,7 @@
 					"Name": "Dual Wield Specialization",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						3,
 						0
@@ -856,7 +856,7 @@
 					"Name": "Improved Execute",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						3,
 						1
@@ -881,7 +881,7 @@
 					"Name": "Enrage",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Flurry",
+					"Support": ["Flurry"],
 					"Position": [
 						3,
 						2
@@ -918,7 +918,7 @@
 					"Name": "Improved Slam",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						4,
 						0
@@ -955,7 +955,7 @@
 					"Name": "Death Wish",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Bloodthirst",
+					"Support": ["Bloodthirst"],
 					"Position": [
 						4,
 						1
@@ -974,7 +974,7 @@
 					"Name": "Improved Intercept",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						4,
 						3
@@ -999,7 +999,7 @@
 					"Name": "Improved Berserker Rage",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						5,
 						0
@@ -1024,7 +1024,7 @@
 					"Name": "Flurry",
 					"Points": 0,
 					"Dependency": "Enrage",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						5,
 						2
@@ -1061,7 +1061,7 @@
 					"Name": "Bloodthirst",
 					"Points": 0,
 					"Dependency": "Death Wish",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						6,
 						1
@@ -1090,7 +1090,7 @@
 					"Name": "Shield Specialization",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Improved Shield Block",
+					"Support": ["Improved Shield Block"],
 					"Position": [
 						0,
 						1
@@ -1127,7 +1127,7 @@
 					"Name": "Anticipation",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						0,
 						2
@@ -1164,7 +1164,7 @@
 					"Name": "Improved Bloodrage",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Last Stand",
+					"Support": ["Last Stand"],
 					"Position": [
 						1,
 						0
@@ -1189,7 +1189,7 @@
 					"Name": "Toughness",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						2
@@ -1226,7 +1226,7 @@
 					"Name": "Iron Will",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						3
@@ -1263,7 +1263,7 @@
 					"Name": "Last Stand",
 					"Points": 0,
 					"Dependency": "Improved Bloodrage",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						0
@@ -1282,7 +1282,7 @@
 					"Name": "Improved Shield Block",
 					"Points": 0,
 					"Dependency": "Shield Specialization",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						1
@@ -1311,7 +1311,7 @@
 					"Name": "Improved Revenge",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						2
@@ -1340,7 +1340,7 @@
 					"Name": "Defiance",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						3
@@ -1377,7 +1377,7 @@
 					"Name": "Improved Sunder Armor",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						3,
 						0
@@ -1406,7 +1406,7 @@
 					"Name": "Improved Disarm",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						3,
 						1
@@ -1435,7 +1435,7 @@
 					"Name": "Improved Taunt",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						3,
 						2
@@ -1460,7 +1460,7 @@
 					"Name": "Improved Shield Wall",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						4,
 						0
@@ -1485,7 +1485,7 @@
 					"Name": "Concussion Blow",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Shield Slamm",
+					"Support": ["Shield Slamm"],
 					"Position": [
 						4,
 						1
@@ -1504,7 +1504,7 @@
 					"Name": "Improved Shield Bash",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						4,
 						2
@@ -1529,7 +1529,7 @@
 					"Name": "One-Handed Weapon Specialization",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						5,
 						2
@@ -1566,7 +1566,7 @@
 					"Name": "Shield Slam",
 					"Points": 0,
 					"Dependency": "Concussion Blow",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						6,
 						1

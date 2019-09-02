@@ -11,7 +11,7 @@
 			"Name": "Improved Eviscerate",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  0,
 			  0
@@ -40,7 +40,7 @@
 			"Name": "Remorseless Attacks",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  0,
 			  1
@@ -65,7 +65,7 @@
 			"Name": "Malice",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "Lethality",
+			"Support": ["Lethality"],
 			"Position": [
 			  0,
 			  2
@@ -102,7 +102,7 @@
 			"Name": "Ruthlessness",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  1,
 			  0
@@ -131,7 +131,7 @@
 			"Name": "Murder",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  1,
 			  1
@@ -156,7 +156,7 @@
 			"Name": "Improved Slice and Dice",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  1,
 			  3
@@ -185,7 +185,7 @@
 			"Name": "Relentless Strikes",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  2,
 			  0
@@ -204,7 +204,7 @@
 			"Name": "Improved Expose Armor",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  2,
 			  1
@@ -229,7 +229,7 @@
 			"Name": "Lethality",
 			"Points": 0,
 			"Dependency": "Malice",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  2,
 			  2
@@ -266,7 +266,7 @@
 			"Name": "Vile Poisons",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  3,
 			  1
@@ -303,7 +303,7 @@
 			"Name": "Improved Poisons",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  3,
 			  2
@@ -340,7 +340,7 @@
 			"Name": "Cold Blood",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "Seal Fate",
+			"Support": ["Seal Fate"],
 			"Position": [
 			  4,
 			  1
@@ -359,7 +359,7 @@
 			"Name": "Improved Kidney Shot",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  4,
 			  2
@@ -388,7 +388,7 @@
 			"Name": "Seal Fate",
 			"Points": 0,
 			"Dependency": "Cold Blood",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  5,
 			  1
@@ -425,7 +425,7 @@
 			"Name": "Vigor",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  6,
 			  1
@@ -454,7 +454,7 @@
 			"Name": "Improved Gouge",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  0,
 			  0
@@ -483,7 +483,7 @@
 			"Name": "Improved Sinister Strike",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  0,
 			  1
@@ -508,7 +508,7 @@
 			"Name": "Lightning Reflexes",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  0,
 			  2
@@ -545,7 +545,7 @@
 			"Name": "Improved Backstab",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  1,
 			  0
@@ -574,7 +574,7 @@
 			"Name": "Deflection",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "Riposte",
+			"Support": ["Riposte"],
 			"Position": [
 			  1,
 			  1
@@ -611,7 +611,7 @@
 			"Name": "Precision",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "Dual Wield Specialization",
+			"Support": ["Dual Wield Specialization"],
 			"Position": [
 			  1,
 			  2
@@ -648,7 +648,7 @@
 			"Name": "Endurance",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  2,
 			  0
@@ -673,7 +673,7 @@
 			"Name": "Riposte",
 			"Points": 0,
 			"Dependency": "Deflection",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  2,
 			  1
@@ -692,7 +692,7 @@
 			"Name": "Improved Sprint",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  2,
 			  3
@@ -717,7 +717,7 @@
 			"Name": "Improved Kick",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  3,
 			  0
@@ -742,7 +742,7 @@
 			"Name": "Dagger Specialization",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  3,
 			  1
@@ -779,7 +779,7 @@
 			"Name": "Dual Wield Specialization",
 			"Points": 0,
 			"Dependency": "Precision",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  3,
 			  2
@@ -816,7 +816,7 @@
 			"Name": "Mace Specialization",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  4,
 			  0
@@ -853,7 +853,7 @@
 			"Name": "Blade Flurry",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "Weapon Expertise",
+			"Support": ["Weapon Expertise"],
 			"Position": [
 			  4,
 			  1
@@ -872,7 +872,7 @@
 			"Name": "Sword Specialization",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  4,
 			  2
@@ -909,7 +909,7 @@
 			"Name": "Fist Weapon Specialization",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  4,
 			  3
@@ -946,7 +946,7 @@
 			"Name": "Weapon Expertise",
 			"Points": 0,
 			"Dependency": "Blade Flurry",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  5,
 			  1
@@ -971,7 +971,7 @@
 			"Name": "Aggression",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  5,
 			  2
@@ -1000,7 +1000,7 @@
 			"Name": "Adrenaline Rush",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  6,
 			  1
@@ -1029,7 +1029,7 @@
 			"Name": "Master of Deception",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  0,
 			  1
@@ -1066,7 +1066,7 @@
 			"Name": "Opportunity",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  0,
 			  2
@@ -1103,7 +1103,7 @@
 			"Name": "Sleight of Hand",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  1,
 			  0
@@ -1128,7 +1128,7 @@
 			"Name": "Elusiveness",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  1,
 			  1
@@ -1153,7 +1153,7 @@
 			"Name": "Camouflage",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  1,
 			  2
@@ -1190,7 +1190,7 @@
 			"Name": "Initiative",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  2,
 			  0
@@ -1219,7 +1219,7 @@
 			"Name": "Ghostly Strike",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  2,
 			  1
@@ -1238,7 +1238,7 @@
 			"Name": "Improved Ambush",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  2,
 			  2
@@ -1267,7 +1267,7 @@
 			"Name": "Setup",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  3,
 			  0
@@ -1296,7 +1296,7 @@
 			"Name": "Improved Sap",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  3,
 			  1
@@ -1325,7 +1325,7 @@
 			"Name": "Serrated Blades",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "Hemorrhage",
+			"Support": ["Hemorrhage"],
 			"Position": [
 			  3,
 			  2
@@ -1354,7 +1354,7 @@
 			"Name": "Heightened Senses",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  4,
 			  0
@@ -1379,7 +1379,7 @@
 			"Name": "Preparation",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "Premeditation",
+			"Support": ["Premeditation"],
 			"Position": [
 			  4,
 			  1
@@ -1398,7 +1398,7 @@
 			"Name": "Dirty Deeds",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  4,
 			  2
@@ -1423,7 +1423,7 @@
 			"Name": "Hemorrhage",
 			"Points": 0,
 			"Dependency": "Serrated Blades",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  4,
 			  3
@@ -1442,7 +1442,7 @@
 			"Name": "Deadliness",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  5,
 			  2
@@ -1479,7 +1479,7 @@
 			"Name": "Premeditation",
 			"Points": 0,
 			"Dependency": "Preparation",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  6,
 			  1

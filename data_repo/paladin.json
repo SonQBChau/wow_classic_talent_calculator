@@ -11,7 +11,7 @@
 			"Name": "Divine Strength",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  0,
 			  1
@@ -48,7 +48,7 @@
 			"Name": "Divine Intellect",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  0,
 			  2
@@ -85,7 +85,7 @@
 			"Name": "Spiritual Focus",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  1,
 			  1
@@ -122,7 +122,7 @@
 			"Name": "Improved Seal of Righteousness",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  1,
 			  2
@@ -159,7 +159,7 @@
 			"Name": "Healing Light",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  2,
 			  0
@@ -188,7 +188,7 @@
 			"Name": "Consecration",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  2,
 			  1
@@ -207,7 +207,7 @@
 			"Name": "Improved Lay on Hands",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  2,
 			  2
@@ -232,7 +232,7 @@
 			"Name": "Unyielding Faith",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  2,
 			  3
@@ -257,7 +257,7 @@
 			"Name": "Illumination",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "Divine Favor",
+			"Support": ["Divine Favor"],
 			"Position": [
 			  3,
 			  1
@@ -294,7 +294,7 @@
 			"Name": "Improved Blessing of Wisdom",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  3,
 			  2
@@ -319,7 +319,7 @@
 			"Name": "Divine Favor",
 			"Points": 0,
 			"Dependency": "Illumination",
-			"Support": "Holy Shock",
+			"Support": ["Holy Shock"],
 			"Position": [
 			  4,
 			  1
@@ -338,7 +338,7 @@
 			"Name": "Lasting Judgement",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  4,
 			  2
@@ -367,7 +367,7 @@
 			"Name": "Holy Power",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  5,
 			  2
@@ -404,7 +404,7 @@
 			"Name": "Holy Shock",
 			"Points": 0,
 			"Dependency": "Divine Favor",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  6,
 			  1
@@ -433,7 +433,7 @@
 			"Name": "Improved Devotion Aura",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  0,
 			  1
@@ -470,7 +470,7 @@
 			"Name": "Redoubt",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "Shield Specialization",
+			"Support": ["Shield Specialization"],
 			"Position": [
 			  0,
 			  2
@@ -507,7 +507,7 @@
 			"Name": "Precision",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  1,
 			  0
@@ -536,7 +536,7 @@
 			"Name": "Guardian's Favor",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  1,
 			  1
@@ -561,7 +561,7 @@
 			"Name": "Toughness",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  1,
 			  3
@@ -598,7 +598,7 @@
 			"Name": "Blessing of Kings",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  2,
 			  0
@@ -617,7 +617,7 @@
 			"Name": "Improved Righteous Fury",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  2,
 			  1
@@ -646,7 +646,7 @@
 			"Name": "Shield Specialization",
 			"Points": 0,
 			"Dependency": "Redoubt",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  2,
 			  2
@@ -675,7 +675,7 @@
 			"Name": "Anticipation",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  2,
 			  3
@@ -712,7 +712,7 @@
 			"Name": "Improved Hammer of Justice",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  3,
 			  1
@@ -741,7 +741,7 @@
 			"Name": "Improved Concentration Aura",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  3,
 			  2
@@ -770,7 +770,7 @@
 			"Name": "Blessing of Sanctuary",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "Holy Shield",
+			"Support": ["Holy Shield"],
 			"Position": [
 			  4,
 			  1
@@ -789,7 +789,7 @@
 			"Name": "Reckoning",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  4,
 			  2
@@ -826,7 +826,7 @@
 			"Name": "One-Handed Weapon Specialization",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  5,
 			  2
@@ -863,7 +863,7 @@
 			"Name": "Holy Shield",
 			"Points": 0,
 			"Dependency": "Blessing of Sanctuary",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  6,
 			  1
@@ -892,7 +892,7 @@
 			"Name": "Improved Blessing of Might",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  0,
 			  1
@@ -929,7 +929,7 @@
 			"Name": "Benediction",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  0,
 			  2
@@ -966,7 +966,7 @@
 			"Name": "Improved Judgement",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  1,
 			  0
@@ -991,7 +991,7 @@
 			"Name": "Improved Seal of the Crusader",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  1,
 			  1
@@ -1020,7 +1020,7 @@
 			"Name": "Deflection",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  1,
 			  2
@@ -1057,7 +1057,7 @@
 			"Name": "Vindication",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  2,
 			  0
@@ -1086,7 +1086,7 @@
 			"Name": "Conviction",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "Vengeance",
+			"Support": ["Vengeance"],
 			"Position": [
 			  2,
 			  1
@@ -1123,7 +1123,7 @@
 			"Name": "Seal of Command",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  2,
 			  2
@@ -1142,7 +1142,7 @@
 			"Name": "Pursuit of Justice",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  2,
 			  3
@@ -1167,7 +1167,7 @@
 			"Name": "Eye for an Eye",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  3,
 			  0
@@ -1192,7 +1192,7 @@
 			"Name": "Improved Retribution Aura",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  3,
 			  2
@@ -1217,7 +1217,7 @@
 			"Name": "Two-Handed Weapon Specialization",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  4,
 			  0
@@ -1246,7 +1246,7 @@
 			"Name": "Sanctity Aura",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  4,
 			  2
@@ -1265,7 +1265,7 @@
 			"Name": "Vengeance",
 			"Points": 0,
 			"Dependency": "Conviction",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  5,
 			  1
@@ -1302,7 +1302,7 @@
 			"Name": "Repentance",
 			"Points": 0,
 			"Dependency": "",
-			"Support": "",
+			"Support": [],
 			"Position": [
 			  6,
 			  1

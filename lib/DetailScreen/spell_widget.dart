@@ -51,10 +51,10 @@ class _SpellWidgetState extends State<SpellWidget> {
   }
 
   bool _checkSpellCanDecrease() {
-    // rules: can decrease if
+    // rules if can decrease:
     // 1. currentRank > 0
     // 2. has no talent dependency
-    // 3. retain enough points for higher tier spell if it is checked
+    // 3. retain enough points for higher tier spell
 
     // 1. if currentRank is 0, then cannot decrease
     if (currentRank <= 0) {
@@ -69,6 +69,7 @@ class _SpellWidgetState extends State<SpellWidget> {
       }
     }
 
+    // for decrease middle tree spell, we need to:
     // check widget talent spell tier,
     // then check total points in that tier
     // if have enough points, let decrease
@@ -85,19 +86,17 @@ class _SpellWidgetState extends State<SpellWidget> {
         return false;
       }
       // check for highest required points
-      int requiredNextTopTierPoints = (highestTier -1) * 5;
+      int requiredNextTopTierPoints = (highestTier - 1) * 5;
       int nextTopTierPoints = talentProvider.findTierSum(highestTier - 1, widget.talentTreeName);
       if (requiredNextTopTierPoints >= nextTopTierPoints) {
         return false;
       }
-
     }
 
     return true;
   }
 
   void _decreaseRank() {
-
     if (_checkSpellCanDecrease()) {
       talentProvider.decreaseTalentPoints(widget.talent, currentRank, widget.talentTreeName);
     } // else show toast to let user know cannot decrease

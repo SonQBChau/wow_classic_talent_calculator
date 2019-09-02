@@ -11,7 +11,7 @@
 					"Name": "Convection",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						0,
 						1
@@ -48,7 +48,7 @@
 					"Name": "Concussion",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						0,
 						2
@@ -85,7 +85,7 @@
 					"Name": "Earth's Grasp",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						0
@@ -110,7 +110,7 @@
 					"Name": "Elemental Warding",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						1
@@ -139,7 +139,7 @@
 					"Name": "Call of Flame",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						2
@@ -168,7 +168,7 @@
 					"Name": "Elemental Focus",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						0
@@ -187,7 +187,7 @@
 					"Name": "Reverberation",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						1
@@ -224,7 +224,7 @@
 					"Name": "Call of Thunder",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Lightning Mastery",
+					"Support": ["Lightning Mastery"],
 					"Position": [
 						2,
 						2
@@ -261,7 +261,7 @@
 					"Name": "Improved Fire Totems",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						3,
 						0
@@ -286,7 +286,7 @@
 					"Name": "Eye of the Storm",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						3,
 						1
@@ -315,7 +315,7 @@
 					"Name": "Elemental Devastation",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						3,
 						3
@@ -344,7 +344,7 @@
 					"Name": "Storm Reach",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						4,
 						0
@@ -369,7 +369,7 @@
 					"Name": "Elemental Fury",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Elemental Mastery",
+					"Support": ["Elemental Mastery"],
 					"Position": [
 						4,
 						1
@@ -388,7 +388,7 @@
 					"Name": "Lightning Mastery",
 					"Points": 0,
 					"Dependency": "Call of Thunder",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						5,
 						2
@@ -425,7 +425,7 @@
 					"Name": "Elemental Mastery",
 					"Points": 0,
 					"Dependency": "Elemental Fury",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						6,
 						1
@@ -454,7 +454,7 @@
 					"Name": "Ancestral Knowledge",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						0,
 						1
@@ -491,7 +491,7 @@
 					"Name": "Shield Specialization",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						0,
 						2
@@ -528,7 +528,7 @@
 					"Name": "Guardian Totems",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						0
@@ -553,7 +553,7 @@
 					"Name": "Thundering Strikes",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Flurry",
+					"Support": ["Flurry"],
 					"Position": [
 						1,
 						1
@@ -590,7 +590,7 @@
 					"Name": "Improved Ghost Wolf",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						2
@@ -615,7 +615,7 @@
 					"Name": "Improved Lightning Shield",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						3
@@ -644,7 +644,7 @@
 					"Name": "Enhancing Totems",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						0
@@ -669,7 +669,7 @@
 					"Name": "Two-Handed Axes and Maces",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						2
@@ -688,7 +688,7 @@
 					"Name": "Anticipation",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						3
@@ -725,7 +725,7 @@
 					"Name": "Flurry",
 					"Points": 0,
 					"Dependency": "Thundering Strikes",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						3,
 						1
@@ -762,7 +762,7 @@
 					"Name": "Toughness",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						3,
 						2
@@ -799,7 +799,7 @@
 					"Name": "Improved Weapon Totems",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						4,
 						0
@@ -824,7 +824,7 @@
 					"Name": "Elemental Weapons",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Stormstrike",
+					"Support": ["Stormstrike"],
 					"Position": [
 						4,
 						1
@@ -853,7 +853,7 @@
 					"Name": "Parry",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						4,
 						2
@@ -872,7 +872,7 @@
 					"Name": "Weapon Mastery",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						5,
 						2
@@ -909,7 +909,7 @@
 					"Name": "Stormstrike",
 					"Points": 0,
 					"Dependency": "Elemental Weapons",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						6,
 						1
@@ -938,7 +938,7 @@
 					"Name": "Improved Healing Wave",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						0,
 						1
@@ -975,7 +975,7 @@
 					"Name": "Tidal Focus",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						0,
 						2
@@ -1012,7 +1012,7 @@
 					"Name": "Improved Reincarnation",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						0
@@ -1037,7 +1037,7 @@
 					"Name": "Ancestral Healing",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						1
@@ -1066,7 +1066,7 @@
 					"Name": "Totemic Focus",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						1,
 						2
@@ -1103,7 +1103,7 @@
 					"Name": "Nature's Guidance",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						0
@@ -1132,7 +1132,7 @@
 					"Name": "Healing Focus",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						1
@@ -1169,7 +1169,7 @@
 					"Name": "Totemic Mastery",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						2
@@ -1188,7 +1188,7 @@
 					"Name": "Healing Grace",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						2,
 						3
@@ -1217,7 +1217,7 @@
 					"Name": "Restorative Totems",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Mana Tide Totem",
+					"Support": ["Mana Tide Totem"],
 					"Position": [
 						3,
 						1
@@ -1254,7 +1254,7 @@
 					"Name": "Tidal Mastery",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						3,
 						2
@@ -1291,7 +1291,7 @@
 					"Name": "Healing Way",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						4,
 						0
@@ -1320,7 +1320,7 @@
 					"Name": "Nature's Swiftness",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						4,
 						2
@@ -1339,7 +1339,7 @@
 					"Name": "Purification",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						5,
 						2
@@ -1376,7 +1376,7 @@
 					"Name": "Mana Tide Totem",
 					"Points": 0,
 					"Dependency": "Restorative Totems",
-					"Support": "",
+					"Support": [],
 					"Position": [
 						6,
 						1

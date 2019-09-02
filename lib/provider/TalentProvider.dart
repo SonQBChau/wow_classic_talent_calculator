@@ -86,6 +86,13 @@ class TalentProvider extends ChangeNotifier {
     }
   }
 
+//  /// lock state: cannot decrease
+//  /// unlock state: can decrease
+//  void updateTalentLock(Talent talent, String specTreeName){
+//    final int tierPoints = talent.tier * 5;
+//    findTierSum()
+//  }
+
   /// enable or disable spell talent depend on conditions
   /// enable if:
   /// have enough talent points: current talent tree points  >= required tier (e.g tier 3 requires 10 points)
@@ -139,7 +146,7 @@ class TalentProvider extends ChangeNotifier {
     return null;
   }
 
-  /// find highest tier spell checked in curent tree spec
+  /// find highest tier spell checked in current tree spec
   Talent findHighestTierSpell(String specTreeName) {
     Talent highestTierSpell;
     List<TalentTree> specTrees = talentTrees.specTrees;
@@ -160,4 +167,25 @@ class TalentProvider extends ChangeNotifier {
     }
     return highestTierSpell;
   }
+
+  /// find all points up to the current tier
+  int findTierSum(int currentTier, String specTreeName) {
+    int totalPoints = 0;
+    List<TalentTree> specTrees = talentTrees.specTrees;
+    for (int i = 0; i < specTrees.length; i++) {
+      if (specTrees[i].name == specTreeName) {
+        List<Talent> talents = specTrees[i].talents.talent;
+        for (int j = 0; j < talents.length; j++) {
+          if (talents[j].tier <= currentTier) {
+            totalPoints += talents[j].points;
+          }
+        }
+        break;
+      }
+    }
+    return totalPoints;
+  }
+
+  // lock spell or not
+
 }

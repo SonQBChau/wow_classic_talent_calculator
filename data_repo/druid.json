@@ -132,7 +132,7 @@
 					"Name": "Improved Moonfire",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Vengeance",
+					"Support": ["Vengeance"],
 					"Position": [
 						1,
 						1
@@ -169,7 +169,7 @@
 					"Name": "Natural Weapons",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Omen of Clarity",
+					"Support": ["Omen of Clarity"],
 					"Position": [
 						1,
 						2
@@ -382,7 +382,7 @@
 					"Name": "Nature's Grace",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Moonfury",
+					"Support": ["Moonfury"],
 					"Position": [
 						4,
 						1
@@ -713,7 +713,7 @@
 					"Name": "Sharpened Claws",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Blood Frenzy AND Primal Fury",
+					"Support": ["Blood Frenzy","Primal Fury"],
 					"Position": [
 						2,
 						2
@@ -767,7 +767,7 @@
 					"Name": "Predatory Strikes",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Heart of the Wild",
+					"Support": ["Heart of the Wild"],
 					"Position": [
 						3,
 						1
@@ -1030,7 +1030,7 @@
 					"Name": "Improved Healing Touch",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Nature's Swiftness",
+					"Support": ["Nature's Swiftness"],
 					"Position": [
 						1,
 						0
@@ -1158,7 +1158,7 @@
 					"Name": "Insect Swarm",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Gift of Nature",
+					"Support": ["Gift of Nature"],
 					"Position": [
 						2,
 						2
@@ -1214,7 +1214,7 @@
 					"Name": "Tranquil Spirit",
 					"Points": 0,
 					"Dependency": "",
-					"Support": "Swiftmend",
+					"Support": ["Swiftmend"],
 					"Position": [
 						3,
 						1

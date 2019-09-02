@@ -46,74 +46,61 @@ class _SpellWidgetState extends State<SpellWidget> {
   // onTap, increase spell rank if it's not max and not over 60
   void _increaseRank() {
     if (currentRank < maxRank && talentProvider.getTotalTalentPoints() < 60) {
-      talentProvider.increaseTalentPoints(
-          widget.talent, currentRank, widget.talentTreeName);
+      talentProvider.increaseTalentPoints(widget.talent, currentRank, widget.talentTreeName);
     }
   }
 
-  void _decreaseRank() {
+  bool _checkSpellCanDecrease() {
     // rules: can decrease if
     // 1. currentRank > 0
     // 2. has no talent dependency
     // 3. retain enough points for higher tier spell if it is checked
 
-    bool canDecrease = true;
-
     // 1. if currentRank is 0, then cannot decrease
     if (currentRank <= 0) {
-      canDecrease = false;
+      return false;
     }
-
-    // 2. if this talent has support, check if that support is checked
+    // 2. if this talent has support spell, check if that support one is selected
     // if yes, cannot decrease
-    if (widget.talent.support != '') {
-      ///Druid is is the ONLY special exception that has 2 dependency spells
-      if (widget.talent.support == 'Blood Frenzy AND Primal Fury') {
-        Talent bloodFrenzyTalent =
-            talentProvider.findTalentByName('Blood Frenzy');
-        Talent primalFuryTalent =
-            talentProvider.findTalentByName('Primal Fury');
-        if (bloodFrenzyTalent.points > 0 || primalFuryTalent.points > 0) {
-          canDecrease = false;
-        }
-      } else if (widget.talent.support ==
-          'Shadowform AND Improved Vampiric Embrace') {
-        Talent shadowformTalent = talentProvider.findTalentByName('Shadowform');
-        Talent impVampiricEmbraceTalent =
-            talentProvider.findTalentByName('Improved Vampiric Embrace');
-        if (shadowformTalent.points > 0 ||
-            impVampiricEmbraceTalent.points > 0) {
-          canDecrease = false;
-        }
-      } else {
-        Talent dependencyTalent =
-            talentProvider.findTalentByName(widget.talent.support);
-        if (dependencyTalent.points > 0) {
-          canDecrease = false;
-        }
+    for (final supportSpell in widget.talent.support) {
+      Talent dependencyTalent = talentProvider.findTalentByName(supportSpell);
+      if (dependencyTalent.points > 0) {
+        return false;
       }
     }
 
-    // 3. retain enough points for higher tier if checked
-    // need to check if it is not the current spell
-    // if the current spell is not highest, check retain points
-    // if required points is higher total point, cannot decrease
-    Talent highestTalent =
-        talentProvider.findHighestTierSpell(widget.talentTreeName);
-    if (highestTalent != null && widget.talent.name != highestTalent.name) {
-      int requiredTreePoints =
-          (highestTalent.tier * 5 - 5) + highestTalent.points;
-      int talentTreePoints =
-          talentProvider.getTalentTreePoints(widget.talentTreeName);
-      if (requiredTreePoints >= talentTreePoints) {
-        canDecrease = false;
+    // check widget talent spell tier,
+    // then check total points in that tier
+    // if have enough points, let decrease
+    int currentTier = widget.talent.tier;
+    Talent highestTalent = talentProvider.findHighestTierSpell(widget.talentTreeName);
+    int highestTier = highestTalent.tier;
+
+    // if the decrease spell is not the highest tier
+    if (currentTier < highestTier) {
+      // then check for current tier, if enough points in the current tier to decrease
+      int requiredCurrentTierPoints = currentTier * 5;
+      int currentTierPoints = talentProvider.findTierSum(currentTier, widget.talentTreeName);
+      if (requiredCurrentTierPoints >= currentTierPoints) {
+        return false;
       }
+      // check for highest required points
+      int requiredNextTopTierPoints = (highestTier -1) * 5;
+      int nextTopTierPoints = talentProvider.findTierSum(highestTier - 1, widget.talentTreeName);
+      if (requiredNextTopTierPoints >= nextTopTierPoints) {
+        return false;
+      }
+
     }
 
-    if (canDecrease) {
-      talentProvider.decreaseTalentPoints(
-          widget.talent, currentRank, widget.talentTreeName);
-    }
+    return true;
+  }
+
+  void _decreaseRank() {
+
+    if (_checkSpellCanDecrease()) {
+      talentProvider.decreaseTalentPoints(widget.talent, currentRank, widget.talentTreeName);
+    } // else show toast to let user know cannot decrease
   }
 
   // check if spell talent is enable or not
@@ -140,8 +127,7 @@ class _SpellWidgetState extends State<SpellWidget> {
           foregroundDecoration: BoxDecoration(
             color: Colors.grey,
             backgroundBlendMode: BlendMode.saturation,
-            borderRadius:
-                BorderRadius.circular(14), // icon curve border magic number
+            borderRadius: BorderRadius.circular(14), // icon curve border magic number
           ),
           child: Ink.image(
             image: AssetImage(imgLocation),

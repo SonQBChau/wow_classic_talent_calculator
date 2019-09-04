@@ -9,3 +9,5 @@ Sharing
 Refactor
 
 Improve UI
+
+For Android: use android studio to build APK

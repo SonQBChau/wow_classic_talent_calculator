@@ -38,32 +38,32 @@ class LoadHomeScreen extends StatelessWidget {
   }
 
   // this function should only called 1 the entire app
-  Future _loadAllClassesTalent() async {
-    druidTalentString = loadTalentString('druid');
-    hunterTalentString = loadTalentString('hunter');
-    mageTalentString = loadTalentString('mage');
-    paladinTalentString = loadTalentString('paladin');
-    priestTalentString = loadTalentString('priest');
-    rogueTalentString = loadTalentString('rogue');
-    shamanTalentString = loadTalentString('shaman');
-    warlockTalentString = loadTalentString('warlock');
-    warriorTalentString = loadTalentString('warrior');
+  Future<void> _loadAllClassesTalent() async {
+    List<dynamic> druidTalentString = await loadTalentString('druid');
+    List<dynamic> hunterTalentString = await loadTalentString('hunter');
+    List<dynamic> mageTalentString = await loadTalentString('mage');
+    List<dynamic> paladinTalentString = await loadTalentString('paladin');
+    List<dynamic> priestTalentString = await loadTalentString('priest');
+    List<dynamic> rogueTalentString = await loadTalentString('rogue');
+    List<dynamic> shamanTalentString = await loadTalentString('shaman');
+    List<dynamic> warlockTalentString = await loadTalentString('warlock');
+    List<dynamic> warriorTalentString = await loadTalentString('warrior');
   }
 
   @override
   Widget build(BuildContext context) {
-    _loadAllClassesTalent();
+    // _loadAllClassesTalent();
 
     return HomeScreen(
-      druidTalentTrees: druidTalentString,
-      hunterTalentTrees: hunterTalentString,
-      mageTalentTrees: mageTalentString,
-      paladinTalentTrees: paladinTalentString,
-      priestTalentTrees: priestTalentString,
-      rogueTalentTrees: rogueTalentString,
-      shamanTalentTrees: shamanTalentString,
-      warlockTalentTrees: warlockTalentString,
-      warriorTalentTrees: warriorTalentString,
+      druidTalentTrees: loadTalentString('druid'),
+      hunterTalentTrees: loadTalentString('hunter'),
+      mageTalentTrees: loadTalentString('mage'),
+      paladinTalentTrees: loadTalentString('paladin'),
+      priestTalentTrees: loadTalentString('priest'),
+      rogueTalentTrees: loadTalentString('rogue'),
+      shamanTalentTrees: loadTalentString('shaman'),
+      warlockTalentTrees: loadTalentString('warlock'),
+      warriorTalentTrees: loadTalentString('warrior'),
     );
   }
 }

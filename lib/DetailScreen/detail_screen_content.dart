@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/talent_tree_widget.dart';
@@ -36,6 +38,25 @@ class _DetailScreenContentState extends State<DetailScreenContent>
     super.dispose();
   }
 
+  void saveTalent() {
+    print("save talent");
+
+    String json = jsonEncode(widget.talentTrees);
+    print(json);
+  }
+
+  void loadTalent() {
+    print("load talent");
+  }
+
+  void handlePopupMenuSelect(String value) {
+    if (value == 'Load') {
+      loadTalent();
+    } else if (value == 'Save') {
+      saveTalent();
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     // get the current level to display at the top corner
@@ -69,20 +90,19 @@ class _DetailScreenContentState extends State<DetailScreenContent>
             ),
           ),
           // overflow menu
-          PopupMenuButton<int>(
+          PopupMenuButton<String>(
+            onSelected: (value) {
+              handlePopupMenuSelect(value);
+            },
             itemBuilder: (context) => [
               PopupMenuItem(
-                value: 1,
+                value: "Load",
                 child: Text("Load"),
               ),
               PopupMenuItem(
-                value: 2,
+                value: "Save",
                 child: Text("Save"),
-              ),
-              PopupMenuItem(
-                value: 2,
-                child: Text("Reset"),
-              ),
+              )
             ],
           ),
         ],

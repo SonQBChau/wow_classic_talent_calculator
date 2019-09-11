@@ -47,8 +47,8 @@ class WelcomeScreenState extends State<WelcomeScreen> {
   @override
   Future initState() {
     super.initState();
-    checkFirstSeen();
-    // getUserPreferences();
+    // checkFirstSeen();
+    getUserPreferences();
   }
 
   @override

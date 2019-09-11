@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wow_classic_talent_calculator/HomeScreen/home_screen.dart';
+import 'package:wow_classic_talent_calculator/HomeScreen/load_home_screen.dart';
 import 'package:wow_classic_talent_calculator/IntroScreen/card_widget.dart';
 import 'package:wow_classic_talent_calculator/utils/colors.dart';
 import 'package:wow_classic_talent_calculator/utils/fade_transition.dart';
@@ -61,7 +62,7 @@ class IntroScreen extends StatelessWidget {
                 ),
                 onPressed: () {
                   Navigator.of(context)
-                      .pushReplacement(FadeRoute(page: HomeScreen()));
+                      .pushReplacement(FadeRoute(page: LoadHomeScreen()));
                 },
               )
             ],

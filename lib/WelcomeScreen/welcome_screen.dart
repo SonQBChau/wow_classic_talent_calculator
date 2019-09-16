@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:get_it/get_it.dart';
+
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:wow_classic_talent_calculator/HomeScreen/home_screen.dart';
 import 'package:wow_classic_talent_calculator/HomeScreen/load_home_screen.dart';
 import 'package:wow_classic_talent_calculator/IntroScreen/intro_screen.dart';
-import 'package:wow_classic_talent_calculator/model/user.dart';
-import 'package:wow_classic_talent_calculator/services/localstorage_service.dart';
-import 'package:wow_classic_talent_calculator/services/service_locator.dart';
+
 import 'package:wow_classic_talent_calculator/utils/fade_transition.dart';
 
 /// First page of the app
@@ -36,19 +33,10 @@ class WelcomeScreenState extends State<WelcomeScreen> {
     }
   }
 
-  Future getUserPreferences() async {
-    var storageService = sl.get<LocalStorageService>();
-    var mySavedUser = storageService.user;
-    print('==============');
-    print(storageService);
-    print(mySavedUser);
-  }
-
   @override
   Future initState() {
     super.initState();
-    // checkFirstSeen();
-    getUserPreferences();
+    checkFirstSeen();
   }
 
   @override

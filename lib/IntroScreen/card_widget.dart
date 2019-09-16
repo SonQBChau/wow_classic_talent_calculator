@@ -18,12 +18,12 @@ class CardWidget extends StatelessWidget {
                 padding: EdgeInsets.only(right: 10),
                 child: Icon(
                   icon,
-                  size: 50,
+                  size: 40,
                   color: kColorLightLicorice,
                 )),
             Text(
               text,
-              style: TextStyle(fontSize: 18, color: kColorLicorice),
+              style: TextStyle(fontSize: 16, color: kColorLicorice),
             )
           ],
         ),

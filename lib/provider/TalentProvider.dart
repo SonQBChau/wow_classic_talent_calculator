@@ -57,12 +57,10 @@ class TalentProvider extends ChangeNotifier {
   }
 
   /// increase the talent points of selected spell
+  /// increase spell rank if it's not max and not over 60
+  /// loop 5 times to max out
   void increaseTalentPoints(
       Talent talent, int currentRank, String talentTreeName) {
-    // talent.points = currentRank + 1;
-    // increaseTreePoints(talentTreeName);
-    // updateTalentTree();
-    // notifyListeners();
     for (int i = 0; i < 5; i++) {
       if (talent.points < talent.ranks.rank.length &&
           getTotalTalentPoints() < 60) {
@@ -94,13 +92,6 @@ class TalentProvider extends ChangeNotifier {
       }
     }
   }
-
-//  /// lock state: cannot decrease
-//  /// unlock state: can decrease
-//  void updateTalentLock(Talent talent, String specTreeName){
-//    final int tierPoints = talent.tier * 5;
-//    findTierSum()
-//  }
 
   /// enable or disable spell talent depend on conditions
   /// enable if:

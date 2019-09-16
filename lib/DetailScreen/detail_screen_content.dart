@@ -3,10 +3,12 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/talent_tree_widget.dart';
+import 'package:wow_classic_talent_calculator/IntroScreen/intro_screen.dart';
 import 'package:wow_classic_talent_calculator/provider/TalentProvider.dart';
 import 'package:wow_classic_talent_calculator/utils/colors.dart';
 import 'package:wow_classic_talent_calculator/utils/constants.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
+import 'package:wow_classic_talent_calculator/utils/fade_transition.dart';
 import 'package:wow_classic_talent_calculator/utils/string.dart' as str;
 
 // detail screen content below the tabs bar
@@ -49,11 +51,33 @@ class _DetailScreenContentState extends State<DetailScreenContent>
     print("load talent");
   }
 
+  void showHelp() {
+    print("show help");
+    _showDialog();
+  }
+
+  void _showDialog() {
+    // flutter defined function
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        // return object of type Dialog
+        return AlertDialog(
+          contentPadding: EdgeInsets.all(0),
+          content: IntroScreen(),
+          // content: Text("Alert Dialog body"),
+        );
+      },
+    );
+  }
+
   void handlePopupMenuSelect(String value) {
     if (value == 'Load') {
       loadTalent();
     } else if (value == 'Save') {
       saveTalent();
+    } else if (value == 'Help') {
+      showHelp();
     }
   }
 
@@ -96,13 +120,9 @@ class _DetailScreenContentState extends State<DetailScreenContent>
             },
             itemBuilder: (context) => [
               PopupMenuItem(
-                value: "Load",
-                child: Text("Load"),
+                value: "Help",
+                child: Text("Help"),
               ),
-              PopupMenuItem(
-                value: "Save",
-                child: Text("Save"),
-              )
             ],
           ),
         ],

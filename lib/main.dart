@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:wow_classic_talent_calculator/HomeScreen/load_home_screen.dart';
+import 'package:wow_classic_talent_calculator/IntroScreen/intro_screen.dart';
 import 'WelcomeScreen/welcome_screen.dart';
 
 /// onboarding page
@@ -28,8 +30,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: WelcomeScreen(),
-      // home: IntroScreen(),
+      // home: WelcomeScreen(),
+      home: LoadHomeScreen(),
     );
   }
 }

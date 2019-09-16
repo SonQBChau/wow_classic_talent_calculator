@@ -45,10 +45,6 @@ class _SpellWidgetState extends State<SpellWidget> {
 
   // onTap, increase spell rank if it's not max and not over 60
   void _increaseRank() {
-    // if (currentRank < maxRank && talentProvider.getTotalTalentPoints() < 60) {
-    //   talentProvider.increaseTalentPoints(
-    //       widget.talent, currentRank, widget.talentTreeName);
-    // }
     talentProvider.increaseTalentPoints(
         widget.talent, currentRank, widget.talentTreeName);
   }

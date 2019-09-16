@@ -4,71 +4,74 @@ import 'package:wow_classic_talent_calculator/HomeScreen/load_home_screen.dart';
 import 'package:wow_classic_talent_calculator/IntroScreen/card_widget.dart';
 import 'package:wow_classic_talent_calculator/utils/colors.dart';
 import 'package:wow_classic_talent_calculator/utils/fade_transition.dart';
+import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 
 class IntroScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        color: kColorSelectiveYellow.withOpacity(0.5),
-        child: Center(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              Container(
-                padding: EdgeInsets.only(left: 40, right: 40),
-                child: Column(
-                  children: <Widget>[
-                    CardWidget(
-                      icon: Icons.add_circle,
-                      text: 'Tap to increase',
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    CardWidget(
-                      icon: Icons.remove_circle,
-                      text: 'Double tap to decrease',
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    CardWidget(
-                      icon: Icons.info,
-                      text: 'Hold for description',
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              MaterialButton(
-                child: Container(
-                  padding: EdgeInsets.symmetric(horizontal: 15, vertical: 5),
-                  decoration: BoxDecoration(
-                    border: Border.all(width: 0.5),
-                    borderRadius: BorderRadius.all(
-                        Radius.circular(5.0) //         <--- border radius here
-                        ),
-                  ),
-                  child: Text(
-                    'Got it!',
-                    style: TextStyle(fontSize: 30, color: kColorLicorice),
-                  ),
-                ),
-                onPressed: () {
-                  Navigator.of(context)
-                      .pushReplacement(FadeRoute(page: LoadHomeScreen()));
-                },
-              )
-            ],
+    return Container(
+      width: 300, // image size
+      height: 330,
+      child: Stack(
+        children: <Widget>[
+          Image.asset(
+            'assets/background/paper.png',
+            fit: BoxFit.contain,
           ),
-        ),
+          Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                CardWidget(
+                  icon: Icons.add_circle,
+                  text: 'Tap to increase',
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                CardWidget(
+                  icon: Icons.remove_circle,
+                  text: 'Double tap to decrease',
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                CardWidget(
+                  icon: Icons.info,
+                  text: 'Hold for description',
+                ),
+              ],
+            ),
+          )
+          // Column(
+          //   children: <Widget>[
+          //     SizedBox(
+          //       height: 20,
+          //     ),
+          //     CardWidget(
+          //       icon: Icons.add_circle,
+          //       text: 'Tap to increase',
+          //     ),
+          //     SizedBox(
+          //       height: 20,
+          //     ),
+          //     CardWidget(
+          //       icon: Icons.remove_circle,
+          //       text: 'Double tap to decrease',
+          //     ),
+          //     SizedBox(
+          //       height: 20,
+          //     ),
+          //     CardWidget(
+          //       icon: Icons.info,
+          //       text: 'Hold for description',
+          //     ),
+          //   ],
+          // )
+        ],
       ),
     );
+
+    ;
   }
 }

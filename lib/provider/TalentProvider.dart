@@ -106,7 +106,8 @@ class TalentProvider extends ChangeNotifier {
       if (talent.dependency != '') {
         Talent dependencyTalent = findTalentByName(talent.dependency);
         //check for enough required points
-        if (dependencyTalent.points == dependencyTalent.ranks.rank.length) {
+        if (dependencyTalent != null &&
+            dependencyTalent.points == dependencyTalent.ranks.rank.length) {
           talent.enable = true;
         } else {
           talent.enable = false;

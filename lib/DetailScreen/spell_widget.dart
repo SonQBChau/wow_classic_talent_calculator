@@ -45,9 +45,12 @@ class _SpellWidgetState extends State<SpellWidget> {
 
   // onTap, increase spell rank if it's not max and not over 60
   void _increaseRank() {
-    if (currentRank < maxRank && talentProvider.getTotalTalentPoints() < 60) {
-      talentProvider.increaseTalentPoints(widget.talent, currentRank, widget.talentTreeName);
-    }
+    // if (currentRank < maxRank && talentProvider.getTotalTalentPoints() < 60) {
+    //   talentProvider.increaseTalentPoints(
+    //       widget.talent, currentRank, widget.talentTreeName);
+    // }
+    talentProvider.increaseTalentPoints(
+        widget.talent, currentRank, widget.talentTreeName);
   }
 
   bool _checkSpellCanDecrease() {
@@ -74,20 +77,23 @@ class _SpellWidgetState extends State<SpellWidget> {
     // then check total points in that tier
     // if have enough points, let decrease
     int currentTier = widget.talent.tier;
-    Talent highestTalent = talentProvider.findHighestTierSpell(widget.talentTreeName);
+    Talent highestTalent =
+        talentProvider.findHighestTierSpell(widget.talentTreeName);
     int highestTier = highestTalent.tier;
 
     // if the decrease spell is not the highest tier
     if (currentTier < highestTier) {
       // then check for current tier, if enough points in the current tier to decrease
       int requiredCurrentTierPoints = currentTier * 5;
-      int currentTierPoints = talentProvider.findTierSum(currentTier, widget.talentTreeName);
+      int currentTierPoints =
+          talentProvider.findTierSum(currentTier, widget.talentTreeName);
       if (requiredCurrentTierPoints >= currentTierPoints) {
         return false;
       }
       // check for highest required points
       int requiredNextTopTierPoints = (highestTier - 1) * 5;
-      int nextTopTierPoints = talentProvider.findTierSum(highestTier - 1, widget.talentTreeName);
+      int nextTopTierPoints =
+          talentProvider.findTierSum(highestTier - 1, widget.talentTreeName);
       if (requiredNextTopTierPoints >= nextTopTierPoints) {
         return false;
       }
@@ -98,7 +104,8 @@ class _SpellWidgetState extends State<SpellWidget> {
 
   void _decreaseRank() {
     if (_checkSpellCanDecrease()) {
-      talentProvider.decreaseTalentPoints(widget.talent, currentRank, widget.talentTreeName);
+      talentProvider.decreaseTalentPoints(
+          widget.talent, currentRank, widget.talentTreeName);
     } // else show toast to let user know cannot decrease
   }
 
@@ -126,7 +133,8 @@ class _SpellWidgetState extends State<SpellWidget> {
           foregroundDecoration: BoxDecoration(
             color: Colors.grey,
             backgroundBlendMode: BlendMode.saturation,
-            borderRadius: BorderRadius.circular(14), // icon curve border magic number
+            borderRadius:
+                BorderRadius.circular(14), // icon curve border magic number
           ),
           child: Ink.image(
             image: AssetImage(imgLocation),
@@ -148,6 +156,7 @@ class _SpellWidgetState extends State<SpellWidget> {
     currentRank = widget.talent.points;
     spellName = widget.talent.icon.toLowerCase();
     imgLocation = 'assets/Icons/$spellName.png';
+    // print(widget.talent.points);
 
     return Container(
       width: SizeConfig.cellSize,

@@ -59,10 +59,19 @@ class TalentProvider extends ChangeNotifier {
   /// increase the talent points of selected spell
   void increaseTalentPoints(
       Talent talent, int currentRank, String talentTreeName) {
-    talent.points = currentRank + 1;
-    increaseTreePoints(talentTreeName);
-    updateTalentTree();
-    notifyListeners();
+    // talent.points = currentRank + 1;
+    // increaseTreePoints(talentTreeName);
+    // updateTalentTree();
+    // notifyListeners();
+    for (int i = 0; i < 5; i++) {
+      if (talent.points < talent.ranks.rank.length &&
+          getTotalTalentPoints() < 60) {
+        talent.points = talent.points + 1;
+        increaseTreePoints(talentTreeName);
+        updateTalentTree();
+        notifyListeners();
+      }
+    }
   }
 
   /// decrease the talent points of selected spell
@@ -106,7 +115,8 @@ class TalentProvider extends ChangeNotifier {
       if (talent.dependency != '') {
         Talent dependencyTalent = findTalentByName(talent.dependency);
         //check for enough required points
-        if (dependencyTalent.points == dependencyTalent.ranks.rank.length) {
+        if (dependencyTalent != null &&
+            dependencyTalent.points == dependencyTalent.ranks.rank.length) {
           talent.enable = true;
         } else {
           talent.enable = false;

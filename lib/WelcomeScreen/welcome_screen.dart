@@ -19,14 +19,14 @@ class WelcomeScreen extends StatefulWidget {
 class WelcomeScreenState extends State<WelcomeScreen> {
   Future checkFirstSeen() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    bool _seen = (prefs.getBool('seen') ?? false);
+    bool _seen = (prefs.getBool('seenOnboarding') ?? false);
 
     if (_seen) {
       // Navigator.of(context).pushReplacement(
       // MaterialPageRoute(builder: (context) => HomeScreen()));
       Navigator.of(context).pushReplacement(FadeRoute(page: LoadHomeScreen()));
     } else {
-      prefs.setBool('seen', true);
+      prefs.setBool('seenOnboarding', true);
       // Navigator.of(context).pushReplacement(
       //     MaterialPageRoute(builder: (context) => IntroScreen()));
       Navigator.of(context).pushReplacement(FadeRoute(page: IntroScreen()));

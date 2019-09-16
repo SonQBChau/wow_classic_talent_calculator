@@ -1276,7 +1276,7 @@
 			"Icon": "Spell_Frost_FrostShock",
 			"Name": "Shatter",
 			"Points": 0,
-			"Dependency": "improved Frost Nova",
+			"Dependency": "Improved Frost Nova",
 			"Support": [],
 			"Position": [
 			  3,

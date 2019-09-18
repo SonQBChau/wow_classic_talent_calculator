@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wow_classic_talent_calculator/ArrowWidgets/class_arrow_widget.dart';
 import 'package:wow_classic_talent_calculator/DetailScreen/detail_screen.dart';
 import 'package:wow_classic_talent_calculator/HomeScreen/class_widget.dart';
+import 'package:wow_classic_talent_calculator/HomeScreen/drawer_widget.dart';
 import 'package:wow_classic_talent_calculator/utils/colors.dart';
 import 'package:wow_classic_talent_calculator/utils/size_config.dart';
 
@@ -50,83 +51,85 @@ class HomeScreen extends StatelessWidget {
     SizeConfig().init(context);
 
     return Scaffold(
-        appBar: AppBar(
-          title: Text(
-            'Classic Talent Calculator',
-            style: TextStyle(
-              color: kColorSelectiveYellow,
-              fontSize: 24,
+      appBar: AppBar(
+        title: Text(
+          'Classic Talent Calculator',
+          style: TextStyle(
+            color: kColorSelectiveYellow,
+            fontSize: 24,
+          ),
+        ),
+        centerTitle: true,
+        backgroundColor: kColorLightLicorice,
+      ),
+      body: ListView(
+        children: <Widget>[
+          GestureDetector(
+            onTap: () => _handleOnTap(
+                context, 'druid', druidTalentTrees, kColorOrangeDruid),
+            child: ClassWidget(
+              className: 'druid',
             ),
           ),
-          centerTitle: true,
-          backgroundColor: kColorLightLicorice,
-        ),
-        body: ListView(
-          children: <Widget>[
-            GestureDetector(
-              onTap: () => _handleOnTap(
-                  context, 'druid', druidTalentTrees, kColorOrangeDruid),
-              child: ClassWidget(
-                className: 'druid',
-              ),
+          GestureDetector(
+            onTap: () => _handleOnTap(
+                context, 'hunter', hunterTalentTrees, kColorGreenHunter),
+            child: ClassWidget(
+              className: 'hunter',
             ),
-            GestureDetector(
-              onTap: () => _handleOnTap(
-                  context, 'hunter', hunterTalentTrees, kColorGreenHunter),
-              child: ClassWidget(
-                className: 'hunter',
-              ),
+          ),
+          GestureDetector(
+            onTap: () =>
+                _handleOnTap(context, 'mage', mageTalentTrees, kColorBlueMage),
+            child: ClassWidget(
+              className: 'mage',
             ),
-            GestureDetector(
-              onTap: () => _handleOnTap(
-                  context, 'mage', mageTalentTrees, kColorBlueMage),
-              child: ClassWidget(
-                className: 'mage',
-              ),
+          ),
+          GestureDetector(
+            onTap: () => _handleOnTap(
+                context, 'paladin', paladinTalentTrees, kColorPinkPaladin),
+            child: ClassWidget(
+              className: 'paladin',
             ),
-            GestureDetector(
-              onTap: () => _handleOnTap(
-                  context, 'paladin', paladinTalentTrees, kColorPinkPaladin),
-              child: ClassWidget(
-                className: 'paladin',
-              ),
+          ),
+          GestureDetector(
+            onTap: () => _handleOnTap(
+                context, 'priest', priestTalentTrees, kColorWhitePriest),
+            child: ClassWidget(
+              className: 'priest',
             ),
-            GestureDetector(
-              onTap: () => _handleOnTap(
-                  context, 'priest', priestTalentTrees, kColorWhitePriest),
-              child: ClassWidget(
-                className: 'priest',
-              ),
+          ),
+          GestureDetector(
+            onTap: () => _handleOnTap(
+                context, 'rogue', rogueTalentTrees, kColorYellowRogue),
+            child: ClassWidget(
+              className: 'rogue',
             ),
-            GestureDetector(
-              onTap: () => _handleOnTap(
-                  context, 'rogue', rogueTalentTrees, kColorYellowRogue),
-              child: ClassWidget(
-                className: 'rogue',
-              ),
+          ),
+          GestureDetector(
+            onTap: () => _handleOnTap(
+                context, 'shaman', shamanTalentTrees, kColorBlueShaman),
+            child: ClassWidget(
+              className: 'shaman',
             ),
-            GestureDetector(
-              onTap: () => _handleOnTap(
-                  context, 'shaman', shamanTalentTrees, kColorBlueShaman),
-              child: ClassWidget(
-                className: 'shaman',
-              ),
+          ),
+          GestureDetector(
+            onTap: () => _handleOnTap(
+                context, 'warlock', warlockTalentTrees, kColorPurpleWarlock),
+            child: ClassWidget(
+              className: 'warlock',
             ),
-            GestureDetector(
-              onTap: () => _handleOnTap(
-                  context, 'warlock', warlockTalentTrees, kColorPurpleWarlock),
-              child: ClassWidget(
-                className: 'warlock',
-              ),
+          ),
+          GestureDetector(
+            onTap: () => _handleOnTap(
+                context, 'warrior', warriorTalentTrees, kColorTanWarrior),
+            child: ClassWidget(
+              className: 'warrior',
             ),
-            GestureDetector(
-              onTap: () => _handleOnTap(
-                  context, 'warrior', warriorTalentTrees, kColorTanWarrior),
-              child: ClassWidget(
-                className: 'warrior',
-              ),
-            ),
-          ],
-        ));
+          ),
+        ],
+      ),
+      drawer: DrawerWidget(),
+    );
   }
 }

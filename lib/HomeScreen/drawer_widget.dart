@@ -23,6 +23,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
     setState(() {
       isSwitched = value;
     });
+    // save to storage
     prefs.setBool('maxIncreaseOnTap', value);
   }
 
@@ -36,7 +37,8 @@ class _DrawerWidgetState extends State<DrawerWidget> {
               handleOnSwitch(value);
             },
             activeTrackColor: kColorSelectiveYellow.withOpacity(0.5),
-            activeColor: kColorSelectiveYellow),
+            activeColor: kColorSelectiveYellow,
+            inactiveThumbColor: kColorSelectiveYellow.withOpacity(0.5)),
       );
     } else {
       return Container();

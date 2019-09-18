@@ -52,6 +52,7 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(color: kColorSelectiveYellow),
         title: Text(
           'Classic Talent Calculator',
           style: TextStyle(

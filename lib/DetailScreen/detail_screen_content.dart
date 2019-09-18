@@ -91,13 +91,10 @@ class _DetailScreenContentState extends State<DetailScreenContent>
     }
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(color: kColorSelectiveYellow),
         title: Text(
           str.capitalize(widget.className),
           style: TextStyle(color: kColorSelectiveYellow),
-        ),
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: kColorSelectiveYellow),
-          onPressed: () => Navigator.of(context).pop(),
         ),
         actions: <Widget>[
           // level label
@@ -115,6 +112,7 @@ class _DetailScreenContentState extends State<DetailScreenContent>
           ),
           // overflow menu
           PopupMenuButton<String>(
+            // color: kColorSelectiveYellow,
             onSelected: (value) {
               handlePopupMenuSelect(value);
             },

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
 import 'package:wow_classic_talent_calculator/HomeScreen/load_home_screen.dart';
 import 'package:wow_classic_talent_calculator/IntroScreen/intro_screen.dart';
+import 'package:wow_classic_talent_calculator/provider/provider_setup.dart';
 import 'WelcomeScreen/welcome_screen.dart';
 
 /// onboarding page
@@ -23,15 +25,17 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'WoW Classic Talent Calculator',
-      theme: ThemeData(
+    return MultiProvider(
+        providers: providers,
+        child: MaterialApp(
+          title: 'WoW Classic Talent Calculator',
+          theme: ThemeData(
 //        brightness: Brightness.dark,
-        primarySwatch: Colors.blue,
-      ),
-      debugShowCheckedModeBanner: false,
-      // home: WelcomeScreen(),
-      home: LoadHomeScreen(),
-    );
+            primarySwatch: Colors.blue,
+          ),
+          debugShowCheckedModeBanner: false,
+          // home: WelcomeScreen(),
+          home: LoadHomeScreen(),
+        ));
   }
 }

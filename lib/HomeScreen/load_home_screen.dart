@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:wow_classic_talent_calculator/HomeScreen/home_screen.dart';
 import 'package:wow_classic_talent_calculator/model/talent.dart';
@@ -19,6 +20,16 @@ class LoadHomeScreen extends StatelessWidget {
     final jsonResponse = json.decode(jsonTalent);
     return jsonResponse;
   }
+
+  // Future loadSettings() async {
+  //   SharedPreferences prefs = await SharedPreferences.getInstance();
+  //   bool _maxPointsOnTap = (prefs.getBool('maxPointsOnTap') ?? true);
+
+  //   if (_maxPointsOnTap) {
+  //   } else {
+  //     prefs.setBool('maxPointsOnTap', true);
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {

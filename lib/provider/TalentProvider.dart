@@ -61,9 +61,9 @@ class TalentProvider extends ChangeNotifier {
   /// loop 5 times to max out
   void increaseTalentPoints(
       Talent talent, int currentRank, String talentTreeName) {
+    int length = isSwitch ? 5 : 1;
     for (int i = 0; i < 5; i++) {
-      if (talent.points < talent.ranks.rank.length &&
-          getTotalTalentPoints() < 60) {
+      if (talent.points < length && getTotalTalentPoints() < 60) {
         talent.points = talent.points + 1;
         increaseTreePoints(talentTreeName);
         updateTalentTree();

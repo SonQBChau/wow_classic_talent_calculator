@@ -1,13 +1,8 @@
-# wow_classic_talent_calculator
- 
-TODO:
+Wow Classic talent calculator for mobile
 
-Load/Save talents
+## Google play:
 
-Sharing
+https://play.google.com/store/apps/details?id=com.sonchau.wow_classic_talent_calculator&hl=en
 
-Refactor
 
-Improve UI
-
-For Android: use android studio to build APK, remember to change version code
+<img src="https://github.com/SonQBChau/wow_classic_talent_calculator/blob/master/assets/Screenshots/ss_1_5.5.png" width="50%" height="50%">
